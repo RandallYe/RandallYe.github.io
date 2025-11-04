@@ -1,954 +1,424 @@
-<!DOCTYPE html>
-<html data-markdown-preview-plus-context="html-export">
-  <head>
-    <meta charset="utf-8" />
-    <title>index.mkd</title>
-    <style>.emoji {
-  max-width: 1em !important;
-}
-del {
-  text-decoration: none;
-  position: relative;
-}
-del::after {
-  border-bottom: 1px solid black;
-  content: '';
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 50%;
-}
-ul.contains-task-list li.task-list-item {
-  position: relative;
-  list-style-type: none;
-}
-ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
-  position: absolute;
-  transform: translateX(-100%);
-  width: 30px;
-}
-span.critic.comment {
-  position: relative;
-}
-span.critic.comment::before {
-  content: '\1f4ac';
-  position: initial;
-}
-span.critic.comment > span {
-  display: none;
-}
-span.critic.comment:hover > span {
-  display: initial;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  border: 1px solid;
-  border-radius: 5px;
-  max-height: 4em;
-  overflow: auto;
-}
-span.critic.comment:focus > span {
-  display: initial;
-  text-decoration: underline;
-  position: initial;
-  top: auto;
-  left: auto;
-  border: initial;
-  border-radius: initial;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  background-color: transparent;
-}
+<!DOCTYPE html><html><head>
+      <title>index</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/ky582/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.18/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
-body {
-  overflow: initial !important;
-  overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-  line-height: 1.6;
-  word-wrap: break-word;
-  padding: 30px;
-  font-size: 16px;
-  color: #333;
-  background-color: #fff;
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<p><a href="https://www-users.york.ac.uk/~ky582/">Home</a> | <a href="#short-background">Short background</a> | <a href="#insresearch-interests-and-summaryins">Research interests</a> |  <a href="#news">News</a> | <a href="#publications">Publications</a> | <a href="#talks-and-presentations">Talks and Presentations</a> |<br>
+<a href="#projects-i-was-or-am-working-on">Projects</a> | <a href="#posts">Posts</a> | <a href="#showcases">Showcases</a> | <a href="#academic-activities">Academic activities</a> | <a href="#contact">Contact</a></p>
+<h1>Kangfeng Ye (also known as Randall Ye)</h1>
+<style>
+img[src*="#round"]{
+  border-radius: 50%;
+}
+img[src*="#middle"] {
+   width:450px;
+}
+img[src*="#small"] {
+   width:200px;
 }
-body > *:first-child {
-  margin-top: 0 !important;
-}
-body > *:last-child {
-  margin-bottom: 0 !important;
-}
-body a:not([href]) {
-  color: inherit;
-  text-decoration: none;
-}
-body .absent {
-  color: #c00;
-}
-body .anchor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  padding-right: 6px;
-  padding-left: 30px;
-  margin-left: -30px;
-}
-body .anchor:focus {
-  outline: none;
-}
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
-  position: relative;
-  margin-top: 1em;
-  margin-bottom: 16px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-body h1 .octicon-link,
-body h2 .octicon-link,
-body h3 .octicon-link,
-body h4 .octicon-link,
-body h5 .octicon-link,
-body h6 .octicon-link {
-  display: none;
-  color: #000;
-  vertical-align: middle;
-}
-body h1:hover .anchor,
-body h2:hover .anchor,
-body h3:hover .anchor,
-body h4:hover .anchor,
-body h5:hover .anchor,
-body h6:hover .anchor {
-  padding-left: 8px;
-  margin-left: -30px;
-  text-decoration: none;
-}
-body h1:hover .anchor .octicon-link,
-body h2:hover .anchor .octicon-link,
-body h3:hover .anchor .octicon-link,
-body h4:hover .anchor .octicon-link,
-body h5:hover .anchor .octicon-link,
-body h6:hover .anchor .octicon-link {
-  display: inline-block;
-}
-body h1 tt,
-body h2 tt,
-body h3 tt,
-body h4 tt,
-body h5 tt,
-body h6 tt,
-body h1 code,
-body h2 code,
-body h3 code,
-body h4 code,
-body h5 code,
-body h6 code {
-  font-size: inherit;
-}
-body h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #eee;
-}
-body h1 .anchor {
-  line-height: 1;
-}
-body h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.75em;
-  line-height: 1.225;
-  border-bottom: 1px solid #eee;
-}
-body h2 .anchor {
-  line-height: 1;
-}
-body h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
-}
-body h3 .anchor {
-  line-height: 1.2;
-}
-body h4 {
-  font-size: 1.25em;
-}
-body h4 .anchor {
-  line-height: 1.2;
-}
-body h5 {
-  font-size: 1em;
-}
-body h5 .anchor {
-  line-height: 1.1;
-}
-body h6 {
-  font-size: 1em;
-  color: #777;
-}
-body h6 .anchor {
-  line-height: 1.1;
-}
-body p,
-body blockquote,
-body ul,
-body ol,
-body dl,
-body table,
-body pre {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-body hr {
-  height: 4px;
-  padding: 0;
-  margin: 16px 0;
-  background-color: #e7e7e7;
-  border: 0 none;
-}
-body ul,
-body ol {
-  padding-left: 2em;
-}
-body ul.no-list,
-body ol.no-list {
-  padding: 0;
-  list-style-type: none;
-}
-body ul ul,
-body ul ol,
-body ol ol,
-body ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-body li > p {
-  margin-top: 16px;
-}
-body dl {
-  padding: 0;
-}
-body dl dt {
-  padding: 0;
-  margin-top: 16px;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: bold;
-}
-body dl dd {
-  padding: 0 16px;
-  margin-bottom: 16px;
-}
-body blockquote {
-  padding: 0 15px;
-  color: #777;
-  border-left: 4px solid #ddd;
-}
-body blockquote > :first-child {
-  margin-top: 0;
-}
-body blockquote > :last-child {
-  margin-bottom: 0;
-}
-body table {
-  display: block;
-  width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
-}
-body table th {
-  font-weight: bold;
-}
-body table th,
-body table td {
-  padding: 6px 13px;
-  border: 1px solid #ddd;
-}
-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-}
-body table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-body img {
-  max-width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body .emoji {
-  max-width: none;
-}
-body span.frame {
-  display: block;
-  overflow: hidden;
-}
-body span.frame > span {
-  display: block;
-  float: left;
-  width: auto;
-  padding: 7px;
-  margin: 13px 0 0;
-  overflow: hidden;
-  border: 1px solid #ddd;
-}
-body span.frame span img {
-  display: block;
-  float: left;
-}
-body span.frame span span {
-  display: block;
-  padding: 5px 0 0;
-  clear: both;
-  color: #333;
-}
-body span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both;
-}
-body span.align-center > span {
-  display: block;
-  margin: 13px auto 0;
-  overflow: hidden;
-  text-align: center;
-}
-body span.align-center span img {
-  margin: 0 auto;
-  text-align: center;
-}
-body span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both;
-}
-body span.align-right > span {
-  display: block;
-  margin: 13px 0 0;
-  overflow: hidden;
-  text-align: right;
-}
-body span.align-right span img {
-  margin: 0;
-  text-align: right;
-}
-body span.float-left {
-  display: block;
-  float: left;
-  margin-right: 13px;
-  overflow: hidden;
-}
-body span.float-left span {
-  margin: 13px 0 0;
-}
-body span.float-right {
-  display: block;
-  float: right;
-  margin-left: 13px;
-  overflow: hidden;
-}
-body span.float-right > span {
-  display: block;
-  margin: 13px auto 0;
-  overflow: hidden;
-  text-align: right;
-}
-body code,
-body tt {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 3px;
-}
-body code:before,
-body tt:before,
-body code:after,
-body tt:after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
-}
-body code br,
-body tt br {
-  display: none;
-}
-body del code {
-  text-decoration: inherit;
-}
-body pre > code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-body .highlight {
-  margin-bottom: 16px;
-}
-body .highlight pre,
-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f7f7f7;
-  border-radius: 3px;
-}
-body .highlight pre {
-  margin-bottom: 0;
-  word-break: normal;
-}
-body pre {
-  word-wrap: normal;
-}
-body pre code,
-body pre tt {
-  display: inline;
-  max-width: initial;
-  padding: 0;
-  margin: 0;
-  overflow: initial;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0;
-}
-body pre code:before,
-body pre tt:before,
-body pre code:after,
-body pre tt:after {
-  content: normal;
-}
-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
-}
-span.critic.comment > span {
-  background-color: #fff;
-}
-a {
-  color: #337ab7;
-}
-
-.bracket-matcher .region {
-  border-bottom: 1px dotted lime;
-  position: absolute;
-}
-.line-number.bracket-matcher.bracket-matcher {
-  color: #383a42;
-  background-color: #e5e5e6;
-}
-
-.spell-check-misspelling .region {
-  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
-}
-.spell-check-corrections {
-  width: 25em !important;
-}
-
-pre.editor-colors {
-  background-color: #fafafa;
-  color: #383a42;
-}
-pre.editor-colors .line.cursor-line {
-  background-color: rgba(56, 58, 66, 0.05);
-}
-pre.editor-colors .invisible {
-  color: #383a42;
-}
-pre.editor-colors .cursor {
-  border-left: 2px solid #526fff;
-}
-pre.editor-colors .selection .region {
-  background-color: #e5e5e6;
-}
-pre.editor-colors .bracket-matcher .region {
-  border-bottom: 1px solid #526fff;
-  box-sizing: border-box;
-}
-pre.editor-colors .invisible-character {
-  color: rgba(56, 58, 66, 0.2);
-}
-pre.editor-colors .indent-guide {
-  color: rgba(56, 58, 66, 0.2);
-}
-pre.editor-colors .wrap-guide {
-  background-color: rgba(56, 58, 66, 0.2);
-}
-pre.editor-colors .find-result .region.region.region,
-pre.editor-colors .current-result .region.region.region {
-  border-radius: 2px;
-  background-color: rgba(82, 111, 255, 0.2);
-  transition: border-color 0.4s;
-}
-pre.editor-colors .find-result .region.region.region {
-  border: 2px solid transparent;
-}
-pre.editor-colors .current-result .region.region.region {
-  border: 2px solid #526fff;
-  transition-duration: .1s;
-}
-pre.editor-colors .gutter .line-number {
-  color: #9d9d9f;
-  -webkit-font-smoothing: antialiased;
-}
-pre.editor-colors .gutter .line-number.cursor-line {
-  color: #383a42;
-  background-color: #e5e5e6;
-}
-pre.editor-colors .gutter .line-number.cursor-line-no-selection {
-  background-color: transparent;
-}
-pre.editor-colors .gutter .line-number .icon-right {
-  color: #383a42;
-}
-pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
-  bottom: -3px;
-}
-pre.editor-colors .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 25px;
-  border-bottom: 1px dotted rgba(255, 20, 20, 0.5);
-  pointer-events: none;
-}
-pre.editor-colors .gutter .line-number.folded,
-pre.editor-colors .gutter .line-number:after,
-pre.editor-colors .fold-marker:after {
-  color: #383a42;
-}
-.syntax--comment {
-  color: #a0a1a7;
-  font-style: italic;
-}
-.syntax--comment .syntax--markup.syntax--link {
-  color: #a0a1a7;
-}
-.syntax--entity.syntax--name.syntax--type {
-  color: #c18401;
-}
-.syntax--entity.syntax--other.syntax--inherited-class {
-  color: #c18401;
-}
-.syntax--keyword {
-  color: #a626a4;
-}
-.syntax--keyword.syntax--control {
-  color: #a626a4;
-}
-.syntax--keyword.syntax--operator {
-  color: #383a42;
-}
-.syntax--keyword.syntax--other.syntax--special-method {
-  color: #4078f2;
-}
-.syntax--keyword.syntax--other.syntax--unit {
-  color: #986801;
-}
-.syntax--storage {
-  color: #a626a4;
-}
-.syntax--storage.syntax--type.syntax--annotation,
-.syntax--storage.syntax--type.syntax--primitive {
-  color: #a626a4;
-}
-.syntax--storage.syntax--modifier.syntax--package,
-.syntax--storage.syntax--modifier.syntax--import {
-  color: #383a42;
-}
-.syntax--constant {
-  color: #986801;
-}
-.syntax--constant.syntax--variable {
-  color: #986801;
-}
-.syntax--constant.syntax--character.syntax--escape {
-  color: #0184bc;
-}
-.syntax--constant.syntax--numeric {
-  color: #986801;
-}
-.syntax--constant.syntax--other.syntax--color {
-  color: #0184bc;
-}
-.syntax--constant.syntax--other.syntax--symbol {
-  color: #0184bc;
-}
-.syntax--variable {
-  color: #e45649;
-}
-.syntax--variable.syntax--interpolation {
-  color: #ca1243;
-}
-.syntax--variable.syntax--parameter {
-  color: #383a42;
-}
-.syntax--string {
-  color: #50a14f;
-}
-.syntax--string > .syntax--source,
-.syntax--string .syntax--embedded {
-  color: #383a42;
-}
-.syntax--string.syntax--regexp {
-  color: #0184bc;
-}
-.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
-  color: #c18401;
-}
-.syntax--string.syntax--other.syntax--link {
-  color: #e45649;
-}
-.syntax--punctuation.syntax--definition.syntax--comment {
-  color: #a0a1a7;
-}
-.syntax--punctuation.syntax--definition.syntax--method-parameters,
-.syntax--punctuation.syntax--definition.syntax--function-parameters,
-.syntax--punctuation.syntax--definition.syntax--parameters,
-.syntax--punctuation.syntax--definition.syntax--separator,
-.syntax--punctuation.syntax--definition.syntax--seperator,
-.syntax--punctuation.syntax--definition.syntax--array {
-  color: #383a42;
-}
-.syntax--punctuation.syntax--definition.syntax--heading,
-.syntax--punctuation.syntax--definition.syntax--identity {
-  color: #4078f2;
-}
-.syntax--punctuation.syntax--definition.syntax--bold {
-  color: #c18401;
-  font-weight: bold;
-}
-.syntax--punctuation.syntax--definition.syntax--italic {
-  color: #a626a4;
-  font-style: italic;
-}
-.syntax--punctuation.syntax--section.syntax--embedded {
-  color: #ca1243;
-}
-.syntax--punctuation.syntax--section.syntax--method,
-.syntax--punctuation.syntax--section.syntax--class,
-.syntax--punctuation.syntax--section.syntax--inner-class {
-  color: #383a42;
-}
-.syntax--support.syntax--class {
-  color: #c18401;
-}
-.syntax--support.syntax--type {
-  color: #0184bc;
-}
-.syntax--support.syntax--function {
-  color: #0184bc;
-}
-.syntax--support.syntax--function.syntax--any-method {
-  color: #4078f2;
-}
-.syntax--entity.syntax--name.syntax--function {
-  color: #4078f2;
-}
-.syntax--entity.syntax--name.syntax--class,
-.syntax--entity.syntax--name.syntax--type.syntax--class {
-  color: #c18401;
-}
-.syntax--entity.syntax--name.syntax--section {
-  color: #4078f2;
-}
-.syntax--entity.syntax--name.syntax--tag {
-  color: #e45649;
-}
-.syntax--entity.syntax--other.syntax--attribute-name {
-  color: #986801;
-}
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
-  color: #4078f2;
-}
-.syntax--meta.syntax--class {
-  color: #c18401;
-}
-.syntax--meta.syntax--class.syntax--body {
-  color: #383a42;
-}
-.syntax--meta.syntax--method-call,
-.syntax--meta.syntax--method {
-  color: #383a42;
-}
-.syntax--meta.syntax--definition.syntax--variable {
-  color: #e45649;
-}
-.syntax--meta.syntax--link {
-  color: #986801;
-}
-.syntax--meta.syntax--require {
-  color: #4078f2;
-}
-.syntax--meta.syntax--selector {
-  color: #a626a4;
-}
-.syntax--meta.syntax--separator {
-  color: #383a42;
-}
-.syntax--meta.syntax--tag {
-  color: #383a42;
-}
-.syntax--underline {
-  text-decoration: underline;
-}
-.syntax--none {
-  color: #383a42;
-}
-.syntax--invalid.syntax--deprecated {
-  color: #000000 !important;
-  background-color: #f2a60d !important;
-}
-.syntax--invalid.syntax--illegal {
-  color: white !important;
-  background-color: #ff1414 !important;
-}
-.syntax--markup.syntax--bold {
-  color: #986801;
-  font-weight: bold;
-}
-.syntax--markup.syntax--changed {
-  color: #a626a4;
-}
-.syntax--markup.syntax--deleted {
-  color: #e45649;
-}
-.syntax--markup.syntax--italic {
-  color: #a626a4;
-  font-style: italic;
-}
-.syntax--markup.syntax--heading {
-  color: #e45649;
-}
-.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-  color: #4078f2;
-}
-.syntax--markup.syntax--link {
-  color: #0184bc;
-}
-.syntax--markup.syntax--inserted {
-  color: #50a14f;
-}
-.syntax--markup.syntax--quote {
-  color: #986801;
-}
-.syntax--markup.syntax--raw {
-  color: #50a14f;
-}
-.syntax--source.syntax--c .syntax--keyword.syntax--operator {
-  color: #a626a4;
-}
-.syntax--source.syntax--cpp .syntax--keyword.syntax--operator {
-  color: #a626a4;
-}
-.syntax--source.syntax--cs .syntax--keyword.syntax--operator {
-  color: #a626a4;
-}
-.syntax--source.syntax--css .syntax--property-name,
-.syntax--source.syntax--css .syntax--property-value {
-  color: #696c77;
-}
-.syntax--source.syntax--css .syntax--property-name.syntax--support,
-.syntax--source.syntax--css .syntax--property-value.syntax--support {
-  color: #383a42;
-}
-.syntax--source.syntax--elixir .syntax--source.syntax--embedded.syntax--source {
-  color: #383a42;
-}
-.syntax--source.syntax--elixir .syntax--constant.syntax--language,
-.syntax--source.syntax--elixir .syntax--constant.syntax--numeric,
-.syntax--source.syntax--elixir .syntax--constant.syntax--definition {
-  color: #4078f2;
-}
-.syntax--source.syntax--elixir .syntax--variable.syntax--definition,
-.syntax--source.syntax--elixir .syntax--variable.syntax--anonymous {
-  color: #a626a4;
-}
-.syntax--source.syntax--elixir .syntax--parameter.syntax--variable.syntax--function {
-  color: #986801;
-  font-style: italic;
-}
-.syntax--source.syntax--elixir .syntax--quoted {
-  color: #50a14f;
-}
-.syntax--source.syntax--elixir .syntax--keyword.syntax--special-method,
-.syntax--source.syntax--elixir .syntax--embedded.syntax--section,
-.syntax--source.syntax--elixir .syntax--embedded.syntax--source.syntax--empty {
-  color: #e45649;
-}
-.syntax--source.syntax--elixir .syntax--readwrite.syntax--module .syntax--punctuation {
-  color: #e45649;
-}
-.syntax--source.syntax--elixir .syntax--regexp.syntax--section,
-.syntax--source.syntax--elixir .syntax--regexp.syntax--string {
-  color: #ca1243;
-}
-.syntax--source.syntax--elixir .syntax--separator,
-.syntax--source.syntax--elixir .syntax--keyword.syntax--operator {
-  color: #986801;
-}
-.syntax--source.syntax--elixir .syntax--variable.syntax--constant {
-  color: #c18401;
-}
-.syntax--source.syntax--elixir .syntax--array,
-.syntax--source.syntax--elixir .syntax--scope,
-.syntax--source.syntax--elixir .syntax--section {
-  color: #696c77;
-}
-.syntax--source.syntax--gfm .syntax--markup {
-  -webkit-font-smoothing: auto;
-}
-.syntax--source.syntax--gfm .syntax--link .syntax--entity {
-  color: #4078f2;
-}
-.syntax--source.syntax--go .syntax--storage.syntax--type.syntax--string {
-  color: #a626a4;
-}
-.syntax--source.syntax--ini .syntax--keyword.syntax--other.syntax--definition.syntax--ini {
-  color: #e45649;
-}
-.syntax--source.syntax--java .syntax--storage.syntax--modifier.syntax--import {
-  color: #c18401;
-}
-.syntax--source.syntax--java .syntax--storage.syntax--type {
-  color: #c18401;
-}
-.syntax--source.syntax--java .syntax--keyword.syntax--operator.syntax--instanceof {
-  color: #a626a4;
-}
-.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair {
-  color: #e45649;
-}
-.syntax--source.syntax--java-properties .syntax--meta.syntax--key-pair > .syntax--punctuation {
-  color: #383a42;
-}
-.syntax--source.syntax--js .syntax--keyword.syntax--operator {
-  color: #0184bc;
-}
-.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--delete,
-.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--in,
-.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--of,
-.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--instanceof,
-.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--new,
-.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--typeof,
-.syntax--source.syntax--js .syntax--keyword.syntax--operator.syntax--void {
-  color: #a626a4;
-}
-.syntax--source.syntax--ts .syntax--keyword.syntax--operator {
-  color: #0184bc;
-}
-.syntax--source.syntax--flow .syntax--keyword.syntax--operator {
-  color: #0184bc;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json {
-  color: #e45649;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation.syntax--string {
-  color: #e45649;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
-  color: #50a14f;
-}
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--constant.syntax--language.syntax--json,
-.syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--array.syntax--json > .syntax--constant.syntax--language.syntax--json {
-  color: #0184bc;
-}
-.syntax--ng.syntax--interpolation {
-  color: #e45649;
-}
-.syntax--ng.syntax--interpolation.syntax--begin,
-.syntax--ng.syntax--interpolation.syntax--end {
-  color: #4078f2;
-}
-.syntax--ng.syntax--interpolation .syntax--function {
-  color: #e45649;
-}
-.syntax--ng.syntax--interpolation .syntax--function.syntax--begin,
-.syntax--ng.syntax--interpolation .syntax--function.syntax--end {
-  color: #4078f2;
-}
-.syntax--ng.syntax--interpolation .syntax--bool {
-  color: #986801;
-}
-.syntax--ng.syntax--interpolation .syntax--bracket {
-  color: #383a42;
-}
-.syntax--ng.syntax--pipe,
-.syntax--ng.syntax--operator {
-  color: #383a42;
-}
-.syntax--ng.syntax--tag {
-  color: #0184bc;
-}
-.syntax--ng.syntax--attribute-with-value .syntax--attribute-name {
-  color: #c18401;
-}
-.syntax--ng.syntax--attribute-with-value .syntax--string {
-  color: #a626a4;
-}
-.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--begin,
-.syntax--ng.syntax--attribute-with-value .syntax--string.syntax--end {
-  color: #383a42;
-}
-.syntax--source.syntax--ruby .syntax--constant.syntax--other.syntax--symbol > .syntax--punctuation {
-  color: inherit;
-}
-.syntax--source.syntax--php .syntax--class.syntax--bracket {
-  color: #383a42;
-}
-.syntax--source.syntax--python .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
-  color: #a626a4;
-}
-.syntax--source.syntax--python .syntax--variable.syntax--parameter {
-  color: #986801;
-}
-
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
-/*
- * Examples
- * (To see them, uncomment and save)
- */
 </style>
+<div align="center">
+<img style="float: right" src="pics/me.jpg#round" alt="Kangfeng Ye" width="200">
+</div>
+<p>I am a Research Associate at the University of York, working in the <a href="https://www.cs.york.ac.uk/">Department of Computer Science</a>.</p>
+<p>I am creating a simpler academic homepage and migrating contents from <a href="./old_entry/index.html">old entry</a>.</p>
+<p>My latest CV is available <a href="./CV/Academic_CV-Kangfeng_Ye.pdf">here</a>.</p>
+<hr>
+<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="toc"><div class="input-div"><div class="code-chunk-btn-group"><div class="run-btn btn btn-xs btn-primary"><span>▶︎</span></div><div class="run-all-btn btn btn-xs btn-primary">all</div></div><div class="status">running...</div></div><div class="output-div"></div></div><ul>
+<li><a href="#short-background">Short background</a>
+<ul>
+<li><a href="#research-keywords">Research Keywords</a></li>
+</ul>
+</li>
+<li><a href="#insresearch-interests-and-summaryins">Research interests and summary</a>
+<ul>
+<li><a href="#probabilistic-programming-semantics-and-verification">Probabilistic programming: semantics and verification</a></li>
+<li><a href="#formal-specification-languages">Formal specification languages</a>
+<ul>
+<li><a href="#z-notation-and-circus">Z notation and Circus</a></li>
+<li><a href="#csp">CSP</a></li>
+</ul>
+</li>
+<li><a href="#graphical-notations">Graphical Notations</a></li>
+<li><a href="#formal-verification-of-security-protocols">Formal verification of security protocols</a></li>
+</ul>
+</li>
+<li><a href="#news">News</a>
+<ul>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#events-i-attended">Events (I attended)</a></li>
+</ul>
+</li>
+<li><a href="#awards">Awards</a></li>
+<li><a href="#publications">Publications</a>
+<ul>
+<li><a href="#journal-article">Journal article</a></li>
+<li><a href="#conference-proceedings">Conference Proceedings</a></li>
+<li><a href="#books-and-chapters">Books and Chapters</a></li>
+<li><a href="#phd-thesis">PhD Thesis</a></li>
+<li><a href="#preprints">Preprints</a></li>
+</ul>
+</li>
+<li><a href="#talks-and-presentations">Talks and Presentations</a>
+<ul>
+<li><a href="#probabilistic-programming">Probabilistic programming</a></li>
+<li><a href="#verification-of-security-protocols">Verification of security protocols</a></li>
+</ul>
+</li>
+<li><a href="#projects-i-was-or-am-working-on">Projects (I was or am working on)</a></li>
+<li><a href="#posts">Posts</a></li>
+<li><a href="#showcases">Showcases</a></li>
+<li><a href="#academic-activities">Academic activities</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<hr>
+<h1 id="short-background">Short background </h1>
+<dl>
+<dt>2016 - now: Academia (Formal methods in robotics, probabilistic programming, and security)</dt>
+<dd>
+<p>In my research, I use mathematical logic (alphabetised predicate calculus in Unifying Theories of Programming - UTP) to give <mark>probabilistic semantics</mark> (denotational and operational semantics) to a domain-specific language (<strong>RoboChart</strong>) in robotics, with support of modelling time and probability, (2) develop <mark>automated verification tools</mark> using modern model-based techniques (model transformation, validation, and generation) and formal verification (model checking and theorem proving), and apply theoretical semantics and practical tools to a variety of case studies.</p>
+</dd>
+<dd>
+<p>I am a developer of <a href="https://robostar.cs.york.ac.uk/robotool/">RoboTool</a> supporting probabilistic verification for robotic applications, and a contributor <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> of <a href="https://isabelle-utp.york.ac.uk/">Isabelle/UTP</a>, a unifying semantic framework supporting theorem proving. Both tools are being developed in the <a href="https://robostar.cs.york.ac.uk">RoboStar</a> group.</p>
+</dd>
+<dt>2012 - 2016: PhD at the University of York (Formal methods)</dt>
+<dd>
+<p>Supervised by Prof. Jim Woodcock. <em>The most right choice in my career is to have a PhD in formal methods with Jim. Every time when I think of him, I always feel 🙂 ☀️ and calm and passionate 🔥 in research</em> because of the knowledge he taught me and the way being a good researcher.</p>
+</dd>
+<dd>
+<p>📚 Thesis: <a href="https://etheses.whiterose.ac.uk/15526/">Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra)</a></p>
+</dd>
+<dt>2004 - 2012: Industry (Embedded Software Engineer/Lead)</dt>
+<dd>
+<p>Led a team (4-8 members) to develop embedded software for lithography, Ethernet Datacenter Switch, and Communication devices.  C/C++, MCU, Linux, VxWorks</p>
+</dd>
+</dl>
+<h2 id="research-keywords">Research Keywords </h2>
+<p>🔑 Formal verification 🔑 Formal semantics 🔑 Probabilistic programming languages 🔑 Probabilistic model checking 🔑 Probabilistic theorem proving 🔑 Model-based Software Engineering 🔑 Cyber-Physical Systems 🔑 Cryptographic security protocols 🔑 Tool development</p>
+<h1 id="insresearch-interests-and-summaryins"><ins>Research interests and summary</ins> </h1>
+<h2 id="probabilistic-programming-semantics-and-verification">Probabilistic programming: semantics and verification </h2>
+<p>➡️ Probabilistic semantics and verification for RoboChart using PRISM</p>
+<ul>
+<li>🔆 <em>fully automatic verification of state machines notation using probabilistic model checking</em></li>
+<li>📚: <a href="https://doi.org/10.1007/s10270-021-00916-8">Probabilistic Modelling and Verification Using RoboChart and PRISM</a></li>
+<li>🛠️: Three plugins in <a href="https://robostar.cs.york.ac.uk/robotool/">RoboTool</a> for 1️⃣ the PRISM metamodel, 2️⃣ RoboChart model transformation to PRISM and verification, and 3️⃣ Probabilistic properties.</li>
+<li>📒 <a href="https://robostar.cs.york.ac.uk/case_studies/">RoboChart case studies</a>, <a href="https://github.com/UoY-RoboStar/hvc-case-study/tree/prism_verification">High-Voltage Controller (HVC)</a>, <a href="https://github.com/UoY-RoboStar/uvc-case-study">UV light-treatment (UVC)</a>
+<ul>
+<li>📚 <a href="10.1109/CASE56687.2023.10260395">Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment</a></li>
+</ul>
+</li>
+</ul>
+<p>➡️ Probabilistic Unifying Relations (ProbURel)</p>
+<ul>
+<li>🔆 <em>a probabilistic semantics framework</em> and 🔆 <em>a probabilistic programming language</em></li>
+<li>📚: <a href="https://doi.org/10.1016/j.tcs.2024.114876">Probabilistic unifying relations for modelling epistemic and aleatoric uncertainty: Semantics and automated reasoning with theorem proving</a></li>
+<li>🛠️: <a href="https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_relations">A theory for ProbURel and algebraic laws</a></li>
+<li>📒 <a href="https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_relations/Examples">Six proved examples</a> including <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">Monty Hall problem</a>, a forgetful Monty, [Doctor Who's Tardis Attacker], robot localisation, cancer diagnosis (Bayesian approach), coin flip till heads, throw a pair of dice till they have the same outcome.</li>
+</ul>
+<p>➡️ Probabilistic designs</p>
+<ul>
+<li>🔆 <em>a theory for nondeterministic probabilistic sequential programming language</em></li>
+<li>📚: <a href="https://doi.org/10.1007/978-3-030-88701-8_28">Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving</a></li>
+<li>🛠️: <a href="https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_designs">A theory for probabilistic designs in Isabelle/HOL</a></li>
+<li>📒 <a href="https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_designs/examples">The proof of an algorithm to get uniform distribution from just a fair coin, and a few other examples from He's and Hehner's PPP papers</a></li>
+</ul>
+<p>➡️ Quantitative Analysis of UML Activity Diagrams</p>
+<ul>
+<li>🔆 <em>A UML Profile for Quantitative Annotations</em> 🔆 <em>Semantics of Quantitative Activity Diagrams in PRISM</em> 🔆 <em>Parametric Quantitative Analysis</em> 🔆 <em>Synthesis</em> 🔆 <em>Three Markov models (DTMC, MDP, and CTMC)</em></li>
+<li>📚: <a href="https://arxiv.org/abs/2403.00169">Quantitative Assurance and Synthesis of Controllers from Activity Diagrams</a></li>
+<li>🛠️: <a href="https://github.com/RandallYe/QANAD">Eclipse-based Plugins</a>, fully automated, support PRISM and Storm</li>
+<li>📒 <a href="https://github.com/RandallYe/QANAD/tree/master/Examples">Seven evaluated examples</a> including Six-sided dice, Digital camera, Fruit picking, Travel web, IT Support, and Travel management from literature. Hospital 🏥 Intralogistics Robot 🤖 by us
+<ul>
+<li>14 Markov models: 6 in DTMCs, 3 in MDPs, and 5 in CTMCs</li>
+</ul>
+</li>
+<li>🎬 <a href="https://www.youtube.com/watch?v=EhhQAlD1P2Q">Installation - 1: Eclipse, Papyrus and Epsilon</a> and <a href="https://www.youtube.com/watch?v=NTyLdK8tQvo">Installation - 2: Configuration</a></li>
+</ul>
+<p>➡️ QoS (energy efficiency and service availability) analysis of O-RAN xApps</p>
+<ul>
+<li>🔆 <em>Compared 6 configurations of control policy for different QoS results</em></li>
+<li>📚: <a href="https://arxiv.org/abs/2411.03943">Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification</a>, to appear in DataMod24</li>
+<li>🛠️ <a href="https://github.com/RandallYe/ORAN-xApp-QoS-PRISM-Models">PRISM models</a></li>
+<li>📒 A scenario with 3 Radio cards + 9 UEs (user equipments) where UEs can be switched on and off based on a continuous distribution (exponential).</li>
+</ul>
+<h2 id="formal-specification-languages">Formal specification languages </h2>
+<h3 id="z-notation-and-circus">Z notation and Circus </h3>
+<p>➡️ Model checking of Circus</p>
+<ul>
+<li>🔆 <em>Semantics of Circus in CSP || B</em> 🔆 <em>Automatic transformation of Circus to CSP || B</em> 🔆 <em>Model checking using ProB</em></li>
+<li>📚: <a href="https://etheses.whiterose.ac.uk/15526/">Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra)</a>, <a href="https://doi.org/10.1007/s10009-015-0402-1">Model checking of state-rich formalism by linking to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>S</mi><mi>P</mi><mtext> </mtext><mi mathvariant="normal">∥</mi><mtext> </mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">CSP\,\Vert \,B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">CSP</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∥</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></a></li>
+<li>🛠️: <a href="https://github.com/RandallYe/Circus2ZCSP">Circus2CSPZ translator</a>, Java, based on the CZT project</li>
+<li>📒 <a href="https://github.com/RandallYe/Circus-Programs/tree/master/Cases/ReactiveBuffer">Reactive buffer</a>, <a href="https://github.com/RandallYe/Circus-Programs/tree/master/Cases/SteamBoiler">Steam boiler</a>, <a href="https://github.com/RandallYe/Circus-Programs/tree/master/Cases/ESEL">ESEL</a></li>
+</ul>
+<p>➡️ An ISO Z and Circus Parser and Typechecker</p>
+<ul>
+<li>🔆 <em>A complete implementation<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> of ISO Z Standard (<a href="https://www.iso.org/standard/21573.html">ISO/IEC 13568:2002</a>)</em> 🔆 <em>Most Circus Syntax</em></li>
+<li>📚: Haven't published yet 🙁</li>
+<li>🛠️: <a href="https://github.com/RandallYe/ISOZ-Parser-TypeChecker">ISOZ and Circus Parser and TypeChecker</a>, implemented using Alex and Happy in Haskell, also C++.</li>
+<li>📒 Examples from the standard documentation, Circus buffer, reactive buffer, Circus steam boiler</li>
+</ul>
+<p>➡️ Reactive Relations<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
+<ul>
+<li>🔆 <em>A mechanised theory of Reactive Relations in Isabelle/HOL</em></li>
+<li>📚: <a href="https://doi.org/10.1016/j.jlamp.2021.100681">Automated verification of reactive and concurrent programs<br>
+by calculation</a></li>
+<li>🛠️: <a href="https://github.com/isabelle-utp/utp-main/tree/master/theories/reactive">The theory of Reactive Relations in UTP</a></li>
+<li>📒 Reactive buffer</li>
+</ul>
+<h3 id="csp">CSP </h3>
+<p>➡️ Animation of RoboChart</p>
+<ul>
+<li>🔆 <em>An Interaction-Trees-based deterministic CSP in Isabelle/HOL</em></li>
+<li>📚: Formally verified animation for RoboChart using interaction trees at <a href="https://doi.org/10.1016/j.jlamp.2023.100940">Journal of Logical and Algebraic Methods in Programming</a> and at <a href="https://doi.org/10.1007/978-3-031-17244-1_24">ICFEM2022</a></li>
+<li>🛠️: <a href="https://github.com/isabelle-utp/interaction-trees">The theory of Interaction Trees based CSP in Isabelle/UTP</a></li>
+<li>📒 <a href="https://github.com/isabelle-utp/interaction-trees/tree/master/RoboChart/examples/RoboChart_ChemicalDetector_autonomous">Autonomous Chemical Detector</a>, <a href="https://github.com/isabelle-utp/interaction-trees/tree/master/RoboChart/examples/Patrol_Robot">Patrol Robot</a></li>
+</ul>
+<h2 id="graphical-notations">Graphical Notations </h2>
+<p>➡️ Assume-Guarantee Reasoning of Simulink</p>
+<ul>
+<li>🔆 <em>A mechanised theory for assume-guarantee reasoning of discrete Simulink in Isabelle/HOL</em></li>
+<li>📚: <a href="https://doi.org/10.1007/978-3-030-15792-0_10">Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP</a>, <a href="https://eprints.whiterose.ac.uk/129640/15/Compositional_Assume_Guarantee_Reasoning_of_Control_Law_Diagrams_using_UTP_Tech_Report.pdf">Technical report for the mechanised theory</a></li>
+<li>🛠️: <a href="https://github.com/RandallYe/Compositional_AG_Reasoning_Simulink_UTP">The theory of Assume-Guarantee reasoning of Simulink</a></li>
+<li>📒 <a href="https://github.com/RandallYe/Compositional_AG_Reasoning_Simulink_UTP/blob/main/post_landing_finalize_1.thy">A post landing finalize subsystem in aircraft cabin pressure control</a></li>
+</ul>
+<p>➡️ Probabilistic semantics and animation for the state-machine based RoboChart (see details above)</p>
+<img src="pics/uvc_human.png" alt="UVC Human State Machine" width="400">
+<p>➡️ Quantitative Analysis of UML Activity Diagrams (see details above)</p>
+<img src="pics/PAL_use_case.png" alt="PAL use case" width="600">
+<h2 id="formal-verification-of-security-protocols">Formal verification of security protocols </h2>
+<p>➡️ Formal verification of security protocols using animation, a lightweight model checker</p>
+<ul>
+<li>🔆 <em>An Interaction-Trees-based deterministic CSP used to model security protocols</em> 🔆 <em>Manual + Automatic verification</em> 🔆 <em>User-guided accessible verification</em> 🔆 <em>Terminal + Web interfaces</em></li>
+<li>📚: <a href="https://doi.org/10.1007/978-3-031-77382-2_3">User-Guided Verification of Security Protocols via Sound Animation</a></li>
+<li>🛠️: <a href="https://github.com/RandallYe/Animation_of_Security_Protocols">A theory of modelling and verifying security protocols in Isabelle/HOL</a></li>
+<li>📒 <a href="https://github.com/RandallYe/Animation_of_Security_Protocols/tree/master/NSPK">Needham-Schroeder Public Key Protocol</a>, <a href="https://github.com/RandallYe/Animation_of_Security_Protocols/tree/master/Diffie_Hellman">Diffie-Hellman key agreement</a></li>
+</ul>
+<h2>Member of Groups</h2>
+<ul>
+<li><a href="https://www.cs.york.ac.uk/circus/">Circus</a> <sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup></li>
+<li><a href="https://robostar.cs.york.ac.uk/">RoboStar</a></li>
+<li><a href="https://systronlab.github.io/">SysTRON Lab</a></li>
+</ul>
+<h1 id="news">News </h1>
+<h2 id="papers">Papers </h2>
+<dl>
+<dt>2025-04-18 DataMod24 paper available online</dt>
+<dd><a href="https://doi.org/10.1007/978-3-031-87908-1_9">Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification</a> from Springer</dd>
+<dt>2025-01-16 Interviewed by <a href="https://newbooksnetwork.com/hosts/profile/1dea1d2c-5a16-4797-82ae-edfb1f79eb99">Dr. Daniel Shea</a> on Scholarly Communication</dt>
+<dd>I was interviewed on <a href="https://newbooksnetwork.com/category/academic-partners/scholarly-communications">Scholarly Communication</a> by Dr. Daniel Shea from Karlsruhe Institute of Technology (KIT) for one of my co-authored paper: <a href="https://doi.org/10.1007/s10270-021-00916-8">Probabilistic Modelling and Verification Using RoboChart and PRISM</a>. The paper was published in the journal of <a href="https://www.sosym.org/">Software and Systems Modeling</a> and won the <a href="https://www.sosym.org/journal_first/">Journal-First award</a>. I was invited to present the paper at <a href="https://conf.researchr.org/home/models-2022">MODELS 2022</a>.<br>
+The episode is now available <a href="https://newbooksnetwork.com/use-sequential-internal-review-to-improve-your-next-submission">here</a>.</dd>
+<dt>2024-11-06 The preprint of the DataMod24 paper is available</dt>
+<dd>The preprint of our paper "Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification" can be found <a href="https://arxiv.org/abs/2411.03943">here</a>.</dd>
+<dt>2024-10-07 Paper accepted by DataMod24</dt>
+<dd>Our paper submitted to <a href="https://datamod2024.github.io/">DataMod24</a> has been accepted for publication. This paper is about the quantitative analysis of a control policy used in an O-RAN xApp to achieve energy efficiency and guarantee service availability. We use PRISM to verify a scenario with 3 radio cells (stations) and 9 UEs (user equipments) while UEs are dynamically and uncertainly switched on and off.</dd>
+<dt>2024-10-01 The preprint of the SEFM2024 paper is available</dt>
+<dd>The preprint of our paper "User-Guided Verification of Security Protocols via Sound Animation" can be found <a href="https://arxiv.org/abs/2410.00676">here</a>. Please note that <strong>this is not the final camera ready version</strong></dd>
+<dt>2024-09-25</dt>
+<dd>Our TCS journal paper (about probabilistic programming) is now <a href="https://doi.org/10.1016/j.tcs.2024.114876" title="TCS paper">online</a></dd>
+<dt>2024-09-12</dt>
+<dd>Our TCS journal paper (about probabilistic programming) has been accepted for publication and should be online soon.</dd>
+<dd>The first draft is available <a href="https://arxiv.org/abs/2303.09692">online at arxiv</a></dd>
+<dt>2024-09-01</dt>
+<dd>A joint Festschrift paper, titled "<a href="https://link.springer.com/chapter/10.1007/978-3-031-67114-2_11">A Tour Through the Programming Choices: Semantics and Applications</a>", with Pedro Ribeiro, Frank Zeyda, and Alvaro Miyazawa to celebrate Prof. Jim Woodcock's retirement from York. He was my PhD supervisor and a line manager in RoboStar.</dd>
+<dt>2024-08-22</dt>
+<dd>Our paper (<mark><em>User-Guided Verification of Security Protocols via Sound Animation</em></mark>) submitted to <a href="https://sefm-conference.github.io/2024/">SEFM24</a> has been accepted for publication.</dd>
+<dt>2023-12-19</dt>
+<dd>Our JLAMP journal paper (<mark><em><a href="https://doi.org/10.1016/j.jlamp.2023.100940">Formally verified animation for RoboChart using interaction trees</a></em></mark>) has been accepted for publication.</dd>
+</dl>
+<h2 id="events-i-attended">Events (I attended) </h2>
+<dl>
+<dt>2025-07-15 to 2025-07-16: CHEDDAR and 'Friends' Symposium and Industry Days, London</dt>
+<dd>I presented the select CHEDDAR highlight project 3.2 (formal verification) from the University of York (collaborated with the University of Glasgow and Imperial College London). My slides are available <a href="./Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf">here</a>.</dd>
+<dt>2025-03-03 to 2025-03-06: MWC2025 at Barcelona, Spain</dt>
+<dd>A <a href="https://www.linkedin.com/posts/randallye_who-can-or-who-wants-to-formally-activity-7304257438197731330-y6Zl?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABIDDMQBY24b1UzaJYtEAEtEUs8fmBnVAjM">Linkedin post</a> about our demo "User-Guided Verification of Security Protocols via Sound Animation", also <a href="https://www.youtube.com/watch?v=8FO6KT6EMqM">a video</a> available at Youtube.</dd>
+<dt>2024-11-06 to 2024-11-08: SEFM2024 at Aveiro, Portugal</dt>
+<dd>I presented our work "User-Guided Verification of Security Protocols via Sound Animation" at <a href="https://sefm-conference.github.io/2024/">SEFM2024</a>. The slide is available <a href="./SEFM2024/SEFM2024_presentation.pdf">here</a></dd>
+<dt>2024-09-26 Cheddar All-hands meeting in Imperial</dt>
+<dd>Presentations from new partners, demonstration discussion, and updates from each pillar. I have updated P3.2 from York regarding accessible formal techniques using <mark><em>sound animation</em></mark> and quantitative analysis of energy efficiency and service availability in O-RAN xApps (to optimise QoS).</dd>
+<dt>2024-09-04 Jim's Festschrift</dt>
+<dd>I have been greatly benefited from Jim’s inspiration and mentorship. I and Pedro presented our paper "<a href="https://link.springer.com/chapter/10.1007/978-3-031-67114-2_11">A Tour Through the Programming Choices: Semantics and Applications</a>". It's my pleasure to present Frank's preferential choice and my work ProbURel (collaborated with Jim and Simon) in probabilistic semantics and theorem proving.</dd>
+<dt>2024-07-25 6G Summit in Leeds</dt>
+<dd>Co-located with WINCOM2024</dd>
+<dt>2024-07-09</dt>
+<dd>Cheddar project meeting at the Cranfield University</dd>
+<dt>2024-06-27</dt>
+<dd>Gave a talk in the University's <a href="https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0">Celebrating Spaces: Connecting Researchers</a>. It is a 5-minute Lightning Talk. My talk is about <a href="https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0">Guarantee correctness and performance of probabilistic algorithms</a>.</dd>
+<dt>2024-06-05 to 06</dt>
+<dd>Cheddar Pillar 1 and P3.2 meetings at the University of Glasgow</dd>
+<dt>2024-03-28</dt>
+<dd>Cheddar P3.1 and P3.2 joint meeting at Imperial College London</dd>
+<dt>2024-03-12</dt>
+<dd>Cheddar Bi-Annual meeting at the University of York</dd>
+</dl>
+<h1 id="awards">Awards </h1>
+<dl>
+<dt>2022 SoSyM Journal-first</dt>
+<dd>For the paper <a href="https://doi.org/10.1007/s10270-021-00916-8">Probabilistic Modelling and Verification Using RoboChart and PRISM</a><br>
+<img src="pics/sosym-journal-first.png" alt="SoSyM Journal-first" width="400"></dd>
+</dl>
+<h1 id="publications">Publications </h1>
+<h2 id="journal-article">Journal article </h2>
+<ol>
+<li>
+<p>[<mark><strong>ProbURel</strong></mark>] K. Ye, J. Woodcock, and S. Foster, “Probabilistic unifying relations for modelling epistemic and aleatoric uncertainty: Semantics and automated reasoning with theorem proving,” Theoretical Computer Science, p. 114 876, 2024, issn: 0304-3975.  doi: <a href="https://doi.org/10.1016/j.tcs.2024.114876">10.1016/j.tcs.2024.114876</a>.</p>
+</li>
+<li>
+<p>[<mark><strong>RoboChart_ITrees</strong></mark>] K. Ye, S. Foster, and J. Woodcock, “Formally verified animation for RoboChart using interaction trees,” Journal of Logical and Algebraic Methods in Programming, vol. 137, p. 100 940, 2024, issn: 2352-2208.  doi: <a href="https://doi.org/10.1016/j.jlamp.2023.100940">10.1016/j.jlamp.2023.100940</a>.</p>
+</li>
+<li>
+<p>[<mark><strong>RoboChart_PRISM</strong></mark>] K. Ye, A. Cavalcanti, S. Foster, A. Miyazawa, and J. Woodcock, “Probabilistic modelling and verification using RoboChart and PRISM,” en, Software and Systems Modeling, vol. 21, no. 2, pp. 667–716, Apr. 2022, issn: 1619-1374.  doi: <a href="https://doi.org/10.1007/s10270-021-00916-8">10.1007/s10270-021-00916-8</a>.</p>
+</li>
+<li>
+<p>[<mark><strong>Reactive_Relations</strong></mark>] S. Foster, K. Ye, A. Cavalcanti, and J. Woodcock, “Automated Verification of Reactive and Concurrent Programs by Calculation,” Journal of Logical and Algebraic Methods in Programming, vol. 121, p. 100 681, Jun. 2021, arXiv:2007.13529 [cs], issn: 23522208.  doi:<br>
+<a href="https://doi.org/10.1016/j.jlamp.2021.100681">10.1016/j.jlamp.2021.100681</a>.</p>
+</li>
+<li>
+<p>[<mark><strong>ModelChecking_Circus</strong></mark>] K. Ye and J. Woodcock, “Model checking of state-rich formalism by linking to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>S</mi><mi>P</mi><mtext> </mtext><mi mathvariant="normal">∥</mi><mtext> </mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">CSP\,\Vert \,B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">CSP</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∥</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>,” en, International Journal on Software Tools for Technology Transfer, vol. 19, no. 1, pp. 73–96, Feb. 2017, issn: 1433-2787.  doi: <a href="https://doi.org/10.1007/s10009-015-0402-1." title="visited on 10/13/2023">10.1007/s10009-015-0402-1. (visited on 10/13/2023)</a>.</p>
+</li>
+</ol>
+<h2 id="conference-proceedings">Conference Proceedings </h2>
+<ol>
+<li>
+<p>K. Ye, R. Metere, and P. Yadav, “User-Guided Verification of Security Protocols via Sound Animation,” in Software Engineering and Formal Methods (SEFM), Springer Nature Switzerland, Nov. 2024, pp. 33–51, isbn: 9783031773822.  doi: <a href="https://doi.org/10.1007/978-3-031-77382-2_3">10.1007/978-3-031-77382-2_3</a>.</p>
+</li>
+<li>
+<p>R. Metere, K. Ye, Y. Gu, et al., “Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification,” in From Data to Models and Back (DataMod2024), Springer International Publishing, 2024.  doi: <a href="https://doi.org/10.1007/978-3-031-87908-1_9">10.1007/978-3-031-87908-1_9</a>.</p>
+</li>
+<li>
+<p>M. Adam, K. Ye, D. A. Anisi, A. Cavalcanti, J. Woodcock, and R. Morris, “Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment,” in 2023 IEEE 19th International Conference on Automation Science and Engineering (CASE), ISSN: 2161-8089, Aug. 2023, pp. 1–7.  <a href="https://doi.org/10.1109/CASE56687.2023.10260395">10.1109/CASE56687.2023.10260395</a>.</p>
+</li>
+<li>
+<p>K. Ye, S. Foster, and J. Woodcock, “Formally Verified Animation for RoboChart Using Interaction Trees,” en, in Formal Methods and Software Engineering, A. Riesco and M. Zhang, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2022, pp. 404–420, isbn: 978-3-031-17244-1.  <a href="https://doi.org/10.1007/978-3-031-17244-1_24">10.1007/978-3-031-17244-1_24</a>.</p>
+</li>
+<li>
+<p>K. Ye, S. Foster, and J. Woodcock, “Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving,” en, in Relational and Algebraic Methods in Computer Science, U. Fahrenberg, M. Gehrke, L. Santocanale, and M. Winter, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2021, pp. 465–482, isbn: 978-3-030-88701-8.  <a href="https://doi.org/10.1007/978-3-030-88701-8_28">10.1007/978-3-030-88701-8_28</a>.</p>
+</li>
+<li>
+<p>J. Woodcock, A. Cavalcanti, S. Foster, A. Mota, and K. Ye, “Probabilistic Semantics for RoboChart,” en, in Unifying Theories of Programming, P. Ribeiro and A. Sampaio, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2019, pp. 80–105, isbn: 978-3-030-31038-7.  <a href="https://doi.org/10.1007/978-3-030-31038-7_5">10.1007/978-3-030-31038-7_5</a>.</p>
+</li>
+<li>
+<p>S. Foster, K. Ye, A. Cavalcanti, and J. Woodcock, “Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra,” en, in Relational and Algebraic Methods in Computer Science, J. Desharnais, W. Guttmann, and S. Joosten, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2018, pp. 205–224, isbn: 978-3-030-02149-8.  <a href="https://doi.org/10.1007/978-3-030-02149-8_13">10.1007/978-3-030-02149-8_13</a>.</p>
+</li>
+</ol>
+<h2 id="books-and-chapters">Books and Chapters </h2>
+<ol>
+<li>
+<p>P. Ribeiro, K. Ye, F. Zeyda, and A. Miyazawa, “A tour through the programming choices: Semantics and applications,” in The Application of Formal Methods. Springer Nature Switzerland, 2024, pp. 261–305, isbn: 9783031671142.  <a href="https://doi.org/10.1007/978-3-031-67114-2_11">10.1007/978-3-031-67114-2_11</a>.</p>
+</li>
+<li>
+<p>J. Woodcock, S. Foster, A. Mota, and K. Ye, “RoboStar Technology: Modelling Uncertainty in RoboChart Using Probability,” en, in Software Engineering for Robotics, A. Cavalcanti, B. Dongol, R. Hierons, J. Timmis, and J. Woodcock, Eds., Cham: Springer International Publishing, 2021, pp. 413–465, isbn: 978-3-030-66494-7.  doi: <a href="https://doi.org/10.1007/978-3-030-66494-7_13">10.1007/978-3-030-66494-7_13</a>.</p>
+</li>
+<li>
+<p>K. Ye, S. Foster, and J. Woodcock, “Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP,” en, in From Astrophysics to Unconventional Computation: Essays Presented to Susan Stepney on the Occasion of her 60th Birthday, ser. Emergence, Complexity and Computation, A. Adamatzky and V. Kendon, Eds., Cham: Springer International Publishing,<br>
+2020, pp. 215–254, isbn: 978-3-030-15792-0.  doi: <a href="https://doi.org/10.1007/978-3-030-15792-0_10">10.1007/978-3-030-15792-0_10</a>.</p>
+</li>
+</ol>
+<h2 id="phd-thesis">PhD Thesis </h2>
+<ol>
+<li>K. Ye, “Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra),” en, phd, University of York, Aug. 2016.  url: <a href="https://etheses.whiterose.ac.uk/15526/">https://etheses.whiterose.ac.uk/15526/</a>.</li>
+</ol>
+<h2 id="preprints">Preprints </h2>
+<ol>
+<li>
+<p>K. Ye and J. Woodcock, RoboCertProb: Property Specification for Probabilistic RoboChart Models, 2024. arXiv: <a href="https://arxiv.org/abs/2403.08136">2403.08136</a> [cs.LO].</p>
+</li>
+<li>
+<p>K. Ye, F. Yan, and S. Gerasimou, Quantitative Assurance and Synthesis of Controllers from Activity Diagrams, 2024. arXiv: <a href="https://arxiv.org/abs/2403.00169">2403.00169</a> [cs.LO].</p>
+</li>
+</ol>
+<h1 id="talks-and-presentations">Talks and Presentations </h1>
+<h2 id="probabilistic-programming">Probabilistic programming </h2>
+<dl>
+<dt>Lightning Talk on 2024-06-27</dt>
+<dd>A 5-minute Lightning Talk, given at the University's <a href="https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0">Celebrating Spaces: Connecting Researchers</a>. The talk video is now available at <a href="https://www.youtube.com/watch?v=9GZMzrVsnxY">Youtube</a>. My talk is about <a href="https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0">Guarantee correctness and performance of probabilistic algorithms</a>.<br>
+<img src="pics/Monkey_Cliff.png#middle" alt="Monkey in front of a cliff"></dd>
+</dl>
+<h2 id="verification-of-security-protocols">Verification of security protocols </h2>
+<dl>
+<dt>Presentation at CHEDDAR and 'Friends' Symposium and Industry Days - 15/16 July, London</dt>
+<dd>I presented the select CHEDDAR highlight project 3.2 (formal verification) from the University of York (collaborated with the University of Glasgow and Imperial College London). My slides are available <a href="./Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf">here</a>.</dd>
+<dt>Presentation at SEFM2024 on the 7th of November, 2024</dt>
+<dd>I presented our paper "User-Guided Verification of Security Protocols via Sound Animation" at <a href="https://sefm-conference.github.io/2024/">SEFM2024</a>. In this work, we address the accessibility of formal verification of security protocols for designers and the soundness guarantee of automatically generated animators. The slide is available <a href="./SEFM2024/SEFM2024_presentation.pdf">here</a>. More details can be found <a href="./Posts/SEFM_DataMod/cheddar_updates.html">this post</a>.</dd>
+</dl>
+<h1 id="projects-i-was-or-am-working-on">Projects (I was or am working on) </h1>
+<dl>
+<dt>CHEDDAR (Feb 2024 - )</dt>
+<dd>The Communications Hub for Empowering Distributed Cloud Computing Applications and Research <a href="https://cheddarhub.org/">(CHEDDAR)</a></dd>
+<dt>SESAME (June 2023 - Jan 2024)</dt>
+<dd><a href="https://www.sesame-project.org/">Secure and Safe Multi-Robot Systems</a></dd>
+<dt>RoboCalc and RoboTest (April 2018 - June 2023)</dt>
+<dd>EPSRC projects in the <a href="https://robostar.cs.york.ac.uk/">RoboStar</a> group</dd>
+<dt><a href="https://www.cs.york.ac.uk/circus/CyPhyAssure/">CyphyAssure</a> (June 2021 - September 2021)</dt>
+<dd>A EPSRC-funded (Simon Foster's fellowship) project</dd>
+<dt>Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP (Oct 2017 - March 2018)</dt>
+<dd>A <a href="https://vetss.org.uk/">VETSS</a> sponsored project</dd>
+<dt><a href="https://into-cps.org/">INTO-CPS</a> (Nov 2016 - Dec 2017)</dt>
+<dd>Integrated Tool Chain for Model-based Design of Cyber-Physical Systems</dd>
+</dl>
+<h1 id="posts">Posts </h1>
+<dl>
+<dt>2024-11-06 to 08</dt>
+<dd><a href="./posts/SEFM_DataMod/SEFM_DataMod_2024.html">Application of formal verification in security protocols and O-RAN xApps</a></dd>
+</dl>
+<h1 id="showcases">Showcases </h1>
+<h1 id="academic-activities">Academic activities </h1>
+<dl>
+<dt>Organiser of <a href="https://www.wincom-conf.org/WINCOM_2024/?page=demo-Hackathon">WINCOM2024 Hackathon and Demo</a></dt>
+<dd>Organised with Ashan Khan together</dd>
+<dt>JWFS 2024 PC member</dt>
+<dd>The Festschrift for <a href="https://sites.google.com/york.ac.uk/jim-woodcock-home-page" title="Jim's homepage">Prof. Jim Woodcock</a> on the occasion of his retirement from the University of York</dd>
+</dl>
+<h1 id="contact">Contact </h1>
+<ul>
+<li>Email: <a href="mailto:kangfeng.ye@york.ac.uk">kangfeng.ye@york.ac.uk</a></li>
+<li><a href="https://github.com/RandallYe">GitHub - RandallYe</a></li>
+<li><a href="https://www.linkedin.com/in/randallye">Linkedin - Randall Ye</a></li>
+<li><a href="https://scholar.google.com/citations?user=PbLkCR8AAAAJ&amp;hl=en">Google Scholar - Kangfeng Ye</a></li>
+<li><a href="https://dblp.org/pid/193/5774.html">DBLP - Kangfeng Ye</a></li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>I made a few contributions to Isabelle/UTP, particularly in reactive designs and interaction trees. But in general, I am a user of Isabelle/UTP, and not a developer. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Except semantics transformation rules (a small part is implemented) <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>relatively small contribution to this work, mainly in the verificaiton of the reactive buffer, and gave Simon some insight on the verificaiton strategy when he was developing the theory. But this is very beautiful work and it is nice to mention here. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>Circus members are now mostly in RoboStar <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
-  </head>
-  <body>
-    <h1>Kangfeng (Randall) Ye</h1>
-<p>Please find my personal academic homepage <a href="https://www-users.cs.york.ac.uk/ky582/">here</a>.</p>
-
-  </body>
-</html>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
