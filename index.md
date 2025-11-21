@@ -21,11 +21,7 @@ img[src*="#small"] {
 <img style="float: right" src="pics/me.jpg#round" alt="Kangfeng Ye" width="200"/>
 </div>
 
-I am a Research Associate at the University of York, working in the [Department of Computer Science](https://www.cs.york.ac.uk/).
-
-I am creating a simpler academic homepage and migrating contents from [old entry](./old_entry/index.html).
-
-My latest CV is available [here](./CV/Academic_CV-Kangfeng_Ye.pdf).
+I left the University of York in November 2025 and joined [IOHK](https://iohk.io/) as a formal methods engineer. 
 
 <hr/>
 
@@ -43,6 +39,7 @@ My latest CV is available [here](./CV/Academic_CV-Kangfeng_Ye.pdf).
   - [Graphical Notations](#graphical-notations)
   - [Formal verification of security protocols](#formal-verification-of-security-protocols)
 - [News](#news)
+  - [General](#general)
   - [Papers](#papers)
   - [Events (I attended)](#events-i-attended)
 - [Awards](#awards)
@@ -68,7 +65,11 @@ My latest CV is available [here](./CV/Academic_CV-Kangfeng_Ye.pdf).
 
 # Short background
 
-2016 - now: Academia (Formal methods in robotics, probabilistic programming, and security)
+Since Nov 2025: Industry at IOHK
+
+: Formal methods engineer
+
+2016 - 2025: Academia (Formal methods in robotics, probabilistic programming, and security)
 
 : In my research, I use mathematical logic (alphabetised predicate calculus in Unifying Theories of Programming - UTP) to give ==probabilistic semantics== (denotational and operational semantics) to a domain-specific language (**RoboChart**) in robotics, with support of modelling time and probability, (2) develop ==automated verification tools== using modern model-based techniques (model transformation, validation, and generation) and formal verification (model checking and theorem proving), and apply theoretical semantics and practical tools to a variety of case studies. 
 
@@ -185,7 +186,20 @@ Member of Groups
 
 
 # News
+## General
+2025-11-24 New journey in industry at IOHK
+: I joined [IOHK](https://iohk.io/) as a formal methods engineer.
+
+2025-11-21 Last day at the University of York
+: I left the UoY after 13 years there (4 years as PhD and 9 years as RA).
+
 ## Papers
+2025-11-11 ICFEM2025 paper availabel online at Springer
+: Now our paper (Formal Verification of Physical Layer Security Protocols for Next-Generation Communication Networks) is available [online](https://doi.org/10.1007/978-981-95-4213-0_1).
+
+2025-08-02 Paper accepted by ICFEM2025
+: Our paper, titled "Formal Verification of Physical Layer Security Protocols for Next-Generation Communication Networks", submitted to [ICFEM2025](https://icfem2025.github.io/) was accepted. 
+
 2025-04-18 DataMod24 paper available online
 : [Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification](https://doi.org/10.1007/978-3-031-87908-1_9) from Springer
 
@@ -276,19 +290,22 @@ The episode is now available [here](https://newbooksnetwork.com/use-sequential-i
 
 ## Conference Proceedings
 
-1. K. Ye, R. Metere, and P. Yadav, “User-Guided Verification of Security Protocols via Sound Animation,” in Software Engineering and Formal Methods (SEFM), Springer Nature Switzerland, Nov. 2024, pp. 33–51, isbn: 9783031773822.  doi: [10.1007/978-3-031-77382-2_3](https://doi.org/10.1007/978-3-031-77382-2_3).
+1. [==**PLS**==] K. Ye, R. Metere, J. Woodcock, and P. Yadav, “Formal verification of physical layer security protocols for next-generation communication networks,” in Formal Methods and Software Engineering, É. André, J. Wang, and N. Zhan, Eds., Singapore: Springer Nature Singapore, 2026, pp. 1–21, isbn: 978-981-95-4213-0.  doi: [10.1007/978-981-95-4213-0_1](https://doi.org/10.1007/978-981-95-4213-0_1). 
 
-1. R. Metere, K. Ye, Y. Gu, et al., “Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification,” in From Data to Models and Back (DataMod2024), Springer International Publishing, 2024.  doi: [10.1007/978-3-031-87908-1_9](https://doi.org/10.1007/978-3-031-87908-1_9).
 
-1. M. Adam, K. Ye, D. A. Anisi, A. Cavalcanti, J. Woodcock, and R. Morris, “Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment,” in 2023 IEEE 19th International Conference on Automation Science and Engineering (CASE), ISSN: 2161-8089, Aug. 2023, pp. 1–7.  [10.1109/CASE56687.2023.10260395](https://doi.org/10.1109/CASE56687.2023.10260395).
+1. [==**Sound animation**==] K. Ye, R. Metere, and P. Yadav, “User-Guided Verification of Security Protocols via Sound Animation,” in Software Engineering and Formal Methods (SEFM), Springer Nature Switzerland, Nov. 2024, pp. 33–51, isbn: 9783031773822.  doi: [10.1007/978-3-031-77382-2_3](https://doi.org/10.1007/978-3-031-77382-2_3).
 
-2. K. Ye, S. Foster, and J. Woodcock, “Formally Verified Animation for RoboChart Using Interaction Trees,” en, in Formal Methods and Software Engineering, A. Riesco and M. Zhang, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2022, pp. 404–420, isbn: 978-3-031-17244-1.  [10.1007/978-3-031-17244-1_24](https://doi.org/10.1007/978-3-031-17244-1_24).
+1. [==**O-RAN xApp**==] R. Metere, K. Ye, Y. Gu, et al., “Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification,” in From Data to Models and Back (DataMod2024), Springer International Publishing, 2024.  doi: [10.1007/978-3-031-87908-1_9](https://doi.org/10.1007/978-3-031-87908-1_9).
 
-3. K. Ye, S. Foster, and J. Woodcock, “Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving,” en, in Relational and Algebraic Methods in Computer Science, U. Fahrenberg, M. Gehrke, L. Santocanale, and M. Winter, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2021, pp. 465–482, isbn: 978-3-030-88701-8.  [10.1007/978-3-030-88701-8_28](https://doi.org/10.1007/978-3-030-88701-8_28).
+1. [==**Probabilisic case study**==] M. Adam, K. Ye, D. A. Anisi, A. Cavalcanti, J. Woodcock, and R. Morris, “Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment,” in 2023 IEEE 19th International Conference on Automation Science and Engineering (CASE), ISSN: 2161-8089, Aug. 2023, pp. 1–7.  [10.1109/CASE56687.2023.10260395](https://doi.org/10.1109/CASE56687.2023.10260395).
 
-4. J. Woodcock, A. Cavalcanti, S. Foster, A. Mota, and K. Ye, “Probabilistic Semantics for RoboChart,” en, in Unifying Theories of Programming, P. Ribeiro and A. Sampaio, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2019, pp. 80–105, isbn: 978-3-030-31038-7.  [10.1007/978-3-030-31038-7_5](https://doi.org/10.1007/978-3-030-31038-7_5).
+2. [==**RoboChart Animation**==] K. Ye, S. Foster, and J. Woodcock, “Formally Verified Animation for RoboChart Using Interaction Trees,” en, in Formal Methods and Software Engineering, A. Riesco and M. Zhang, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2022, pp. 404–420, isbn: 978-3-031-17244-1.  [10.1007/978-3-031-17244-1_24](https://doi.org/10.1007/978-3-031-17244-1_24).
 
-5. S. Foster, K. Ye, A. Cavalcanti, and J. Woodcock, “Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra,” en, in Relational and Algebraic Methods in Computer Science, J. Desharnais, W. Guttmann, and S. Joosten, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2018, pp. 205–224, isbn: 978-3-030-02149-8.  [10.1007/978-3-030-02149-8_13](https://doi.org/10.1007/978-3-030-02149-8_13).
+3. [==**Probabilistic Theorem Provering**==] K. Ye, S. Foster, and J. Woodcock, “Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving,” en, in Relational and Algebraic Methods in Computer Science, U. Fahrenberg, M. Gehrke, L. Santocanale, and M. Winter, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2021, pp. 465–482, isbn: 978-3-030-88701-8.  [10.1007/978-3-030-88701-8_28](https://doi.org/10.1007/978-3-030-88701-8_28).
+
+4. [==**Probabilistic Semantics**==] J. Woodcock, A. Cavalcanti, S. Foster, A. Mota, and K. Ye, “Probabilistic Semantics for RoboChart,” en, in Unifying Theories of Programming, P. Ribeiro and A. Sampaio, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2019, pp. 80–105, isbn: 978-3-030-31038-7.  [10.1007/978-3-030-31038-7_5](https://doi.org/10.1007/978-3-030-31038-7_5).
+
+5. [==**Reactive relations**==] S. Foster, K. Ye, A. Cavalcanti, and J. Woodcock, “Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra,” en, in Relational and Algebraic Methods in Computer Science, J. Desharnais, W. Guttmann, and S. Joosten, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2018, pp. 205–224, isbn: 978-3-030-02149-8.  [10.1007/978-3-030-02149-8_13](https://doi.org/10.1007/978-3-030-02149-8_13).
 
 ## Books and Chapters
 
@@ -322,7 +339,7 @@ Presentation at SEFM2024 on the 7th of November, 2024
 : I presented our paper "User-Guided Verification of Security Protocols via Sound Animation" at [SEFM2024](https://sefm-conference.github.io/2024/). In this work, we address the accessibility of formal verification of security protocols for designers and the soundness guarantee of automatically generated animators. The slide is available [here](./SEFM2024/SEFM2024_presentation.pdf). More details can be found [this post](./Posts/SEFM_DataMod/cheddar_updates.html).
 
 # Projects (I was or am working on)
-CHEDDAR (Feb 2024 - )
+CHEDDAR (Feb 2024 - Nov 2025)
 : The Communications Hub for Empowering Distributed Cloud Computing Applications and Research [(CHEDDAR)](https://cheddarhub.org/)
 
 SESAME (June 2023 - Jan 2024)
@@ -355,7 +372,8 @@ JWFS 2024 PC member
 : The Festschrift for [Prof. Jim Woodcock][jim_home] on the occasion of his retirement from the University of York
 
 # Contact
-- Email: kangfeng.ye@york.ac.uk
+- Email: 
+  + ye.randall@gmail.com (for personal contact)
 - [GitHub - RandallYe](https://github.com/RandallYe)
 - [Linkedin - Randall Ye](https://www.linkedin.com/in/randallye)
 - [Google Scholar - Kangfeng Ye](https://scholar.google.com/citations?user=PbLkCR8AAAAJ&hl=en)
