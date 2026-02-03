@@ -46,6 +46,7 @@ I left the University of York in November 2025 and joined [IOHK](https://iohk.io
 - [Publications](#publications)
   - [Journal article](#journal-article)
   - [Conference Proceedings](#conference-proceedings)
+  - [Formal proofs (published)](#formal-proofs-published)
   - [Books and Chapters](#books-and-chapters)
   - [PhD Thesis](#phd-thesis)
   - [Preprints](#preprints)
@@ -187,11 +188,16 @@ Member of Groups
 
 # News
 ## General
+
 2025-11-24 New journey in industry at IOHK
 : I joined [IOHK](https://iohk.io/) as a formal methods engineer.
 
 2025-11-21 Last day at the University of York
 : I left the UoY after 13 years there (4 years as PhD and 9 years as RA).
+
+2025-11-13 My first submission ([Abel's Limit Theorem](https://www.isa-afp.org/entries/Abel_Limit_Theorem.html)) to Isabelle AFP (Archive of Formal Proofs) was accepted
+: While Abel's limit theorem in mathematical analysis was mechanised in Lean, but not yet in Isabelle.
+This entry mechanises Abel's limit theorem on power series with real coefficients in Isabelle. 
 
 ## Papers
 2025-11-11 ICFEM2025 paper availabel online at Springer
@@ -306,6 +312,10 @@ The episode is now available [here](https://newbooksnetwork.com/use-sequential-i
 4. [==**Probabilistic Semantics**==] J. Woodcock, A. Cavalcanti, S. Foster, A. Mota, and K. Ye, “Probabilistic Semantics for RoboChart,” en, in Unifying Theories of Programming, P. Ribeiro and A. Sampaio, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2019, pp. 80–105, isbn: 978-3-030-31038-7.  [10.1007/978-3-030-31038-7_5](https://doi.org/10.1007/978-3-030-31038-7_5).
 
 5. [==**Reactive relations**==] S. Foster, K. Ye, A. Cavalcanti, and J. Woodcock, “Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra,” en, in Relational and Algebraic Methods in Computer Science, J. Desharnais, W. Guttmann, and S. Joosten, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2018, pp. 205–224, isbn: 978-3-030-02149-8.  [10.1007/978-3-030-02149-8_13](https://doi.org/10.1007/978-3-030-02149-8_13).
+
+## Formal proofs (published)
+
+1. K. Ye, “Abel’s limit theorem,” Archive of Formal Proofs, Nov. 2025, https://isa-afp.org/entries/Abel_Limit_Theorem.html, Formal proof development, issn: 2150-914x.
 
 ## Books and Chapters
 
