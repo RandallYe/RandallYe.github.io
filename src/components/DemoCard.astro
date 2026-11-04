@@ -1,0 +1,5 @@
+---
+interface Props { title: string; summary: string; url: string; kind: string; label?: string; }
+const { title, summary, url, kind, label = 'View source' } = Astro.props;
+---
+<article class="tool-card"><p class="eyebrow">{kind}</p><h3><a href={url}>{title}</a></h3><p>{summary}</p><a class="text-link" href={url}>{label} <span aria-hidden="true">↗</span></a></article>

@@ -1,0 +1,30 @@
+---
+import { local } from '../lib/paths';
+const links = [['', 'Home'], ['research/', 'Research'], ['tools/', 'Tools & Demos'], ['publications/', 'Publications'], ['talks/', 'Talks'], ['about/', 'About']];
+const current = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href={local()} aria-label="Randall Ye — home"><span class="monogram" aria-hidden="true">RY<span>.</span></span><span>Randall Ye<small>Formal methods · Research & engineering</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav id="main-nav" aria-label="Main navigation">
+      {links.map(([path, label]) => <a href={local(path)} aria-current={(path ? current.startsWith(local(path)) : current === local()) ? 'page' : undefined}>{label}</a>)}
+    </nav>
+  </div>
+</header>
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const nav = document.querySelector<HTMLElement>('#main-nav');
+  if (button && nav) {
+    button.hidden = false;
+    nav.classList.add('enhanced');
+    const close = () => { button.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); };
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('is-open', open);
+    });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && button.getAttribute('aria-expanded') === 'true') { close(); button.focus(); } });
+    nav.addEventListener('click', (event) => { if ((event.target as Element).closest('a')) close(); });
+  }
+</script>

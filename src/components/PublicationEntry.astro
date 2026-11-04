@@ -1,0 +1,5 @@
+---
+interface Props { title: string; authors: string; venue: string; year: number; url: string; }
+const { title, authors, venue, year, url } = Astro.props;
+---
+<article class="publication"><span class="publication-year">{year}</span><div><h3><a href={url}>{title}</a></h3><p>{authors}</p><p class="muted">{venue}</p></div><a class="publication-arrow" href={url} aria-label={`Read ${title}`}><span aria-hidden="true">↗</span></a></article>

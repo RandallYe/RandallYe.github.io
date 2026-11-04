@@ -1,0 +1,6 @@
+---
+interface Props { title: string; date: string; summary: string; url?: string; }
+const { title, date, summary, url } = Astro.props;
+const formatted = new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+---
+<article class="news-item"><time datetime={date}>{formatted}</time><div><h3>{url ? <a href={url}>{title}</a> : title}</h3><p>{summary}</p></div></article>
