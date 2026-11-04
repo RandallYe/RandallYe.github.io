@@ -67,3 +67,9 @@ Validation: build, Astro check (zero diagnostics), existing tests and built link
 Replaced the Background prose with a reusable CareerTimeline component covering the four source-documented periods: IOHK from November 2025, York research (2016–2025), York PhD (2012–2016), and embedded engineering/team leadership (2004–2012). The newest-first timeline uses semantic list/time elements, an explicit current-role marker and existing IOHK/thesis links. Mobile stacks dates above descriptions; colours follow the light/dark tokens. CV and contact links remain intact. No additional JavaScript or dependencies.
 
 Validation: Astro check reports zero diagnostics; static build and internal link checks pass, with the existing archive warning unchanged. Browser visual review remains outstanding.
+
+## Mathematical visual identity — 4 November 2026
+
+Added a code-native SVG/CSS ResearchVisual component featuring Hoare-style notation, an illustrative labelled transition system and a symmetric probability-mass diagram (binomial weights 1:4:6:4:1). The graphic is decorative and carries no verification results or executable-demo claims. The original portrait remains in the hero as an author signature. Added a subtle notebook dot grid, mathematical serif accents, formal notation on research cards, diagram-style borders and a stronger security feature panel. Existing light/dark themes, readable content, mobile stacking and reduced-motion behaviour are retained; no new dependencies or third-party assets/requests.
+
+Validation: Astro check reports zero errors/warnings; build and built link checks pass with the existing archive warning. `git diff --check` passes. Browser visual verification could not run: this execution environment denies creation of a local HTTP server socket (PermissionError). Review at 320px and desktop in both themes remains pending.

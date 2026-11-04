@@ -1,0 +1,45 @@
+<figure class="research-visual">
+  <div class="visual-header"><span class="visual-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>MATHEMATICAL FOUNDATIONS</span><span aria-hidden="true">λ</span></div>
+  <div class="visual-equation" aria-hidden="true"><span class="equation-context">specification / reasoning</span><span>&#123;P&#125; <em>C</em> &#123;Q&#125;</span><small>precondition → program → postcondition</small></div>
+  <svg class="foundations-diagram" viewBox="0 0 360 240" fill="none" aria-hidden="true">
+    <defs>
+      <pattern id="model-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" stroke="currentColor" stroke-opacity=".08" /></pattern>
+      <marker id="state-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="m0 0 10 5-10 5Z" fill="#83dcca" /></marker>
+    </defs>
+    <rect width="360" height="240" fill="url(#model-grid)" />
+    <text x="22" y="23" class="diagram-label">TRANSITION SYSTEM</text>
+    <path d="M73 73H153M193 73H273" stroke="#83dcca" stroke-width="1.5" marker-end="url(#state-arrow)" />
+    <path d="M290 94C290 129 55 129 55 94" stroke="#83dcca" stroke-opacity=".5" stroke-dasharray="3 5" marker-end="url(#state-arrow)" />
+    <g stroke="#83dcca" stroke-width="1.5" fill="#122a35"><circle cx="55" cy="73" r="19" /><circle cx="174" cy="73" r="19" /><circle cx="293" cy="73" r="19" /><circle cx="293" cy="73" r="15" stroke-opacity=".4" /></g>
+    <g class="diagram-state"><text x="55" y="79">s₀</text><text x="174" y="79">s₁</text><text x="293" y="79">s₂</text></g>
+    <text x="110" y="59" class="diagram-math">a</text><text x="232" y="59" class="diagram-math">b</text>
+    <path d="M22 145H338" stroke="currentColor" stroke-opacity=".15" />
+    <text x="22" y="169" class="diagram-label">PROBABILITY MASS</text>
+    <path d="M30 219H178M30 180V219" stroke="currentColor" stroke-opacity=".3" />
+    <g fill="#edbd82"><rect x="42" y="211" width="16" height="8" rx="2" /><rect x="67" y="187" width="16" height="32" rx="2" /><rect x="92" y="171" width="16" height="48" rx="2" /><rect x="117" y="187" width="16" height="32" rx="2" /><rect x="142" y="211" width="16" height="8" rx="2" /></g>
+    <text x="220" y="201" class="diagram-formula">∑ pᵢ = 1</text>
+    <text x="220" y="221" class="diagram-label">pᵢ ≥ 0</text>
+  </svg>
+  <figcaption><span class="visual-caption-symbol" aria-hidden="true">⊢</span><span>Precise models. Explicit assumptions.<br /><strong>Reasoning about behaviour.</strong></span></figcaption>
+</figure>
+<style>
+  .research-visual { margin:0; overflow:hidden; border:1px solid #385562; border-radius:10px; background:#12232f; color:#d5e7e8; box-shadow:0 24px 60px -30px #07152199; transform:rotate(1deg); }
+  .visual-header { display:flex; align-items:center; justify-content:space-between; gap:.6rem; padding:.85rem 1rem; border-bottom:1px solid #ffffff18; font: .55rem ui-monospace,monospace; letter-spacing:.12em; color:#a7bfc8; }
+  .visual-dots { display:flex; gap:4px; }
+  .visual-dots i { width:5px; height:5px; border-radius:50%; background:#63818a; }
+  .visual-dots i:first-child { background:#83dcca; }
+  .visual-equation { display:flex; flex-direction:column; gap:.5rem; padding:1.4rem 1.3rem .8rem; }
+  .equation-context { font:.58rem ui-monospace,monospace; letter-spacing:.08em; color:#83dcca; }
+  .visual-equation>span:nth-child(2) { font:2.8rem Georgia,'Times New Roman',serif; letter-spacing:.04em; }
+  .visual-equation em { color:#83dcca; }
+  .visual-equation small { color:#a7bfc8; font-size:.65rem; }
+  .foundations-diagram { display:block; width:100%; height:auto; color:#b1ccd3; }
+  .diagram-label { fill:#a7bfc8; font:8px ui-monospace,monospace; letter-spacing:1px; }
+  .diagram-state { fill:#ddf4ed; text-anchor:middle; font:18px Georgia,serif; }
+  .diagram-math { fill:#83dcca; font:italic 14px Georgia,serif; }
+  .diagram-formula { fill:#edbd82; font:22px Georgia,serif; }
+  figcaption { display:flex; align-items:center; gap:1rem; padding:1.1rem 1.3rem; border-top:1px solid #ffffff18; font-size:.7rem; line-height:1.6; color:#a7bfc8; }
+  figcaption strong { color:#dfefed; font-weight:500; }
+  .visual-caption-symbol { color:#83dcca; font:2rem Georgia,serif; }
+  @media(max-width:760px) { .research-visual { transform:none; max-width:430px; } }
+</style>
