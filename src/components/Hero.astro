@@ -3,9 +3,12 @@ import ResearchVisual from './ResearchVisual.astro';
 import { local } from '../lib/site-paths';
 ---
 <section class="hero" aria-labelledby="hero-title">
-  <div><p class="eyebrow">Formal methods · Semantics · Verification</p><h1 id="hero-title">Kangfeng <span>(Randall) Ye</span></h1><p class="role">Formal Methods Engineer at <a href="https://iohk.io/">IOHK</a></p><p class="hero-description">I work on the mathematical foundations of software and the tools that make them useful. My research connects formal semantics, theorem proving and model checking, with applications in robotics, probabilistic programming and security protocols.</p><div class="actions"><a class="button" href={local('tools/')}>Explore tools & demos <span aria-hidden="true">↗</span></a><a class="text-link" href={local('publications/')}>Read the research <span aria-hidden="true">→</span></a></div><div class="profile-links"><a href="https://github.com/RandallYe">GitHub ↗</a><a href="https://scholar.google.com/citations?hl=en&user=PbLkCR8AAAAJ">Google Scholar ↗</a><a href="https://dblp.org/pid/193/5774.html">DBLP ↗</a></div></div>
+  <div>
+    <div class="hero-identity">
+      <img class="hero-portrait" src={local('pics/me.jpg')} alt="Kangfeng (Randall) Ye" width="3303" height="4722" loading="eager" fetchpriority="high" />
+      <div><p class="eyebrow">Formal methods · Semantics · Verification</p><h1 id="hero-title">Kangfeng <span>(Randall) Ye</span></h1></div>
+    </div><p class="role">Formal Methods Engineer at <a href="https://iohk.io/">IOHK</a></p><p class="hero-description">I work on the mathematical foundations of software and the tools that make them useful. My research connects formal semantics, theorem proving and model checking, with applications in robotics, probabilistic programming and security protocols.</p><div class="actions"><a class="button" href={local('tools/')}>Explore tools & demos <span aria-hidden="true">↗</span></a><a class="text-link" href={local('publications/')}>Read the research <span aria-hidden="true">→</span></a></div><div class="profile-links"><a href="https://github.com/RandallYe">GitHub ↗</a><a href="https://scholar.google.com/citations?hl=en&user=PbLkCR8AAAAJ">Google Scholar ↗</a><a href="https://dblp.org/pid/193/5774.html">DBLP ↗</a></div></div>
   <aside class="hero-aside" aria-label="Research in mathematical models">
     <ResearchVisual />
-    <div class="researcher-signature"><img src={local('pics/me.jpg')} alt="Kangfeng (Randall) Ye" width="3303" height="4722" /><div><span>Kangfeng (Randall) Ye</span><small>Formal methods · Research & engineering</small></div></div>
   </aside>
 </section>

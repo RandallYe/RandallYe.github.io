@@ -101,3 +101,7 @@ Validation: Astro check has zero diagnostics. Tests verify preservation, canonic
 Media headers identify an MP4 container, 227.478-second duration and `avc1`/`mp4a` sample entries (`probabilistic-relations-media-check.json`). **Actual decoding, browser playback, responsive layout and keyboard review remain unverified**; header inspection does not close these acceptance criteria. The older TCS-branch URL could not be fetched; it stays in provenance, while the primary link uses the current homepage's repository. The arXiv page was inspected and explicitly connects its version history to the existing journal DOI.
 
 Next: add the RoboChart/PRISM, chemical-detector and patrol-robot showcases using their now-preserved recordings, then migrate all seven authored blogs. Talks/news/projects/teaching still require structured migration; their preserved files and inventory entries do not imply their pages are complete. No push, Pages setting change or deployment occurred.
+
+## Portrait placement — 4 November 2026
+
+Moved the original portrait from beneath the mathematical illustration into the first identity block at the upper-left of the homepage hero, beside the name. It is now larger, eagerly loaded with high fetch priority, and remains before the biography and illustration in mobile/source order. Added compact sizing for narrow screens; removed the old signature styles and duplicate placement. Build, Astro check and built internal-link checks pass. Actual browser visual review remains pending.
