@@ -109,3 +109,7 @@ Moved the original portrait from beneath the mathematical illustration into the 
 ## Portrait clarification — 4 November 2026
 
 Moved the portrait into the far-left brand/home link on the first navigation row, replacing the RY monogram on every redesigned page. Removed the hero portrait and its placement-specific CSS. The sticky header keeps it visible; compact sizing retains space for mobile menu/theme controls. Build, Astro check and internal-link checks pass; browser visual review remains pending.
+
+## Preferred display name — 4 November 2026
+
+Updated the navigation identity/home label, document/social titles, archive redirect title and About introduction to the user-preferred “Kangfeng (Randall) Ye”. Footer and hero already use that name. Added mobile wrapping space for the longer navigation name beside the portrait and controls. Original publications, URLs and historical source files are unchanged. Build and internal-link checks pass; browser visual review remains pending.
