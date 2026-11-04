@@ -33,5 +33,75 @@
     "path": "post/steady_state_probabilities",
     "destination": "posts/steady-state-probabilities/",
     "title": "Steady state probabilities of Markov chains"
+  },
+  {
+    "path": "talk/20221011_robostar_industry_exhibition",
+    "destination": "talks/#robostar-industry-exhibition-2022",
+    "title": "Presentation and poster at YorRobots and RoboStar Industry Exhibition"
+  },
+  {
+    "path": "talk/20221026_icfem_2022",
+    "destination": "talks/#icfem-2022-robochart-animation",
+    "title": "Formally Verified Animation for RoboChart Using Interaction Trees"
+  },
+  {
+    "path": "talk/20221027_models_2022",
+    "destination": "talks/#models-2022-probabilistic-robochart",
+    "title": "Probabilistic modelling and verification using RoboChart and PRISM"
+  },
+  {
+    "path": "talk/nsfc-rs_isabelle_utp_tutorial",
+    "destination": "talks/#isabelle-utp-tutorial-2019",
+    "title": "Isabelle/UTP Tutorial in Chinese"
+  },
+  {
+    "path": "talk/pintofscience2019",
+    "destination": "talks/#pint-of-science-robotic-swarms-2019",
+    "title": "Engineering Robotic Swarms"
+  },
+  {
+    "path": "talk/ramics2021",
+    "destination": "talks/#ramics-2021-probabilistic-programs",
+    "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving"
+  },
+  {
+    "path": "talk/ramics2021_rehearsal",
+    "destination": "talks/#ramics-2021-probabilistic-programs",
+    "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving rehearsal"
+  },
+  {
+    "path": "talk/robostar_seminar",
+    "destination": "talks/#robostar-probabilistic-systems-seminar-2019",
+    "title": "RoboChart & RoboTool: modelling and verification of probabilistic systems"
+  },
+  {
+    "path": "talk/robostar_seminar_2021",
+    "destination": "talks/#robostar-interaction-trees-seminar-2021",
+    "title": "Animation of RoboChart with Interaction Trees"
+  },
+  {
+    "path": "talk/robostar_seminar_20221005",
+    "destination": "talks/#models-2022-probabilistic-robochart",
+    "title": "Probabilistic modelling and verification using RoboChart and PRISM rehearsal"
+  },
+  {
+    "path": "talk/robostar_seminar_20221119",
+    "destination": "talks/#icfem-2022-robochart-animation",
+    "title": "Formally Verified Animation for RoboChart Using Interaction Trees rehearsal"
+  },
+  {
+    "path": "talk/robostar_seminar_20230628_probabilistic_relations",
+    "destination": "talks/#probabilistic-relations-seminar-2023",
+    "title": "Probabilistic relations seminar"
+  },
+  {
+    "path": "talk/vetss_ag_swu_visit",
+    "destination": "talks/#vetss-control-law-diagrams-2018",
+    "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP"
+  },
+  {
+    "path": "talk/workshop_cq_visitor",
+    "destination": "talks/#southwest-university-workshop-2019",
+    "title": "Modelling and verification of probabilistic behaviour of robotic applications"
   }
 ]

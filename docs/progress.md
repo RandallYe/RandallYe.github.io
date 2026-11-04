@@ -122,7 +122,7 @@ Added five audited lightweight preview/diagram derivatives (87 preserved resourc
 
 Validation: Astro check has zero diagnostics; preservation and canonical-merge tests pass. Root and `/research-preview/` builds, link/fragment/poster/duplicate-ID checks and expanded four-demo output checks all pass. Output checks confirm distinct local videos, native controls, preload none, no autoplay, genuine posters and model images, correct publication links, exactly one card per recovered demo, and retention of the security fallback. Root output restored. Browser playback, visual/keyboard review and external historical branch availability remain pending; captions/transcripts were not supplied and are not invented.
 
-Phase 3B page implementation is complete; its browser acceptance remains open. Next planned content increment: migrate all seven authored blogs, with maths rendering and technical-review notes.
+Phase 3B page implementation is complete; its browser acceptance remains open. The selected blog migration is now complete; five other authored blogs remain excluded by the user's narrowed scope.
 
 ## Line-following robot case study — 4 November 2026
 
@@ -142,4 +142,14 @@ Added pinned KaTeX 0.16.22 for build-time **native MathML only**. No client math
 
 Initial executor npm access failed DNS; installation subsequently became available in the shared workspace, and the matching dependency lockfile is included. Build/type checks now pass. Tests cover exactly the two requested articles, source hashes/figures, retained references, MathML rendering and anchors. Root and preview-subpath builds, internal links and posts-output checks pass; demo-output regressions pass. Root output restored. Browser visual/screen-reader checks and external reference availability remain unverified. No deployment.
 
-Next: remaining talks/projects/news/teaching migration, with no additional blogs in the current scope.
+Talks are now migrated; remaining archive work is projects/news/teaching, with no additional blogs in the current scope.
+
+## Historical talks — 4 November 2026
+
+Merged the current site's three talks with the old-entry archive. The rebuilt Talks page now lists 14 distinct presentations across both sources: 11 substantive archived presentations and three current-site entries. The three archive rehearsals are grouped under their matching RAMiCS, MODELS, and ICFEM presentations. Original archived dates, event labels, slides, the MODELS recording, ICFEM animation clip, and Pint of Science CSP files are linked. The two local videos use native controls with `preload="none"`, no autoplay, and a download fallback. Historical talk URLs on the new site resolve to canonical talk anchors. Talk metadata is schema-validated in `src/data/talks.json`; provenance and binary hashes remain in the archive inventory/manifests.
+
+Validation: `npm run check`, `npm test`, root and `/research-preview/` builds, `check:links`, `check:demo`, `check:posts`, and the new `check:talks` pass. The built Talks route contains 14 source aliases, 11 archive records, three grouped rehearsals, and two deferred local recordings. External talk links and actual video playback remain unverified; browser/device acceptance is still outstanding.
+
+## Remaining archive work
+
+Next: reconcile and merge the seven project histories and 21 news entries against current site records, then add the documented teaching and tutorial history. Only the two user-selected blog posts remain in scope.

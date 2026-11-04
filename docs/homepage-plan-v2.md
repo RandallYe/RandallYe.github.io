@@ -88,7 +88,7 @@ Acceptance: both selected posts accounted for, zero stock-example posts; figures
 ### Phase 3D — talks, bibliography, projects and supporting history
 
 - Enrich current bibliography with the archived abstracts, BibTeX and preprint versions. Recover the 2018 working report as a labelled companion resource; avoid double-counting it as the later chapter.
-- Add all 14 genuine talk entries, grouping rehearsals with main presentations; restore MODELS2022 recording and slide variants, ICFEM2022 and other available slides.
+- [x] Add all 14 substantive archived talk entries, grouping three rehearsals with their conference presentations; restore the MODELS 2022 recording and slide variants, ICFEM 2022 clip/slides and other preserved talk materials.
 - Merge seven project histories and 21 news entries with current records. Distinguish dates of publication, announcement and event.
 - Add CSAV teaching and the Chinese Isabelle/UTP tutorial to About/Talks.
 - Add the line-following robot as a dated engineering case study, explicitly retaining that formal verification was not completed. Record its missing physical-model image.
@@ -112,4 +112,4 @@ Present the coherent merged portfolio and review unresolved biography/company wo
 
 Continue on `redesign/astro`; make small commits per content group and update `docs/progress.md`. Do not restart the existing design or replace the current website with the old export.
 
-The next implementation increment is **Phase 3A plus the probabilistic-relations showcase**, followed by the other three recovered research demonstrations and the two selected blogs. This produces a reviewable, evidence-backed addition before undertaking the longer historical migration. The initial planning turn changed only audit documents. Subsequent implementation status is recorded in `progress.md`; the first recovered showcase and preservation foundation are now implemented, with browser acceptance still pending.
+The next implementation increment is to merge seven project histories and 21 news entries, then add the documented teaching/tutorial history. Talks are now represented as 11 archive presentations plus three nested rehearsals, alongside the three recent talks already on the site. Subsequent implementation status is recorded in `progress.md`; browser acceptance remains pending.

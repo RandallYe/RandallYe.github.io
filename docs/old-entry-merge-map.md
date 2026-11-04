@@ -1,6 +1,6 @@
 # Old-entry content merge map
 
-Destinations below are proposed unless already present. Canonical publication anchors and all four recovered research showcases and the line-following engineering case study are now implemented; see `progress.md`. The analysis step itself migrated no content; the subsequent preservation manifest records assets now copied. GitHub is authoritative for current facts; historical resources retain their own dates and provenance.
+Destinations below are proposed unless already present. Canonical publication anchors, all four recovered research showcases, the line-following engineering case study, two selected posts, and all substantive talk entries are now implemented; see `progress.md`. The preservation manifest records copied assets and checksums. GitHub is authoritative for current facts; historical resources retain their own dates and provenance.
 
 | Archived page (relative to `old_entry/`) | Destination | Treatment |
 | --- | --- | --- |
@@ -32,21 +32,21 @@ Destinations below are proposed unless already present. Canonical publication an
 | `publication/ye-2023-probabilistic/index.html` — Probabilistic relations for modelling epistemic and aleatoric uncertainty: semantics and automated reasoning with theorem proving | `/publications/#proburel` | Merge metadata/BibTeX/abstract into canonical work; preserve version link |
 | `publication/ye-2024-quantitative/index.html` — Quantitative Assurance and Synthesis of Controllers from Activity Diagrams | `/publications/#quantitative-activity-diagrams` | Merge metadata/BibTeX/abstract into canonical work; preserve version link |
 | `publication/ye-2024100940/index.html` — Formally verified animation for RoboChart using interaction trees | `/publications/#robochart-animation-jlamp` | Merge metadata/BibTeX/abstract into canonical work; preserve version link |
-| `talk/20221011_robostar_industry_exhibition/index.html` — Presentation and poster at YorRobots and RoboStar Industry Exhibition | `/talks/#20221011-robostar-industry-exhibition` | Recover event, slides, recording and source links |
-| `talk/20221026_icfem_2022/index.html` — Formally Verified Animation for RoboChart Using Interaction Trees @ ICFEM2022 | `/talks/#icfem-2022` | Recover event, slides, recording and source links |
-| `talk/20221027_models_2022/index.html` — Probabilistic modelling and verification using RoboChart and PRISM @ MODELS2022 | `/talks/#models-2022` | Recover event, slides, recording and source links |
+| `talk/20221011_robostar_industry_exhibition/index.html` — Presentation and poster at YorRobots and RoboStar Industry Exhibition | `/talks/#robostar-industry-exhibition-2022` | Migrated with original slides and linked PRISM demo |
+| `talk/20221026_icfem_2022/index.html` — Formally Verified Animation for RoboChart Using Interaction Trees @ ICFEM2022 | `/talks/#icfem-2022-robochart-animation` | Migrated with preserved clip/slides; seminar rehearsal grouped |
+| `talk/20221027_models_2022/index.html` — Probabilistic modelling and verification using RoboChart and PRISM @ MODELS2022 | `/talks/#models-2022-probabilistic-robochart` | Migrated with recording, two slide variants and linked PRISM demo; seminar rehearsal grouped |
 | `talk/example-talk/index.html` — Example Talk | `No production route` | Exclude stock theme example; retain in source inventory |
-| `talk/nsfc-rs_isabelle_utp_tutorial/index.html` — Isabelle/UTP Tutorial in Chinese | `/talks/#nsfc-rs-isabelle-utp-tutorial` | Recover event, slides, recording and source links |
-| `talk/pintofscience2019/index.html` — Engineering Robotic Swarms | `/talks/#pintofscience2019` | Recover event, slides, recording and source links |
-| `talk/ramics2021/index.html` — Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving @ RAMiCS2021 | `/talks/#ramics-2021` | Recover event, slides, recording and source links |
-| `talk/ramics2021_rehearsal/index.html` — Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving | `/talks/#ramics-2021` | Preserve as dated rehearsal/seminar beneath related main talk; do not duplicate conference appearance |
-| `talk/robostar_seminar/index.html` — RoboChart & RoboTool: modelling and verification of probabilistic systems | `/talks/#robostar-seminar` | Recover event, slides, recording and source links |
-| `talk/robostar_seminar_2021/index.html` — Animation of RoboChart with Interaction Trees | `/talks/#robostar-seminar-2021` | Recover event, slides, recording and source links |
-| `talk/robostar_seminar_20221005/index.html` — Probabilistic modelling and verification using RoboChart and PRISM | `/talks/#models-2022` | Preserve as dated rehearsal/seminar beneath related main talk; do not duplicate conference appearance |
-| `talk/robostar_seminar_20221119/index.html` — Formally Verified Animation for RoboChart Using Interaction Trees | `/talks/#icfem-2022` | Preserve as dated rehearsal/seminar beneath related main talk; do not duplicate conference appearance |
-| `talk/robostar_seminar_20230628_probabilistic_relations/index.html` — Probabilistic relations for modelling epistemic and aleatoric uncertainties: its semantics and automated reasoning with theorem proving | `/talks/#robostar-seminar-20230628-probabilistic-relations` | Recover event, slides, recording and source links |
-| `talk/vetss_ag_swu_visit/index.html` — Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP | `/talks/#vetss-ag-swu-visit` | Recover event, slides, recording and source links |
-| `talk/workshop_cq_visitor/index.html` — Modelling and verification of probabilistic behaviour of robotic applications | `/talks/#workshop-cq-visitor` | Recover event, slides, recording and source links |
+| `talk/nsfc-rs_isabelle_utp_tutorial/index.html` — Isabelle/UTP Tutorial in Chinese | `/talks/#isabelle-utp-tutorial-2019` | Migrated with its source attribution and CyPhyAssure links |
+| `talk/pintofscience2019/index.html` — Engineering Robotic Swarms | `/talks/#pint-of-science-robotic-swarms-2019` | Migrated with original five CSP solver files |
+| `talk/ramics2021/index.html` — Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving @ RAMiCS2021 | `/talks/#ramics-2021-probabilistic-programs` | Migrated with slides and canonical publication link; rehearsal grouped |
+| `talk/ramics2021_rehearsal/index.html` — Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving | `/talks/#ramics-2021-probabilistic-programs` | Grouped under RAMiCS presentation as dated rehearsal |
+| `talk/robostar_seminar/index.html` — RoboChart & RoboTool: modelling and verification of probabilistic systems | `/talks/#robostar-probabilistic-systems-seminar-2019` | Migrated with related PRISM demo |
+| `talk/robostar_seminar_2021/index.html` — Animation of RoboChart with Interaction Trees | `/talks/#robostar-interaction-trees-seminar-2021` | Migrated with canonical publication link |
+| `talk/robostar_seminar_20221005/index.html` — Probabilistic modelling and verification using RoboChart and PRISM | `/talks/#models-2022-probabilistic-robochart` | Grouped under MODELS presentation as dated seminar rehearsal |
+| `talk/robostar_seminar_20221119/index.html` — Formally Verified Animation for RoboChart Using Interaction Trees | `/talks/#icfem-2022-robochart-animation` | Grouped under ICFEM presentation as dated seminar rehearsal |
+| `talk/robostar_seminar_20230628_probabilistic_relations/index.html` — Probabilistic relations for modelling epistemic and aleatoric uncertainties: its semantics and automated reasoning with theorem proving | `/talks/#probabilistic-relations-seminar-2023` | Migrated with original slides and related demonstration |
+| `talk/vetss_ag_swu_visit/index.html` — Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP | `/talks/#vetss-control-law-diagrams-2018` | Migrated with preserved Simulink PDF and associated paper |
+| `talk/workshop_cq_visitor/index.html` — Modelling and verification of probabilistic behaviour of robotic applications | `/talks/#southwest-university-workshop-2019` | Migrated with related PRISM demo |
 | `post/bdi_model/index.html` — Belief-Desire-Intention (BDI) | `/posts/bdi-model/` | Migrate full authored post, original date, figures and references |
 | `post/getting-started/index.html` — Welcome to Wowchemy, the website builder for Hugo | `No production route` | Exclude stock theme example; retain in source inventory |
 | `post/jupyter/index.html` — Display Jupyter Notebooks with Academic | `No production route` | Exclude stock theme example; retain in source inventory |

@@ -75,4 +75,19 @@ const posts = defineCollection({
   loader: file('./src/data/posts.json'),
   schema: z.object({ id: slug, title: z.string(), date: z.string(), summary: z.string(), math: z.boolean(), sourcePath: z.string(), sourceSha256: z.string(), body: z.string() }),
 });
-export const collections = { demos, publications, posts };
+const talks = defineCollection({
+  loader: file('./src/data/talks.json'),
+  schema: z.object({
+    id: slug,
+    title: z.string().min(1),
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    event: z.string().min(1),
+    description: z.string().min(1),
+    resources: z.array(resource).default([]),
+    rehearsals: z.array(z.object({ date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), title: z.string(), label: z.string() })).default([]),
+    sourcePath: z.string().optional(),
+    recording: z.string().optional(),
+    recordingTitle: z.string().optional(),
+  }),
+});
+export const collections = { demos, publications, posts, talks };
