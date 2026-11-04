@@ -1,9 +1,13 @@
 ---
+import { getCollection } from 'astro:content';
+import FeaturedDemo from '../../components/FeaturedDemo.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DemoCard from '../../components/DemoCard.astro';
 import { tools } from '../../data/research';
+const demos = (await getCollection('demos')).sort((a, b) => a.data.order - b.data.order);
 ---
 <BaseLayout title="Tools & Demos" description="Explore research software, mechanised theories and demonstrations of formal verification.">
   <div class="page-heading"><p class="eyebrow">Research you can explore</p><h1>Tools & Demos</h1><p>Implementations and examples that connect formal foundations with practical exploration.</p></div>
+  {demos.map(demo => <FeaturedDemo demo={demo} />)}
   <div class="grid tools-grid">{tools.map(tool => <DemoCard {...tool} />)}</div>
 </BaseLayout>

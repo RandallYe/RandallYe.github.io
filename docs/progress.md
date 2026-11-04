@@ -17,15 +17,25 @@
 - [x] Existing portrait, CV, slides and archived post reused. Original root fragment links expose links to the corresponding archived sections.
 - [ ] Build/type checks and actual 320px/desktop browser QA.
 
-## Phase 2 — Security animation showcase
+## Phase 2 — Security animation showcase (implemented; acceptance pending)
 
-Source resource audit complete; implementation in progress. Video URL is confirmed in the original source; playback and embedding remain unverified. No public interactive service established.
+- [x] Schema-validated Markdown demo collection using current Astro loaders and Zod schema.
+- [x] Featured demonstration directly after the homepage hero, and on Tools & Demos.
+- [x] `/tools/security-protocol-animation/` with source-based explanation, formal scope, documented workflow, protocol examples and paper/source/slides links.
+- [x] Generic FeaturedDemo, VideoEmbed and ResourceLinks components. Player contacts YouTube only after a button click, with no autoplay and an always-visible external watch link; link remains usable without JavaScript.
+- [x] Missing video still/transcript and uncertain playback recorded in metadata; no invented imagery, results or public interactive service.
+- [ ] Verify playback, embedding, page rendering and complete browser acceptance.
+
 
 ## Checks and environment
 
 - `npm install --fetch-retries=0`: FAIL — EAI_AGAIN resolving registry.npmjs.org; no dependencies or lockfile produced.
-- Phase 1 `npm run build`: BLOCKED — astro executable not installed (exit 127).
-- Phase 1 `npm run check`: BLOCKED — astro executable not installed (exit 127).
+- Phase 1 and Phase 2 `npm run build`: BLOCKED — astro executable not installed (exit 127).
+- Phase 1 and Phase 2 `npm run check`: BLOCKED — astro executable not installed (exit 127).
+- `npm test`: PASS — base-prefix behaviour and exact preservation of 17 assets, original Markdown and 20 publication records.
+- `git diff --check`: PASS.
+- Original source comparison against `4544eec`: PASS — no changes to index.html, index.md or original asset directories.
+- `npm run check:links`: BLOCKED — correctly refuses to pass without built dist output. The checker validates generated routes, assets and fragments at the configured base; reports inherited archive issues separately.
 - Registry metadata reports Astro 7.4.5 requires Node >=22.23.4; installed Node is 22.23.2. Upgrade Node before installing.
 
 ## Remaining acceptance checklist
@@ -35,3 +45,7 @@ On a supported, network-enabled environment: install and commit lockfile; run ty
 ## Next phases and release gate
 
 Migrate the rest of the research detail/news/projects/activities into structured pages (currently preserved in full in the archive). Confirm preferred IOHK/IOG wording, bibliography date discrepancies and video availability in `content-review.md`. Production cutover, Pages settings, deployment workflows and pushes remain untouched; explicit approval is required before deployment.
+
+## Known archive limitations
+
+Original exported HTML includes a local `file://` KaTeX stylesheet path. The archive strips this unusable link but mathematical display still needs browser review/local styling. The original files and all content remain unchanged. Newly designed pages use plain text notation and do not depend on remote maths assets. Old archive files may contain inherited outbound/internal issues; link checks report these as explicit legacy warnings rather than silently treating them as validated.

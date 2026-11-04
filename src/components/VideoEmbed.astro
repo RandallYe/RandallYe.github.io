@@ -1,0 +1,27 @@
+---
+interface Props { url: string; title: string; note?: string; }
+const { url, title, note } = Astro.props;
+const videoId = new URL(url).searchParams.get('v');
+const embedUrl = videoId && /^[a-zA-Z0-9_-]{11}$/.test(videoId) ? `https://www.youtube-nocookie.com/embed/${videoId}` : undefined;
+---
+<figure class="video-figure"><div class="video-shell" data-video data-embed={embedUrl} data-title={title}><div data-video-prompt><p class="eyebrow">Recorded research demonstration</p><h3>{title}</h3><p>Load the video player to watch the recording. This contacts YouTube only after you choose to load it.</p>{embedUrl && <button class="button" data-load-video type="button" hidden>Load video player <span aria-hidden="true">▷</span></button>}<p><a href={url}>Watch the original recording on YouTube ↗</a></p></div><div data-video-player></div></div><figcaption class="video-caption">{note} The external watch link remains available if the player cannot load.</figcaption></figure>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-video]').forEach(container => {
+    const button = container.querySelector<HTMLButtonElement>('[data-load-video]');
+    const holder = container.querySelector<HTMLElement>('[data-video-player]');
+    const embedUrl = container.dataset.embed;
+    if (!button || !holder || !embedUrl) return;
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      const frame = document.createElement('iframe');
+      frame.src = embedUrl;
+      frame.title = container.dataset.title || 'Research demonstration recording';
+      frame.allowFullscreen = true;
+      frame.allow = 'encrypted-media; picture-in-picture; fullscreen';
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      holder.replaceChildren(frame);
+      button.hidden = true;
+      frame.focus();
+    }, { once: true });
+  });
+</script>
