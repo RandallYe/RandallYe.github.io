@@ -50,3 +50,7 @@ Profile destinations from live site: https://github.com/RandallYe ; https://www.
 ## Release prerequisites
 
 File-level inventory and asset preservation are complete. Still verify all outbound links, check archived equations in a browser, and verify video manually. No production cutover until these gaps and the user review are resolved.
+
+## Expanded scope: historical old_entry export
+
+The original inventory above covers only the latest GitHub homepage. On 4 November 2026 the user identified `/home/rye/workspace/web/old_entry` as an additional source and confirmed that GitHub is authoritative for current facts. The old export contains substantial missing authored material, including seven blogs and local research recordings. See `old-entry-analysis.md`, `old-entry-inventory.json` and `old-entry-merge-map.md`; the remaining roadmap is now `homepage-plan-v2.md`. These resources are inventoried, but their binaries have not yet been copied into this repository. Earlier statements of complete preservation apply to the 17 latest-site assets only.
