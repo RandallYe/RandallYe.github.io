@@ -4,7 +4,7 @@ Revised 4 November 2026 following the audit of `old_entry` and the user's clarif
 
 ## 1. Objective and source rules
 
-Present a consistent view of Kangfeng (Randall) Ye by combining the latest GitHub homepage with valuable historical resources. Move all seven authored blogs into the website. Recover missing work, rather than duplicate contributions or restore an obsolete identity.
+Present a consistent view of Kangfeng (Randall) Ye by combining the latest GitHub homepage with valuable historical resources. Migrate only the two user-selected posts: Temporal Logic and Steady State Probabilities. The other five authored posts remain excluded from the current scope. Recover missing work, rather than duplicate contributions or restore an obsolete identity.
 
 1. **GitHub wins for current facts:** biography, IOHK role, primary CV, project dates, final publication metadata and contact links.
 2. **The archive adds evidence:** videos, slides, posters, code downloads, detailed explanations, teaching and blogs. Older affiliations/statuses remain historical.
@@ -16,7 +16,7 @@ Evidence: `old-entry-analysis.md`, `old-entry-inventory.json`, `old-entry-merge-
 
 ## 2. Unified information architecture
 
-Give **Posts** a first-class navigation link now that seven authored articles have been recovered. Keep six links—Research, Tools & Demos, Publications, Posts, Talks, About—with Home accessible through the existing logo/name link. Keep the News archive in the home news section and footer.
+Give **Posts** a first-class navigation link now that two authored articles have been selected. Keep six links—Research, Tools & Demos, Publications, Posts, Talks, About—with Home accessible through the existing logo/name link. Keep the News archive in the home news section and footer.
 
 | Route | Unified role |
 | --- | --- |
@@ -26,7 +26,7 @@ Give **Posts** a first-class navigation link now that seven authored articles ha
 | `/tools/`, `/tools/[slug]/` | Real recorded demonstrations, source walkthroughs and clearly labelled engineering case studies |
 | `/publications/` | Current bibliography enriched with abstracts, BibTeX, preprints and related resources; stable canonical identifiers |
 | `/talks/` | Unified current and historical presentations; separate event dates; rehearsals nested beneath their associated presentation |
-| `/posts/`, `/posts/[slug]/` | All seven authored blogs with original dates, figures, references and source context |
+| `/posts/`, `/posts/[slug]/` | The two selected authored blogs with original dates, figures, references and source context |
 | `/news/` | Merged chronology of current and archived announcements, deduplicated by event/work |
 | `/about/` | Current identity and career timeline, plus dated teaching/outreach; current CV remains primary |
 
@@ -77,13 +77,13 @@ Link their actual recordings, diagrams, source and corresponding papers. Attach 
 
 Acceptance: recordings play locally, controls are keyboard accessible, media is not downloaded before requested, source resources are reachable, and the scientific scope matches the original work. No unsupported Try button.
 
-### Phase 3C — migrate all authored blogs
+### Phase 3C — migrate the two selected blogs
 
-Create Posts index/detail routes and migrate all seven posts listed in the analysis. Preserve original dates, full explanations, references and diagrams, including the temporal-logic timeline. Keep notes on other speakers' work attributed.
+Create Posts index/detail routes and migrate only Temporal Logic and Steady State Probabilities from the analysis. Preserve original dates, full explanations, references and diagrams, including the temporal-logic timeline. Keep notes on other speakers' work attributed.
 
-Review the identified Markov-chain, index-condition and qubit wording issues before publication. Document substantive corrections with an editorial note while retaining the original evidence. Do not treat successful equation rendering as scientific validation.
+Review the identified Markov-chain and index-condition issues in the selected steady-state notes before publication. Document substantive corrections with an editorial note while retaining the original evidence. Do not treat successful equation rendering as scientific validation.
 
-Acceptance: seven authored posts accounted for, zero stock-example posts; figures and references preserved; no raw TeX leakage, clipped matrices or unreviewed doubtful claims silently republished. Blogs are reachable from the site rather than hidden in the legacy archive.
+Acceptance: both selected posts accounted for, zero stock-example posts; figures and references preserved; no raw TeX leakage, clipped matrices or unreviewed doubtful claims silently republished. Blogs are reachable from the site rather than hidden in the legacy archive.
 
 ### Phase 3D — talks, bibliography, projects and supporting history
 
@@ -98,7 +98,7 @@ Acceptance: every substantive archive entry is migrated, merged into a canonical
 
 ### Phase 4 — combined-site quality assurance and preview
 
-Run build, type/content checks, asset-hash checks, internal route/fragment checks and external-resource review. Validate root and preview base paths. Check all seven articles' maths, local videos, keyboard navigation, 320px/mobile/desktop layouts, both themes and media loading/performance. Generate an old-to-new route report and validate aliases, including preserved filenames and case.
+Run build, type/content checks, asset-hash checks, internal route/fragment checks and external-resource review. Validate root and preview base paths. Check both selected articles' maths, local videos, keyboard navigation, 320px/mobile/desktop layouts, both themes and media loading/performance. Generate an old-to-new route report and validate aliases, including preserved filenames and case.
 
 Prepare a preview-only hosting workflow using current official guidance. Do not create a production-triggering workflow, change Pages settings or deploy while this approval gate is closed. Browser checks remain outstanding in the current restricted execution environment; passing build checks does not replace them.
 
@@ -112,4 +112,4 @@ Present the coherent merged portfolio and review unresolved biography/company wo
 
 Continue on `redesign/astro`; make small commits per content group and update `docs/progress.md`. Do not restart the existing design or replace the current website with the old export.
 
-The next implementation increment is **Phase 3A plus the probabilistic-relations showcase**, followed by the other three recovered research demonstrations and all seven blogs. This produces a reviewable, evidence-backed addition before undertaking the longer historical migration. The initial planning turn changed only audit documents. Subsequent implementation status is recorded in `progress.md`; the first recovered showcase and preservation foundation are now implemented, with browser acceptance still pending.
+The next implementation increment is **Phase 3A plus the probabilistic-relations showcase**, followed by the other three recovered research demonstrations and the two selected blogs. This produces a reviewable, evidence-backed addition before undertaking the longer historical migration. The initial planning turn changed only audit documents. Subsequent implementation status is recorded in `progress.md`; the first recovered showcase and preservation foundation are now implemented, with browser acceptance still pending.

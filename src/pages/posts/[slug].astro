@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { typesetArticle } from '../../lib/article-math';
+import { local } from '../../lib/site-paths';
+export const getStaticPaths = (async () => (await getCollection('posts')).map(post => ({ params: { slug: post.id }, props: { post } }))) satisfies GetStaticPaths;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { post } = Astro.props;
+const { data } = post;
+const body = (data.math ? typesetArticle(data.body) : data.body).replace(/(href|src)="(\/old_entry\/[^"#]+)"/g, (_match, attr: string, path: string) => `${attr}="${local(path)}"`);
+---
+<BaseLayout title={data.title} description={data.summary}>
+  <a class="back-link" href={local('posts/')}>← Posts</a>
+  <div class="page-heading"><p class="eyebrow">Historical technical notes · <time datetime={data.date}>{data.date}</time></p><h1>{data.title}</h1><p>{data.summary}</p></div>
+  {data.math && <aside class="notice"><strong>Historical working notes — technical review</strong><p>The original text is retained, including unfinished examples. Some statements need correction: sums of transition probabilities count expected visits rather than the probability of a visit; finite-step powers need not equal their limiting matrix exactly; return probabilities use first-return events. The displayed Markov-property condition should use non-negative time indices. Treat the original summary diagram in the same historical context.</p><p>For the displayed three-state example, exact arithmetic gives (P¹¹)₀₀ = 382205275/1019215872, rather than exactly 3/8. Further review of the distinctions between time averages and pointwise limits is needed.</p></aside>}
+  <article class="post-body" set:html={body} />
+</BaseLayout>
+<style>
+  .post-body { max-width: 850px; margin: 2rem 0; overflow-wrap: anywhere; }
+  .post-body :global(h2), .post-body :global(h3), .post-body :global(h4), .post-body :global(h5) { margin: 2rem 0 1rem; scroll-margin-top: 7rem; }
+  .post-body :global(p), .post-body :global(li) { color: var(--muted); }
+  .post-body :global(li) { margin-bottom: .4rem; }
+  .post-body :global(figure) { margin: 2rem 0; }
+  .post-body :global(img) { display: block; max-width: 100%; height: auto; background: white; border: 1px solid var(--line); border-radius: 5px; }
+  .post-body :global(figcaption) { color: var(--muted); font-size: .85rem; margin-top: .6rem; }
+  .post-body :global(blockquote) { margin-inline: 0; border-left: 3px solid var(--accent); padding-left: 1.2rem; }
+  .post-body :global(math[display="block"]) { display: block; overflow-x: auto; max-width: 100%; padding: .8rem 0; }
+  .post-body :global(math) { color: var(--ink); }
+</style>

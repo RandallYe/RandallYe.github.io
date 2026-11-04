@@ -23,5 +23,15 @@
     "path": "showcase/engineer_lfr",
     "destination": "tools/line-following-robot/",
     "title": "Engineering a line-following robot"
+  },
+  {
+    "path": "post/temporal-logic",
+    "destination": "posts/temporal-logic/",
+    "title": "Temporal Logic — history and semantics"
+  },
+  {
+    "path": "post/steady_state_probabilities",
+    "destination": "posts/steady-state-probabilities/",
+    "title": "Steady state probabilities of Markov chains"
   }
 ]

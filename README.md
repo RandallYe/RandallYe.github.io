@@ -44,3 +44,9 @@ npm test
 ```
 
 Recovered showcases are `/tools/probabilistic-relations/`, `/tools/robochart-prism/`, `/tools/robochart-chemical-detector/` `/tools/robochart-patrol-robot/` and the engineering case study `/tools/line-following-robot/`; their original site paths redirect locally. Local videos use controls and `preload="none"`; media header checks do not establish actual browser playback. See `docs/progress.md` for verification gaps and upcoming demos/blog migration.
+
+## Selected posts
+
+The user's blog scope is limited to Temporal Logic and Steady State Probabilities, available at `/posts/`. Other archived blogs are not published. Source hashes, full article bodies and original dates live in `src/data/posts.json`. `python3 scripts/migrate-selected-posts.py /home/rye/workspace/web/old_entry` refreshes those two archived bodies and idempotent aliases; it does not recover other posts.
+
+KaTeX is a pinned build dependency and outputs native MathML without client scripts or remote fonts. Run `npm run check:posts` after a successful build, with the same ASTRO_BASE value as that build. The steady-state post visibly identifies historical scientific-review issues while retaining the source notes.

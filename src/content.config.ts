@@ -71,4 +71,8 @@ const demos = defineCollection({
   }),
 });
 
-export const collections = { demos, publications };
+const posts = defineCollection({
+  loader: file('./src/data/posts.json'),
+  schema: z.object({ id: slug, title: z.string(), date: z.string(), summary: z.string(), math: z.boolean(), sourcePath: z.string(), sourceSha256: z.string(), body: z.string() }),
+});
+export const collections = { demos, publications, posts };

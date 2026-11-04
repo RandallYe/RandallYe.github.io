@@ -131,3 +131,15 @@ Recovered `engineer_lfr` at `/tools/line-following-robot/`, with a static redire
 Added an engineering-case-study category to distinguish this work from theorem-proving demonstrations. Retained the explicit source statement that planned formal verification was not completed. Videos now have visible titles and spacing for multi-recording pages. The page is discoverable on Home and Tools; Home selects five showcase cards while Tools retains the complete source/tool list. Added four audited lightweight image derivatives (91 preserved resources in total).
 
 Validation: zero Astro diagnostics; preservation/canonical tests pass; root and preview builds, internal-link checks and seven-video output checks pass. Output checks verify all three LFR videos, captions, figures, source download, absence of autoplay and explicit unfinished-verification scope. Root output restored. Browser playback, responsive visual/keyboard review and reproducing the hardware/controller remain unverified. No production deployment.
+
+## Two selected historical posts — 4 November 2026
+
+The user narrowed blog migration to **Temporal Logic** and **Steady State Probabilities**. This supersedes earlier seven-blog tasks; the other five authored posts are excluded unless requested later. Updated the parent AGENTS.md and remaining plan accordingly.
+
+Added a validated posts collection, `/posts/` index and two detail pages: `/posts/temporal-logic/` and `/posts/steady-state-probabilities/`. Recovered complete article bodies from their article-content sections, with original dates (18 and 23 November 2022), source-page hashes, heading anchors, references, temporal-logic timeline and both probability diagrams. Removed theme wrappers, social-sharing widgets, generated-image dependencies and old navigation. Added Posts to the main navigation, using the existing logo as Home, and new-host legacy-path redirects for both articles. No other blog routes were generated.
+
+Added pinned KaTeX 0.16.22 for build-time **native MathML only**. No client maths library, remote fonts or stylesheet is required. The original LaTeX `mbox` notation and encoded ellipsis are adapted only for rendering. Strict equation parsing, matrices and aligned derivations pass; original archived mathematical content is retained. A visible historical-working-notes review banner identifies known doubtful/unfinished statements rather than silently rewriting them or claiming scientific validation.
+
+Initial executor npm access failed DNS; installation subsequently became available in the shared workspace, and the matching dependency lockfile is included. Build/type checks now pass. Tests cover exactly the two requested articles, source hashes/figures, retained references, MathML rendering and anchors. Root and preview-subpath builds, internal links and posts-output checks pass; demo-output regressions pass. Root output restored. Browser visual/screen-reader checks and external reference availability remain unverified. No deployment.
+
+Next: remaining talks/projects/news/teaching migration, with no additional blogs in the current scope.
