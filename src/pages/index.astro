@@ -10,7 +10,7 @@ import PublicationEntry from '../components/PublicationEntry.astro';
 import NewsItem from '../components/NewsItem.astro';
 import { research, tools, news } from '../data/research';
 import publications from '../data/publications.json';
-import { local } from '../lib/paths';
+import { local } from '../lib/site-paths';
 const demos = (await getCollection('demos', ({ data }) => data.featured)).sort((a, b) => a.data.order - b.data.order);
 const selected = [publications[0], publications[6], publications[2]];
 ---

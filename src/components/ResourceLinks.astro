@@ -1,5 +1,5 @@
 ---
-import { local } from '../lib/paths';
+import { local } from '../lib/site-paths';
 interface Props { links: { label: string; url: string }[]; label?: string; }
 const { links, label = 'Research resources' } = Astro.props;
 const resourceUrl = (url: string) => url.startsWith('https://randallye.github.io/') ? local(url.slice('https://randallye.github.io/'.length)) : url;

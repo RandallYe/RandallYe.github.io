@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PublicationEntry from '../../components/PublicationEntry.astro';
 import publications from '../../data/publications.json';
-import { local } from '../../lib/paths';
+import { local } from '../../lib/site-paths';
 const groups = [...new Set(publications.map(paper => paper.group))];
 const id = (group: string) => group.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '');
 ---

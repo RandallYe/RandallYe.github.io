@@ -4,7 +4,7 @@ import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
 import ResourceLinks from '../../components/ResourceLinks.astro';
-import { local } from '../../lib/paths';
+import { local } from '../../lib/site-paths';
 export const getStaticPaths = (async () => {
   const demos = await getCollection('demos');
   return demos.map(demo => ({ params: { slug: demo.data.slug }, props: { demo } }));

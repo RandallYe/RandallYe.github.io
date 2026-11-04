@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { local } from '../lib/paths';
+import { local } from '../lib/site-paths';
 interface Props { demo: CollectionEntry<'demos'>; }
 const { demo } = Astro.props;
 const d = demo.data;
