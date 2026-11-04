@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import DemoCard from './DemoCard.astro';
+import { tools } from '../data/research';
+const demos = (await getCollection('demos', ({ data }) => !data.featured)).sort((a, b) => a.data.order - b.data.order);
+const demoIds = new Set(demos.map(demo => demo.data.slug));
+const sourceTools = tools.filter(tool => !tool.demoId || !demoIds.has(tool.demoId));
+---
+<div class="grid tools-grid">
+  {demos.map(({ data }) => <DemoCard title={data.title} summary={data.summary} url={`/tools/${data.slug}/`} kind="Recorded research walkthrough" label="Watch & explore" thumbnail={data.thumbnail} thumbnailAlt={data.thumbnailAlt} />)}
+  {sourceTools.map(tool => <DemoCard {...tool} />)}
+</div>

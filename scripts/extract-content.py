@@ -32,6 +32,10 @@ for chunk in re.split(r'\n\s*\n',section):
     venue=re.sub(r'https?://\S+','',venue).strip()
     pubs.append(dict(title=title.replace('$CSP\\,\\Vert \\,B$','CSP ∥ B'),authors=authors.rstrip(', '),venue=venue,year=year,url=url,group=group))
 assert len(pubs)==20,len(pubs)
+# Refresh source metadata while retaining canonical IDs and migrated resources.
+existing_path = root / 'src/data/publications.json'
+existing = {record['url']: record for record in json.loads(existing_path.read_text())} if existing_path.exists() else {}
+pubs = [{**existing.get(record['url'], {}), **record} for record in pubs]
 (root/'src/data/publications.json').write_text(json.dumps(pubs,indent=2,ensure_ascii=False)+'\n')
 class Inventory(HTMLParser):
     def __init__(self):super().__init__();self.links=[];self.ids=[]

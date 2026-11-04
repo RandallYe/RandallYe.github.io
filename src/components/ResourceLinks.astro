@@ -2,6 +2,6 @@
 import { local } from '../lib/site-paths';
 interface Props { links: { label: string; url: string }[]; label?: string; }
 const { links, label = 'Research resources' } = Astro.props;
-const resourceUrl = (url: string) => url.startsWith('https://randallye.github.io/') ? local(url.slice('https://randallye.github.io/'.length)) : url;
+const resourceUrl = (url: string) => url.startsWith('https://randallye.github.io/') ? local(url.slice('https://randallye.github.io/'.length)) : local(url);
 ---
 <ul class="resource-links" aria-label={label}>{links.map(link => <li><a href={resourceUrl(link.url)}>{link.label} <span aria-hidden="true">↗</span></a></li>)}</ul>

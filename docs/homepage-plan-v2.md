@@ -12,7 +12,7 @@ Present a consistent view of Kangfeng (Randall) Ye by combining the latest GitHu
 4. **Keep provenance:** source page, original path, source date, content type and relationship to the canonical work. Preserve conflicting raw evidence in review metadata, not contradictory visitor-facing text.
 5. **Do not resolve uncertainty by guessing:** record missing resources and disputed scientific statements explicitly. Never fabricate media, execution results or verification claims.
 
-Evidence: `old-entry-analysis.md`, `old-entry-inventory.json`, `old-entry-merge-map.md`. The source export remains outside this repository until selected resources are preserved during migration.
+Evidence: `old-entry-analysis.md`, `old-entry-inventory.json`, `old-entry-merge-map.md`. The source export remains read-only outside this repository; selected resources have now been preserved as recorded in `progress.md`.
 
 ## 2. Unified information architecture
 
@@ -112,4 +112,4 @@ Present the coherent merged portfolio and review unresolved biography/company wo
 
 Continue on `redesign/astro`; make small commits per content group and update `docs/progress.md`. Do not restart the existing design or replace the current website with the old export.
 
-The next implementation increment is **Phase 3A plus the probabilistic-relations showcase**, followed by the other three recovered research demonstrations and all seven blogs. This produces a reviewable, evidence-backed addition before undertaking the longer historical migration. The current turn delivers analysis and this revised plan; it does not yet migrate the website or deploy it.
+The next implementation increment is **Phase 3A plus the probabilistic-relations showcase**, followed by the other three recovered research demonstrations and all seven blogs. This produces a reviewable, evidence-backed addition before undertaking the longer historical migration. The initial planning turn changed only audit documents. Subsequent implementation status is recorded in `progress.md`; the first recovered showcase and preservation foundation are now implemented, with browser acceptance still pending.

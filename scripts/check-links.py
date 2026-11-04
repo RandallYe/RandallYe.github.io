@@ -15,13 +15,16 @@ class Page(HTMLParser):
     def __init__(self, text):
         super().__init__()
         self.ids = set()
+        self.duplicate_ids = []
         self.links = []
         self.feed(text)
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if 'id' in attrs:
+            if attrs['id'] in self.ids:
+                self.duplicate_ids.append(attrs['id'])
             self.ids.add(attrs['id'])
-        for key in ('href', 'src'):
+        for key in ('href', 'src', 'poster'):
             if key in attrs:
                 self.links.append(attrs[key])
 
@@ -31,7 +34,9 @@ warnings = []
 checked = 0
 for path, page in pages.items():
     relative = path.relative_to(ROOT).as_posix()
-    archived = relative.startswith(('legacy/', 'posts/'))
+    archived = relative.startswith(('legacy/', 'posts/SEFM_DataMod/'))
+    for duplicate in page.duplicate_ids:
+        (warnings if archived else errors).append(f'{relative}: duplicate id: {duplicate}')
     origin = 'https://local.invalid' + BASE + relative
     for link in page.links:
         parsed = urlsplit(urljoin(origin, link))

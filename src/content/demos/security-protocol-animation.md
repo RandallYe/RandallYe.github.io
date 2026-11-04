@@ -24,10 +24,15 @@ paperLinks:
 sourceLinks:
   - label: View Isabelle/HOL and animator source
     url: https://github.com/RandallYe/Animation_of_Security_Protocols
+relatedPublications:
+  - security-protocol-animation
+examplesHeading: Two protocol examples
 exampleLinks:
   - label: Needham–Schroeder public-key specification
+    description: Explore the public-key protocol specification in the early-framework model collection. Related variants are documented in the repository.
     url: https://github.com/RandallYe/Animation_of_Security_Protocols/blob/master/User_Guided_Verification_Security/NSPKP/NSPK3/NSPK3.thy
   - label: Diffie–Hellman specification
+    description: Inspect the key-agreement specification and its explicit intruder model. The repository also documents a digital-signature variant.
     url: https://github.com/RandallYe/Animation_of_Security_Protocols/blob/master/User_Guided_Verification_Security/Diffie_Hellman/DH_v1/DH.thy
 slidesLinks:
   - label: SEFM presentation slides (PDF)

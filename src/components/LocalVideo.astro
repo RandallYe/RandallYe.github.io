@@ -1,0 +1,30 @@
+---
+import { local } from '../lib/site-paths';
+interface Props {
+  src: string;
+  title: string;
+  caption: string;
+  poster?: string;
+  mimeType?: string;
+  note?: string;
+  id: string;
+}
+const { src, title, caption, poster, mimeType = 'video/mp4', note, id } = Astro.props;
+---
+<figure class="local-video">
+  <video controls preload="none" playsinline poster={poster ? local(poster) : undefined} aria-label={title} aria-describedby={`${id}-caption`}>
+    <source src={local(src)} type={mimeType} />
+    <p>Your browser cannot play this recording. <a href={local(src)}>Download the original recording</a>.</p>
+  </video>
+  <figcaption id={`${id}-caption`}>
+    <p>{caption}</p>
+    {note && <p>{note}</p>}
+    <a href={local(src)} download>Download the original recording (MP4) ↓</a>
+  </figcaption>
+</figure>
+<style>
+  .local-video { margin: 0; }
+  video { display: block; width: 100%; height: auto; aspect-ratio: 720 / 423; background: #0d1922; border: 1px solid var(--line); border-radius: 7px; }
+  figcaption { margin-top: .8rem; font-size: .85rem; color: var(--muted); }
+  figcaption p { margin: .4rem 0; }
+</style>

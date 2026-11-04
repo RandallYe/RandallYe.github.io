@@ -22,3 +22,11 @@
 - All 20 publications retain co-authors. Original research, news, projects, academic activities and contribution caveats remain accessible in the full archive; detailed structured migration is Phase 3.
 
 The original exported homepage refers to a local file:// KaTeX stylesheet. The archived rendering strips that unusable link; verify archived maths before release. No source HTML was overwritten.
+
+## Historical probabilistic-relations showcase
+
+- Original date is 4 February 2023; the linked current publication is the 2024 co-authored journal paper. They are presented separately as a historical walkthrough and a related published result.
+- The current theory repository was inspectable through the web tool; the old `probabilistic_designs/tree/TCS` destination was not. The older link is retained in provenance rather than presented as a verified reproduction endpoint.
+- The preprint page `https://arxiv.org/abs/2303.09692` was inspected: it identifies the same authors and journal DOI as the current bibliography. It is attached as a version link, not another publication.
+- Original screenshot visually inspected. The MP4 and slides match audited hashes; header inspection is recorded separately. Playback, subtitles/captions and exact correspondence between each recorded proof and later paper results have not been asserted.
+- The original 2018 report BibTeX contains an invalid institution export field. Its raw download is preserved as historical data; it is not rendered as authoritative current metadata or counted as a new peer-reviewed paper.

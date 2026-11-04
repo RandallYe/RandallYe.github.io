@@ -5,7 +5,21 @@
     "venue": "Theoretical Computer Science, p. 114 876, 2024, issn: 0304-3975.  doi: 10.1016/j.tcs.2024.114876.",
     "year": 2024,
     "url": "https://doi.org/10.1016/j.tcs.2024.114876",
-    "group": "Journal article"
+    "group": "Journal article",
+    "id": "proburel",
+    "resources": [
+      {
+        "label": "Archived BibTeX (earlier version)",
+        "url": "/old_entry/publication/ye-2023-probabilistic/cite.bib"
+      },
+      {
+        "label": "Preprint version",
+        "url": "https://arxiv.org/abs/2303.09692"
+      }
+    ],
+    "relatedDemos": [
+      "probabilistic-relations"
+    ]
   },
   {
     "title": "Formally verified animation for RoboChart using interaction trees",
@@ -13,7 +27,22 @@
     "venue": "Journal of Logical and Algebraic Methods in Programming, vol. 137, p. 100 940, 2024, issn: 2352-2208.  doi: 10.1016/j.jlamp.2023.100940.",
     "year": 2024,
     "url": "https://doi.org/10.1016/j.jlamp.2023.100940",
-    "group": "Journal article"
+    "group": "Journal article",
+    "id": "robochart-animation-jlamp",
+    "resources": [
+      {
+        "label": "Archived BibTeX (earlier version)",
+        "url": "/old_entry/publication/ye-2023-formally/cite.bib"
+      },
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/ye-2024100940/cite.bib"
+      },
+      {
+        "label": "Preprint version",
+        "url": "https://arxiv.org/abs/2303.09106"
+      }
+    ]
   },
   {
     "title": "Probabilistic modelling and verification using RoboChart and PRISM",
@@ -21,7 +50,8 @@
     "venue": "en, Software and Systems Modeling, vol. 21, no. 2, pp. 667–716, Apr. 2022, issn: 1619-1374.  doi: 10.1007/s10270-021-00916-8.",
     "year": 2022,
     "url": "https://doi.org/10.1007/s10270-021-00916-8",
-    "group": "Journal article"
+    "group": "Journal article",
+    "id": "robochart-prism"
   },
   {
     "title": "Automated Verification of Reactive and Concurrent Programs by Calculation",
@@ -29,7 +59,22 @@
     "venue": "Journal of Logical and Algebraic Methods in Programming, vol. 121, p. 100 681, Jun. 2021, arXiv:2007.13529 [cs], issn: 23522208.  doi: 10.1016/j.jlamp.2021.100681.",
     "year": 2021,
     "url": "https://doi.org/10.1016/j.jlamp.2021.100681",
-    "group": "Journal article"
+    "group": "Journal article",
+    "id": "reactive-programs-calculation",
+    "resources": [
+      {
+        "label": "Archived BibTeX (earlier version)",
+        "url": "/old_entry/publication/foster-2020-a/foster-2020-a.bib"
+      },
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/foster-2021100681/cite.bib"
+      },
+      {
+        "label": "Preprint version",
+        "url": "https://arxiv.org/abs/2007.13529"
+      }
+    ]
   },
   {
     "title": "Model checking of state-rich formalism by linking to CSP ∥ B",
@@ -37,7 +82,14 @@
     "venue": "en, International Journal on Software Tools for Technology Transfer, vol. 19, no. 1, pp. 73–96, Feb. 2017, issn: 1433-2787.  doi: 10.1007/s10009-015-0402-1. (visited on 10/13/2023)).",
     "year": 2017,
     "url": "https://doi.org/10.1007/s10009-015-0402-1",
-    "group": "Journal article"
+    "group": "Journal article",
+    "id": "circus-model-checking",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/ye-2017/ye-2017.bib"
+      }
+    ]
   },
   {
     "title": "Formal verification of physical layer security protocols for next-generation communication networks",
@@ -45,7 +97,8 @@
     "venue": "in Formal Methods and Software Engineering, É. André, J. Wang, and N. Zhan, Eds., Singapore: Springer Nature Singapore, 2026, pp. 1–21, isbn: 978-981-95-4213-0.  doi: 10.1007/978-981-95-4213-0_1.",
     "year": 2026,
     "url": "https://doi.org/10.1007/978-981-95-4213-0_1",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "physical-layer-security"
   },
   {
     "title": "User-Guided Verification of Security Protocols via Sound Animation",
@@ -53,7 +106,11 @@
     "venue": "in Software Engineering and Formal Methods (SEFM), Springer Nature Switzerland, Nov. 2024, pp. 33–51, isbn: 9783031773822.  doi: 10.1007/978-3-031-77382-2_3.",
     "year": 2024,
     "url": "https://doi.org/10.1007/978-3-031-77382-2_3",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "security-protocol-animation",
+    "relatedDemos": [
+      "security-protocol-animation"
+    ]
   },
   {
     "title": "Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification",
@@ -61,7 +118,8 @@
     "venue": "in From Data to Models and Back (DataMod2024), Springer International Publishing, 2024.  doi: 10.1007/978-3-031-87908-1_9.",
     "year": 2024,
     "url": "https://doi.org/10.1007/978-3-031-87908-1_9",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "oran-energy-availability"
   },
   {
     "title": "Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment",
@@ -69,7 +127,14 @@
     "venue": "in 2023 IEEE 19th International Conference on Automation Science and Engineering (CASE), ISSN: 2161-8089, Aug. 2023, pp. 1–7.  10.1109/CASE56687.2023.10260395.",
     "year": 2023,
     "url": "https://doi.org/10.1109/CASE56687.2023.10260395",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "agriculture-robot-light-treatment",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/10260395/cite.bib"
+      }
+    ]
   },
   {
     "title": "Formally Verified Animation for RoboChart Using Interaction Trees",
@@ -77,7 +142,14 @@
     "venue": "en, in Formal Methods and Software Engineering, A. Riesco and M. Zhang, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2022, pp. 404–420, isbn: 978-3-031-17244-1.  10.1007/978-3-031-17244-1_24.",
     "year": 2022,
     "url": "https://doi.org/10.1007/978-3-031-17244-1_24",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "robochart-animation-icfem",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/ye-2022/cite.bib"
+      }
+    ]
   },
   {
     "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving",
@@ -85,7 +157,14 @@
     "venue": "en, in Relational and Algebraic Methods in Computer Science, U. Fahrenberg, M. Gehrke, L. Santocanale, and M. Winter, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2021, pp. 465–482, isbn: 978-3-030-88701-8.  10.1007/978-3-030-88701-8_28.",
     "year": 2021,
     "url": "https://doi.org/10.1007/978-3-030-88701-8_28",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "probabilistic-sequential-programs",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/ye-2021-a/cite.bib"
+      }
+    ]
   },
   {
     "title": "Probabilistic Semantics for RoboChart",
@@ -93,7 +172,14 @@
     "venue": "en, in Unifying Theories of Programming, P. Ribeiro and A. Sampaio, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2019, pp. 80–105, isbn: 978-3-030-31038-7.  10.1007/978-3-030-31038-7_5.",
     "year": 2019,
     "url": "https://doi.org/10.1007/978-3-030-31038-7_5",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "probabilistic-semantics-robochart",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/jim-2019/jim-2019.bib"
+      }
+    ]
   },
   {
     "title": "Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra",
@@ -101,7 +187,22 @@
     "venue": "en, in Relational and Algebraic Methods in Computer Science, J. Desharnais, W. Guttmann, and S. Joosten, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2018, pp. 205–224, isbn: 978-3-030-02149-8.  10.1007/978-3-030-02149-8_13.",
     "year": 2018,
     "url": "https://doi.org/10.1007/978-3-030-02149-8_13",
-    "group": "Conference Proceedings"
+    "group": "Conference Proceedings",
+    "id": "reactive-relations-2018",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/foster-2018/foster-2018.bib"
+      },
+      {
+        "label": "Archived BibTeX (earlier version)",
+        "url": "/old_entry/publication/foster-2018-a/foster-2018-a.bib"
+      },
+      {
+        "label": "Preprint version",
+        "url": "https://arxiv.org/abs/1806.02101"
+      }
+    ]
   },
   {
     "title": "Abel’s limit theorem",
@@ -109,7 +210,8 @@
     "venue": "Archive of Formal Proofs, Nov. 2025,  Formal proof development, issn: 2150-914x.",
     "year": 2025,
     "url": "https://isa-afp.org/entries/Abel_Limit_Theorem.html",
-    "group": "Formal proofs (published)"
+    "group": "Formal proofs (published)",
+    "id": "abel-limit-theorem"
   },
   {
     "title": "A tour through the programming choices: Semantics and applications",
@@ -117,7 +219,8 @@
     "venue": "in The Application of Formal Methods. Springer Nature Switzerland, 2024, pp. 261–305, isbn: 9783031671142.  10.1007/978-3-031-67114-2_11.",
     "year": 2024,
     "url": "https://doi.org/10.1007/978-3-031-67114-2_11",
-    "group": "Books and Chapters"
+    "group": "Books and Chapters",
+    "id": "programming-choices"
   },
   {
     "title": "RoboStar Technology: Modelling Uncertainty in RoboChart Using Probability",
@@ -125,7 +228,14 @@
     "venue": "en, in Software Engineering for Robotics, A. Cavalcanti, B. Dongol, R. Hierons, J. Timmis, and J. Woodcock, Eds., Cham: Springer International Publishing, 2021, pp. 413–465, isbn: 978-3-030-66494-7.  doi: 10.1007/978-3-030-66494-7_13.",
     "year": 2021,
     "url": "https://doi.org/10.1007/978-3-030-66494-7_13",
-    "group": "Books and Chapters"
+    "group": "Books and Chapters",
+    "id": "robostar-uncertainty",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/woodcock-2021/cite.bib"
+      }
+    ]
   },
   {
     "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP",
@@ -133,7 +243,22 @@
     "venue": "en, in From Astrophysics to Unconventional Computation: Essays Presented to Susan Stepney on the Occasion of her 60th Birthday, ser. Emergence, Complexity and Computation, A. Adamatzky and V. Kendon, Eds., Cham: Springer International Publishing, 2020, pp. 215–254, isbn: 978-3-030-15792-0.  doi: 10.1007/978-3-030-15792-0_10.",
     "year": 2020,
     "url": "https://doi.org/10.1007/978-3-030-15792-0_10",
-    "group": "Books and Chapters"
+    "group": "Books and Chapters",
+    "id": "control-law-diagrams",
+    "resources": [
+      {
+        "label": "2018 working-report BibTeX",
+        "url": "/old_entry/publication/ye-2018/ye-2018.bib"
+      },
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/ye-2020/ye-2020.bib"
+      },
+      {
+        "label": "Related 2018 working report",
+        "url": "https://eprints.whiterose.ac.uk/129640/"
+      }
+    ]
   },
   {
     "title": "Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra)",
@@ -141,7 +266,14 @@
     "venue": "en, phd, University of York, Aug. 2016.  url:",
     "year": 2016,
     "url": "https://etheses.whiterose.ac.uk/15526/",
-    "group": "PhD Thesis"
+    "group": "PhD Thesis",
+    "id": "state-rich-formalisms-thesis",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/ye-2016/ye-2016.bib"
+      }
+    ]
   },
   {
     "title": "RoboCertProb: Property Specification for Probabilistic RoboChart Models",
@@ -149,7 +281,8 @@
     "venue": "Preprint, 2024.  arXiv: 2403.08136 [cs.LO].",
     "year": 2024,
     "url": "https://arxiv.org/abs/2403.08136",
-    "group": "Preprints"
+    "group": "Preprints",
+    "id": "robocertprob"
   },
   {
     "title": "Quantitative Assurance and Synthesis of Controllers from Activity Diagrams",
@@ -157,6 +290,13 @@
     "venue": "Preprint, 2024.  arXiv: 2403.00169 [cs.LO].",
     "year": 2024,
     "url": "https://arxiv.org/abs/2403.00169",
-    "group": "Preprints"
+    "group": "Preprints",
+    "id": "quantitative-activity-diagrams",
+    "resources": [
+      {
+        "label": "Archived BibTeX",
+        "url": "/old_entry/publication/ye-2024-quantitative/cite.bib"
+      }
+    ]
   }
 ]

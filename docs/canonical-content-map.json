@@ -1,0 +1,26 @@
+{
+  "policy": "Latest GitHub metadata wins; archive versions attach to canonical works.",
+  "publicationAliases": {
+    "10260395": "agriculture-robot-light-treatment",
+    "foster-2018": "reactive-relations-2018",
+    "foster-2018-a": "reactive-relations-2018",
+    "foster-2020-a": "reactive-programs-calculation",
+    "foster-2021100681": "reactive-programs-calculation",
+    "jim-2019": "probabilistic-semantics-robochart",
+    "woodcock-2021": "robostar-uncertainty",
+    "ye-2017": "circus-model-checking",
+    "ye-2020": "control-law-diagrams",
+    "ye-2021": "robochart-prism",
+    "ye-2021-a": "probabilistic-sequential-programs",
+    "ye-2022": "robochart-animation-icfem",
+    "ye-2023-formally": "robochart-animation-jlamp",
+    "ye-2024100940": "robochart-animation-jlamp",
+    "ye-2023-probabilistic": "proburel",
+    "ye-2024-quantitative": "quantitative-activity-diagrams",
+    "ye-2016": "state-rich-formalisms-thesis"
+  },
+  "companionReports": {
+    "ye-2018": "control-law-diagrams"
+  },
+  "resources": "docs/old-entry-assets.json"
+}

@@ -1,5 +1,28 @@
 ---
-interface Props { title: string; authors: string; venue: string; year: number; url: string; }
-const { title, authors, venue, year, url } = Astro.props;
+import ResourceLinks from './ResourceLinks.astro';
+interface Props {
+  id: string;
+  title: string;
+  authors: string;
+  venue: string;
+  year: number;
+  url: string;
+  resources?: { label: string; url: string }[];
+  relatedDemos?: string[];
+  compact?: boolean;
+}
+const { id, title, authors, venue, year, url, resources = [], relatedDemos = [], compact = false } = Astro.props;
+const links = [
+  ...resources,
+  ...relatedDemos.map(slug => ({ label: 'Watch related demonstration', url: `/tools/${slug}/` })),
+];
 ---
-<article class="publication"><span class="publication-year">{year}</span><div><h3><a href={url}>{title}</a></h3><p>{authors}</p><p class="muted">{venue}</p></div><a class="publication-arrow" href={url} aria-label={`Read ${title}`}><span aria-hidden="true">↗</span></a></article>
+<article class="publication" id={id}>
+  <span class="publication-year">{year}</span>
+  <div>
+    <h3><a href={url}>{title}</a></h3>
+    <p>{authors}</p><p class="muted">{venue}</p>
+    {!compact && links.length > 0 && <ResourceLinks links={links} label={`Resources for ${title}`} />}
+  </div>
+  <a class="publication-arrow" href={url} aria-label={`Read ${title}`}><span aria-hidden="true">↗</span></a>
+</article>

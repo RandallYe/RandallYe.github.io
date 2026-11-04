@@ -12,7 +12,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "check:links": "python3 scripts/check-links.py",
-    "test": "node --test scripts/*.test.mjs"
+    "test": "node --test scripts/*.test.mjs",
+    "check:demo": "python3 scripts/check-demo-output.py"
   },
   "dependencies": {
     "astro": "7.4.5"

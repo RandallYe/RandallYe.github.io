@@ -4,6 +4,7 @@ import { local } from '../../lib/site-paths';
 // Preserve the complete original page. Prefix only relative file links; leave
 // fragment links local to the archive. The source file itself stays unchanged.
 const html = source.replace(/<!doctype html>/i, '').replace(/<link[^>]+href="file:[^"]+"[^>]*>/gi, '').replace('<html>', '<html lang="en-GB">').replace(/(href|src)="([^"\s]+)"/g, (match, attr, value) => {
+  if (value === '10.1109/CASE56687.2023.10260395') return `${attr}="https://doi.org/${value}"`;
   if (/^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(value)) return match;
   if (/^(?:\.\/)?Posts\/SEFM_DataMod\/cheddar_updates\.html/.test(value)) return `${attr}="${local('posts/SEFM_DataMod/SEFM_DataMod_2024.html')}"`;
   return `${attr}="${local(value.replace(/^\.\//, ''))}"`;
