@@ -12,7 +12,7 @@
 - Original NSPK/DH links point to absent or moved directories. Updated example links use the README's early-framework theory locations inspected through GitHub. Check again before publication.
 - DOI linked by both homepage and README; the audit tool could not fetch the DOI destination. Verify access before release.
 - Original talk recording, scholarly profiles, and other outbound destinations still need HTTP/manual checks. A failure to fetch during this audit does not establish that a link is broken.
-- Original SEFM talk points to `Posts/SEFM_DataMod/cheddar_updates.html`; actual tracked post is `posts/SEFM_DataMod/SEFM_DataMod_2024.html`. Archive rendering and new pages link to the actual file; original source remains unchanged.
+- The original SEFM talk points to `Posts/SEFM_DataMod/cheddar_updates.html`; the latest-site report is `posts/SEFM_DataMod/SEFM_DataMod_2024.html`. The complete report is now a structured post at `/posts/sefm-datamod-report/`; the legacy mixed-case `.html` URL redirects there, while the original source and report file remain preserved.
 
 ## Scientific scope
 

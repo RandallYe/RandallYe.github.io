@@ -23,7 +23,7 @@ Upstream root observed: `index.html`, `index.md`, `CV/`, `pics/`, `SEFM2024/`, `
 | `/SEFM2024/SEFM2024_presentation.pdf` | Preserve exact path; preserved locally and linked through the configured base |
 | `/Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf` | Same policy |
 | `/CV/`, other pictures and downloads | All 17 assets inventoried with checksums; CV is `CV/Academic_CV-Kangfeng_Ye.pdf` |
-| `/Posts/SEFM_DataMod/cheddar_updates.html` | Site links uppercase Posts while repo lists lowercase posts; actual post is `posts/SEFM_DataMod/SEFM_DataMod_2024.html`; archive rendering corrects this broken destination |
+| `/Posts/SEFM_DataMod/cheddar_updates.html` | Historical mixed-case URL preserved as a static redirect to the migrated `/posts/sefm-datamod-report/` article; original report remains at `posts/SEFM_DataMod/SEFM_DataMod_2024.html` |
 
 ## Security demonstration resources
 

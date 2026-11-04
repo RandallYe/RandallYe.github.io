@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { local } from '../../lib/site-paths';
 const posts = (await getCollection('posts')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 ---
-<BaseLayout title="Posts" description="Notes on temporal logic and steady-state probabilities by Kangfeng (Randall) Ye.">
-  <div class="page-heading"><p class="eyebrow">Logic & probability</p><h1>Posts</h1><p>Selected technical notes from the earlier homepage, with their original dates and references.</p></div>
-  {posts.map(({ id, data }) => <article class="research-detail prose"><p class="eyebrow"><time datetime={data.date}>{data.date}</time></p><h2><a href={local(`posts/${id}/`)}>{data.title}</a></h2><p>{data.summary}</p><a class="text-link" href={local(`posts/${id}/`)}>Read the post →</a></article>)}
+<BaseLayout title="Posts" description="Technical notes and conference reports by Kangfeng (Randall) Ye.">
+  <div class="page-heading"><p class="eyebrow">Research notes & reports</p><h1>Posts</h1><p>Technical notes and reports, with original material and references preserved.</p></div>
+  {posts.map(({ id, data }) => <article class="research-detail prose"><p class="eyebrow">{data.dateLabel ?? <time datetime={data.date}>{data.date}</time>}</p><h2><a href={local(`posts/${id}/`)}>{data.title}</a></h2><p>{data.summary}</p><a class="text-link" href={local(`posts/${id}/`)}>Read the post →</a></article>)}
 </BaseLayout>

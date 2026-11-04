@@ -153,3 +153,9 @@ Validation: `npm run check`, `npm test`, root and `/research-preview/` builds, `
 ## Remaining archive work
 
 Next: reconcile and merge the seven project histories and 21 news entries against current site records, then add the documented teaching and tutorial history. Only the two user-selected blog posts remain in scope.
+
+## SEFM and DataMod report migration — 4 November 2026
+
+After the user reported the report link broken, traced the original homepage URL to a mixed-case `.html` path that was not emitted by the existing Astro directory route. Migrated the full latest-site report to `/posts/sefm-datamod-report/`, retaining both SEFM and DataMod sections, six original figures, attribution, paper and project links, and a SHA-256 reference to the untouched source file. The Talks resource and rendered legacy homepage now point to the new post. The exact historic `Posts/SEFM_DataMod/cheddar_updates.html` URL now has a matching `.html` redirect route. The two selected old-entry blogs remain the only old-entry blog migrations.
+
+Validation: post tests verify source hash, all six figure files and paper links. Build and post/link checks verify the new route and exact legacy `.html` redirect at root and preview base paths. Browser validation remains pending.

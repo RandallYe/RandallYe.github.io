@@ -15,7 +15,7 @@
     "description": "Co-authored presentation on accessible verification and the soundness of generated animators.",
     "resources": [
       { "label": "Presentation slides (PDF)", "url": "/SEFM2024/SEFM2024_presentation.pdf" },
-      { "label": "SEFM and DataMod report", "url": "/posts/SEFM_DataMod/SEFM_DataMod_2024.html" },
+      { "label": "SEFM and DataMod report", "url": "/posts/sefm-datamod-report/" },
       { "label": "Related security-protocol demonstration", "url": "/tools/security-protocol-animation/" }
     ]
   },
