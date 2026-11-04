@@ -14,7 +14,7 @@ for chunk in re.split(r'\n\s*\n',section):
     if not re.match(r'\d+\.',chunk):continue
     citation=re.sub(r'^\d+\.\s*(?:\[==\*\*.*?\*\*==\]\s*)?','',chunk)
     urls=re.findall(r'https?://[^\s)]+',citation)
-    url=urls[-1].rstrip('.')
+    url=urls[-1].rstrip('.,')
     if '“' in citation:
         authors,title_tail=citation.split('“',1)
         title,venue=title_tail.split('”',1)
