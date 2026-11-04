@@ -105,3 +105,7 @@ Next: add the RoboChart/PRISM, chemical-detector and patrol-robot showcases usin
 ## Portrait placement — 4 November 2026
 
 Moved the original portrait from beneath the mathematical illustration into the first identity block at the upper-left of the homepage hero, beside the name. It is now larger, eagerly loaded with high fetch priority, and remains before the biography and illustration in mobile/source order. Added compact sizing for narrow screens; removed the old signature styles and duplicate placement. Build, Astro check and built internal-link checks pass. Actual browser visual review remains pending.
+
+## Portrait clarification — 4 November 2026
+
+Moved the portrait into the far-left brand/home link on the first navigation row, replacing the RY monogram on every redesigned page. Removed the hero portrait and its placement-specific CSS. The sticky header keeps it visible; compact sizing retains space for mobile menu/theme controls. Build, Astro check and internal-link checks pass; browser visual review remains pending.

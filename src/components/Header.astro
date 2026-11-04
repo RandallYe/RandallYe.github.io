@@ -5,7 +5,7 @@ const current = Astro.url.pathname;
 ---
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="wordmark" href={local()} aria-label="Randall Ye — home"><span class="monogram" aria-hidden="true">RY<span>.</span></span><span>Randall Ye<small>Formal methods · Research & engineering</small></span></a>
+    <a class="wordmark" href={local()} aria-label="Randall Ye — home"><img class="header-portrait" src={local('pics/me.jpg')} alt="" width="3303" height="4722" loading="eager" fetchpriority="high" /><span>Randall Ye<small>Formal methods · Research & engineering</small></span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">☰</span></button>
     <nav id="main-nav" aria-label="Main navigation">
       {links.map(([path, label]) => <a href={local(path)} aria-current={(path ? current.startsWith(local(path)) : current === local()) ? 'page' : undefined}>{label}</a>)}

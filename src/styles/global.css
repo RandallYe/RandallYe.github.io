@@ -912,28 +912,16 @@ body {
   .feature::before { font-size: 15rem; bottom: -5rem; }
 }
 
-.hero-identity {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  margin-bottom: 1.2rem;
-}
-.hero-identity > div { min-width: 0; }
-.hero-identity .eyebrow { font-size: .6rem; line-height: 1.7; margin-bottom: .7rem; }
-.hero-identity h1 { font-size: clamp(2rem, 4.4vw, 3.8rem); margin: 0; }
-.hero-portrait {
+.header-portrait {
   flex-shrink: 0;
-  width: 120px;
-  height: 150px;
+  width: 48px;
+  height: 48px;
   object-fit: cover;
   object-position: center 25%;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  box-shadow: 5px 5px 0 var(--accent-light);
+  border-radius: 50%;
+  border: 2px solid var(--line);
 }
 @media(max-width:400px) {
-  .hero-identity { gap: 1rem; align-items: flex-start; }
-  .hero-portrait { width: 76px; height: 100px; }
-  .hero-identity h1 { font-size: 1.8rem; }
-  .hero-identity .eyebrow { font-size: .52rem; margin-bottom: .4rem; }
+  .wordmark { gap: .5rem; }
+  .header-portrait { width: 40px; height: 40px; }
 }
