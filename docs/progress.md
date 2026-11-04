@@ -55,3 +55,9 @@ Original exported HTML includes a local `file://` KaTeX stylesheet path. The arc
 Fixed Vite resolving extensionless `lib/paths` imports to `paths.mjs` instead of `paths.ts`, causing `local is not a function`. Renamed the Astro wrapper to `site-paths.ts` and updated every component/page import. The pure base-path helper and preservation tests are unchanged. Replaced the archive's Node filesystem import with a build-time raw HTML import, resolving missing Node type declarations.
 
 Using the user-installed Node 24.22.2 and dependencies: `npm run check` passes with zero errors/warnings; `npm test` passes; root and `/research-preview/` builds succeed; both built link checks report zero errors and one inherited legacy warning (`10.1109/CASE56687.2023.10260395` was a relative URL in the original homepage). Root build output is restored. These results supersede the earlier environment-blocked build/type/link status above. Browser and video verification remain outstanding.
+
+## Theme toggle — 4 November 2026
+
+Added a keyboard-accessible Dark toggle to the header on every redesigned page, including mobile. It sets dark/light CSS tokens, exposes pressed state and an action label, remembers the preference in localStorage, defaults to the system setting, and initialises before page paint. Storage failures do not prevent switching. Without JavaScript, CSS follows the system theme. The preserved original archive retains its original appearance.
+
+Validation: build, Astro check (zero diagnostics), existing tests and built link check pass, with the previously documented legacy warning unchanged. Five scripted DOM scenarios cover system preference, saved overrides, invalid storage values, unavailable storage, toggling, persistence and accessible state. Actual browser visual/keyboard review remains pending.

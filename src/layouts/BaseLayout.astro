@@ -14,6 +14,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <link rel="canonical" href={canonical} /><meta property="og:type" content="website" />
     <meta property="og:title" content={`${title} | Randall Ye`} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary" /><meta name="theme-color" content="#f6f8f7" />
+    <script is:inline>
+      (() => {
+        let saved = null;
+        try { saved = localStorage.getItem('research-theme'); } catch { /* Storage may be unavailable. */ }
+        const dark = saved === 'dark' || (saved !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#101b24' : '#f6f8f7');
+      })();
+    </script>
     <slot name="head" />
   </head>
   <body><a class="skip-link" href="#main">Skip to content</a><Header /><main id="main" class="shell" tabindex="-1"><slot /></main><Footer /></body>

@@ -10,9 +10,36 @@ const current = Astro.url.pathname;
     <nav id="main-nav" aria-label="Main navigation">
       {links.map(([path, label]) => <a href={local(path)} aria-current={(path ? current.startsWith(local(path)) : current === local()) ? 'page' : undefined}>{label}</a>)}
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Enable dark theme" aria-pressed="false" hidden>
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8" /><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor" stroke="none" /></svg>
+      <span>Dark</span>
+    </button>
   </div>
 </header>
 <script>
+  const themeToggle = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  const preference = window.matchMedia('(prefers-color-scheme: dark)');
+  const applyTheme = (dark: boolean) => {
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+    themeToggle?.setAttribute('aria-pressed', String(dark));
+    themeToggle?.setAttribute('aria-label', dark ? 'Disable dark theme' : 'Enable dark theme');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#101b24' : '#f6f8f7');
+  };
+  if (themeToggle) {
+    themeToggle.hidden = false;
+    applyTheme(document.documentElement.dataset.theme === 'dark');
+    themeToggle.addEventListener('click', () => {
+      const dark = document.documentElement.dataset.theme !== 'dark';
+      applyTheme(dark);
+      try { localStorage.setItem('research-theme', dark ? 'dark' : 'light'); } catch { /* Storage may be unavailable. */ }
+    });
+    preference.addEventListener('change', event => {
+      let saved: string | null = null;
+      try { saved = localStorage.getItem('research-theme'); } catch { /* Follow the system without storage. */ }
+      if (saved !== 'dark' && saved !== 'light') applyTheme(event.matches);
+    });
+  }
+
   const button = document.querySelector<HTMLButtonElement>('.menu-toggle');
   const nav = document.querySelector<HTMLElement>('#main-nav');
   if (button && nav) {
