@@ -1,6 +1,6 @@
 # Old-entry content merge map
 
-Destinations below are proposed unless already present. Canonical publication anchors and the probabilistic-relations showcase are now implemented; see `progress.md`. The analysis step itself migrated no content; the subsequent preservation manifest records assets now copied. GitHub is authoritative for current facts; historical resources retain their own dates and provenance.
+Destinations below are proposed unless already present. Canonical publication anchors and all four recovered research showcases are now implemented; see `progress.md`. The analysis step itself migrated no content; the subsequent preservation manifest records assets now copied. GitHub is authoritative for current facts; historical resources retain their own dates and provenance.
 
 | Archived page (relative to `old_entry/`) | Destination | Treatment |
 | --- | --- | --- |

@@ -9,6 +9,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 PREVIEWS = {'showcase/demonstration_of_probabilistic_relation/featured_hu7888d7cc804f4e8e895bb066cdd171ef_1109337_720x2500_fit_q75_h2_lanczos_3.webp'}
+PREVIEWS.update({'showcase/animation_of_autonomous_chemical_detector/Featured_hud9be3fd51e9ded56112bb3323c9633e2_1004789_720x2500_fit_q75_h2_lanczos_3.webp', 'showcase/animation_of_patrol_robot/Featured_hu022584ec861fb5fb603cb43189fc6f04_1083944_720x2500_fit_q75_h2_lanczos_3.webp', 'showcase/animation_of_patrol_robot/PatrolMod_hu38db1eb6168b86b42bf1b461bf10a67e_2104495_1200x1200_fit_q75_h2_lanczos_3.webp', 'showcase/probabilistic_verification_of_robochart_using_prism/featured_hub5a9c5ab00d6cfe3a815a9fd2a1eab28_1167549_720x2500_fit_q75_h2_lanczos_3.webp', 'showcase/animation_of_patrol_robot/Corridor_sections_hu9c767e2eb6e7fe0b4aefa2a101f579ca_248902_1200x1200_fit_q75_h2_lanczos_3.webp'})
 EXTENSIONS = {'.mp4', '.pdf', '.bib', '.csp', '.zip', '.png', '.jpg', '.jpeg', '.svg', '.webp'}
 
 

@@ -113,3 +113,13 @@ Moved the portrait into the far-left brand/home link on the first navigation row
 ## Preferred display name — 4 November 2026
 
 Updated the navigation identity/home label, document/social titles, archive redirect title and About introduction to the user-preferred “Kangfeng (Randall) Ye”. Footer and hero already use that name. Added mobile wrapping space for the longer navigation name beside the portrait and controls. Original publications, URLs and historical source files are unchanged. Build and internal-link checks pass; browser visual review remains pending.
+
+## Remaining three recovered research demos — 4 November 2026
+
+Implemented `/tools/robochart-prism/`, `/tools/robochart-chemical-detector/` and `/tools/robochart-patrol-robot/` using the original January 2023 descriptions and distinct preserved MP4s. Each page includes the source screenshot, documented workflow, scope/limitations, original model/case-study links, related publication anchors and available slides/posters. The patrol page renders its two original model/corridor diagrams; PRISM includes the mail-delivery model diagram. No invented quantitative results, traces or live execution controls.
+
+Added five audited lightweight preview/diagram derivatives (87 preserved resources total: 81 originals plus six selected derivatives). The generic demo template now renders image media with alt text and captions. Added three new-host legacy-route redirects and publication backlinks while keeping the existing bibliography at 20 canonical records. Conference and journal animation papers remain distinct. The Interaction Trees source-only card is represented by the recovered animation demos, keeping Home/Tools to four recorded walkthroughs plus the Circus source card; security remains the sole featured demo.
+
+Validation: Astro check has zero diagnostics; preservation and canonical-merge tests pass. Root and `/research-preview/` builds, link/fragment/poster/duplicate-ID checks and expanded four-demo output checks all pass. Output checks confirm distinct local videos, native controls, preload none, no autoplay, genuine posters and model images, correct publication links, exactly one card per recovered demo, and retention of the security fallback. Root output restored. Browser playback, visual/keyboard review and external historical branch availability remain pending; captions/transcripts were not supplied and are not invented.
+
+Phase 3B page implementation is complete; its browser acceptance remains open. Next planned content increment: migrate all seven authored blogs, with maths rendering and technical-review notes.

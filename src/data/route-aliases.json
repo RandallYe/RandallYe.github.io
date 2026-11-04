@@ -3,5 +3,20 @@
     "path": "showcase/demonstration_of_probabilistic_relation",
     "destination": "tools/probabilistic-relations/",
     "title": "Probabilistic-relations walkthrough"
+  },
+  {
+    "path": "showcase/probabilistic_verification_of_robochart_using_prism",
+    "destination": "tools/robochart-prism/",
+    "title": "Probabilistic verification of RoboChart using PRISM"
+  },
+  {
+    "path": "showcase/animation_of_autonomous_chemical_detector",
+    "destination": "tools/robochart-chemical-detector/",
+    "title": "Animation of an autonomous chemical detector"
+  },
+  {
+    "path": "showcase/animation_of_patrol_robot",
+    "destination": "tools/robochart-patrol-robot/",
+    "title": "Animation of a patrol robot model"
   }
 ]

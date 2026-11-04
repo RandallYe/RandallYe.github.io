@@ -30,3 +30,7 @@ The original exported homepage refers to a local file:// KaTeX stylesheet. The a
 - The preprint page `https://arxiv.org/abs/2303.09692` was inspected: it identifies the same authors and journal DOI as the current bibliography. It is attached as a version link, not another publication.
 - Original screenshot visually inspected. The MP4 and slides match audited hashes; header inspection is recorded separately. Playback, subtitles/captions and exact correspondence between each recorded proof and later paper results have not been asserted.
 - The original 2018 report BibTeX contains an invalid institution export field. Its raw download is preserved as historical data; it is not rendered as authoritative current metadata or counted as a new peer-reviewed paper.
+
+## RoboChart demos recovered from old_entry
+
+All three recordings have original showcase dates of 26 January 2023. Latest-site publication metadata remains authoritative: RoboChart/PRISM (2022), ICFEM animation (2022), and the later JLAMP animation paper (2024). The later journal paper is related research, not evidence that the earlier videos show every later result. Original deep links to the `robochart_nondeterminism_resolving` branch and RoboStar case-study pages are retained; their current external availability and actual video playback remain to be checked. No numerical PRISM results, universal correctness guarantees or physical-robot claims were added.

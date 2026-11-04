@@ -479,6 +479,19 @@
       "mediaPlayback": null
     },
     {
+      "path": "showcase/animation_of_autonomous_chemical_detector/Featured_hud9be3fd51e9ded56112bb3323c9633e2_1004789_720x2500_fit_q75_h2_lanczos_3.webp",
+      "bytes": 34788,
+      "sha256": "0c063d5822038a63ba7a2f2e317357cd3c7966d5381eff3a4f68d05932ee14b7",
+      "publicPath": "old_entry/showcase/animation_of_autonomous_chemical_detector/Featured_hud9be3fd51e9ded56112bb3323c9633e2_1004789_720x2500_fit_q75_h2_lanczos_3.webp",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_autonomous_chemical_detector/index.html",
+          "plannedDestination": "/tools/robochart-chemical-detector/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
       "path": "showcase/animation_of_patrol_robot/Animation_of_Patrol_Robot.mp4",
       "bytes": 15462605,
       "sha256": "4f0adadc1f60b6d5ccaa967720967ac41f7e53fb2535ac3cb5c88c39dc9129eb",
@@ -505,6 +518,19 @@
       "mediaPlayback": null
     },
     {
+      "path": "showcase/animation_of_patrol_robot/Corridor_sections_hu9c767e2eb6e7fe0b4aefa2a101f579ca_248902_1200x1200_fit_q75_h2_lanczos_3.webp",
+      "bytes": 6078,
+      "sha256": "2589bd9854d1c57e72d9b8d3f5c82e4f7a72c95389b9102d10c23145accba1cc",
+      "publicPath": "old_entry/showcase/animation_of_patrol_robot/Corridor_sections_hu9c767e2eb6e7fe0b4aefa2a101f579ca_248902_1200x1200_fit_q75_h2_lanczos_3.webp",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_patrol_robot/index.html",
+          "plannedDestination": "/tools/robochart-patrol-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
       "path": "showcase/animation_of_patrol_robot/Featured.png",
       "bytes": 1083944,
       "sha256": "249851d15ba0b710ad37b3bd990c2967c3eecccabdca223303a3b11412ffb87e",
@@ -518,10 +544,36 @@
       "mediaPlayback": null
     },
     {
+      "path": "showcase/animation_of_patrol_robot/Featured_hu022584ec861fb5fb603cb43189fc6f04_1083944_720x2500_fit_q75_h2_lanczos_3.webp",
+      "bytes": 34946,
+      "sha256": "e14aa1fcafafd0586cae732a9e92bdabe29ce60777d5812af6da881787e4c298",
+      "publicPath": "old_entry/showcase/animation_of_patrol_robot/Featured_hu022584ec861fb5fb603cb43189fc6f04_1083944_720x2500_fit_q75_h2_lanczos_3.webp",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_patrol_robot/index.html",
+          "plannedDestination": "/tools/robochart-patrol-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
       "path": "showcase/animation_of_patrol_robot/PatrolMod.png",
       "bytes": 2104495,
       "sha256": "d98e67fbafb8df1e0db5e224966cbf31422dab7b9a5af31d0fd6e689d29144cc",
       "publicPath": "old_entry/showcase/animation_of_patrol_robot/PatrolMod.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_patrol_robot/index.html",
+          "plannedDestination": "/tools/robochart-patrol-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/animation_of_patrol_robot/PatrolMod_hu38db1eb6168b86b42bf1b461bf10a67e_2104495_1200x1200_fit_q75_h2_lanczos_3.webp",
+      "bytes": 32444,
+      "sha256": "8b34f290fa2f9c58b587f461cde0b1221b3aa58eb8d12b4df5fca68f93663a5e",
+      "publicPath": "old_entry/showcase/animation_of_patrol_robot/PatrolMod_hu38db1eb6168b86b42bf1b461bf10a67e_2104495_1200x1200_fit_q75_h2_lanczos_3.webp",
       "consumers": [
         {
           "sourcePage": "showcase/animation_of_patrol_robot/index.html",
@@ -769,6 +821,19 @@
       "bytes": 1167549,
       "sha256": "fc9fba586ece3df586d2e8317cb934e45aa534bc37cb548d0e83ea1e7fe3a1f9",
       "publicPath": "old_entry/showcase/probabilistic_verification_of_robochart_using_prism/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/probabilistic_verification_of_robochart_using_prism/index.html",
+          "plannedDestination": "/tools/robochart-prism/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/probabilistic_verification_of_robochart_using_prism/featured_hub5a9c5ab00d6cfe3a815a9fd2a1eab28_1167549_720x2500_fit_q75_h2_lanczos_3.webp",
+      "bytes": 23488,
+      "sha256": "5b5bd012e8a34564a91aa8be33c8906e35cb5e53d6ffcc456ed137419801bdcf",
+      "publicPath": "old_entry/showcase/probabilistic_verification_of_robochart_using_prism/featured_hub5a9c5ab00d6cfe3a815a9fd2a1eab28_1167549_720x2500_fit_q75_h2_lanczos_3.webp",
       "consumers": [
         {
           "sourcePage": "showcase/probabilistic_verification_of_robochart_using_prism/index.html",

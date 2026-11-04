@@ -42,6 +42,10 @@
         "label": "Preprint version",
         "url": "https://arxiv.org/abs/2303.09106"
       }
+    ],
+    "relatedDemos": [
+      "robochart-chemical-detector",
+      "robochart-patrol-robot"
     ]
   },
   {
@@ -51,7 +55,10 @@
     "year": 2022,
     "url": "https://doi.org/10.1007/s10270-021-00916-8",
     "group": "Journal article",
-    "id": "robochart-prism"
+    "id": "robochart-prism",
+    "relatedDemos": [
+      "robochart-prism"
+    ]
   },
   {
     "title": "Automated Verification of Reactive and Concurrent Programs by Calculation",
@@ -149,6 +156,9 @@
         "label": "Archived BibTeX",
         "url": "/old_entry/publication/ye-2022/cite.bib"
       }
+    ],
+    "relatedDemos": [
+      "robochart-chemical-detector"
     ]
   },
   {
