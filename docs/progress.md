@@ -61,3 +61,9 @@ Using the user-installed Node 24.22.2 and dependencies: `npm run check` passes w
 Added a keyboard-accessible Dark toggle to the header on every redesigned page, including mobile. It sets dark/light CSS tokens, exposes pressed state and an action label, remembers the preference in localStorage, defaults to the system setting, and initialises before page paint. Storage failures do not prevent switching. Without JavaScript, CSS follows the system theme. The preserved original archive retains its original appearance.
 
 Validation: build, Astro check (zero diagnostics), existing tests and built link check pass, with the previously documented legacy warning unchanged. Five scripted DOM scenarios cover system preference, saved overrides, invalid storage values, unavailable storage, toggling, persistence and accessible state. Actual browser visual/keyboard review remains pending.
+
+## About career timeline — 4 November 2026
+
+Replaced the Background prose with a reusable CareerTimeline component covering the four source-documented periods: IOHK from November 2025, York research (2016–2025), York PhD (2012–2016), and embedded engineering/team leadership (2004–2012). The newest-first timeline uses semantic list/time elements, an explicit current-role marker and existing IOHK/thesis links. Mobile stacks dates above descriptions; colours follow the light/dark tokens. CV and contact links remain intact. No additional JavaScript or dependencies.
+
+Validation: Astro check reports zero diagnostics; static build and internal link checks pass, with the existing archive warning unchanged. Browser visual review remains outstanding.
