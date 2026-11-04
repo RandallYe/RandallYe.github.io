@@ -1,0 +1,1063 @@
+{
+  "source": "old_entry",
+  "audit": "docs/old-entry-inventory.json",
+  "files": [
+    {
+      "path": "files/PoS2019/frog-0.csp",
+      "bytes": 2802,
+      "sha256": "e17b684ee47bb4eaa41cbc0ae9fe197776fa894f302a8d26199ef6492cd5f5e3",
+      "publicPath": "old_entry/files/PoS2019/frog-0.csp",
+      "consumers": [
+        {
+          "sourcePage": "talk/pintofscience2019/index.html",
+          "plannedDestination": "/talks/#pintofscience2019"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "files/PoS2019/frog-1.csp",
+      "bytes": 3375,
+      "sha256": "c93cc31cdbcc126178299e480ba210486004a9013ae8f7badca50da8bde37c68",
+      "publicPath": "old_entry/files/PoS2019/frog-1.csp",
+      "consumers": [
+        {
+          "sourcePage": "talk/pintofscience2019/index.html",
+          "plannedDestination": "/talks/#pintofscience2019"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "files/PoS2019/frog-2.csp",
+      "bytes": 4961,
+      "sha256": "c8751f7e82d0a2e746bf4313bd8fa3ea41317711e141f047f7a8e764bccf3b11",
+      "publicPath": "old_entry/files/PoS2019/frog-2.csp",
+      "consumers": [
+        {
+          "sourcePage": "talk/pintofscience2019/index.html",
+          "plannedDestination": "/talks/#pintofscience2019"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "files/PoS2019/frog-3.csp",
+      "bytes": 5351,
+      "sha256": "c581d7440d76ad6adb6d0fe9dfe250f7395c326d3d9f1788e9c496a49d9cda32",
+      "publicPath": "old_entry/files/PoS2019/frog-3.csp",
+      "consumers": [
+        {
+          "sourcePage": "talk/pintofscience2019/index.html",
+          "plannedDestination": "/talks/#pintofscience2019"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "files/PoS2019/frog-4.csp",
+      "bytes": 5455,
+      "sha256": "1f2218f7c56f39de1f99e0f2dfc09608a8e14b4cdaf47b8c215473ca4174c074",
+      "publicPath": "old_entry/files/PoS2019/frog-4.csp",
+      "consumers": [
+        {
+          "sourcePage": "talk/pintofscience2019/index.html",
+          "plannedDestination": "/talks/#pintofscience2019"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "files/lfr/my_lfr_gcc_20180807.zip",
+      "bytes": 3232743,
+      "sha256": "4671e5a731191740e42706ad775909b169241dd7fd0e090d8fc3a867dadf00ed",
+      "publicPath": "old_entry/files/lfr/my_lfr_gcc_20180807.zip",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "news/2022_sosym-first-paper-award/featured.pdf",
+      "bytes": 205708,
+      "sha256": "a07ea04cf9850d50197a4845635b5ec69e0721b6536473d5f2ae9e943ddd91c1",
+      "publicPath": "old_entry/news/2022_sosym-first-paper-award/featured.pdf",
+      "consumers": [
+        {
+          "sourcePage": "news/2022_sosym-first-paper-award/index.html",
+          "plannedDestination": "/news/#2022-sosym-first-paper-award"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "news/2022_sosym-first-paper-award/featured.png",
+      "bytes": 927963,
+      "sha256": "3d4539edd555d098e1b720366f2a9078469aaef076e2fa827b5ac63bed04c466",
+      "publicPath": "old_entry/news/2022_sosym-first-paper-award/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "news/2022_sosym-first-paper-award/index.html",
+          "plannedDestination": "/news/#2022-sosym-first-paper-award"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "post/steady_state_probabilities/summary-steady-state_prob.png",
+      "bytes": 417559,
+      "sha256": "c19cbd669b629a948a781511d234653184b053259b31a32d0a7bf9253b42112a",
+      "publicPath": "old_entry/post/steady_state_probabilities/summary-steady-state_prob.png",
+      "consumers": [
+        {
+          "sourcePage": "post/steady_state_probabilities/index.html",
+          "plannedDestination": "/posts/steady-state-probabilities/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "post/steady_state_probabilities/two-states.png",
+      "bytes": 6057,
+      "sha256": "9b3c02c2d13e082b11467f1badb35a8b26346a2f01931dc99c40ac4dcf541f6b",
+      "publicPath": "old_entry/post/steady_state_probabilities/two-states.png",
+      "consumers": [
+        {
+          "sourcePage": "post/steady_state_probabilities/index.html",
+          "plannedDestination": "/posts/steady-state-probabilities/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "post/temporal-logic/temporal-logic.png",
+      "bytes": 1610337,
+      "sha256": "4db40cf53dbd2e53b73a8dae9cc22df265c9e95ab43291fbf5360cbfae1d6599",
+      "publicPath": "old_entry/post/temporal-logic/temporal-logic.png",
+      "consumers": [
+        {
+          "sourcePage": "post/temporal-logic/index.html",
+          "plannedDestination": "/posts/temporal-logic/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "project/cyphyassure/featured.png",
+      "bytes": 1167866,
+      "sha256": "6b5d32e033c7476445d7075ab66b4abbe7738369a1181fa7d7b043953e077512",
+      "publicPath": "old_entry/project/cyphyassure/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "project/cyphyassure/index.html",
+          "plannedDestination": "/research/projects/cyphyassure/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "project/into-csp/featured.png",
+      "bytes": 33222,
+      "sha256": "fb0a42159f2dcdf2ba83dcf7f084598684f3443f0eca2ec2c74ec086a25331b6",
+      "publicPath": "old_entry/project/into-csp/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "project/into-csp/index.html",
+          "plannedDestination": "/research/projects/into-cps/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "project/robocalc/featured.jpg",
+      "bytes": 549840,
+      "sha256": "ba572405e213042cca1125efe64cc1d8bd8362f3cae8de1436418cfddda33e8e",
+      "publicPath": "old_entry/project/robocalc/featured.jpg",
+      "consumers": [
+        {
+          "sourcePage": "project/robocalc/index.html",
+          "plannedDestination": "/research/projects/robocalc/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "project/robotest/featured.png",
+      "bytes": 155439,
+      "sha256": "bc238c349b5f2e30e7528a3ad360e7a40853e39094bf42d01307f370bea93e53",
+      "publicPath": "old_entry/project/robotest/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "project/robotest/index.html",
+          "plannedDestination": "/research/projects/robotest/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "project/sesame/featured.jpg",
+      "bytes": 93253,
+      "sha256": "651e2d116e60028a921f10fdab1c844703ca36bb80dab51257d306bdfcc632b0",
+      "publicPath": "old_entry/project/sesame/featured.jpg",
+      "consumers": [
+        {
+          "sourcePage": "project/sesame/index.html",
+          "plannedDestination": "/research/projects/sesame/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "project/vetss/featured.png",
+      "bytes": 115731,
+      "sha256": "b1b1197b9bf6ec879a4e28960a89251dc968f4f7c5b5d8729aa1ef8e2118e7c9",
+      "publicPath": "old_entry/project/vetss/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "project/vetss/index.html",
+          "plannedDestination": "/research/projects/vetss/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "project/vetss/vetss_isabelle.png",
+      "bytes": 1079126,
+      "sha256": "5fb0dda0967321da1b45ba2ac0c034763379bba68fa5afcf8775dd87660abbc8",
+      "publicPath": "old_entry/project/vetss/vetss_isabelle.png",
+      "consumers": [
+        {
+          "sourcePage": "project/vetss/index.html",
+          "plannedDestination": "/research/projects/vetss/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/10260395/cite.bib",
+      "bytes": 458,
+      "sha256": "ecfe4994fbcedee0ba25959b9d5989d7a44251231d3f3c2cbcbb82c2df2faf8f",
+      "publicPath": "old_entry/publication/10260395/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/10260395/index.html",
+          "plannedDestination": "/publications/#agriculture-robot-light-treatment"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/foster-2018/foster-2018.bib",
+      "bytes": 1321,
+      "sha256": "d23b8dd5df46d6d737ac563fbf962be0017fe001fd73354aaab94721617f2fb3",
+      "publicPath": "old_entry/publication/foster-2018/foster-2018.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/foster-2018/index.html",
+          "plannedDestination": "/publications/#reactive-relations-2018"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/foster-2018-a/foster-2018-a.bib",
+      "bytes": 544,
+      "sha256": "a859fc6a1f6ab2ff38a65a6b90b59b2460b38520305cc1ff6b3c009b66e74d8d",
+      "publicPath": "old_entry/publication/foster-2018-a/foster-2018-a.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/foster-2018-a/index.html",
+          "plannedDestination": "/publications/#reactive-relations-2018"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/foster-2020-a/foster-2020-a.bib",
+      "bytes": 614,
+      "sha256": "35db127cadc196c7a3916ba3b2c252d6e7023eac8eb22bb57294d36c049cc707",
+      "publicPath": "old_entry/publication/foster-2020-a/foster-2020-a.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/foster-2020-a/index.html",
+          "plannedDestination": "/publications/#reactive-programs-calculation"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/foster-2021100681/cite.bib",
+      "bytes": 1528,
+      "sha256": "501f297869bfd34f0924c5856a5f2199e38cd6be458e8a04b15047bb9c3e0fb5",
+      "publicPath": "old_entry/publication/foster-2021100681/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/foster-2021100681/index.html",
+          "plannedDestination": "/publications/#reactive-programs-calculation"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/jim-2019/jim-2019.bib",
+      "bytes": 745,
+      "sha256": "3550c2641bb14c1dbaf0e19be674cee40e9690d1841581b5e0eaa57e40bb97db",
+      "publicPath": "old_entry/publication/jim-2019/jim-2019.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/jim-2019/index.html",
+          "plannedDestination": "/publications/#probabilistic-semantics-robochart"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/woodcock-2021/cite.bib",
+      "bytes": 1394,
+      "sha256": "05ca44117cce6300ef1ab7762b37db18c3ae8a85187499236f54e1a841339f7d",
+      "publicPath": "old_entry/publication/woodcock-2021/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/woodcock-2021/index.html",
+          "plannedDestination": "/publications/#robostar-uncertainty"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2016/ye-2016.bib",
+      "bytes": 442,
+      "sha256": "ee063ca1ae13a00e59ba675c07c9aa92326eb4c16fdf6d531f25f4e235bdb433",
+      "publicPath": "old_entry/publication/ye-2016/ye-2016.bib",
+      "consumers": [],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2017/ye-2017.bib",
+      "bytes": 1805,
+      "sha256": "b02662aa745f6793386b2599ae19db1691d56905b6d90ebd73859c8c1a2470dd",
+      "publicPath": "old_entry/publication/ye-2017/ye-2017.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2017/index.html",
+          "plannedDestination": "/publications/#circus-model-checking"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2018/ye-2018.bib",
+      "bytes": 1224,
+      "sha256": "2a86740da6ef7819b3005fa4810d630dc1b0853eb92b0a57fc0edd75f40ba7b6",
+      "publicPath": "old_entry/publication/ye-2018/ye-2018.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2018/index.html",
+          "plannedDestination": "/publications/#control-law-diagrams-technical-report"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2020/ye-2020.bib",
+      "bytes": 1411,
+      "sha256": "61fe24979ef2c946f4f13fa28729277ba7aad3cfe933fdeba7e5ccb6ff8c9974",
+      "publicPath": "old_entry/publication/ye-2020/ye-2020.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2020/index.html",
+          "plannedDestination": "/publications/#control-law-diagrams"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2021-a/cite.bib",
+      "bytes": 1737,
+      "sha256": "67a67814fe4351604c3243b3ff60619adf7bc56b10569a4327ea8efbe97f4b98",
+      "publicPath": "old_entry/publication/ye-2021-a/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2021-a/index.html",
+          "plannedDestination": "/publications/#probabilistic-sequential-programs"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2022/cite.bib",
+      "bytes": 1467,
+      "sha256": "02c591bf3cd6dd5e3f1b2632f563c9824b30b3fbefabbeb35d8cb0baec395c6d",
+      "publicPath": "old_entry/publication/ye-2022/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2022/index.html",
+          "plannedDestination": "/publications/#robochart-animation-icfem"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2023-formally/cite.bib",
+      "bytes": 252,
+      "sha256": "f82bfad046e2a3c3b3f368b09dce9e81a06ebfa14d238b332d398024eac17c91",
+      "publicPath": "old_entry/publication/ye-2023-formally/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2023-formally/index.html",
+          "plannedDestination": "/publications/#robochart-animation-jlamp"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2023-probabilistic/cite.bib",
+      "bytes": 321,
+      "sha256": "003534183a1961110db3ea01779c31c66dcd4dd8e2af5fec4e80001d686b0303",
+      "publicPath": "old_entry/publication/ye-2023-probabilistic/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2023-probabilistic/index.html",
+          "plannedDestination": "/publications/#proburel"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2024-quantitative/cite.bib",
+      "bytes": 264,
+      "sha256": "d06fba0b81413d0def94f68a809b975b7d17283281501f2295172dbf89f058a7",
+      "publicPath": "old_entry/publication/ye-2024-quantitative/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2024-quantitative/index.html",
+          "plannedDestination": "/publications/#quantitative-activity-diagrams"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "publication/ye-2024100940/cite.bib",
+      "bytes": 2061,
+      "sha256": "26e36d3135b8e0c8b7a7f0c659a0d44fe0fbfd870ece5f7e26174ff1959655c6",
+      "publicPath": "old_entry/publication/ye-2024100940/cite.bib",
+      "consumers": [
+        {
+          "sourcePage": "publication/ye-2024100940/index.html",
+          "plannedDestination": "/publications/#robochart-animation-jlamp"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/animation_of_autonomous_chemical_detector/Animation_of_Chemical_Detector.mp4",
+      "bytes": 9546874,
+      "sha256": "2bdab13c0778c25c090315d7208536bcf1fb4f5080bbd39f8b8332ecf14d2a4d",
+      "publicPath": "old_entry/showcase/animation_of_autonomous_chemical_detector/Animation_of_Chemical_Detector.mp4",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_autonomous_chemical_detector/index.html",
+          "plannedDestination": "/tools/robochart-chemical-detector/"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "showcase/animation_of_autonomous_chemical_detector/Featured.png",
+      "bytes": 1004789,
+      "sha256": "64ff9d62607780b1be72a3bcce63dd57f9d906ce477d34517daf0223013b0906",
+      "publicPath": "old_entry/showcase/animation_of_autonomous_chemical_detector/Featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_autonomous_chemical_detector/index.html",
+          "plannedDestination": "/tools/robochart-chemical-detector/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/animation_of_patrol_robot/Animation_of_Patrol_Robot.mp4",
+      "bytes": 15462605,
+      "sha256": "4f0adadc1f60b6d5ccaa967720967ac41f7e53fb2535ac3cb5c88c39dc9129eb",
+      "publicPath": "old_entry/showcase/animation_of_patrol_robot/Animation_of_Patrol_Robot.mp4",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_patrol_robot/index.html",
+          "plannedDestination": "/tools/robochart-patrol-robot/"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "showcase/animation_of_patrol_robot/Corridor_sections.png",
+      "bytes": 248902,
+      "sha256": "63251e4f6f127173edf27d5cf45b17335625d5665990153494ccda30388a50c3",
+      "publicPath": "old_entry/showcase/animation_of_patrol_robot/Corridor_sections.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_patrol_robot/index.html",
+          "plannedDestination": "/tools/robochart-patrol-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/animation_of_patrol_robot/Featured.png",
+      "bytes": 1083944,
+      "sha256": "249851d15ba0b710ad37b3bd990c2967c3eecccabdca223303a3b11412ffb87e",
+      "publicPath": "old_entry/showcase/animation_of_patrol_robot/Featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_patrol_robot/index.html",
+          "plannedDestination": "/tools/robochart-patrol-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/animation_of_patrol_robot/PatrolMod.png",
+      "bytes": 2104495,
+      "sha256": "d98e67fbafb8df1e0db5e224966cbf31422dab7b9a5af31d0fd6e689d29144cc",
+      "publicPath": "old_entry/showcase/animation_of_patrol_robot/PatrolMod.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/animation_of_patrol_robot/index.html",
+          "plannedDestination": "/tools/robochart-patrol-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/demonstration_of_probabilistic_relation/Demonstration_of_probabilistic_relations.mp4",
+      "bytes": 36155429,
+      "sha256": "0458a81e843412d012a548175bacf1c160c0208a878ab8cee38013cc4cc17bef",
+      "publicPath": "old_entry/showcase/demonstration_of_probabilistic_relation/Demonstration_of_probabilistic_relations.mp4",
+      "consumers": [
+        {
+          "sourcePage": "showcase/demonstration_of_probabilistic_relation/index.html",
+          "plannedDestination": "/tools/probabilistic-relations/"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "showcase/demonstration_of_probabilistic_relation/featured.png",
+      "bytes": 1109337,
+      "sha256": "fe1c138de4673e79f17d509b6cb2ffb77ae874c769fafdf8ef8915f1f95f675d",
+      "publicPath": "old_entry/showcase/demonstration_of_probabilistic_relation/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/demonstration_of_probabilistic_relation/index.html",
+          "plannedDestination": "/tools/probabilistic-relations/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/demonstration_of_probabilistic_relation/featured_hu7888d7cc804f4e8e895bb066cdd171ef_1109337_720x2500_fit_q75_h2_lanczos_3.webp",
+      "bytes": 38608,
+      "sha256": "25d54b458fadef6bb0238c9b2417f947dcdaf5d4946b09d92ab533abe2386dd4",
+      "publicPath": "old_entry/showcase/demonstration_of_probabilistic_relation/featured_hu7888d7cc804f4e8e895bb066cdd171ef_1109337_720x2500_fit_q75_h2_lanczos_3.webp",
+      "consumers": [
+        {
+          "sourcePage": "showcase/demonstration_of_probabilistic_relation/index.html",
+          "plannedDestination": "/tools/probabilistic-relations/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/engineer_lfr/featured.png",
+      "bytes": 167208,
+      "sha256": "e93fe0e1a5e7ec850d72ae90426cd1c56f01a8b2598a20bf22f543ea5908104c",
+      "publicPath": "old_entry/showcase/engineer_lfr/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/engineer_lfr/lfr_demo_sharp_corner.mp4",
+      "bytes": 13534819,
+      "sha256": "eacde7723b7c9a26b042919455c823c015ca646177d51ec9eec77b3d959a73bb",
+      "publicPath": "old_entry/showcase/engineer_lfr/lfr_demo_sharp_corner.mp4",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "showcase/engineer_lfr/lfr_dse_result.png",
+      "bytes": 2481568,
+      "sha256": "0d2b642321e920f99306d36ee00d3cf583beee4f1f49950932016e1db002e479",
+      "publicPath": "old_entry/showcase/engineer_lfr/lfr_dse_result.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/engineer_lfr/lfr_map1.mp4",
+      "bytes": 14102964,
+      "sha256": "3f55a88c24667c7a0574b7f92a2cd949c8be03af32040cb04ae76af176ef8fd1",
+      "publicPath": "old_entry/showcase/engineer_lfr/lfr_map1.mp4",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "showcase/engineer_lfr/lfr_map1_sim.mp4",
+      "bytes": 17550817,
+      "sha256": "1e89b6236ca1ce4a5e4d84fd7a75bd2480dcb37286306139aa6b16057b4876dc",
+      "publicPath": "old_entry/showcase/engineer_lfr/lfr_map1_sim.mp4",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "showcase/engineer_lfr/lfr_math_model.jpg",
+      "bytes": 2121722,
+      "sha256": "06547b512811b0fc08e5dc6fb0b4cc925bf68caf41cc695dd84615abdbf60e0a",
+      "publicPath": "old_entry/showcase/engineer_lfr/lfr_math_model.jpg",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/engineer_lfr/m3pi.png",
+      "bytes": 183585,
+      "sha256": "942af8c42f2f431997761f34b3129a3ef831d16306e8d9b21a3ec5ebc1cf56a5",
+      "publicPath": "old_entry/showcase/engineer_lfr/m3pi.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/poster_animation_robochart_interaction_trees/Poster_Animation_RoboChart_Interaction_Trees.pdf",
+      "bytes": 876600,
+      "sha256": "bd5aecbbef5591b843e31f508269e09d48dbb054a46afa46e1b6de29d9669645",
+      "publicPath": "old_entry/showcase/poster_animation_robochart_interaction_trees/Poster_Animation_RoboChart_Interaction_Trees.pdf",
+      "consumers": [
+        {
+          "sourcePage": "showcase/poster_animation_robochart_interaction_trees/index.html",
+          "plannedDestination": "/research/#robochart-animation-posters"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/poster_animation_robochart_interaction_trees/featured.png",
+      "bytes": 1631223,
+      "sha256": "8446620750c97d375dc896fc55cd81dd061a8110def788ea348b6e6f1517fc85",
+      "publicPath": "old_entry/showcase/poster_animation_robochart_interaction_trees/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/poster_animation_robochart_interaction_trees/index.html",
+          "plannedDestination": "/research/#robochart-animation-posters"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/poster_probabilistic_modelling_and_verificaton/Poster_Probabilistic_Modelling_and_Verificaton.pdf",
+      "bytes": 1073492,
+      "sha256": "1ed0a02df3be6bc261a96aed1b21b7eb1310c184143517d102a7b86aba84a299",
+      "publicPath": "old_entry/showcase/poster_probabilistic_modelling_and_verificaton/Poster_Probabilistic_Modelling_and_Verificaton.pdf",
+      "consumers": [
+        {
+          "sourcePage": "showcase/poster_probabilistic_modelling_and_verificaton/index.html",
+          "plannedDestination": "/research/#probabilistic-modelling-posters"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/poster_probabilistic_modelling_and_verificaton/featured.png",
+      "bytes": 2439429,
+      "sha256": "d1c26df40f8300a0b3f6f7b6b6d91f91976f679b30437581296936ee8a4705b4",
+      "publicPath": "old_entry/showcase/poster_probabilistic_modelling_and_verificaton/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/poster_probabilistic_modelling_and_verificaton/index.html",
+          "plannedDestination": "/research/#probabilistic-modelling-posters"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/poster_robostar_industry_exhibition_202210/Poster_RoboStar_industry_exhibition_202210.pdf",
+      "bytes": 2505067,
+      "sha256": "610b5f8a3ac33cf861ffbc08498f99dbeaa714548d35e22b4222b35c7a5ccab6",
+      "publicPath": "old_entry/showcase/poster_robostar_industry_exhibition_202210/Poster_RoboStar_industry_exhibition_202210.pdf",
+      "consumers": [
+        {
+          "sourcePage": "showcase/poster_robostar_industry_exhibition_202210/index.html",
+          "plannedDestination": "/research/#probabilistic-modelling-posters"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/poster_robostar_industry_exhibition_202210/featured.png",
+      "bytes": 30120906,
+      "sha256": "92e665485c4b1debdc1c069ce535256716115e6631279c95c9ec20f3ce12dd76",
+      "publicPath": "old_entry/showcase/poster_robostar_industry_exhibition_202210/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/poster_robostar_industry_exhibition_202210/index.html",
+          "plannedDestination": "/research/#probabilistic-modelling-posters"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/probabilistic_verification_of_robochart_using_prism/DeliveryRobotModule.png",
+      "bytes": 1167549,
+      "sha256": "fc9fba586ece3df586d2e8317cb934e45aa534bc37cb548d0e83ea1e7fe3a1f9",
+      "publicPath": "old_entry/showcase/probabilistic_verification_of_robochart_using_prism/DeliveryRobotModule.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/probabilistic_verification_of_robochart_using_prism/index.html",
+          "plannedDestination": "/tools/robochart-prism/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/probabilistic_verification_of_robochart_using_prism/Verification_of_Mail_Delivery_Robot.mp4",
+      "bytes": 26400647,
+      "sha256": "8d3e48fbdd8e660acc52e779fee1ce345c831ac96958e932a93e8e07fa604f94",
+      "publicPath": "old_entry/showcase/probabilistic_verification_of_robochart_using_prism/Verification_of_Mail_Delivery_Robot.mp4",
+      "consumers": [
+        {
+          "sourcePage": "showcase/probabilistic_verification_of_robochart_using_prism/index.html",
+          "plannedDestination": "/tools/robochart-prism/"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "showcase/probabilistic_verification_of_robochart_using_prism/featured.png",
+      "bytes": 1167549,
+      "sha256": "fc9fba586ece3df586d2e8317cb934e45aa534bc37cb548d0e83ea1e7fe3a1f9",
+      "publicPath": "old_entry/showcase/probabilistic_verification_of_robochart_using_prism/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/probabilistic_verification_of_robochart_using_prism/index.html",
+          "plannedDestination": "/tools/robochart-prism/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/20221011_robostar_industry_exhibition/20221011_robostar_industry_exhibition.pdf",
+      "bytes": 1449877,
+      "sha256": "190f2d8293673d8002b1719bdac233999223d4898b5b69c284e8c95d4bfc8998",
+      "publicPath": "old_entry/talk/20221011_robostar_industry_exhibition/20221011_robostar_industry_exhibition.pdf",
+      "consumers": [
+        {
+          "sourcePage": "talk/20221011_robostar_industry_exhibition/index.html",
+          "plannedDestination": "/talks/#20221011-robostar-industry-exhibition"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/20221011_robostar_industry_exhibition/featured.png",
+      "bytes": 989968,
+      "sha256": "294c9d105733e71c57241203bb1ef6b8d94e00025d411de46ca1f7c7d8346122",
+      "publicPath": "old_entry/talk/20221011_robostar_industry_exhibition/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/20221011_robostar_industry_exhibition/index.html",
+          "plannedDestination": "/talks/#20221011-robostar-industry-exhibition"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/20221026_icfem_2022/20221026_ICFEM_2022.pdf",
+      "bytes": 4978774,
+      "sha256": "e004a1ac55757ad6739e04be8b2e24732f8e4cdc478f720997c97a92c1f176a8",
+      "publicPath": "old_entry/talk/20221026_icfem_2022/20221026_ICFEM_2022.pdf",
+      "consumers": [
+        {
+          "sourcePage": "talk/20221026_icfem_2022/index.html",
+          "plannedDestination": "/talks/#icfem-2022"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/20221026_icfem_2022/Animation_Movement.mp4",
+      "bytes": 4953094,
+      "sha256": "3d9e9fd2881e0796d67dcecf3cd9d0e3a7a16f5db956a60be4f568494a9e3566",
+      "publicPath": "old_entry/talk/20221026_icfem_2022/Animation_Movement.mp4",
+      "consumers": [
+        {
+          "sourcePage": "talk/20221026_icfem_2022/index.html",
+          "plannedDestination": "/talks/#icfem-2022"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "talk/20221027_models_2022/20221027_MODELS_2022.pdf",
+      "bytes": 2608441,
+      "sha256": "cee841823cd25f4aa153639838cde99c99920e663465002ef810fc9672c1e718",
+      "publicPath": "old_entry/talk/20221027_models_2022/20221027_MODELS_2022.pdf",
+      "consumers": [
+        {
+          "sourcePage": "talk/20221027_models_2022/index.html",
+          "plannedDestination": "/talks/#models-2022"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/20221027_models_2022/MODELS-2022_JF1_recording_Probabilistic-modelling-and-verification-using-RoboChart-and-PRISM_KangfengYe.mp4",
+      "bytes": 45240738,
+      "sha256": "937d223f7ec49d32bd1f8de572e766f23a701c4d42c2edc2df4aba9f2ae97074",
+      "publicPath": "old_entry/talk/20221027_models_2022/MODELS-2022_JF1_recording_Probabilistic-modelling-and-verification-using-RoboChart-and-PRISM_KangfengYe.mp4",
+      "consumers": [
+        {
+          "sourcePage": "talk/20221027_models_2022/index.html",
+          "plannedDestination": "/talks/#models-2022"
+        }
+      ],
+      "mediaPlayback": "not-checked"
+    },
+    {
+      "path": "talk/nsfc-rs_isabelle_utp_tutorial/featured.png",
+      "bytes": 652620,
+      "sha256": "22a42e3701a4b9fe5384cda3ea8d9d6935298f771fa2f5e0ae71a99dd24cb3b8",
+      "publicPath": "old_entry/talk/nsfc-rs_isabelle_utp_tutorial/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/nsfc-rs_isabelle_utp_tutorial/index.html",
+          "plannedDestination": "/talks/#nsfc-rs-isabelle-utp-tutorial"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/pintofscience2019/featured.png",
+      "bytes": 2114907,
+      "sha256": "06345ea6e784054c76e868618cdd6dd4d1a8f0ffa16a6ba725d7046607f774dd",
+      "publicPath": "old_entry/talk/pintofscience2019/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/pintofscience2019/index.html",
+          "plannedDestination": "/talks/#pintofscience2019"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/ramics2021/featured.png",
+      "bytes": 1707419,
+      "sha256": "2e5d1f41469d1f4a29c6acd295373d043ec2442735a11b5a912fc3705622e487",
+      "publicPath": "old_entry/talk/ramics2021/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/ramics2021/index.html",
+          "plannedDestination": "/talks/#ramics-2021"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/ramics2021/ramics2021.pdf",
+      "bytes": 438443,
+      "sha256": "352e6c77700b867412d2bef7097ce23366862beda5ec586a18044adbe3a6ca3c",
+      "publicPath": "old_entry/talk/ramics2021/ramics2021.pdf",
+      "consumers": [
+        {
+          "sourcePage": "talk/ramics2021/index.html",
+          "plannedDestination": "/talks/#ramics-2021"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/ramics2021_rehearsal/featured.png",
+      "bytes": 1707419,
+      "sha256": "2e5d1f41469d1f4a29c6acd295373d043ec2442735a11b5a912fc3705622e487",
+      "publicPath": "old_entry/talk/ramics2021_rehearsal/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/ramics2021_rehearsal/index.html",
+          "plannedDestination": "/talks/#ramics-2021"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/robostar_seminar/featured.png",
+      "bytes": 557402,
+      "sha256": "1a8dc2fb9575e4dddd8fe79878f991a600abc5b86a88e6e0159d82d0a3e62f85",
+      "publicPath": "old_entry/talk/robostar_seminar/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/robostar_seminar/index.html",
+          "plannedDestination": "/talks/#robostar-seminar"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/robostar_seminar_2021/featured.png",
+      "bytes": 1167866,
+      "sha256": "6b5d32e033c7476445d7075ab66b4abbe7738369a1181fa7d7b043953e077512",
+      "publicPath": "old_entry/talk/robostar_seminar_2021/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/robostar_seminar_2021/index.html",
+          "plannedDestination": "/talks/#robostar-seminar-2021"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/robostar_seminar_20221005/featured.png",
+      "bytes": 133920,
+      "sha256": "3a05d79d1e4f7e7ea70edf58b9052e660713a4983bedcb87f60bc8cd56d5dc67",
+      "publicPath": "old_entry/talk/robostar_seminar_20221005/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/robostar_seminar_20221005/index.html",
+          "plannedDestination": "/talks/#models-2022"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/robostar_seminar_20221119/featured.png",
+      "bytes": 2863483,
+      "sha256": "4f252e63df5e847ccfda7f3aaa14781a30052809488a8b55c0614dffc0be13ea",
+      "publicPath": "old_entry/talk/robostar_seminar_20221119/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/robostar_seminar_20221119/index.html",
+          "plannedDestination": "/talks/#icfem-2022"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/robostar_seminar_20230628_probabilistic_relations/featured.png",
+      "bytes": 170264,
+      "sha256": "0f7db45bd27b34f460f12abbbb6677fb0bb750f8b5ca834c631f304ec3a90170",
+      "publicPath": "old_entry/talk/robostar_seminar_20230628_probabilistic_relations/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/robostar_seminar_20230628_probabilistic_relations/index.html",
+          "plannedDestination": "/talks/#robostar-seminar-20230628-probabilistic-relations"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/robostar_seminar_20230628_probabilistic_relations/robostar_seminar_20230628_probabilistic_relations.pdf",
+      "bytes": 1193653,
+      "sha256": "46e62f2dc07aa9f2ca0e6fc2f16a3737bd745c46666a785e803e3297092b4855",
+      "publicPath": "old_entry/talk/robostar_seminar_20230628_probabilistic_relations/robostar_seminar_20230628_probabilistic_relations.pdf",
+      "consumers": [
+        {
+          "sourcePage": "talk/robostar_seminar_20230628_probabilistic_relations/index.html",
+          "plannedDestination": "/talks/#robostar-seminar-20230628-probabilistic-relations"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/vetss_ag_swu_visit/featured.png",
+      "bytes": 1079126,
+      "sha256": "5fb0dda0967321da1b45ba2ac0c034763379bba68fa5afcf8775dd87660abbc8",
+      "publicPath": "old_entry/talk/vetss_ag_swu_visit/featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/vetss_ag_swu_visit/index.html",
+          "plannedDestination": "/talks/#vetss-ag-swu-visit"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/vetss_ag_swu_visit/vetss_simulink.pdf",
+      "bytes": 1671270,
+      "sha256": "33ee6e983b68f498dde556f54464fc3224bf943e1ac13dbad2d99c0484403ca1",
+      "publicPath": "old_entry/talk/vetss_ag_swu_visit/vetss_simulink.pdf",
+      "consumers": [
+        {
+          "sourcePage": "talk/vetss_ag_swu_visit/index.html",
+          "plannedDestination": "/talks/#vetss-ag-swu-visit"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "talk/workshop_cq_visitor/Featured.png",
+      "bytes": 553894,
+      "sha256": "097ddea4fc51ec4cbaae05c528d55aa895059cd43b83ac8e19f27b446c216fea",
+      "publicPath": "old_entry/talk/workshop_cq_visitor/Featured.png",
+      "consumers": [
+        {
+          "sourcePage": "talk/workshop_cq_visitor/index.html",
+          "plannedDestination": "/talks/#workshop-cq-visitor"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "uploads/CV-KangfengYe.pdf",
+      "bytes": 180257,
+      "sha256": "4ac362e2dde8d0b44b820516fd6b3d569b9b197171b6e884afed3ce2c649966d",
+      "publicPath": "old_entry/uploads/CV-KangfengYe.pdf",
+      "consumers": [],
+      "mediaPlayback": null
+    },
+    {
+      "path": "uploads/MODELS2022_with_more_details_20221025.pdf",
+      "bytes": 4498487,
+      "sha256": "7d23c15761f3d5e6a0be1d56fa52cde93be944d18794f1767f3acee94da50078",
+      "publicPath": "old_entry/uploads/MODELS2022_with_more_details_20221025.pdf",
+      "consumers": [
+        {
+          "sourcePage": "talk/20221027_models_2022/index.html",
+          "plannedDestination": "/talks/#models-2022"
+        }
+      ],
+      "mediaPlayback": null
+    }
+  ],
+  "policy": "Authored original media/downloads plus an explicitly selected genuine preview; unselected generated derivatives, stock samples and theme infrastructure excluded. The historical CV is retained under old_entry/uploads and does not replace the current CV."
+}

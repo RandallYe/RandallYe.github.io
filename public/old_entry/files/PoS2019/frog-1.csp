@@ -1,0 +1,80 @@
+-- Frog jumper game solver (similar to frog-0.csp but use another board for the target setting)
+-- This change gives flexibility to check a board with different stop scheme
+
+-- - - E - - 
+-- Set up of the board
+-- Color of Frog: Red or Blue
+datatype Frog = R | B 
+
+-- State of each slot: either occupied by a frog (Red or Blue), or empty
+datatype Cell = P.Frog | E 
+
+-- Initial setting of board
+Board1 = <P.R, E, P.B> 
+Board2 = <P.R, P.R, E, P.B, P.B> 
+Board3 = <P.R, P.R, P.R, E, P.B, P.B, P.B> 
+Board4 = <P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B> 
+Board5 = <P.R, P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B, P.B> 
+Board6 = <P.R, P.R, P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B, P.B, P.B> 
+Board10 = <P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B> 
+
+-- Target setting of board
+Board2End = <P.B, P.B, E, P.R, P.R> 
+Board2End1 = <P.B, E, P.R, P.B, P.R> 
+Board3End = <P.B, P.B, P.B, E, P.R, P.R, P.R> 
+Board10End = <P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, E, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R> 
+Board10End1 = <P.B, E, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R> 
+
+BoardStart = Board10
+BoardEnd = Board10End1
+
+Size = #BoardStart 
+SizeEnd = #BoardEnd 
+
+BoardCoords = {0..(Size-1)}
+
+-- get the nth element from a sequence
+nth(n,xs) = if n==0 then head(xs) 
+                    else nth(n-1,tail(xs))
+
+-- move_left.i or move_right.i: move left or right into i 
+channel move_left, move_right, jump_left, jump_right: Frog.BoardCoords
+channel done
+
+-- slot process
+
+-- The slot is occupied and moved to another place
+Full(i, frog, target) = (i > 0) & move_left.frog.(i-1) -> Empty(i, target)  
+                []
+                (i < (Size-1)) & move_right.frog.(i+1) -> Empty(i, target)  
+                [] 
+                (i > 1) & jump_left.frog.(i-2) -> Empty(i, target)
+                [] 
+                (i < (Size-2)) & jump_right.frog.(i+2) -> Empty(i, target)
+                [] 
+                (target == (P.frog)) & done -> Full(i, frog, target)
+
+Empty(i, target) = i < (Size - 1) & ([] frog:Frog @ move_left.frog.i -> Full(i, frog, target))
+                [] i > 0 & ([] frog:Frog @ move_right.frog.i -> Full(i, frog, target)) 
+                [] i < (Size - 2) & ([] frog:Frog @ jump_left.frog.i -> Full(i, frog, target)) 
+                [] i > 1 & ([] frog:Frog @ jump_right.frog.i -> Full(i, frog, target))
+                [] (target == E) & done -> Empty(i, target)
+
+Slot(i) =   if nth(i, BoardStart) == (P.B) then Full(i, B, nth(i, BoardEnd)) 
+            else
+                if nth(i, BoardStart) == (P.R) then Full(i, R, nth(i, BoardEnd)) 
+                else Empty(i, nth(i, BoardEnd)) 
+
+Alpha(i) = Union({{done},
+                  {move_left.f.(i-1) | f <- Frog, i > 0}, -- for Full state
+                  {move_left.f.(i) | f <- Frog}, -- for Empty state
+                  {move_right.f.(i+1) | f <- Frog, i < (Size-1)},
+                  {move_right.f.(i) | f <- Frog},
+                  {jump_left.f.(i-2) | f <- Frog, i > 1},
+                  {jump_left.f.(i) | f <- Frog},
+                  {jump_right.f.(i+2) | f <- Frog, i < (Size-2)},
+                  {jump_right.f.(i) | f <- Frog}})
+
+Puzzle = (|| (i):BoardCoords @ [Alpha(i)] Slot(i)) 
+
+assert STOP [T= Puzzle \ {|move_left, move_right, jump_left, jump_right|}

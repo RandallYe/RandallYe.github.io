@@ -1,0 +1,116 @@
+-- Frog jumper game solver (similar to frog-2.csp but introduce seqR and seqB to construct boards)
+-- This change makes it easy to construct a big board 
+
+-- - - E - - 
+-- Set up of the board
+-- Color of Frog: Red or Blue
+datatype Frog = R | B 
+
+-- State of each slot: either occupied by a frog (Red or Blue), or empty
+datatype Cell = P.Frog | E 
+
+-- construct a sequence which length is n and each element is equal to x, such as <P.R, P.R, ....>
+seqRB(n, x) = (< x | i <- <1..n>>)
+
+-- Initial setting of board
+Board1 = <P.R, E, P.B> 
+Board2 = <P.R, P.R, E, P.B, P.B> 
+Board3 = <P.R, P.R, P.R, E, P.B, P.B, P.B> 
+Board4 = <P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B> 
+Board5 = <P.R, P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B, P.B> 
+Board6 = <P.R, P.R, P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B, P.B, P.B> 
+Board10 = <P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, E, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B> 
+Board20 = seqRB(20, P.R) ^ <E> ^ seqRB(20, P.B)
+Board30 = seqRB(30, P.R) ^ <E> ^ seqRB(30, P.B)
+Board100 = seqRB(100, P.R) ^ <E> ^ seqRB(100, P.B)
+
+-- Target setting of board
+Board1End = <P.B, E, P.R> 
+Board2End = <P.B, P.B, E, P.R, P.R> 
+Board2End1 = <P.B, E, P.R, P.B, P.R> 
+Board3End = <P.B, P.B, P.B, E, P.R, P.R, P.R> 
+Board10End = <P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, E, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R> 
+-- With this tactic, this couldn't be reached
+Board10End1 = <P.B, E, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.B, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R, P.R> 
+Board20End = seqRB(20, P.B) ^ <E> ^ seqRB(20, P.R)
+Board30End = seqRB(30, P.B) ^ <E> ^ seqRB(30, P.R)
+Board100End = seqRB(100, P.B) ^ <E> ^ seqRB(100, P.R)
+
+BoardStart = Board10
+BoardEnd = Board10End
+
+Size = #BoardStart 
+SizeEnd = #BoardEnd 
+
+BoardCoords = {0..(Size-1)}
+
+-- get the nth element from a sequence
+nth(n,xs) = if n==0 then head(xs) 
+                    else nth(n-1,tail(xs))
+
+-- move_left.i or move_right.i: move left or right into i 
+channel move_left, move_right, jump_left, jump_right: Frog.BoardCoords
+channel done
+
+-- slot process
+
+--------------------------------------------------------------------------
+--                          Original                                    --
+--------------------------------------------------------------------------
+-- -- The slot is occupied and moved to another place
+-- Full(i, frog, target) = (i > 0) & move_left.frog.(i-1) -> Empty(i, target)  
+--                 []
+--                 (i < (Size-1)) & move_right.frog.(i+1) -> Empty(i, target)  
+--                 [] 
+--                 (i > 1) & jump_left.frog.(i-2) -> Empty(i, target)
+--                 [] 
+--                 (i < (Size-2)) & jump_right.frog.(i+2) -> Empty(i, target)
+--                 [] 
+--                 (target == (P.frog)) & done -> Full(i, frog, target)
+-- 
+-- Empty(i, target) = i < (Size - 1) & ([] frog:Frog @ move_left.frog.i -> Full(i, frog, target))
+--                 [] i > 0 & ([] frog:Frog @ move_right.frog.i -> Full(i, frog, target)) 
+--                 [] i < (Size - 2) & ([] frog:Frog @ jump_left.frog.i -> Full(i, frog, target)) 
+--                 [] i > 1 & ([] frog:Frog @ jump_right.frog.i -> Full(i, frog, target))
+--                 [] (target == E) & done -> Empty(i, target)
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+--                          Modified                                    --
+--------------------------------------------------------------------------
+-- The slot is occupied and moved to another place
+Full(i, frog, target) = ((i > 0) and (frog == B)) & move_left.frog.(i-1) -> Empty(i, target)  
+                []
+                ((i < (Size-1)) and (frog == R)) & move_right.frog.(i+1) -> Empty(i, target)  
+                [] 
+                ((i > 1) and (frog == B)) & jump_left.frog.(i-2) -> Empty(i, target)
+                [] 
+                ((i < (Size-2)) and (frog == R)) & jump_right.frog.(i+2) -> Empty(i, target)
+                [] 
+                (target == (P.frog)) & done -> Full(i, frog, target)
+
+Empty(i, target) = i < (Size - 1) & (move_left.B.i -> Full(i, B, target))
+                [] i > 0 & (move_right.R.i -> Full(i, R, target)) 
+                [] i < (Size - 2) & (jump_left.B.i -> Full(i, B, target)) 
+                [] i > 1 & (jump_right.R.i -> Full(i, R, target))
+                [] (target == E) & done -> Empty(i, target)
+
+
+Slot(i) =   if nth(i, BoardStart) == (P.B) then Full(i, B, nth(i, BoardEnd)) 
+            else
+                if nth(i, BoardStart) == (P.R) then Full(i, R, nth(i, BoardEnd)) 
+                else Empty(i, nth(i, BoardEnd)) 
+
+Alpha(i) = Union({{done},
+                  {move_left.f.(i-1) | f <- Frog, i > 0}, -- for Full state
+                  {move_left.f.(i) | f <- Frog}, -- for Empty state
+                  {move_right.f.(i+1) | f <- Frog, i < (Size-1)},
+                  {move_right.f.(i) | f <- Frog},
+                  {jump_left.f.(i-2) | f <- Frog, i > 1},
+                  {jump_left.f.(i) | f <- Frog},
+                  {jump_right.f.(i+2) | f <- Frog, i < (Size-2)},
+                  {jump_right.f.(i) | f <- Frog}})
+
+Puzzle = (|| (i):BoardCoords @ [Alpha(i)] Slot(i)) 
+
+assert STOP [T= Puzzle \ {|move_left, move_right, jump_left, jump_right|}
