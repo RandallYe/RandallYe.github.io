@@ -1,0 +1,919 @@
+{
+  "sourceCommit": "4544eec",
+  "ids": [
+    "short-background",
+    "fnref1",
+    "research-keywords",
+    "insresearch-interests-and-summaryins",
+    "probabilistic-programming-semantics-and-verification",
+    "formal-specification-languages",
+    "z-notation-and-circus",
+    "fnref2",
+    "fnref3",
+    "csp",
+    "graphical-notations",
+    "formal-verification-of-security-protocols",
+    "fnref4",
+    "news",
+    "general",
+    "papers",
+    "events-i-attended",
+    "awards",
+    "publications",
+    "journal-article",
+    "conference-proceedings",
+    "formal-proofs-published",
+    "books-and-chapters",
+    "phd-thesis",
+    "preprints",
+    "talks-and-presentations",
+    "probabilistic-programming",
+    "verification-of-security-protocols",
+    "projects-i-was-or-am-working-on",
+    "posts",
+    "showcases",
+    "academic-activities",
+    "contact",
+    "fn1",
+    "fn2",
+    "fn3",
+    "fn4"
+  ],
+  "links": [
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "file:////home/rye/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.20/crossnote/dependencies/katex/katex.min.css"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www-users.york.ac.uk/~ky582/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#short-background"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#insresearch-interests-and-summaryins"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#news"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#publications"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#talks-and-presentations"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#projects-i-was-or-am-working-on"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#posts"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#showcases"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#academic-activities"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#contact"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "pics/me.jpg#round"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://iohk.io/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#short-background"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#research-keywords"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#insresearch-interests-and-summaryins"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#probabilistic-programming-semantics-and-verification"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#formal-specification-languages"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#z-notation-and-circus"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#csp"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#graphical-notations"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#formal-verification-of-security-protocols"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#news"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#general"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#papers"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#events-i-attended"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#awards"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#publications"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#journal-article"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#conference-proceedings"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#formal-proofs-published"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#books-and-chapters"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#phd-thesis"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#preprints"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#talks-and-presentations"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#probabilistic-programming"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#verification-of-security-protocols"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#projects-i-was-or-am-working-on"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#posts"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#showcases"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#academic-activities"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#contact"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://robostar.cs.york.ac.uk/robotool/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fn1"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://isabelle-utp.york.ac.uk/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://robostar.cs.york.ac.uk"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://etheses.whiterose.ac.uk/15526/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/s10270-021-00916-8"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://robostar.cs.york.ac.uk/robotool/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://robostar.cs.york.ac.uk/case_studies/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/UoY-RoboStar/hvc-case-study/tree/prism_verification"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/UoY-RoboStar/uvc-case-study"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "10.1109/CASE56687.2023.10260395"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.tcs.2024.114876"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_relations"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_relations/Examples"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://en.wikipedia.org/wiki/Monty_Hall_problem"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-030-88701-8_28"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_designs"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_designs/examples"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://arxiv.org/abs/2403.00169"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/QANAD"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/QANAD/tree/master/Examples"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.youtube.com/watch?v=EhhQAlD1P2Q"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.youtube.com/watch?v=NTyLdK8tQvo"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://arxiv.org/abs/2411.03943"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/ORAN-xApp-QoS-PRISM-Models"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://etheses.whiterose.ac.uk/15526/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/s10009-015-0402-1"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Circus2ZCSP"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Circus-Programs/tree/master/Cases/ReactiveBuffer"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Circus-Programs/tree/master/Cases/SteamBoiler"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Circus-Programs/tree/master/Cases/ESEL"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fn2"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.iso.org/standard/21573.html"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/ISOZ-Parser-TypeChecker"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fn3"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.jlamp.2021.100681"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/isabelle-utp/utp-main/tree/master/theories/reactive"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.jlamp.2023.100940"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-031-17244-1_24"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/isabelle-utp/interaction-trees"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/isabelle-utp/interaction-trees/tree/master/RoboChart/examples/RoboChart_ChemicalDetector_autonomous"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/isabelle-utp/interaction-trees/tree/master/RoboChart/examples/Patrol_Robot"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-030-15792-0_10"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://eprints.whiterose.ac.uk/129640/15/Compositional_Assume_Guarantee_Reasoning_of_Control_Law_Diagrams_using_UTP_Tech_Report.pdf"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Compositional_AG_Reasoning_Simulink_UTP"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Compositional_AG_Reasoning_Simulink_UTP/blob/main/post_landing_finalize_1.thy"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "pics/uvc_human.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "pics/PAL_use_case.png"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-031-77382-2_3"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Animation_of_Security_Protocols"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Animation_of_Security_Protocols/tree/master/NSPK"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe/Animation_of_Security_Protocols/tree/master/Diffie_Hellman"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.cs.york.ac.uk/circus/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fn4"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://robostar.cs.york.ac.uk/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://systronlab.github.io/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://iohk.io/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.isa-afp.org/entries/Abel_Limit_Theorem.html"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-981-95-4213-0_1"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://icfem2025.github.io/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-031-87908-1_9"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://newbooksnetwork.com/hosts/profile/1dea1d2c-5a16-4797-82ae-edfb1f79eb99"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://newbooksnetwork.com/category/academic-partners/scholarly-communications"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/s10270-021-00916-8"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.sosym.org/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.sosym.org/journal_first/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://conf.researchr.org/home/models-2022"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://newbooksnetwork.com/use-sequential-internal-review-to-improve-your-next-submission"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://arxiv.org/abs/2411.03943"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://datamod2024.github.io/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://arxiv.org/abs/2410.00676"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.tcs.2024.114876"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://arxiv.org/abs/2303.09692"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-67114-2_11"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sefm-conference.github.io/2024/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.jlamp.2023.100940"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "./Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.linkedin.com/posts/randallye_who-can-or-who-wants-to-formally-activity-7304257438197731330-y6Zl?utm_source=share&utm_medium=member_desktop&rcm=ACoAABIDDMQBY24b1UzaJYtEAEtEUs8fmBnVAjM"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.youtube.com/watch?v=8FO6KT6EMqM"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sefm-conference.github.io/2024/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "./SEFM2024/SEFM2024_presentation.pdf"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-67114-2_11"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/s10270-021-00916-8"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "pics/sosym-journal-first.png"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.tcs.2024.114876"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.jlamp.2023.100940"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/s10270-021-00916-8"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1016/j.jlamp.2021.100681"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/s10009-015-0402-1."
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-981-95-4213-0_1"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-031-77382-2_3"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-031-87908-1_9"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1109/CASE56687.2023.10260395"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-031-17244-1_24"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-030-88701-8_28"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-030-31038-7_5"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-030-02149-8_13"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://isa-afp.org/entries/Abel_Limit_Theorem.html"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-031-67114-2_11"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-030-66494-7_13"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://doi.org/10.1007/978-3-030-15792-0_10"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://etheses.whiterose.ac.uk/15526/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://arxiv.org/abs/2403.08136"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://arxiv.org/abs/2403.00169"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.youtube.com/watch?v=9GZMzrVsnxY"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "pics/Monkey_Cliff.png#middle"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "./Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sefm-conference.github.io/2024/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "./SEFM2024/SEFM2024_presentation.pdf"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "./Posts/SEFM_DataMod/cheddar_updates.html"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://cheddarhub.org/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.sesame-project.org/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://robostar.cs.york.ac.uk/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.cs.york.ac.uk/circus/CyPhyAssure/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://vetss.org.uk/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://into-cps.org/"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "./posts/SEFM_DataMod/SEFM_DataMod_2024.html"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.wincom-conf.org/WINCOM_2024/?page=demo-Hackathon"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://sites.google.com/york.ac.uk/jim-woodcock-home-page"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "mailto:ye.randall@gmail.com"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://github.com/RandallYe"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://www.linkedin.com/in/randallye"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://scholar.google.com/citations?user=PbLkCR8AAAAJ&hl=en"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "https://dblp.org/pid/193/5774.html"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fnref1"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fnref2"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fnref3"
+    },
+    {
+      "tag": "a",
+      "attribute": "href",
+      "url": "#fnref4"
+    }
+  ]
+}

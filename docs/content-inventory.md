@@ -4,7 +4,9 @@ Audit: 4 November 2026. Sources: https://randallye.github.io/ and https://github
 
 ## Repository and preservation status
 
-The supplied workspace contains only AGENTS.md and CODEX_HOMEPAGE_PLAN.md; its read-only .git mount is empty. Shell GitHub access fails DNS. Implementation is isolated in `astro-redesign/`, a new local Git repository on `redesign/astro`, **not a branch descended from upstream**. No upstream files or production settings were changed. Before integration, clone upstream, branch from master, and cherry-pick these commits. Copy all original assets unchanged into public at their original case-sensitive paths; verify checksums. Asset preservation remains incomplete until this is done.
+The supplied workspace initially contained only the guide and brief. The user subsequently supplied a clean clone at `/home/rye/workspace/RandallYe.github.io`. A local clone now lives in `astro-redesign/`, on `redesign/astro`, descended from upstream `master` at `4544eec`. The initial audit commit was brought across; original history and all 19 tracked legacy files remain unchanged. No upstream pushes or production changes occurred.
+
+`docs/legacy-assets.json` records the paths, sizes and SHA-256 digests of all 17 original binary/static assets. They are copied byte-for-byte to `public/` at their original paths. `index.html` and `index.md` remain unchanged at the repository root. The original homepage is served at `/legacy/` with relative file URLs adjusted for Astro's base path; the original Markdown is downloadable at `/legacy/index.md`. `docs/legacy-links.json` records 37 original IDs and 175 href/src occurrences.
 
 Upstream root observed: `index.html`, `index.md`, `CV/`, `pics/`, `SEFM2024/`, `Cheddar/Cheddar_20250715/`, `posts/SEFM_DataMod/`.
 
@@ -16,12 +18,12 @@ Upstream root observed: `index.html`, `index.md`, `CV/`, `pics/`, `SEFM2024/`, `
 | News: general, papers, events | Selected dated home items; full archive migration pending Phase 3 |
 | Talks, award, projects, academic activities, footnotes | Talks and About summaries; full detail and archive migration pending Phase 3 |
 | Empty Showcases section | `/tools/` and security animation detail |
-| `index.html` and legacy fragment identifiers | Retain original page under `/legacy/` after upstream clone; capture exact IDs and add aliases before cutover |
-| `/pics/me.jpg` | Existing portrait URL identified; binary unavailable locally, do not substitute fabricated portrait |
-| `/SEFM2024/SEFM2024_presentation.pdf` | Preserve exact path; currently link to original absolute URL |
+| `index.html` and legacy fragment identifiers | Original page retained at `/legacy/`; all 37 exact IDs inventoried |
+| `/pics/me.jpg` | Existing portrait URL identified; preserved locally and reused in the hero |
+| `/SEFM2024/SEFM2024_presentation.pdf` | Preserve exact path; preserved locally and linked through the configured base |
 | `/Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf` | Same policy |
-| `/CV/`, other pictures and downloads | Exact filenames and checksums pending clone; never infer a CV filename |
-| `/Posts/SEFM_DataMod/cheddar_updates.html` | Site links uppercase Posts while repo lists lowercase posts; verify case before redirecting; keep original destination recorded |
+| `/CV/`, other pictures and downloads | All 17 assets inventoried with checksums; CV is `CV/Academic_CV-Kangfeng_Ye.pdf` |
+| `/Posts/SEFM_DataMod/cheddar_updates.html` | Site links uppercase Posts while repo lists lowercase posts; actual post is `posts/SEFM_DataMod/SEFM_DataMod_2024.html`; archive rendering corrects this broken destination |
 
 ## Security demonstration resources
 
@@ -47,4 +49,4 @@ Profile destinations from live site: https://github.com/RandallYe ; https://www.
 
 ## Release prerequisites
 
-Complete file-level inventory from upstream; preserve original HTML/Markdown and every binary; verify all outbound links; resolve case mismatch and old fragment aliases; verify video manually. No production cutover until these gaps and the user review are resolved.
+File-level inventory and asset preservation are complete. Still verify all outbound links, check archived equations in a browser, and verify video manually. No production cutover until these gaps and the user review are resolved.
