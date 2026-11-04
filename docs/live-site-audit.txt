@@ -1,0 +1,311 @@
+index (https://randallye.github.io/)
+ [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://randallye.github.io/","lineno":0}); Total lines: 318
+L0: 【0†Home†www-users.york.ac.uk】 | 【1†Short background】 | 【2†Research interests】 | 【3†News】 | 【4†Publications】 | 【5†Talks and Presentations】 |
+L1: 【6†Projects】 | 【7†Posts】 | 【8†Showcases】 | 【9†Academic activities】 | 【10†Contact】
+L2: # Kangfeng Ye (also known as Randall Ye)
+L3: 
+L4: 【11†Image: Kangfeng Ye】
+L5: 
+L6: I left the University of York in November 2025 and joined 【12†IOHK†iohk.io】 as a formal methods engineer.
+L7: 
+L8: * * *
+L9: 
+L10: ▶︎
+L11: 
+L12: all
+L13: 
+L14: running...
+L15:   * 【1†Short background】
+L16:     * 【13†Research Keywords】
+L17:   * 【2†Research interests and summary】
+L18:     * 【14†Probabilistic programming: semantics and verification】
+L19:     * 【15†Formal specification languages】
+L20:       * 【16†Z notation and Circus】
+L21:       * 【17†CSP】
+L22:     * 【18†Graphical Notations】
+L23:     * 【19†Formal verification of security protocols】
+L24:   * 【3†News】
+L25:     * 【20†General】
+L26:     * 【21†Papers】
+L27:     * 【22†Events (I attended)】
+L28:   * 【23†Awards】
+L29:   * 【4†Publications】
+L30:     * 【24†Journal article】
+L31:     * 【25†Conference Proceedings】
+L32:     * 【26†Formal proofs (published)】
+L33:     * 【27†Books and Chapters】
+L34:     * 【28†PhD Thesis】
+L35:     * 【29†Preprints】
+L36:   * 【5†Talks and Presentations】
+L37:     * 【30†Probabilistic programming】
+L38:     * 【31†Verification of security protocols】
+L39:   * 【6†Projects (I was or am working on)】
+L40:   * 【7†Posts】
+L41:   * 【8†Showcases】
+L42:   * 【9†Academic activities】
+L43:   * 【10†Contact】
+L44: * * *
+L45: # Short background
+L46: 
+L47: Since Nov 2025: Industry at IOHK
+L48: 
+L49: 
+L50: Formal methods engineer
+L51: 
+L52: 2016 - 2025: Academia (Formal methods in robotics, probabilistic programming, and security)
+L53: In my research, I use mathematical logic (alphabetised predicate calculus in Unifying Theories of Programming - UTP) to give probabilistic semantics (denotational and operational semantics) to a domain-specific language (RoboChart) in robotics, with support of modelling time and probability, (2) develop automated verification tools using modern model-based techniques (model transformation, validation, and generation) and formal verification (model checking and theorem proving), and apply theoretical semantics and practical tools to a variety of case studies.
+L54: 
+L55: 
+L56: I am a developer of 【32†RoboTool†robostar.cs.york.ac.uk】 supporting probabilistic verification for robotic applications, and a contributor ^{【33†[1]】} of 【34†Isabelle/UTP†isabelle-utp.york.ac.uk】, a unifying semantic framework supporting theorem proving. Both tools are being developed in the 【35†RoboStar†robostar.cs.york.ac.uk】 group.
+L57: 
+L58: 2012 - 2016: PhD at the University of York (Formal methods)
+L59: Supervised by Prof. Jim Woodcock. The most right choice in my career is to have a PhD in formal methods with Jim. Every time when I think of him, I always feel 🙂 ☀️ and calm and passionate 🔥 in research because of the knowledge he taught me and the way being a good researcher.
+L60: 
+L61: 
+L62: 
+L63: 📚 Thesis: 【36†Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra)†etheses.whiterose.ac.uk】
+L64: 
+L65: 2004 - 2012: Industry (Embedded Software Engineer/Lead)
+L66: Led a team (4-8 members) to develop embedded software for lithography, Ethernet Datacenter Switch, and Communication devices. C/C++, MCU, Linux, VxWorks
+L67: ## Research Keywords
+L68: 
+L69: 🔑 Formal verification 🔑 Formal semantics 🔑 Probabilistic programming languages 🔑 Probabilistic model checking 🔑 Probabilistic theorem proving 🔑 Model-based Software Engineering 🔑 Cyber-Physical Systems 🔑 Cryptographic security protocols 🔑 Tool development
+L70: 
+L71: # Research interests and summary
+L72: ## Probabilistic programming: semantics and verification
+L73: 
+L74: ➡️ Probabilistic semantics and verification for RoboChart using PRISM
+L75:   * 🔆 fully automatic verification of state machines notation using probabilistic model checking
+L76:   * 📚: 【37†Probabilistic Modelling and Verification Using RoboChart and PRISM†doi.org】
+L77:   * 🛠️: Three plugins in 【32†RoboTool†robostar.cs.york.ac.uk】 for 1️⃣ the PRISM metamodel, 2️⃣ RoboChart model transformation to PRISM and verification, and 3️⃣ Probabilistic properties.
+L78:   * 📒 【38†RoboChart case studies†robostar.cs.york.ac.uk】, 【39†High-Voltage Controller (HVC)†github.com】, 【40†UV light-treatment (UVC)†github.com】
+L79:     * 📚 【41†Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment】
+L80: ➡️ Probabilistic Unifying Relations (ProbURel)
+L81:   * 🔆 a probabilistic semantics framework and 🔆 a probabilistic programming language
+L82:   * 📚: 【42†Probabilistic unifying relations for modelling epistemic and aleatoric uncertainty: Semantics and automated reasoning with theorem proving†doi.org】
+L83:   * 🛠️: 【43†A theory for ProbURel and algebraic laws†github.com】
+L84:   * 📒 【44†Six proved examples†github.com】 including 【45†Monty Hall problem†en.wikipedia.org】, a forgetful Monty, [Doctor Who's Tardis Attacker], robot localisation, cancer diagnosis (Bayesian approach), coin flip till heads, throw a pair of dice till they have the same outcome.
+L85: ➡️ Probabilistic designs
+L86: 
+L87:   * 🔆 a theory for nondeterministic probabilistic sequential programming language
+L88:   * 📚: 【46†Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving†doi.org】
+L89:   * 🛠️: 【47†A theory for probabilistic designs in Isabelle/HOL†github.com】
+L90:   * 📒 【48†The proof of an algorithm to get uniform distribution from just a fair coin, and a few other examples from He's and Hehner's PPP papers†github.com】
+L91: 
+L92: ➡️ Quantitative Analysis of UML Activity Diagrams
+L93:   * 🔆 A UML Profile for Quantitative Annotations 🔆 Semantics of Quantitative Activity Diagrams in PRISM 🔆 Parametric Quantitative Analysis 🔆 Synthesis 🔆 Three Markov models (DTMC, MDP, and CTMC)
+L94:   * 📚: 【49†Quantitative Assurance and Synthesis of Controllers from Activity Diagrams†arxiv.org】
+L95:   * 🛠️: 【50†Eclipse-based Plugins†github.com】, fully automated, support PRISM and Storm
+L96:   * 📒 【51†Seven evaluated examples†github.com】 including Six-sided dice, Digital camera, Fruit picking, Travel web, IT Support, and Travel management from literature. Hospital 🏥 Intralogistics Robot 🤖 by us
+L97:     * 14 Markov models: 6 in DTMCs, 3 in MDPs, and 5 in CTMCs
+L98:   * 🎬 【52†Installation - 1: Eclipse, Papyrus and Epsilon†www.youtube.com】 and 【53†Installation - 2: Configuration†www.youtube.com】
+L99: ➡️ QoS (energy efficiency and service availability) analysis of O-RAN xApps
+L100: 
+L101:   * 🔆 Compared 6 configurations of control policy for different QoS results
+L102:   * 📚: 【54†Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification†arxiv.org】, to appear in DataMod24
+L103:   * 🛠️ 【55†PRISM models†github.com】
+L104:   * 📒 A scenario with 3 Radio cards + 9 UEs (user equipments) where UEs can be switched on and off based on a continuous distribution (exponential).
+L105: ## Formal specification languages
+L106: ### Z notation and Circus
+L107: 
+L108: ➡️ Model checking of Circus
+L109:   * 🔆 Semantics of Circus in CSP || B 🔆 Automatic transformation of Circus to CSP || B 🔆 Model checking using ProB
+L110:   * 📚: 【36†Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra)†etheses.whiterose.ac.uk】, 【56†Model checking of state-rich formalism by linking to $CSP\,\Vert \,B$CSP∥B†doi.org】
+L111:   * 🛠️: 【57†Circus2CSPZ translator†github.com】, Java, based on the CZT project
+L112:   * 📒 【58†Reactive buffer†github.com】, 【59†Steam boiler†github.com】, 【60†ESEL†github.com】
+L113: ➡️ An ISO Z and Circus Parser and Typechecker
+L114: 
+L115:   * 🔆 A complete implementation^{【61†[2]】} of ISO Z Standard (【62†ISO/IEC 13568:2002†www.iso.org】) 🔆 Most Circus Syntax
+L116:   * 📚: Haven't published yet 🙁
+L117:   * 🛠️: 【63†ISOZ and Circus Parser and TypeChecker†github.com】, implemented using Alex and Happy in Haskell, also C++.
+L118:   * 📒 Examples from the standard documentation, Circus buffer, reactive buffer, Circus steam boiler
+L119: 
+L120: ➡️ Reactive Relations^{【64†[3]】}
+L121:   * 🔆 A mechanised theory of Reactive Relations in Isabelle/HOL
+L122:   * 📚:
+L123: 【65†Automated verification of reactive and concurrent programs by calculation†doi.org】
+L124:   * 🛠️: 【66†The theory of Reactive Relations in UTP†github.com】
+L125:   * 📒 Reactive buffer
+L126: ### CSP
+L127: 
+L128: ➡️ Animation of RoboChart
+L129: 
+L130:   * 🔆 An Interaction-Trees-based deterministic CSP in Isabelle/HOL
+L131:   * 📚: Formally verified animation for RoboChart using interaction trees at 【67†Journal of Logical and Algebraic Methods in Programming†doi.org】 and at 【68†ICFEM2022†doi.org】
+L132:   * 🛠️: 【69†The theory of Interaction Trees based CSP in Isabelle/UTP†github.com】
+L133:   * 📒 【70†Autonomous Chemical Detector†github.com】, 【71†Patrol Robot†github.com】
+L134: ## Graphical Notations
+L135: 
+L136: ➡️ Assume-Guarantee Reasoning of Simulink
+L137: 
+L138:   * 🔆 A mechanised theory for assume-guarantee reasoning of discrete Simulink in Isabelle/HOL
+L139:   * 📚: 【72†Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP†doi.org】, 【73†Technical report for the mechanised theory†eprints.whiterose.ac.uk】
+L140:   * 🛠️: 【74†The theory of Assume-Guarantee reasoning of Simulink†github.com】
+L141:   * 📒 【75†A post landing finalize subsystem in aircraft cabin pressure control†github.com】
+L142: ➡️ Probabilistic semantics and animation for the state-machine based RoboChart (see details above)
+L143: 
+L144: 【76†Image: UVC Human State Machine】
+L145: 
+L146: ➡️ Quantitative Analysis of UML Activity Diagrams (see details above)
+L147: 
+L148: 【77†Image: PAL use case】
+L149: ## Formal verification of security protocols
+L150: 
+L151: ➡️ Formal verification of security protocols using animation, a lightweight model checker
+L152:   * 🔆 An Interaction-Trees-based deterministic CSP used to model security protocols 🔆 Manual + Automatic verification 🔆 User-guided accessible verification 🔆 Terminal + Web interfaces
+L153:   * 📚: 【78†User-Guided Verification of Security Protocols via Sound Animation†doi.org】
+L154:   * 🛠️: 【79†A theory of modelling and verifying security protocols in Isabelle/HOL†github.com】
+L155:   * 📒 【80†Needham-Schroeder Public Key Protocol†github.com】, 【81†Diffie-Hellman key agreement†github.com】
+L156: ## Member of Groups
+L157: 
+L158:   * 【82†Circus†www.cs.york.ac.uk】 ^{【83†[4]】}
+L159:   * 【35†RoboStar†robostar.cs.york.ac.uk】
+L160:   * 【84†SysTRON Lab†systronlab.github.io】
+L161: 
+L162: # News
+L163: ## General
+L164: 2025-11-24 New journey in industry at IOHK
+L165:     I joined 【12†IOHK†iohk.io】 as a formal methods engineer.
+L166: 2025-11-21 Last day at the University of York
+L167:     I left the UoY after 13 years there (4 years as PhD and 9 years as RA).
+L168: 2025-11-13 My first submission (【85†Abel's Limit Theorem†www.isa-afp.org】) to Isabelle AFP (Archive of Formal Proofs) was accepted
+L169:     While Abel's limit theorem in mathematical analysis was mechanised in Lean, but not yet in Isabelle.
+L170: This entry mechanises Abel's limit theorem on power series with real coefficients in Isabelle.
+L171: ## Papers
+L172: 2025-11-11 ICFEM2025 paper availabel online at Springer
+L173:     Now our paper (Formal Verification of Physical Layer Security Protocols for Next-Generation Communication Networks) is available 【86†online†doi.org】.
+L174: 2025-08-02 Paper accepted by ICFEM2025
+L175:     Our paper, titled "Formal Verification of Physical Layer Security Protocols for Next-Generation Communication Networks", submitted to 【87†ICFEM2025†icfem2025.github.io】 was accepted.
+L176: 2025-04-18 DataMod24 paper available online
+L177:     【88†Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification†doi.org】 from Springer
+L178: 2025-01-16 Interviewed by 【89†Dr. Daniel Shea†newbooksnetwork.com】 on Scholarly Communication
+L179:     I was interviewed on 【90†Scholarly Communication†newbooksnetwork.com】 by Dr. Daniel Shea from Karlsruhe Institute of Technology (KIT) for one of my co-authored paper: 【37†Probabilistic Modelling and Verification Using RoboChart and PRISM†doi.org】. The paper was published in the journal of 【91†Software and Systems Modeling†www.sosym.org】 and won the 【92†Journal-First award†www.sosym.org】. I was invited to present the paper at 【93†MODELS 2022†conf.researchr.org】.
+L180: The episode is now available 【94†here†newbooksnetwork.com】.
+L181: 2024-11-06 The preprint of the DataMod24 paper is available
+L182:     The preprint of our paper "Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification" can be found 【54†here†arxiv.org】.
+L183: 2024-10-07 Paper accepted by DataMod24
+L184:     Our paper submitted to 【95†DataMod24†datamod2024.github.io】 has been accepted for publication. This paper is about the quantitative analysis of a control policy used in an O-RAN xApp to achieve energy efficiency and guarantee service availability. We use PRISM to verify a scenario with 3 radio cells (stations) and 9 UEs (user equipments) while UEs are dynamically and uncertainly switched on and off.
+L185: 2024-10-01 The preprint of the SEFM2024 paper is available
+L186:     The preprint of our paper "User-Guided Verification of Security Protocols via Sound Animation" can be found 【96†here†arxiv.org】. Please note that this is not the final camera ready version
+L187: 2024-09-25
+L188:     Our TCS journal paper (about probabilistic programming) is now 【42†online†doi.org】
+L189: 2024-09-12
+L190:     Our TCS journal paper (about probabilistic programming) has been accepted for publication and should be online soon.
+L191:     The first draft is available 【97†online at arxiv†arxiv.org】
+L192: 2024-09-01
+L193:     A joint Festschrift paper, titled "【98†A Tour Through the Programming Choices: Semantics and Applications†link.springer.com】", with Pedro Ribeiro, Frank Zeyda, and Alvaro Miyazawa to celebrate Prof. Jim Woodcock's retirement from York. He was my PhD supervisor and a line manager in RoboStar.
+L194: 2024-08-22
+L195:     Our paper (User-Guided Verification of Security Protocols via Sound Animation) submitted to 【99†SEFM24†sefm-conference.github.io】 has been accepted for publication.
+L196: 2023-12-19
+L197:     Our JLAMP journal paper (【67†Formally verified animation for RoboChart using interaction trees†doi.org】) has been accepted for publication.
+L198: ## Events (I attended)
+L199: 2025-07-15 to 2025-07-16: CHEDDAR and 'Friends' Symposium and Industry Days, London
+L200:     I presented the select CHEDDAR highlight project 3.2 (formal verification) from the University of York (collaborated with the University of Glasgow and Imperial College London). My slides are available 【100†here】.
+L201: 2025-03-03 to 2025-03-06: MWC2025 at Barcelona, Spain
+L202:     A 【101†Linkedin post†www.linkedin.com】 about our demo "User-Guided Verification of Security Protocols via Sound Animation", also 【102†a video†www.youtube.com】 available at Youtube.
+L203: 2024-11-06 to 2024-11-08: SEFM2024 at Aveiro, Portugal
+L204:     I presented our work "User-Guided Verification of Security Protocols via Sound Animation" at 【99†SEFM2024†sefm-conference.github.io】. The slide is available 【103†here】
+L205: 2024-09-26 Cheddar All-hands meeting in Imperial
+L206:     Presentations from new partners, demonstration discussion, and updates from each pillar. I have updated P3.2 from York regarding accessible formal techniques using sound animation and quantitative analysis of energy efficiency and service availability in O-RAN xApps (to optimise QoS).
+L207: 2024-09-04 Jim's Festschrift
+L208:     I have been greatly benefited from Jim’s inspiration and mentorship. I and Pedro presented our paper "【98†A Tour Through the Programming Choices: Semantics and Applications†link.springer.com】". It's my pleasure to present Frank's preferential choice and my work ProbURel (collaborated with Jim and Simon) in probabilistic semantics and theorem proving.
+L209: 2024-07-25 6G Summit in Leeds
+L210:     Co-located with WINCOM2024
+L211: 2024-07-09
+L212:     Cheddar project meeting at the Cranfield University
+L213: 2024-06-27
+L214:     Gave a talk in the University's 【104†Celebrating Spaces: Connecting Researchers†sites.google.com】. It is a 5-minute Lightning Talk. My talk is about 【104†Guarantee correctness and performance of probabilistic algorithms†sites.google.com】.
+L215: 2024-06-05 to 06
+L216:     Cheddar Pillar 1 and P3.2 meetings at the University of Glasgow
+L217: 2024-03-28
+L218:     Cheddar P3.1 and P3.2 joint meeting at Imperial College London
+L219: 2024-03-12
+L220:     Cheddar Bi-Annual meeting at the University of York
+L221: # Awards
+L222: 
+L223: 2022 SoSyM Journal-first
+L224:     For the paper 【37†Probabilistic Modelling and Verification Using RoboChart and PRISM†doi.org】
+L225: 【105†Image: SoSyM Journal-first】
+L226: 
+L227: # Publications
+L228: ## Journal article
+L229: 
+L230:   1. [ProbURel] K. Ye, J. Woodcock, and S. Foster, “Probabilistic unifying relations for modelling epistemic and aleatoric uncertainty: Semantics and automated reasoning with theorem proving,” Theoretical Computer Science, p. 114 876, 2024, issn: 0304-3975.  doi: 【42†10.1016/j.tcs.2024.114876†doi.org】.
+L231:   2. [RoboChart_ITrees] K. Ye, S. Foster, and J. Woodcock, “Formally verified animation for RoboChart using interaction trees,” Journal of Logical and Algebraic Methods in Programming, vol. 137, p. 100 940, 2024, issn: 2352-2208.  doi: 【67†10.1016/j.jlamp.2023.100940†doi.org】.
+L232:   3. [RoboChart_PRISM] K. Ye, A. Cavalcanti, S. Foster, A. Miyazawa, and J. Woodcock, “Probabilistic modelling and verification using RoboChart and PRISM,” en, Software and Systems Modeling, vol. 21, no. 2, pp. 667–716, Apr. 2022, issn: 1619-1374.  doi: 【37†10.1007/s10270-021-00916-8†doi.org】.
+L233:   4. [Reactive_Relations] S. Foster, K. Ye, A. Cavalcanti, and J. Woodcock, “Automated Verification of Reactive and Concurrent Programs by Calculation,” Journal of Logical and Algebraic Methods in Programming, vol. 121, p. 100 681, Jun. 2021, arXiv:2007.13529 [cs], issn: 23522208.  doi:
+L234: 【65†10.1016/j.jlamp.2021.100681†doi.org】.
+L235:   5. [ModelChecking_Circus] K. Ye and J. Woodcock, “Model checking of state-rich formalism by linking to $CSP\,\Vert \,B$CSP∥B,” en, International Journal on Software Tools for Technology Transfer, vol. 19, no. 1, pp. 73–96, Feb. 2017, issn: 1433-2787.  doi: 【106†10.1007/s10009-015-0402-1. (visited on 10/13/2023)†doi.org】.
+L236: ## Conference Proceedings
+L237: 
+L238:   1. [PLS] K. Ye, R. Metere, J. Woodcock, and P. Yadav, “Formal verification of physical layer security protocols for next-generation communication networks,” in Formal Methods and Software Engineering, É. André, J. Wang, and N. Zhan, Eds., Singapore: Springer Nature Singapore, 2026, pp. 1–21, isbn: 978-981-95-4213-0.  doi: 【86†10.1007/978-981-95-4213-0_1†doi.org】.
+L239:   2. [Sound animation] K. Ye, R. Metere, and P. Yadav, “User-Guided Verification of Security Protocols via Sound Animation,” in Software Engineering and Formal Methods (SEFM), Springer Nature Switzerland, Nov. 2024, pp. 33–51, isbn: 9783031773822.  doi: 【78†10.1007/978-3-031-77382-2_3†doi.org】.
+L240:   3. [O-RAN xApp] R. Metere, K. Ye, Y. Gu, et al., “Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification,” in From Data to Models and Back (DataMod2024), Springer International Publishing, 2024.  doi: 【88†10.1007/978-3-031-87908-1_9†doi.org】.
+L241:   4. [Probabilisic case study] M. Adam, K. Ye, D. A. Anisi, A. Cavalcanti, J. Woodcock, and R. Morris, “Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment,” in 2023 IEEE 19th International Conference on Automation Science and Engineering (CASE), ISSN: 2161-8089, Aug. 2023, pp. 1–7.  【107†10.1109/CASE56687.2023.10260395†doi.org】.
+L242:   5. [RoboChart Animation] K. Ye, S. Foster, and J. Woodcock, “Formally Verified Animation for RoboChart Using Interaction Trees,” en, in Formal Methods and Software Engineering, A. Riesco and M. Zhang, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2022, pp. 404–420, isbn: 978-3-031-17244-1.  【68†10.1007/978-3-031-17244-1_24†doi.org】.
+L243:   6. [Probabilistic Theorem Provering] K. Ye, S. Foster, and J. Woodcock, “Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving,” en, in Relational and Algebraic Methods in Computer Science, U. Fahrenberg, M. Gehrke, L. Santocanale, and M. Winter, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2021, pp. 465–482, isbn: 978-3-030-88701-8.  【46†10.1007/978-3-030-88701-8_28†doi.org】.
+L244:   7. [Probabilistic Semantics] J. Woodcock, A. Cavalcanti, S. Foster, A. Mota, and K. Ye, “Probabilistic Semantics for RoboChart,” en, in Unifying Theories of Programming, P. Ribeiro and A. Sampaio, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2019, pp. 80–105, isbn: 978-3-030-31038-7.  【108†10.1007/978-3-030-31038-7_5†doi.org】.
+L245:   8. [Reactive relations] S. Foster, K. Ye, A. Cavalcanti, and J. Woodcock, “Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra,” en, in Relational and Algebraic Methods in Computer Science, J. Desharnais, W. Guttmann, and S. Joosten, Eds., ser. Lecture Notes in Computer Science, Cham: Springer International Publishing, 2018, pp. 205–224, isbn: 978-3-030-02149-8.  【109†10.1007/978-3-030-02149-8_13†doi.org】.
+L246: ## Formal proofs (published)
+L247: 
+L248:   1. K. Ye, “Abel’s limit theorem,” Archive of Formal Proofs, Nov. 2025, 【110†https://isa-afp.org/entries/Abel_Limit_Theorem.html†isa-afp.org】, Formal proof development, issn: 2150-914x.
+L249: ## Books and Chapters
+L250: 
+L251:   1. P. Ribeiro, K. Ye, F. Zeyda, and A. Miyazawa, “A tour through the programming choices: Semantics and applications,” in The Application of Formal Methods. Springer Nature Switzerland, 2024, pp. 261–305, isbn: 9783031671142.  【111†10.1007/978-3-031-67114-2_11†doi.org】.
+L252:   2. J. Woodcock, S. Foster, A. Mota, and K. Ye, “RoboStar Technology: Modelling Uncertainty in RoboChart Using Probability,” en, in Software Engineering for Robotics, A. Cavalcanti, B. Dongol, R. Hierons, J. Timmis, and J. Woodcock, Eds., Cham: Springer International Publishing, 2021, pp. 413–465, isbn: 978-3-030-66494-7.  doi: 【112†10.1007/978-3-030-66494-7_13†doi.org】.
+L253:   3. K. Ye, S. Foster, and J. Woodcock, “Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP,” en, in From Astrophysics to Unconventional Computation: Essays Presented to Susan Stepney on the Occasion of her 60th Birthday, ser. Emergence, Complexity and Computation, A. Adamatzky and V. Kendon, Eds., Cham: Springer International Publishing,
+L254: 2020, pp. 215–254, isbn: 978-3-030-15792-0.  doi: 【72†10.1007/978-3-030-15792-0_10†doi.org】.
+L255: ## PhD Thesis
+L256: 
+L257:   1. K. Ye, “Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra),” en, phd, University of York, Aug. 2016.  url: 【36†https://etheses.whiterose.ac.uk/15526/†etheses.whiterose.ac.uk】.
+L258: ## Preprints
+L259: 
+L260:   1. K. Ye and J. Woodcock, RoboCertProb: Property Specification for Probabilistic RoboChart Models, 2024. arXiv: 【113†2403.08136†arxiv.org】 [cs.LO].
+L261: 
+L262:   2. K. Ye, F. Yan, and S. Gerasimou, Quantitative Assurance and Synthesis of Controllers from Activity Diagrams, 2024. arXiv: 【49†2403.00169†arxiv.org】 [cs.LO].
+L263: 
+L264: # Talks and Presentations
+L265: ## Probabilistic programming
+L266: 
+L267: Lightning Talk on 2024-06-27
+L268:     A 5-minute Lightning Talk, given at the University's 【104†Celebrating Spaces: Connecting Researchers†sites.google.com】. The talk video is now available at 【114†Youtube†www.youtube.com】. My talk is about 【104†Guarantee correctness and performance of probabilistic algorithms†sites.google.com】.
+L269: 【115†Image: Monkey in front of a cliff】
+L270: ## Verification of security protocols
+L271: Presentation at CHEDDAR and 'Friends' Symposium and Industry Days - 15/16 July, London
+L272:     I presented the select CHEDDAR highlight project 3.2 (formal verification) from the University of York (collaborated with the University of Glasgow and Imperial College London). My slides are available 【100†here】.
+L273: Presentation at SEFM2024 on the 7th of November, 2024
+L274:     I presented our paper "User-Guided Verification of Security Protocols via Sound Animation" at 【99†SEFM2024†sefm-conference.github.io】. In this work, we address the accessibility of formal verification of security protocols for designers and the soundness guarantee of automatically generated animators. The slide is available 【103†here】. More details can be found 【116†this post】.
+L275: # Projects (I was or am working on)
+L276: CHEDDAR (Feb 2024 - Nov 2025)
+L277:     The Communications Hub for Empowering Distributed Cloud Computing Applications and Research 【117†(CHEDDAR)†cheddarhub.org】
+L278: SESAME (June 2023 - Jan 2024)
+L279:     【118†Secure and Safe Multi-Robot Systems†www.sesame-project.org】
+L280: RoboCalc and RoboTest (April 2018 - June 2023)
+L281:     EPSRC projects in the 【35†RoboStar†robostar.cs.york.ac.uk】 group
+L282: 【119†CyphyAssure†www.cs.york.ac.uk】 (June 2021 - September 2021)
+L283:     A EPSRC-funded (Simon Foster's fellowship) project
+L284: Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP (Oct 2017 - March 2018)
+L285:     A 【120†VETSS†vetss.org.uk】 sponsored project
+L286: 【121†INTO-CPS†into-cps.org】 (Nov 2016 - Dec 2017)
+L287:     Integrated Tool Chain for Model-based Design of Cyber-Physical Systems
+L288: # Posts
+L289: 
+L290: 2024-11-06 to 08
+L291:     【122†Application of formal verification in security protocols and O-RAN xApps】
+L292: 
+L293: # Showcases
+L294: 
+L295: # Academic activities
+L296: 
+L297: Organiser of 【123†WINCOM2024 Hackathon and Demo†www.wincom-conf.org】
+L298:     Organised with Ashan Khan together
+L299: JWFS 2024 PC member
+L300:     The Festschrift for 【124†Prof. Jim Woodcock†sites.google.com】 on the occasion of his retirement from the University of York
+L301: # Contact
+L302: 
+L303:   * Email:
+L304:     * ye.randall@gmail.com (for personal contact)
+L305:   * 【125†GitHub - RandallYe†github.com】
+L306:   * 【126†Linkedin - Randall Ye†www.linkedin.com】
+L307:   * 【127†Google Scholar - Kangfeng Ye†scholar.google.com】
+
