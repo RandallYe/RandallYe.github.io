@@ -12,6 +12,9 @@ npm test
 npm run build
 npm run check:links
 npm run check:demo
+npm run check:posts
+npm run check:talks
+npm run check:publications
 npm run dev
 ```
 
@@ -25,6 +28,9 @@ Root deployment configuration is static and targets https://randallye.github.io.
 ASTRO_BASE=/research-preview/ npm run build
 ASTRO_BASE=/research-preview/ npm run check:links
 ASTRO_BASE=/research-preview/ npm run check:demo
+ASTRO_BASE=/research-preview/ npm run check:posts
+ASTRO_BASE=/research-preview/ npm run check:talks
+ASTRO_BASE=/research-preview/ npm run check:publications
 npm run preview
 ```
 
@@ -43,10 +49,12 @@ python3 scripts/preserve-old-entry.py /home/rye/workspace/web/old_entry
 npm test
 ```
 
-Recovered showcases are `/tools/probabilistic-relations/`, `/tools/robochart-prism/`, `/tools/robochart-chemical-detector/` `/tools/robochart-patrol-robot/` and the engineering case study `/tools/line-following-robot/`; their original site paths redirect locally. Local videos use controls and `preload="none"`; media header checks do not establish actual browser playback. See `docs/progress.md` for verification gaps and upcoming demos/blog migration.
+Recovered showcases are `/tools/probabilistic-relations/`, `/tools/robochart-prism/`, `/tools/robochart-chemical-detector/`, `/tools/robochart-patrol-robot/` and the engineering case study `/tools/line-following-robot/`; their original site paths redirect locally. Local videos use controls and `preload="none"`; media header checks do not establish actual browser playback. See `docs/progress.md` for verification gaps and remaining history migration.
 
 ## Selected posts
 
-The user's blog scope is limited to Temporal Logic and Steady State Probabilities, available at `/posts/`. Other archived blogs are not published. Source hashes, full article bodies and original dates live in `src/data/posts.json`. `python3 scripts/migrate-selected-posts.py /home/rye/workspace/web/old_entry` refreshes those two archived bodies and idempotent aliases; it does not recover other posts.
+Only two blogs from `old_entry` are in scope: Temporal Logic and Steady State Probabilities. The latest-site SEFM/DataMod report is also migrated at `/posts/sefm-datamod-report/`. The original report source remains preserved and its content hash is in `src/data/posts.json`; `python3 scripts/migrate-sefm-report.py` refreshes the extracted post from that preserved HTML. The old-entry post hashes, bodies and dates are also in `src/data/posts.json`; `python3 scripts/migrate-selected-posts.py /home/rye/workspace/web/old_entry` refreshes only the two selected old-entry articles.
+
+Archived publication abstracts, BibTeX versions and preprint resources are attached to canonical records. To refresh source-backed abstracts from the supplied old-entry export, run `python3 scripts/enrich-publications.py /home/rye/workspace/web/old_entry`, then run `npm run check:publications` after a build.
 
 KaTeX is a pinned build dependency and outputs native MathML without client scripts or remote fonts. Run `npm run check:posts` after a successful build, with the same ASTRO_BASE value as that build. The steady-state post visibly identifies historical scientific-review issues while retaining the source notes.

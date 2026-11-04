@@ -1,6 +1,6 @@
 # Old-entry content merge map
 
-Destinations below are proposed unless already present. Canonical publication anchors, all four recovered research showcases, the line-following engineering case study, two selected posts, and all substantive talk entries are now implemented; see `progress.md`. The preservation manifest records copied assets and checksums. GitHub is authoritative for current facts; historical resources retain their own dates and provenance.
+Destinations below are proposed unless already present. Canonical publication records now include available source-backed abstracts, BibTeX and preprint versions; all four recovered research showcases, the line-following engineering case study, two selected old-entry posts and all substantive talk entries are implemented. See `progress.md`. The preservation manifest records copied assets and checksums. GitHub is authoritative for current facts; historical resources retain their own dates and provenance.
 
 | Archived page (relative to `old_entry/`) | Destination | Treatment |
 | --- | --- | --- |

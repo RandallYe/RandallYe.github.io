@@ -33,3 +33,23 @@ test('old publication aliases consolidate into unique current records', () => {
     }
   }
 });
+
+test('available abstracts, BibTeX files and preprints are attached to their canonical works', () => {
+  const records = json('src/data/publications.json');
+  const manifest = json('docs/old-entry-assets.json').files.filter(file => file.path.endsWith('.bib'));
+  const linkedBib = new Set();
+  for (const record of records) {
+    if (record.abstract) {
+      assert.ok(record.abstractSource, record.id);
+      assert.match(record.abstractSourceSha256, /^[a-f0-9]{64}$/, record.id);
+      assert.ok(record.abstract.length > 100, record.id);
+    }
+    for (const resource of record.resources || []) {
+      if (resource.url.endsWith('.bib')) linkedBib.add(resource.url.replace(/^\/old_entry\//, ''));
+    }
+  }
+  assert.equal(records.filter(record => record.abstract).length, 9);
+  for (const file of manifest) assert.ok(linkedBib.has(file.path), `unlinked BibTeX source: ${file.path}`);
+  assert.ok(records.find(record => record.id === 'security-protocol-animation').resources.some(resource => resource.url === 'https://arxiv.org/abs/2410.00676'));
+  assert.ok(records.find(record => record.id === 'oran-energy-availability').resources.some(resource => resource.url === 'https://arxiv.org/abs/2411.03943'));
+});

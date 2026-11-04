@@ -7,11 +7,12 @@ interface Props {
   venue: string;
   year: number;
   url: string;
+  abstract?: string;
   resources?: { label: string; url: string }[];
   relatedDemos?: string[];
   compact?: boolean;
 }
-const { id, title, authors, venue, year, url, resources = [], relatedDemos = [], compact = false } = Astro.props;
+const { id, title, authors, venue, year, url, abstract, resources = [], relatedDemos = [], compact = false } = Astro.props;
 const links = [
   ...resources,
   ...relatedDemos.map(slug => ({ label: 'Watch related demonstration', url: `/tools/${slug}/` })),
@@ -22,7 +23,13 @@ const links = [
   <div>
     <h3><a href={url}>{title}</a></h3>
     <p>{authors}</p><p class="muted">{venue}</p>
+    {!compact && abstract && <details class="publication-abstract"><summary>Abstract</summary><p>{abstract}</p></details>}
     {!compact && links.length > 0 && <ResourceLinks links={links} label={`Resources for ${title}`} />}
   </div>
   <a class="publication-arrow" href={url} aria-label={`Read ${title}`}><span aria-hidden="true">↗</span></a>
 </article>
+<style>
+  .publication-abstract { margin: .8rem 0; max-width: 76ch; }
+  .publication-abstract summary { color: var(--accent); cursor: pointer; font-size: .9rem; font-weight: 600; }
+  .publication-abstract p { color: var(--muted); font-size: .92rem; margin: .65rem 0; }
+</style>

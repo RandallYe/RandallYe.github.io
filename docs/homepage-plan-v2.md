@@ -87,7 +87,7 @@ Acceptance: both selected posts accounted for, zero stock-example posts; figures
 
 ### Phase 3D — talks, bibliography, projects and supporting history
 
-- Enrich current bibliography with the archived abstracts, BibTeX and preprint versions. Recover the 2018 working report as a labelled companion resource; avoid double-counting it as the later chapter.
+- [x] Enrich the canonical bibliography with all source-backed archived abstracts, every preserved BibTeX file, and identified preprint versions. Keep the 2018 working report labelled as a companion resource; do not count it as the later chapter.
 - [x] Add all 14 substantive archived talk entries, grouping three rehearsals with their conference presentations; restore the MODELS 2022 recording and slide variants, ICFEM 2022 clip/slides and other preserved talk materials.
 - Merge seven project histories and 21 news entries with current records. Distinguish dates of publication, announcement and event.
 - Add CSAV teaching and the Chinese Isabelle/UTP tutorial to About/Talks.

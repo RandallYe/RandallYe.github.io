@@ -15,7 +15,8 @@
     "test": "node --test scripts/*.test.mjs",
     "check:demo": "python3 scripts/check-demo-output.py",
     "check:posts": "python3 scripts/check-posts-output.py",
-    "check:talks": "python3 scripts/check-talks-output.py"
+    "check:talks": "python3 scripts/check-talks-output.py",
+    "check:publications": "python3 scripts/check-publications-output.py"
   },
   "dependencies": {
     "astro": "7.4.5",

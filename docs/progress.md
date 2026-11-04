@@ -140,15 +140,15 @@ Added a validated posts collection, `/posts/` index and two detail pages: `/post
 
 Added pinned KaTeX 0.16.22 for build-time **native MathML only**. No client maths library, remote fonts or stylesheet is required. The original LaTeX `mbox` notation and encoded ellipsis are adapted only for rendering. Strict equation parsing, matrices and aligned derivations pass; original archived mathematical content is retained. A visible historical-working-notes review banner identifies known doubtful/unfinished statements rather than silently rewriting them or claiming scientific validation.
 
-Initial executor npm access failed DNS; installation subsequently became available in the shared workspace, and the matching dependency lockfile is included. Build/type checks now pass. Tests cover exactly the two requested articles, source hashes/figures, retained references, MathML rendering and anchors. Root and preview-subpath builds, internal links and posts-output checks pass; demo-output regressions pass. Root output restored. Browser visual/screen-reader checks and external reference availability remain unverified. No deployment.
+Initial executor npm access failed DNS; installation subsequently became available in the shared workspace, and the matching dependency lockfile is included. Build/type checks now pass. Tests cover the two requested old-entry articles plus the separately selected latest-site SEFM/DataMod report, source hashes/figures, retained references, MathML rendering and anchors. Root and preview-subpath builds, internal links and posts-output checks pass; demo-output regressions pass. Root output restored. Browser visual/screen-reader checks and external reference availability remain unverified. No deployment.
 
-Talks are now migrated; remaining archive work is projects/news/teaching, with no additional blogs in the current scope.
+Talks and the canonical bibliography are now enriched; remaining archive work is projects/news/teaching, with no additional old-entry blogs in the current scope.
 
 ## Historical talks — 4 November 2026
 
 Merged the current site's three talks with the old-entry archive. The rebuilt Talks page now lists 14 distinct presentations across both sources: 11 substantive archived presentations and three current-site entries. The three archive rehearsals are grouped under their matching RAMiCS, MODELS, and ICFEM presentations. Original archived dates, event labels, slides, the MODELS recording, ICFEM animation clip, and Pint of Science CSP files are linked. The two local videos use native controls with `preload="none"`, no autoplay, and a download fallback. Historical talk URLs on the new site resolve to canonical talk anchors. Talk metadata is schema-validated in `src/data/talks.json`; provenance and binary hashes remain in the archive inventory/manifests.
 
-Validation: `npm run check`, `npm test`, root and `/research-preview/` builds, `check:links`, `check:demo`, `check:posts`, and the new `check:talks` pass. The built Talks route contains 14 source aliases, 11 archive records, three grouped rehearsals, and two deferred local recordings. External talk links and actual video playback remain unverified; browser/device acceptance is still outstanding.
+Validation: `npm run check`, `npm test`, root and `/research-preview/` builds, `check:links`, `check:demo`, `check:posts`, and `check:talks` pass. The built Talks route contains 14 source aliases, 11 archive records, three grouped rehearsals, and two deferred local recordings. External talk links and actual video playback remain unverified; browser/device acceptance is still outstanding.
 
 ## Remaining archive work
 
@@ -159,3 +159,9 @@ Next: reconcile and merge the seven project histories and 21 news entries agains
 After the user reported the report link broken, traced the original homepage URL to a mixed-case `.html` path that was not emitted by the existing Astro directory route. Migrated the full latest-site report to `/posts/sefm-datamod-report/`, retaining both SEFM and DataMod sections, six original figures, attribution, paper and project links, and a SHA-256 reference to the untouched source file. The Talks resource and rendered legacy homepage now point to the new post. The exact historic `Posts/SEFM_DataMod/cheddar_updates.html` URL now has a matching `.html` redirect route. The two selected old-entry blogs remain the only old-entry blog migrations.
 
 Validation: post tests verify source hash, all six figure files and paper links. Build and post/link checks verify the new route and exact legacy `.html` redirect at root and preview base paths. Browser validation remains pending.
+
+## Canonical bibliography enrichment — 4 November 2026
+
+Added archived abstracts to the nine matching canonical records where the old-entry publication page explicitly supplied one. Each abstract stores its source page and SHA-256; the duplicated CSP‖B text artifact in the old HTML export is normalized. No abstract was invented for records without a captured source abstract. Kept the 2018 working report as a labelled resource on the 2020 chapter rather than a second publication. Verified that all 17 archived BibTeX files are reachable from their canonical work/companion record. Added the security-paper and O-RAN arXiv versions referenced in the SEFM/DataMod report, without duplicating works. Abstracts are available in expandable details on Publications.
+
+Validation: Astro check, all unit tests, root and `/research-preview/` builds, and internal links pass. Tests and `check:publications` verify nine rendered abstracts, 17 BibTeX links, the 2018 companion links, preprint versions, and unique canonical records. External abstract links and browser review are still pending.

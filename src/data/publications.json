@@ -46,7 +46,10 @@
     "relatedDemos": [
       "robochart-chemical-detector",
       "robochart-patrol-robot"
-    ]
+    ],
+    "abstract": "RoboChart is a core notation in the RoboStar framework. It is a timed and probabilistic domain-specific and state machine-based language for robotics. RoboChart supports shared variables and communication across entities in its component model. It has formal denotational semantics given in CSP. The semantic technique of Interaction Trees (ITrees) represents behaviours of reactive and concurrent programs interacting with their environments. Recent mechanisation of ITrees, ITree-based CSP semantics and a Z mathematical toolkit in Isabelle/HOL bring new applications of verification and animation for state-rich process languages, such as RoboChart. In this paper, we use ITrees to give RoboChart novel operational semantics, implement it in Isabelle, and use Isabelle’s code generator to generate verified and executable animations. We illustrate our approach using an autonomous chemical detector and patrol robot models, exhibiting nondeterminism and using shared variables. With animation, we show two concrete scenarios for the chemical detector when the robot encounters different environmental inputs and three for the patrol robot when its calibrated position is in other corridor sections. We also verify that the animated scenarios are trace refinements of the CSP denotational semantics of the RoboChart models using FDR, a refinement model checker for CSP. This ensures that our approach to resolve nondeterminism using CSP operators with priority is sound and correct.",
+    "abstractSource": "publication/ye-2024100940/index.html",
+    "abstractSourceSha256": "45ba79879a6fef1a3a0103ef48015756de3d1517de40e9fdf34e1979d4584d8a"
   },
   {
     "title": "Probabilistic modelling and verification using RoboChart and PRISM",
@@ -58,7 +61,10 @@
     "id": "robochart-prism",
     "relatedDemos": [
       "robochart-prism"
-    ]
+    ],
+    "abstract": "RoboChart is a timed domain-specific language for robotics, distinctive in its support for automated verification by model checking and theorem proving. Since uncertainty is an essential part of robotic systems, we present here an extension to RoboChart to model uncertainty using probabilism. The extension enriches RoboChart state machines with probability through a new construct: probabilistic junctions as the source of transitions with a probability value. RoboChart has an accompanying tool, called RoboTool, for modelling and verification of functional and real-time behaviour. We present here also an automatic technique, implemented in RoboTool, to transform a RoboChart model into a PRISM model for verification. We have extended the property language of RoboTool so that probabilistic properties expressed in temporal logic can be written using controlled natural language.",
+    "abstractSource": "publication/ye-2021/index.html",
+    "abstractSourceSha256": "e4f9215effd8dcc4c7f23c2e44fd8e1a6833b2cccbcfc3df73eff5dacb04d86d"
   },
   {
     "title": "Automated Verification of Reactive and Concurrent Programs by Calculation",
@@ -81,7 +87,10 @@
         "label": "Preprint version",
         "url": "https://arxiv.org/abs/2007.13529"
       }
-    ]
+    ],
+    "abstract": "Reactive programs combine traditional sequential programming constructs with primitives to allow communication with other concurrent agents. They are ubiquitous in modern applications, ranging from components systems and web services, to cyber-physical systems and autonomous robots. In this paper, we present an algebraic verification strategy for concurrent reactive programs, with a large or infinite state space. We define novel operators to characterise interactions and state updates, and an associated equational theory. With this we can calculate a reactive program’s denotational semantics, and thereby facilitate automated proof. Of note is our reasoning support for iterative programs with reactive invariants, based on Kleene algebra, and for parallel composition. We illustrate our strategy by verifying a reactive buffer. Our laws and strategy are mechanised in Isabelle/UTP, our implementation of Hoare and He’s Unifying Theories of Programming (UTP) framework, to provide soundness guarantees and practical verification support.",
+    "abstractSource": "publication/foster-2021100681/index.html",
+    "abstractSourceSha256": "1191273ceca1e46d23deb12e206918b3862bf79fd2accee68524584ead7aafc0"
   },
   {
     "title": "Model checking of state-rich formalism by linking to CSP ∥ B",
@@ -96,7 +105,10 @@
         "label": "Archived BibTeX",
         "url": "/old_entry/publication/ye-2017/ye-2017.bib"
       }
-    ]
+    ],
+    "abstract": "Since state-rich formalism is a combination of Z, CSP, refinement calculus and Dijkstra’s guarded commands, its model checking is intrinsically more complicated and difficult than that of individual state-based languages or process algebras. Current solutions translate executable constructs of programs to Java with JCSP, or translate them to CSP processes. Data aspects of programs are expressed in the Java programming language or as CSP processes. Both of them have disadvantages. This work presents a new approach to model-checking by linking it to CSP‖B; then we utilise ProB to model-check and animate the CSP‖B program. The most significant advantage of this approach is the direct mapping of the state part in to Z and finally to B, which maintains the high-level abstraction of data specification. In addition, introduction of deadlock, invariant violation checking, LTL formula checking and animation is another key advantage. We present our approach, a link definition for a subset of constructs, as well as a popular case study (reactive buffer) to show the practical usability of our work. We conclude with a discussion of related work, advantages and potential limitations of our approach and future work.",
+    "abstractSource": "publication/ye-2017/index.html",
+    "abstractSourceSha256": "2318f36a7678a600842cc639d7c8dce184f2e9fe4f978d6e36b718921486eb4a"
   },
   {
     "title": "Formal verification of physical layer security protocols for next-generation communication networks",
@@ -117,6 +129,12 @@
     "id": "security-protocol-animation",
     "relatedDemos": [
       "security-protocol-animation"
+    ],
+    "resources": [
+      {
+        "label": "Preprint version",
+        "url": "https://arxiv.org/abs/2410.00676"
+      }
     ]
   },
   {
@@ -126,7 +144,13 @@
     "year": 2024,
     "url": "https://doi.org/10.1007/978-3-031-87908-1_9",
     "group": "Conference Proceedings",
-    "id": "oran-energy-availability"
+    "id": "oran-energy-availability",
+    "resources": [
+      {
+        "label": "Preprint version",
+        "url": "https://arxiv.org/abs/2411.03943"
+      }
+    ]
   },
   {
     "title": "Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment",
@@ -159,7 +183,10 @@
     ],
     "relatedDemos": [
       "robochart-chemical-detector"
-    ]
+    ],
+    "abstract": "RoboChart is a core notation in the RoboStar framework. It is a timed and probabilistic domain-specific and state machine based language for robotics. RoboChart supports shared variables and communication across entities in its component model. It has a formal denotational semantics given in CSP. Interaction Trees (ITrees) is a semantic technique to represent behaviours of reactive and concurrent programs interacting with their environments. Recent mechanisations of ITrees along with ITree-based CSP semantics and a Z mathematical toolkit in Isabelle/HOL bring new applications of verification and animation for state-rich process languages, such as RoboChart. In this paper, we use ITrees to give RoboChart a novel operational semantics, implement it in Isabelle, and use Isabelle’s code generator to generate verified and executable animations. We illustrate our approach using an autonomous chemical detector model. With animation, we show two concrete scenarios when the robot encounters different environmental inputs.",
+    "abstractSource": "publication/ye-2022/index.html",
+    "abstractSourceSha256": "110c8d200ac714ed70c0e59b07036b6c4475b65d38204b0e095d5a4b898df446"
   },
   {
     "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving",
@@ -174,7 +201,10 @@
         "label": "Archived BibTeX",
         "url": "/old_entry/publication/ye-2021-a/cite.bib"
       }
-    ]
+    ],
+    "abstract": "Semantics for nondeterministic probabilistic sequential programs has been well studied in the past decades. In a variety of semantic models, how nondeterministic choice interacts with probabilistic choice is the most significant difference. In He, Morgan, and McIver’s relational model, probabilistic choice refines nondeterministic choice. This model is general because of its predicative-style semantics in Hoare and He’s Unifying Theories of Programming, and suitable for automated reasoning because of its algebraic feature. Previously, we gave probabilistic semantics to the RoboChart notation based on this model, and also formalised the proof that the semantic embedding is a homomorphism, and revealed interesting details. In this paper, we present our mechanisation of the proof in Isabelle/UTP enabling automated reasoning for probabilistic sequential programs including a subset of the RoboChart language. With mechanisation, we even reveal more interesting questions, hidden in the original model. We demonstrate several examples, including an example to illustrate the interaction between nondeterministic choice and probabilistic choice, and a RoboChart model for randomisation based on binary probabilistic choice.",
+    "abstractSource": "publication/ye-2021-a/index.html",
+    "abstractSourceSha256": "bfa95a2845227c1dafe1d54acf41267b2b6bab95614418137457f157075cdbb8"
   },
   {
     "title": "Probabilistic Semantics for RoboChart",
@@ -212,7 +242,10 @@
         "label": "Preprint version",
         "url": "https://arxiv.org/abs/1806.02101"
       }
-    ]
+    ],
+    "abstract": "Reactive programs are ubiquitous in modern applications, and so verification is highly desirable. We present a verification strategy for reactive programs with a large or infinite state space utilising algebraic laws for reactive relations. We define novel operators to characterise interactions and state updates, and an associated equational theory. With this we can calculate a reactive program’s denotational semantics, and thereby facilitate automated proof. Of note is our reasoning support for iterative programs with reactive invariants, which is supported by Kleene algebra. We illustrate our strategy by verifying a reactive buffer. Our laws and strategy are mechanised in Isabelle/UTP, which provides soundness guarantees, and practical verification support.",
+    "abstractSource": "publication/foster-2018/index.html",
+    "abstractSourceSha256": "5174672c7c7b720c0437d4938116201e4aecf424f897887a648dfe07948a44a3"
   },
   {
     "title": "Abel’s limit theorem",
@@ -245,7 +278,10 @@
         "label": "Archived BibTeX",
         "url": "/old_entry/publication/woodcock-2021/cite.bib"
       }
-    ]
+    ],
+    "abstract": "RoboChart is a UML-like language designed for modelling autonomous and mobile robots. It includes timed and probabilistic primitives. In this chapter, we discuss first why we need probability by surveying how we use it in designing robots. To illustrate our approach, we focus on the verification of probabilistic robotic algorithms for pose estimation. We verify a model-fitting algorithm: random sample consensus (Ransac). This is a popular algorithm, representative of a class of particle-filter algorithms. We analyse the aspects of the algorithm and show how to model-check properties and how to get stronger guarantees using a program logic. Our contributions are a survey of probabilistic robotic applications and an approach to verifying probabilistic algorithms developed using RoboStar technology.",
+    "abstractSource": "publication/woodcock-2021/index.html",
+    "abstractSourceSha256": "bbd8c5abcc911510a6db7e3587b41ac3f488d2d862b35544efbaf78a861e11f2"
   },
   {
     "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP",
@@ -268,7 +304,10 @@
         "label": "Related 2018 working report",
         "url": "https://eprints.whiterose.ac.uk/129640/"
       }
-    ]
+    ],
+    "abstract": "Simulink is widely accepted in industry for model-based designs. Verification of Simulink diagrams against contracts or implementations has attracted the attention of many researchers. We present a compositional assume-guarantee reasoning framework to provide a purely relational mathematical semantics for discrete-time Simulink diagrams, and then to verify the diagrams against the contracts in the same semantics in UTP. We define semantics for individual blocks and composition operators, and develop a set of calculation laws (based on the equational theory) to facilitate automated proof. An industrial safety-critical model is verified using our approach. Furthermore, all these definitions, laws, and verification of the case study are mechanised in Isabelle/UTP, an implementation of UTP in Isabelle/HOL.",
+    "abstractSource": "publication/ye-2020/index.html",
+    "abstractSourceSha256": "97098b26e8c92539b1cfd3d1596bd1f9920cb0285c08e236e51481ccba854c6b"
   },
   {
     "title": "Model Checking of State-Rich Formalisms (By Linking to Combination of State-based Formalism and Process Algebra)",
