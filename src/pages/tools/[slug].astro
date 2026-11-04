@@ -21,7 +21,7 @@ const { Content } = await render(demo);
 <BaseLayout title={d.title} description={d.summary}>
   <a class="back-link" href={local('tools/')}>← Tools & Demos</a>
   <div class="page-heading">
-    <p class="eyebrow">{d.researchArea} · Recorded demonstration</p>
+    <p class="eyebrow">{d.researchArea} · {d.category === 'engineering-case-study' ? 'Engineering case study' : 'Recorded demonstration'}</p>
     <h1>{d.title}</h1><p>{d.subtitle}</p>
     {d.provenance && <p class="source-date">Originally published <time datetime={d.provenance.originalDate}>{new Date(`${d.provenance.originalDate}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></p>}
   </div>
@@ -36,10 +36,10 @@ const { Content } = await render(demo);
     <div class="section-heading"><div><p class="eyebrow">Explore the source material</p><h2>{d.examplesHeading}</h2></div></div>
     <div class="grid example-grid">{d.exampleLinks.map((example, index) => <article class="tool-card"><p class="eyebrow">Example 0{index + 1}</p><h3>{example.label}</h3>{example.description && <p>{example.description}</p>}<a class="text-link" href={local(example.url)}>Explore the specification and source ↗</a></article>)}</div>
   </section>}
-  {figures.length > 0 && <section class="section"><h2>Model diagrams</h2><div class="demo-figures">{figures.map(figure => <figure><a href={local(figure.src)}><img src={local(figure.src)} alt={figure.alt || figure.title} loading="lazy" decoding="async" /></a><figcaption><strong>{figure.title}</strong><p>{figure.caption}</p></figcaption></figure>)}</div></section>}
+  {figures.length > 0 && <section class="section"><h2>Models & supporting figures</h2><div class="demo-figures">{figures.map(figure => <figure><a href={local(figure.src)}><img src={local(figure.src)} alt={figure.alt || figure.title} loading="lazy" decoding="async" /></a><figcaption><strong>{figure.title}</strong><p>{figure.caption}</p></figcaption></figure>)}</div></section>}
   <section class="section prose"><Content /></section>
   {papers.length > 0 && <section class="section prose"><h2>Related publications</h2>{papers.map(paper => <p><a href={local(`publications/#${paper.id}`)}>{paper.data.title}</a><br /><span class="muted">{paper.data.authors} · {paper.data.year}</span></p>)}</section>}
-  <section class="section"><h2>Paper, source & slides</h2><ResourceLinks links={[...d.paperLinks, ...d.sourceLinks, ...d.slidesLinks]} /></section>
+  <section class="section"><h2>Research resources & references</h2><ResourceLinks links={[...d.paperLinks, ...d.sourceLinks, ...d.slidesLinks]} /></section>
 </BaseLayout>
 <style>
   .page-heading .source-date { font-size: .85rem; color: var(--muted); }

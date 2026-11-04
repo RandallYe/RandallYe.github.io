@@ -18,5 +18,10 @@
     "path": "showcase/animation_of_patrol_robot",
     "destination": "tools/robochart-patrol-robot/",
     "title": "Animation of a patrol robot model"
+  },
+  {
+    "path": "showcase/engineer_lfr",
+    "destination": "tools/line-following-robot/",
+    "title": "Engineering a line-following robot"
   }
 ]

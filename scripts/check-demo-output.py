@@ -49,8 +49,22 @@ for slug, count in [('robochart-prism', 1), ('robochart-patrol-robot', 2)]:
     figures = [attrs for tag, attrs in media.tags if tag == 'img' and '/showcase/' in attrs.get('src', '')]
     assert len(figures) == count
     assert all(attrs.get('alt') for attrs in figures)
+lfr_path = ROOT / 'tools/line-following-robot/index.html'
+lfr = Media(lfr_path)
+lfr_videos = [attrs for tag, attrs in lfr.tags if tag == 'video']
+assert len(lfr_videos) == 3
+assert all('controls' in video and video['preload'] == 'none' and 'autoplay' not in video for video in lfr_videos)
+lfr_sources = [attrs['src'] for tag, attrs in lfr.tags if tag == 'source']
+assert len(set(lfr_sources)) == 3
+assert all((ROOT / src[len(BASE):]).is_file() for src in lfr_sources)
+assert BASE + 'old_entry/files/lfr/my_lfr_gcc_20180807.zip' in [attrs.get('href') for tag, attrs in lfr.tags if tag == 'a']
+assert 'formal verification was not completed' in lfr_path.read_text()
+assert len([attrs for tag, attrs in lfr.tags if tag == 'img' and '/showcase/' in attrs.get('src', '')]) == 3
+for route in ['index.html', 'tools/index.html']:
+    text = (ROOT / route).read_text()
+    assert text.count('Engineering a line-following robot') == 1
 security = (ROOT / 'tools/security-protocol-animation/index.html').read_text()
 assert 'Needham–Schroeder' in security and 'Diffie–Hellman' in security
 assert 'youtube-nocookie.com/embed/8FO6KT6EMqM' in security
 assert not any(tag == 'iframe' for tag, _ in Media(ROOT / 'tools/security-protocol-animation/index.html').tags)
-print(f'Demo output checks passed at {BASE}: four distinct local videos, model diagrams, deferred loading, canonical links, no duplicate cards and security fallback retained.')
+print(f'Demo output checks passed at {BASE}: seven distinct local videos, engineering scope, model diagrams, deferred loading, canonical links, no duplicate cards and security fallback retained.')

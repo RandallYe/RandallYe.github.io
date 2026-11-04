@@ -635,6 +635,19 @@
       "mediaPlayback": null
     },
     {
+      "path": "showcase/engineer_lfr/featured_hue7d176f41346907722bcc5ab0fc7f63b_167208_720x2500_fit_q75_h2_lanczos_3.webp",
+      "bytes": 12196,
+      "sha256": "93e9a6570b99545ce3f60aa3d93199f586b03aed0905fca39c91be3fe93b614c",
+      "publicPath": "old_entry/showcase/engineer_lfr/featured_hue7d176f41346907722bcc5ab0fc7f63b_167208_720x2500_fit_q75_h2_lanczos_3.webp",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
       "path": "showcase/engineer_lfr/lfr_demo_sharp_corner.mp4",
       "bytes": 13534819,
       "sha256": "eacde7723b7c9a26b042919455c823c015ca646177d51ec9eec77b3d959a73bb",
@@ -652,6 +665,19 @@
       "bytes": 2481568,
       "sha256": "0d2b642321e920f99306d36ee00d3cf583beee4f1f49950932016e1db002e479",
       "publicPath": "old_entry/showcase/engineer_lfr/lfr_dse_result.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/engineer_lfr/lfr_dse_result_hu1b4adb50a28e97bc749041e0355b4f07_2481568_1200x1200_fit_q75_h2_lanczos_3.webp",
+      "bytes": 57430,
+      "sha256": "f0ea2b9c85552031c919d5bc8ace76b95be9d311c99258388393be4e5943da1b",
+      "publicPath": "old_entry/showcase/engineer_lfr/lfr_dse_result_hu1b4adb50a28e97bc749041e0355b4f07_2481568_1200x1200_fit_q75_h2_lanczos_3.webp",
       "consumers": [
         {
           "sourcePage": "showcase/engineer_lfr/index.html",
@@ -700,10 +726,36 @@
       "mediaPlayback": null
     },
     {
+      "path": "showcase/engineer_lfr/lfr_math_model_hu11154b5c7d56c293c951a3ab585eac38_2121722_1200x1200_fit_q75_h2_lanczos.webp",
+      "bytes": 43978,
+      "sha256": "ce3793308b8acf2f825cd2654d524f800a698cdce21c93184995b9e1326bc24b",
+      "publicPath": "old_entry/showcase/engineer_lfr/lfr_math_model_hu11154b5c7d56c293c951a3ab585eac38_2121722_1200x1200_fit_q75_h2_lanczos.webp",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
       "path": "showcase/engineer_lfr/m3pi.png",
       "bytes": 183585,
       "sha256": "942af8c42f2f431997761f34b3129a3ef831d16306e8d9b21a3ec5ebc1cf56a5",
       "publicPath": "old_entry/showcase/engineer_lfr/m3pi.png",
+      "consumers": [
+        {
+          "sourcePage": "showcase/engineer_lfr/index.html",
+          "plannedDestination": "/tools/line-following-robot/"
+        }
+      ],
+      "mediaPlayback": null
+    },
+    {
+      "path": "showcase/engineer_lfr/m3pi_hu04d1b6a4e115dfc35ed5904b40c996fa_183585_1200x1200_fit_q75_h2_lanczos_3.webp",
+      "bytes": 19450,
+      "sha256": "9dd5a67485b7612c51460b83a5dcf20e0be64e077b69c0fd81eb4fe41a48b910",
+      "publicPath": "old_entry/showcase/engineer_lfr/m3pi_hu04d1b6a4e115dfc35ed5904b40c996fa_183585_1200x1200_fit_q75_h2_lanczos_3.webp",
       "consumers": [
         {
           "sourcePage": "showcase/engineer_lfr/index.html",

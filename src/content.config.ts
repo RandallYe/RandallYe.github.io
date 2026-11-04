@@ -31,6 +31,7 @@ const demos = defineCollection({
     subtitle: z.string(),
     summary: z.string(),
     researchArea: z.string(),
+    category: z.enum(['research-demo', 'engineering-case-study']).default('research-demo'),
     status: z.enum(['recorded-demonstration', 'source-only', 'interactive']),
     problem: z.string(),
     method: z.string(),

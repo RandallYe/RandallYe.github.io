@@ -43,4 +43,4 @@ python3 scripts/preserve-old-entry.py /home/rye/workspace/web/old_entry
 npm test
 ```
 
-Recovered showcases are `/tools/probabilistic-relations/`, `/tools/robochart-prism/`, `/tools/robochart-chemical-detector/` and `/tools/robochart-patrol-robot/`; their original site paths redirect locally. Local videos use controls and `preload="none"`; media header checks do not establish actual browser playback. See `docs/progress.md` for verification gaps and upcoming demos/blog migration.
+Recovered showcases are `/tools/probabilistic-relations/`, `/tools/robochart-prism/`, `/tools/robochart-chemical-detector/` `/tools/robochart-patrol-robot/` and the engineering case study `/tools/line-following-robot/`; their original site paths redirect locally. Local videos use controls and `preload="none"`; media header checks do not establish actual browser playback. See `docs/progress.md` for verification gaps and upcoming demos/blog migration.
