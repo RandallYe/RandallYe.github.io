@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ResearchMethod from '../../components/ResearchMethod.astro';
+import ResearchFocus from '../../components/ResearchFocus.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { local } from '../../lib/site-paths';
 import '../../styles/research.css';
@@ -12,11 +12,8 @@ const selected = await Promise.all([
   { title: 'RoboChart & PRISM', paper: 'robochart-prism', venue: 'Software and Systems Modeling', demo: 'robochart-prism', notation: 'P ∥ Q', path: 'probability/#robochart-prism', summary: 'From robotic state machines to automated probabilistic verification and quantitative properties.' },
 ].map(async work => ({ ...work, publication: await getEntry('publications', work.paper), demonstration: work.demo ? await getEntry('demos', work.demo) : undefined })));
 ---
-<BaseLayout title="Research" description="Research centred on UTP and Circus: modelling state-rich concurrent systems, refinement checking, probabilistic semantics and verification tools.">
-  <div class="research-intro">
-    <div><p class="eyebrow">UTP · Circus · Refinement checking</p><h1>Research</h1><p class="research-intro-statement">Modelling state.<br />Understanding concurrency.<br /><em>Checking refinement.</em></p><p>UTP and Circus are at the centre of my research. I study the modelling of state-rich concurrent systems and their verification through refinement checking, connecting mathematical semantics with specification languages and analysis tools.</p><p>From this foundation, my work extends to probabilistic semantics, robotic systems and security protocols.</p><a class="text-link" href="#areas">Explore the research areas ↓</a></div>
-    <ResearchMethod />
-  </div>
+<BaseLayout title="Research" description="Modelling, verification, development and quantification of state-rich reactive, concurrent and distributed systems using UTP, Circus, CSP and Z.">
+  <ResearchFocus />
   <section class="section" aria-labelledby="selected-research-title">
     <div class="section-heading"><div><p class="eyebrow">Theory into practice · Co-authored work</p><h2 id="selected-research-title">Selected contributions</h2></div><a href={local('publications/')}>All publications →</a></div>
     <div class="research-selected-grid">{selected.map((work, index) => <article class="research-selected">
@@ -28,10 +25,10 @@ const selected = await Promise.all([
     </article>)}</div>
   </section>
   <section class="section" id="areas" aria-labelledby="research-areas-title">
-    <div class="section-heading"><div><p class="eyebrow">Connected lines of inquiry</p><h2 id="research-areas-title">Research areas</h2></div></div>
+    <div class="section-heading"><div><p class="eyebrow">Contributions to one research theme</p><h2 id="research-areas-title">Foundations, methods & applications</h2></div></div>
     {areas.map(({ id, data }) => <article class="research-area-overview" id={id}>
       <div class="research-area-marker" aria-hidden="true"><span>0{data.order + 1}</span><strong>{data.notation}</strong></div>
-      <div><h3><a href={local(`research/${id}/`)}>{data.title}</a></h3><p class="research-overview-question">{data.question}</p><p>{data.summary}</p><a class="text-link" href={local(`research/${id}/`)}>Explore this area →</a></div>
+      <div><h3><a href={local(`research/${id}/`)}>{data.title}</a></h3><p class="research-overview-question">{data.question}</p><p>{data.summary}</p><a class="text-link" href={local(`research/${id}/`)}>Explore these contributions →</a></div>
       <ul class="research-work-index" aria-label={`Contributions in ${data.shortTitle}`}>{data.contributions.map(work => <li><a href={local(`research/${id}/#${work.id}`)}>{work.title}<span aria-hidden="true">↗</span></a></li>)}</ul>
     </article>)}
   </section>

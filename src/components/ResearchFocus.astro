@@ -1,0 +1,35 @@
+---
+import { local } from '../lib/site-paths';
+---
+<section class="research-focus" aria-labelledby="research-focus-title">
+  <p class="eyebrow">Research · Mathematical foundations</p>
+  <h1 id="research-focus-title">Modelling · Verification · Development · Quantification</h1>
+  <p class="research-focus-subject">State-rich reactive, concurrent and distributed systems.</p>
+  <p class="research-focus-intro">I study how to model these systems, verify their behaviour, develop implementations and quantify their properties using <strong>Unifying Theories of Programming (UTP), Circus, CSP and Z</strong>. My focus brings together rich data state, interaction, concurrency and uncertainty within a mathematical account of system behaviour.</p>
+  <div class="research-focus-foundations" aria-label="Formal foundations"><span>UTP</span><span>Circus</span><span>CSP</span><span>Z</span></div>
+  <div class="research-focus-methods">
+    <div><span aria-hidden="true">01 /</span><h2>Modelling</h2><math class="research-focus-notation" aria-label="P in parallel with Q"><mi>P</mi><mo>∥</mo><mi>Q</mi></math><p>Describe rich state and interacting processes through precise specifications and semantics.</p></div>
+    <div><span aria-hidden="true">02 /</span><h2>Verification</h2><math class="research-focus-notation" aria-label="Specification S is refined by P"><mi>S</mi><mo>⊑</mo><mi>P</mi></math><math class="research-focus-notation" aria-label="Always, if p holds, q eventually holds"><mo>□</mo><mo>(</mo><mi>p</mi><mo>⇒</mo><mo>◇</mo><mi>q</mi><mo>)</mo></math><p>Reason about correctness through refinement checking and temporal logic, supported by theorem proving and model checking.</p></div>
+    <div><span aria-hidden="true">03 /</span><h2>Development</h2><math class="research-focus-notation" aria-label="Successive refinements from S to D one to D two"><mi>S</mi><mo>⊑</mo><msub><mi>D</mi><mn>1</mn></msub><mo>⊑</mo><msub><mi>D</mi><mn>2</mn></msub></math><p>Develop implementations from specifications through successive refinement, connecting formal models with executable software.</p></div>
+    <div><span aria-hidden="true">04 /</span><h2>Quantification</h2><math class="research-focus-notation" aria-label="Probability of event A"><mi mathvariant="normal">Pr</mi><mo>(</mo><mi>A</mi><mo>)</mo></math><p>Analyse uncertainty and quantitative properties such as reliability, timing and resource use.</p></div>
+  </div>
+  <div class="research-focus-applications" aria-labelledby="research-applications-title">
+    <div class="research-focus-applications-heading"><p class="eyebrow">Applications of the research theme</p><h2 id="research-applications-title">Different systems. Shared foundations.</h2><p>Blockchains, security protocols and robotic systems combine changing state with interacting participants.</p></div>
+    <div class="research-application-grid">
+      <article>
+        <svg viewBox="0 0 300 140" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.5"><path d="M60 40L150 100L240 40M60 40H240M150 100V120" stroke-dasharray="4 5"/><rect x="35" y="22" width="50" height="36" rx="5"/><rect x="125" y="82" width="50" height="36" rx="5"/><rect x="215" y="22" width="50" height="36" rx="5"/><path d="M46 33H74M46 43H64M136 93H164M136 103H154M226 33H254M226 43H244"/></g></svg>
+        <h3>Blockchains</h3><p>Distributed state and interactions between participants.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 300 140" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.5"><circle cx="55" cy="65" r="23"/><circle cx="245" cy="65" r="23"/><path d="M88 50H210L202 44M212 80H90L98 86"/><rect x="132" y="36" width="36" height="28" rx="4"/><path d="M141 36V28A9 9 0 0 1 159 28V36"/></g><g fill="currentColor" font-family="Georgia,serif" font-size="20" text-anchor="middle"><text x="55" y="72">A</text><text x="245" y="72">B</text></g></svg>
+        <h3>Security protocols</h3><p>Communication, participant state and assumptions about an intruder.</p><a href={local('research/security/')}>Explore protocol research →</a>
+      </article>
+      <article>
+        <svg viewBox="0 0 300 140" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.5"><rect x="120" y="43" width="60" height="48" rx="9"/><circle cx="136" cy="62" r="4"/><circle cx="164" cy="62" r="4"/><path d="M138 79H162M150 43V29M108 57V80M192 57V80M130 91V104M170 91V104M45 103H97M203 103H255"/><circle cx="150" cy="24" r="5"/><path d="M65 35Q90 65 65 95M235 35Q210 65 235 95" stroke-dasharray="4 5"/></g></svg>
+        <h3>Robotic systems</h3><p>Reactive controllers, concurrent behaviour and uncertain environments.</p><a href={local('research/probability/#robochart-prism')}>Explore robotic systems →</a>
+      </article>
+    </div>
+    <p class="research-diagram-caption">Conceptual illustrations of the application domains.</p>
+  </div>
+  <a class="text-link" href="#areas">Explore the contributions to this theme ↓</a>
+</section>

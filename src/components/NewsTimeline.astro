@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ResourceLinks from './ResourceLinks.astro';
+import { local } from '../lib/site-paths';
+interface Props {
+  items: { id: string; data: CollectionEntry<'news'>['data'] }[];
+  compact?: boolean;
+}
+const { items, compact = false } = Astro.props;
+const dateLabel = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+---
+<ol class:list={['news-timeline', { 'news-timeline-compact': compact }]} role="list" aria-label="News, most recent first">
+  {items.map(({ id, data }) => <li class="news-milestone" id={compact ? undefined : id}>
+    <time class="news-milestone-date" datetime={data.date}>{dateLabel(data.date)}</time>
+    <article class="news-milestone-content">
+      <h3>{compact ? <a href={local(`news/#${id}`)}>{data.title}</a> : data.title}</h3>
+      <p>{data.summary}</p>
+      {!compact && <>
+        {data.eventDate && <p class="news-event-date">Event: <time datetime={data.eventDate}>{dateLabel(data.eventDate)}</time>{data.eventEndDate && data.eventEndDate !== data.eventDate && <> – <time datetime={data.eventEndDate}>{dateLabel(data.eventEndDate)}</time></>}.</p>}
+        {data.detail && data.detail !== data.summary && <details><summary>More details</summary><p>{data.detail}</p></details>}
+        {data.resources.length > 0 && <ResourceLinks links={data.resources} label={`Resources for ${data.title}`} />}
+      </>}
+    </article>
+  </li>)}
+</ol>
+<style>
+  .news-timeline { list-style: none; padding: 0; margin: 2rem 0 0; max-width: 950px; }
+  .news-milestone { position: relative; display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 3.5rem; padding-bottom: 2.5rem; scroll-margin-top: 8rem; }
+  .news-milestone::before { content: ''; position: absolute; top: .6rem; bottom: -.6rem; left: 148px; width: 1px; background: var(--line); }
+  .news-milestone::after { content: ''; position: absolute; top: .4rem; left: 143px; width: 11px; height: 11px; border: 2px solid var(--accent); border-radius: 50%; background: var(--paper); }
+  .news-milestone:last-child { padding-bottom: 0; }
+  .news-milestone:last-child::before { display: none; }
+  .news-milestone-date { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; padding-top: .15rem; }
+  .news-milestone-content { min-width: 0; }
+  .news-milestone-content h3 { margin: 0 0 .6rem; font-size: 1.25rem; line-height: 1.35; }
+  .news-milestone-content h3 a { color: var(--ink); text-decoration: none; }
+  .news-milestone-content h3 a:hover { text-decoration: underline; }
+  .news-milestone-content p { color: var(--muted); margin: .6rem 0; }
+  .news-milestone-content .news-event-date { font-size: .85rem; }
+  .news-milestone-content details { margin: 1rem 0; }
+  .news-milestone-content summary { cursor: pointer; color: var(--accent); }
+  .news-timeline-compact .news-milestone-content h3 { font-size: 1.1rem; }
+  .news-timeline-compact .news-milestone-content p { font-size: .92rem; }
+  @media (max-width: 600px) {
+    .news-milestone { grid-template-columns: minmax(0, 1fr); gap: .5rem; padding-left: 1.7rem; padding-bottom: 2rem; }
+    .news-milestone::before { left: 5px; }
+    .news-milestone::after { left: 0; }
+    .news-milestone-date { padding-top: 0; }
+  }
+</style>

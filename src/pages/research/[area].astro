@@ -14,12 +14,12 @@ const areas = (await getCollection('researchAreas')).sort((a, b) => a.data.order
 <BaseLayout title={data.title} description={data.summary}>
   <div class="research-area-heading">
     <a class="back-link" href={local('research/')}>← Research overview</a>
-    <p class="eyebrow">Research area {String(data.order + 1).padStart(2, '0')}</p>
+    <p class="eyebrow">Research strand {String(data.order + 1).padStart(2, '0')}</p>
     <h1>{data.title}</h1><p class="research-question">{data.question}</p><p>{data.approach}</p>
     <span class="research-area-symbol" aria-hidden="true">{data.notation}</span>
   </div>
   <nav class="anchor-nav" aria-label="Contributions in this research area">{data.contributions.map(work => <a href={`#${work.id}`}>{work.title}</a>)}</nav>
   {data.contributions.map((work, index) => <ResearchContribution contribution={work} index={index} />)}
   {projects.length > 0 && <section class="section"><h2>Project connections</h2><div class="research-project-links">{projects.map(project => <a href={local(`research/projects/${project.id}/`)}><strong>{project.data.title}</strong><span>{project.data.period}</span></a>)}</div></section>}
-  <section class="section"><h2>Explore other research areas</h2><div class="research-project-links">{areas.filter(area => area.id !== data.id).map(area => <a href={local(`research/${area.id}/`)}><strong>{area.data.shortTitle}</strong><span>{area.data.summary}</span></a>)}</div></section>
+  <section class="section"><h2>Explore related research strands</h2><div class="research-project-links">{areas.filter(area => area.id !== data.id).map(area => <a href={local(`research/${area.id}/`)}><strong>{area.data.shortTitle}</strong><span>{area.data.summary}</span></a>)}</div></section>
 </BaseLayout>

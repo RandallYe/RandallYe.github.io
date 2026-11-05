@@ -40,3 +40,9 @@ All 20 canonical works are reachable through the related-publication lists acros
 `npm run check:research`, included in `npm run verify`, checks all four detailed routes, 13 contribution anchors, all 20 canonical publication relationships, homepage/detail navigation, examples/software/demo/project links, original diagrams/full-size links and important attribution/scope qualifiers at root and preview bases. Existing route, content, preservation and media-markup checks continue to run. Browser visual, keyboard and playback acceptance remains separate.
 
 Current-source `index.md` SHA-256: `aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a`.
+
+## Unified theme — user clarification
+
+The overarching theme is modelling, verification and quantification of state-rich reactive/concurrent/distributed systems using Unifying Theories of Programming (UTP), Circus, CSP and Z. Blockchain, security-protocol and robotic applications are explicitly supplied by the user. The Research overview now opens with this focus, three complementary activities and three decorative SVG application diagrams. Existing contributions are organised as strands within this one theme. The blockchain illustration introduces an application domain; no blockchain publication, implemented model, verified result or executable demo is inferred.
+
+The subsequent user clarification adds **development** immediately after verification: modelling, verification, development and quantification. Four native MathML expressions illustrate parallel composition (`P ∥ Q`), refinement (`S ⊑ P`), successive refinement (`S ⊑ D₁ ⊑ D₂`) and event probability (`Pr(A)`). They describe the research methods schematically and carry accessible labels; they do not report a proof about a particular system.

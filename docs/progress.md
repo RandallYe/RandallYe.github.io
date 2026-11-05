@@ -217,3 +217,39 @@ Validation: `npm run verify` passes: Astro zero diagnostics, all six existing te
 Applied the user's clarification that UTP and Circus, modelling state-rich concurrent systems and verification through refinement checking are the most important part of the research. The homepage introduction/primary research link, mathematical illustration, selected bibliography and research-theme ordering now lead with this foundation. Research opens with the same framing and a Circus modelling → UTP semantics → refinement-checking panel; its first selected contribution is UTP/Circus, followed by ProbURel and RoboChart/PRISM. The detailed concurrency area is titled “UTP & Circus: State-Rich Concurrent Systems” and appears first. Its Circus contribution explains the modelling/refinement connection and links to the thesis, journal work, translator and case studies. The probabilistic-semantics area explicitly builds on UTP; the other research content, contribution boundaries and existing URLs remain intact.
 
 Validation: `npm run verify` passes at root and preview bases, including checks for the leading UTP/Circus contribution and refinement-checking copy. Astro zero diagnostics, existing unit tests and all route/content/preservation/output checks pass; 100 HTML files and 920 internal references per base, zero errors/warnings. Root output restored. Browser visual acceptance remains pending. No commit, push or deployment.
+
+## One research theme and application diagrams — 5 November 2026
+
+Replaced the Research opening with the user's unified focus: modelling, verification and quantification of state-rich reactive, concurrent and distributed systems using Unifying Theories of Programming (UTP), Circus, CSP and Z. Added a prominent ResearchFocus section describing the three complementary activities, followed by application cards and native SVG conceptual diagrams for blockchains, security protocols and robotic systems. Existing research contributions are framed as strands within this theme; their detail pages and links are retained. Blockchain is included as the user-specified application domain, without inventing a publication, implementation or verification result. No image-generation dependency or client JavaScript was added; layouts use the existing theme tokens and collapse to one column on narrow screens.
+
+Validation: complete root/preview verification passes; source preservation and links remain intact. Browser visual review remains pending. Changes are uncommitted; no push or deployment.
+
+## Formal notation and development in the research introduction — 5 November 2026
+
+Added development immediately after verification in the unified theme and its activity cards. The opening now reads “Modelling, verification, development & quantification.” Each activity includes native MathML notation: parallel composition, specification refinement, a successive-refinement chain and event probability. Accessible labels explain the symbols. These are schematic expressions introducing the methods, not claimed verification results. Development connects specifications and successive refinement to executable software. The four-column layout becomes two columns at intermediate widths and one on mobile.
+
+Validation: Astro check, root build, internal links and research output checks pass; `git diff --check` passes. No new dependencies or remote maths assets. Browser visual/assistive-technology review remains pending. Changes remain uncommitted.
+
+## Research title refinement — 5 November 2026
+
+Replaced the oversized activity-list heading with “The mathematics of interacting systems.” The title uses a smaller responsive size (maximum 3rem instead of 4.5rem), balanced wrapping and a serif accent. Modelling, verification, development and quantification remain together as a compact supporting line; the precise system scope and formal notation remain below it. Astro check, root build, internal links and diff whitespace checks pass. Browser visual review remains pending; changes are uncommitted.
+
+## Research title wording restored — 5 November 2026
+
+Restored the user's exact preferred heading, “Modelling · Verification · Development · Quantification,” and removed the duplicate supporting line. The title now uses the full content width and a compact responsive size capped at 2rem, fitting a single desktop line while permitting wrapping on smaller screens. Root build, internal links and whitespace checks pass; browser visual review remains pending. Changes remain uncommitted.
+
+## Temporal logic notation — 5 November 2026
+
+Added the temporal-logic expression `□(p ⇒ ◇q)` alongside refinement in the Verification activity, with a spoken MathML label explaining “always, if p holds, q eventually holds.” Updated the description to name temporal logic. The expression illustrates a property form, not a verified result for a particular system. Astro check, root build and internal links pass; changes remain uncommitted.
+
+## Academic CV development-server 404 — 5 November 2026
+
+Reproduced the reported `/CV/Academic_CV-Kangfeng_Ye.pdf` 404 by invoking the installed Astro 7.4.5 browser-navigation route guard. Its filesystem lookup resolves that URL against the repository root and blocks the preserved root PDF, despite an identical copy under public/. The PDF itself is valid (four pages) and matches its preserved checksum.
+
+Added a byte-identical public download at `/downloads/academic-cv.pdf`, which has no repository-root collision, and updated About and the rendered legacy CV link. Original PDFs and source HTML remain unchanged. A regression test checks exact PDF bytes and passes a browser-style request through the installed Astro guard. `npm run verify` passes, including the new test, root/preview builds and output/link checks. The original URL's guard response was reproduced as 404; the new URL passes the guard. Live HTTP/browser validation is still restricted by the environment. Root output restored; changes uncommitted.
+
+## News timeline — 5 November 2026
+
+Added a reusable NewsTimeline component for the News archive and the three homepage updates. Entries use semantic ordered lists with a vertical line and circular markers, dates on the left and content on the right; mobile stacks dates above the content beside the line. The archive retains its year navigation, all 46 announcement anchors, event ranges, expandable details and resource links. The compact homepage timeline links to the corresponding full entries. Styling follows existing theme tokens and adds no JavaScript.
+
+Validation: Astro check reports zero diagnostics; root build, history-output checks and all internal links pass (100 HTML pages, 922 references, zero errors/warnings); whitespace checks pass. Browser visual review remains pending. Changes remain uncommitted.
