@@ -1,0 +1,20 @@
+{
+  "derivatives": [
+    {
+      "talkId": "cheddar-symposium-2025",
+      "thumbnail": "/talk-thumbnails/cheddar-2025.png",
+      "thumbnailSha256": "71a58f80a66bdab60637e83b804e8069180da25fc4dcb6808930d629822daae4",
+      "sourcePath": "Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf",
+      "sourceSha256": "86e565a3848b621566bba413c37efda5f449330a671ad6934e296bc4fbff066d",
+      "conversion": "First PDF page rendered to PNG with pdftoppm -scale-to 1100"
+    },
+    {
+      "talkId": "sefm-2024-security-animation",
+      "thumbnail": "/talk-thumbnails/sefm-2024.png",
+      "thumbnailSha256": "48f6a1a67dd32fb041c7eb5258b49a1fd036f59dff46c674d8596c317b83a6f0",
+      "sourcePath": "SEFM2024/SEFM2024_presentation.pdf",
+      "sourceSha256": "e0f4a91a3090a390bef43ab7d296dabf811cb8b734c48e9e4125308de466178e",
+      "conversion": "First PDF page rendered to PNG with pdftoppm -scale-to 1100"
+    }
+  ]
+}

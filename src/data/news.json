@@ -1,0 +1,988 @@
+[
+  {
+    "id": "current-2025-11-24-1",
+    "date": "2025-11-24",
+    "title": "New journey in industry at IOHK",
+    "summary": "I joined IOHK as a formal methods engineer.",
+    "resources": [
+      {
+        "label": "IOHK",
+        "url": "https://iohk.io/"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-11-21-2",
+    "date": "2025-11-21",
+    "title": "Last day at the University of York",
+    "summary": "I left the UoY after 13 years there (4 years as PhD and 9 years as RA).",
+    "resources": [],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-11-13-3",
+    "date": "2025-11-13",
+    "title": "My first submission (Abel's Limit Theorem) to Isabelle AFP (Archive of Formal Proofs) was accepted",
+    "summary": "While Abel's limit theorem in mathematical analysis was mechanised in Lean, but not yet in Isabelle. This entry mechanises Abel's limit theorem on power series with real coefficients in Isabelle.",
+    "resources": [
+      {
+        "label": "Abel's Limit Theorem",
+        "url": "https://www.isa-afp.org/entries/Abel_Limit_Theorem.html"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-11-11-4",
+    "date": "2025-11-11",
+    "title": "ICFEM2025 paper available online at Springer",
+    "summary": "Now our paper (Formal Verification of Physical Layer Security Protocols for Next-Generation Communication Networks) is available online.",
+    "resources": [
+      {
+        "label": "online",
+        "url": "https://doi.org/10.1007/978-981-95-4213-0_1"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-08-02-5",
+    "date": "2025-08-02",
+    "title": "Paper accepted by ICFEM2025",
+    "summary": "Our paper, titled \"Formal Verification of Physical Layer Security Protocols for Next-Generation Communication Networks\", submitted to ICFEM2025 was accepted.",
+    "resources": [
+      {
+        "label": "ICFEM2025",
+        "url": "https://icfem2025.github.io/"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-07-15-16",
+    "date": "2025-07-15",
+    "title": "CHEDDAR and 'Friends' Symposium and Industry Days, London",
+    "summary": "I presented the select CHEDDAR highlight project 3.2 (formal verification) from the University of York (collaborated with the University of Glasgow and Imperial College London). My slides are available here.",
+    "resources": [
+      {
+        "label": "here",
+        "url": "/Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf"
+      }
+    ],
+    "eventDate": "2025-07-15",
+    "eventEndDate": "2025-07-16",
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-04-18-6",
+    "date": "2025-04-18",
+    "title": "DataMod24 paper available online",
+    "summary": "Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification from Springer",
+    "resources": [
+      {
+        "label": "Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification",
+        "url": "https://doi.org/10.1007/978-3-031-87908-1_9"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-03-03-17",
+    "date": "2025-03-03",
+    "title": "MWC2025 at Barcelona, Spain",
+    "summary": "A Linkedin post about our demo \"User-Guided Verification of Security Protocols via Sound Animation\", also a video available at Youtube.",
+    "resources": [
+      {
+        "label": "Linkedin post",
+        "url": "https://www.linkedin.com/posts/randallye_who-can-or-who-wants-to-formally-activity-7304257438197731330-y6Zl?utm_source=share&utm_medium=member_desktop&rcm=ACoAABIDDMQBY24b1UzaJYtEAEtEUs8fmBnVAjM"
+      },
+      {
+        "label": "a video",
+        "url": "https://www.youtube.com/watch?v=8FO6KT6EMqM"
+      }
+    ],
+    "eventDate": "2025-03-03",
+    "eventEndDate": "2025-03-06",
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2025-01-16-7",
+    "date": "2025-01-16",
+    "title": "Interviewed by Dr. Daniel Shea on Scholarly Communication",
+    "summary": "I was interviewed on Scholarly Communication by Dr. Daniel Shea from Karlsruhe Institute of Technology (KIT) for one of my co-authored paper: Probabilistic Modelling and Verification Using RoboChart and PRISM. The paper was published in the journal of Software and Systems Modeling and won the Journal-First award. I was invited to present the paper at MODELS 2022. The episode is now available here.",
+    "resources": [
+      {
+        "label": "Dr. Daniel Shea",
+        "url": "https://newbooksnetwork.com/hosts/profile/1dea1d2c-5a16-4797-82ae-edfb1f79eb99"
+      },
+      {
+        "label": "Scholarly Communication",
+        "url": "https://newbooksnetwork.com/category/academic-partners/scholarly-communications"
+      },
+      {
+        "label": "Probabilistic Modelling and Verification Using RoboChart and PRISM",
+        "url": "https://doi.org/10.1007/s10270-021-00916-8"
+      },
+      {
+        "label": "Software and Systems Modeling",
+        "url": "https://www.sosym.org/"
+      },
+      {
+        "label": "Journal-First award",
+        "url": "https://www.sosym.org/journal_first/"
+      },
+      {
+        "label": "MODELS 2022",
+        "url": "https://conf.researchr.org/home/models-2022"
+      },
+      {
+        "label": "here",
+        "url": "https://newbooksnetwork.com/use-sequential-internal-review-to-improve-your-next-submission"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-11-06-8",
+    "date": "2024-11-06",
+    "title": "The preprint of the DataMod24 paper is available",
+    "summary": "The preprint of our paper \"Towards Achieving Energy Efficiency and Service Availability in O-RAN via Formal Verification\" can be found here.",
+    "resources": [
+      {
+        "label": "here",
+        "url": "https://arxiv.org/abs/2411.03943"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-11-06-18",
+    "date": "2024-11-06",
+    "title": "SEFM2024 at Aveiro, Portugal",
+    "summary": "I presented our work \"User-Guided Verification of Security Protocols via Sound Animation\" at SEFM2024. The slide is available here",
+    "resources": [
+      {
+        "label": "SEFM2024",
+        "url": "https://sefm-conference.github.io/2024/"
+      },
+      {
+        "label": "here",
+        "url": "/SEFM2024/SEFM2024_presentation.pdf"
+      }
+    ],
+    "eventDate": "2024-11-06",
+    "eventEndDate": "2024-11-08",
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-10-07-9",
+    "date": "2024-10-07",
+    "title": "Paper accepted by DataMod24",
+    "summary": "Our paper submitted to DataMod24 has been accepted for publication. This paper is about the quantitative analysis of a control policy used in an O-RAN xApp to achieve energy efficiency and guarantee service availability. We use PRISM to verify a scenario with 3 radio cells (stations) and 9 UEs (user equipments) while UEs are dynamically and uncertainly switched on and off.",
+    "resources": [
+      {
+        "label": "DataMod24",
+        "url": "https://datamod2024.github.io/"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-10-01-10",
+    "date": "2024-10-01",
+    "title": "The preprint of the SEFM2024 paper is available",
+    "summary": "The preprint of our paper \"User-Guided Verification of Security Protocols via Sound Animation\" can be found here. Please note that this is not the final camera ready version",
+    "resources": [
+      {
+        "label": "here",
+        "url": "https://arxiv.org/abs/2410.00676"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-09-26-19",
+    "date": "2024-09-26",
+    "title": "Cheddar All-hands meeting in Imperial",
+    "summary": "Presentations from new partners, demonstration discussion, and updates from each pillar. I have updated P3.2 from York regarding accessible formal techniques using sound animation and quantitative analysis of energy efficiency and service availability in O-RAN xApps (to optimise QoS).",
+    "resources": [],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-09-25-11",
+    "date": "2024-09-25",
+    "title": "ProbURel paper available online",
+    "summary": "Our TCS journal paper (about probabilistic programming) is now online",
+    "resources": [
+      {
+        "label": "online",
+        "url": "https://doi.org/10.1016/j.tcs.2024.114876"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-09-12-12",
+    "date": "2024-09-12",
+    "title": "ProbURel paper accepted by Theoretical Computer Science",
+    "summary": "Our TCS journal paper (about probabilistic programming) has been accepted for publication and should be online soon. The first draft is available online at arxiv",
+    "resources": [
+      {
+        "label": "online at arxiv",
+        "url": "https://arxiv.org/abs/2303.09692"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-09-04-20",
+    "date": "2024-09-04",
+    "title": "Jim's Festschrift",
+    "summary": "I have been greatly benefited from Jim’s inspiration and mentorship. I and Pedro presented our paper \"A Tour Through the Programming Choices: Semantics and Applications\". It's my pleasure to present Frank's preferential choice and my work ProbURel (collaborated with Jim and Simon) in probabilistic semantics and theorem proving.",
+    "resources": [
+      {
+        "label": "A Tour Through the Programming Choices: Semantics and Applications",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-67114-2_11"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-09-01-13",
+    "date": "2024-09-01",
+    "title": "A Tour Through the Programming Choices — Festschrift contribution",
+    "summary": "A joint Festschrift paper, titled \"A Tour Through the Programming Choices: Semantics and Applications\", with Pedro Ribeiro, Frank Zeyda, and Alvaro Miyazawa to celebrate Prof. Jim Woodcock's retirement from York. He was my PhD supervisor and a line manager in RoboStar.",
+    "resources": [
+      {
+        "label": "A Tour Through the Programming Choices: Semantics and Applications",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-67114-2_11"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-08-22-14",
+    "date": "2024-08-22",
+    "title": "Security protocol animation paper accepted by SEFM2024",
+    "summary": "Our paper ( User-Guided Verification of Security Protocols via Sound Animation ) submitted to SEFM24 has been accepted for publication.",
+    "resources": [
+      {
+        "label": "SEFM24",
+        "url": "https://sefm-conference.github.io/2024/"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-07-25-21",
+    "date": "2024-07-25",
+    "title": "6G Summit in Leeds",
+    "summary": "Co-located with WINCOM2024",
+    "resources": [],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-07-09-22",
+    "date": "2024-07-09",
+    "title": "Cheddar project meeting at the Cranfield University",
+    "summary": "Cheddar project meeting at the Cranfield University",
+    "resources": [],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-06-27-23",
+    "date": "2024-06-27",
+    "title": "Gave a talk in the University's Celebrating Spaces: Connecting Researchers",
+    "summary": "Gave a talk in the University's Celebrating Spaces: Connecting Researchers. It is a 5-minute Lightning Talk. My talk is about Guarantee correctness and performance of probabilistic algorithms.",
+    "resources": [
+      {
+        "label": "Guarantee correctness and performance of probabilistic algorithms",
+        "url": "https://sites.google.com/york.ac.uk/celebrating-spaces/home?authuser=0"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-06-05-24",
+    "date": "2024-06-05",
+    "title": "CHEDDAR meetings at the University of Glasgow",
+    "summary": "Cheddar Pillar 1 and P3.2 meetings at the University of Glasgow",
+    "resources": [],
+    "eventDate": "2024-06-05",
+    "eventEndDate": "2024-06-06",
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-03-28-25",
+    "date": "2024-03-28",
+    "title": "Cheddar P3.1 and P3.2 joint meeting at Imperial College London",
+    "summary": "Cheddar P3.1 and P3.2 joint meeting at Imperial College London",
+    "resources": [],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "current-2024-03-12-26",
+    "date": "2024-03-12",
+    "title": "Cheddar Bi-Annual meeting at the University of York",
+    "summary": "Cheddar Bi-Annual meeting at the University of York",
+    "resources": [],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "20240229-submission-jss",
+    "date": "2024-02-29",
+    "title": "A new journal submission to JSS - QASCAD: Quantitative Assurance and Synthesis of Controllers from Activity Diagrams",
+    "summary": "We have submitted our work in probabilistic model checking for Activity Diagrams to the Journal of Systems and Software.",
+    "detail": "Our preprint paper (QASCAD: Quantitative Assurance and Synthesis of Controllers from Activity Diagrams) can be found on arxiv . The QASCAD tool and case studies are deposited on our GitHub repository .",
+    "resources": [
+      {
+        "label": "arxiv",
+        "url": "https://arxiv.org/abs/2403.00169"
+      },
+      {
+        "label": "our GitHub repository",
+        "url": "https://github.com/RandallYe/QASCAD"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20240229_submission_jss/index.html",
+        "sha256": "36a21d91b8f8e140f31b8e3b523d4044047ef613ac3b991058c259a67755fa86"
+      }
+    ]
+  },
+  {
+    "id": "20240201-new-project-cheddar",
+    "date": "2024-02-01",
+    "title": "Work in a new project CHEDDAR",
+    "summary": "Just started to work in a new project CHEDDAR with Poonam Yadav and Roberto Metere in formal verification of security protocols from Feb 1st 2024.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Project history",
+        "url": "/research/projects/cheddar/"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20240201_new_project_cheddar/index.html",
+        "sha256": "3491eff744639836f56c5518fc0c7795609b51f7b2d75241e0618e9412625b2f"
+      }
+    ]
+  },
+  {
+    "id": "current-2023-12-19-15",
+    "date": "2023-12-19",
+    "title": "RoboChart animation journal paper accepted by JLAMP",
+    "summary": "Our JLAMP journal paper ( Formally verified animation for RoboChart using interaction trees ) has been accepted for publication.",
+    "resources": [
+      {
+        "label": "here",
+        "url": "https://doi.org/10.1016/j.jlamp.2023.100940"
+      }
+    ],
+    "eventDate": null,
+    "eventEndDate": null,
+    "provenance": [
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      },
+      {
+        "source": "old_entry",
+        "path": "news/20231229_jlamp_paper_accepted_online/index.html",
+        "sha256": "a2bba8c5328dee26dccdb364b17b7f7f43a79ecac3af8856e512a457081908f2"
+      }
+    ],
+    "detail": "This was submitted to Journal of Logical and Algebraic Methods in Programming (JLAMP) on 28 February 2023, Accepted on 19 December 2023, and Final version on 29 December 2023. A very pleased and efficient review process. Many thanks to the editors and reviewers of JLAMP for very helpful comments to improve the quality of our paper. The paper is available here ."
+  },
+  {
+    "id": "20230627-new-project-sesame",
+    "date": "2023-06-27",
+    "title": "Work in a new project SESAME",
+    "summary": "Just started to work in a new project SESAME with Simos Gerasimou in safety and security analysis of multiple robotic systems using probabilistic model checking from June 2023.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Project history",
+        "url": "/research/projects/sesame/"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20230627_new_project_sesame/index.html",
+        "sha256": "bd15d05d585513174c48c2595d65296ca815f02cf590b1ec82bc319b7f0120b8"
+      }
+    ]
+  },
+  {
+    "id": "2022-sosym-first-paper-award",
+    "date": "2023-01-01",
+    "title": "2022 SoSyM Journal-first award",
+    "summary": "The award concerns Probabilistic Modelling and Verification Using RoboChart and PRISM. Announced on 1 January 2023.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Paper and co-authors",
+        "url": "/publications/#robochart-prism"
+      },
+      {
+        "label": "SoSyM Journal-first award (PDF)",
+        "url": "/old_entry/news/2022_sosym-first-paper-award/featured.pdf"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/2022_sosym-first-paper-award/index.html",
+        "sha256": "1c1faa2ededf867698a0b8a9cd80a20854cdcdbbde5f06c56bf917761cf67098"
+      }
+    ]
+  },
+  {
+    "id": "20221119-invitation-jlamp-extension-icfem",
+    "date": "2022-11-19",
+    "title": "An exciting invitation from ICFEM2022",
+    "summary": "Invited to submit an extension of our ICFEM2022 paper 'Formally Verified Animation for RoboChart Using Interaction Trees' to the Journal of Logical and Algebraic Methods in Programming (JLAMP)",
+    "detail": "Invited to submit an extension of our ICFEM2022 paper ‘ Formally Verified Animation for RoboChart Using Interaction Trees ’ to the Journal of Logical and Algebraic Methods in Programming (JLAMP)",
+    "resources": [
+      {
+        "label": "Formally Verified Animation for RoboChart Using Interaction Trees",
+        "url": "https://doi.org/10.1007/978-3-031-17244-1_24"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20221119_invitation_jlamp_extension_icfem/index.html",
+        "sha256": "a8d1b72726266cf05df99cdbe23a2a59cac4964c7619df14e318c4fe27be9fdf"
+      }
+    ]
+  },
+  {
+    "id": "20221027-models2022-presentation",
+    "date": "2022-10-27",
+    "title": "An online talk today at MODELS2022",
+    "summary": "See the talks area for more details.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Presentation and recording",
+        "url": "/talks/#models-2022-probabilistic-robochart"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20221027_models2022_presentation/index.html",
+        "sha256": "b52c8b8f7e53ee75eb8f67b333fa4876affbd3bf320b62c3e94c86efffd889c0"
+      }
+    ]
+  },
+  {
+    "id": "20221026-icfem2022-presentation",
+    "date": "2022-10-26",
+    "title": "An online talk today at ICFEM2022",
+    "summary": "See the talks area for more details.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Presentation and recording",
+        "url": "/talks/#icfem-2022-robochart-animation"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20221026_icfem2022_presentation/index.html",
+        "sha256": "32dda0f1688933dcdba4e8cf943bc39c15d99fb1f8c9ad4688d6cb96b6f258f0"
+      }
+    ]
+  },
+  {
+    "id": "published-online-icfem2022",
+    "date": "2022-10-10",
+    "title": "ICFEM 2022 paper is available online",
+    "summary": "You can download the paper “Formally Verified Animation for RoboChart Using Interaction Trees”.",
+    "detail": "You can download the paper “Formally Verified Animation for RoboChart Using Interaction Trees” .",
+    "resources": [
+      {
+        "label": "“Formally Verified Animation for RoboChart Using Interaction Trees”",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-17244-1_24"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/published_online_icfem2022/index.html",
+        "sha256": "c39074210a1cd632683f3a176afdf374e7f1fb6deba8cc04273677840cee907b"
+      }
+    ]
+  },
+  {
+    "id": "20221011-robostar-industry-exhibition",
+    "date": "2022-09-14",
+    "title": "YorRobots and RoboStar Industry Exhibition",
+    "summary": "On 11-12 October YorRobots and RoboStar will be hosting an Industry Exhibition, which will be held in person on the Heslington East campus.",
+    "detail": "Full details can be found here . The programme can be found here . I am going to have a presentation and a poster for display at the event.",
+    "resources": [
+      {
+        "label": "here",
+        "url": "https://robostar.cs.york.ac.uk/news/2022-09-14-YorRobots-RoboStar-Industry-Exhibition.html"
+      },
+      {
+        "label": "here",
+        "url": "https://robostar.cs.york.ac.uk/events/yrie2022/"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20221011_robostar_industry_exhibition/index.html",
+        "sha256": "c7bc96ed0d5f1eeebeca4d1cc342b4e805f8a75392abc83eddd595f9b2ca883f"
+      }
+    ],
+    "eventDate": "2022-10-11",
+    "eventEndDate": "2022-10-12"
+  },
+  {
+    "id": "20220829-invitation-to-models2022-jf1",
+    "date": "2022-08-29",
+    "title": "An exciting invitation from MODELS2022 to present our SoSym journal paper there",
+    "summary": "Very delighted to be invited to this great conference as a journal first (JF1) paper.",
+    "detail": "SoSyM Journal-first Our SoSym paper: Probabilistic modelling and verification using RoboChart and PRISM MODELS2022 Thanks to SoSyM and MODELS2022.",
+    "resources": [
+      {
+        "label": "SoSyM Journal-first",
+        "url": "https://www.sosym.org/journal_first/"
+      },
+      {
+        "label": "Probabilistic modelling and verification using RoboChart and PRISM",
+        "url": "https://rdcu.be/cYioZ"
+      },
+      {
+        "label": "MODELS2022",
+        "url": "https://conf.researchr.org/home/models-2022"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/20220829_invitation_to_models2022_jf1/index.html",
+        "sha256": "7d82e61ef77d4fea217492b1b25b79004818345f54250ade225b92276e7afd29"
+      }
+    ]
+  },
+  {
+    "id": "accepted-paper-icfem2022",
+    "date": "2022-06-27",
+    "title": "The submission (Formally Verified Animation for RoboChart using Interaction Trees) to ICFEM2022 is accepted",
+    "summary": "The submission (Formally Verified Animation for RoboChart using Interaction Trees) to ICFEM2022 is accepted",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Paper and co-authors",
+        "url": "/publications/#robochart-animation-icfem"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/accepted_paper_icfem2022/index.html",
+        "sha256": "88b503912b27449405b4dc08a7e3191ac8fe694fe69db5bb4fdae16cfc30bcb1"
+      }
+    ]
+  },
+  {
+    "id": "special-issue-ras-journal-cfp",
+    "date": "2021-12-09",
+    "title": "Call for paper: Special Issue of Software Engineering for Robotics in Robotics and Autonomous Systems Journal, Elsevier",
+    "summary": "Special Issue: Software Engineering for Robotics # Robotics and Autonomous Systems Journal, Elsevier.",
+    "detail": "Please find the call for paper on the RoboStar website .",
+    "resources": [
+      {
+        "label": "the RoboStar website",
+        "url": "https://robostar.cs.york.ac.uk/CfP-ROBOT-2022.html"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/special_issue_ras_journal_cfp/index.html",
+        "sha256": "f15ca6f9012ecb8a1b87f90644739847f4f4dc3604109d40d6ea59576bb0213a"
+      }
+    ]
+  },
+  {
+    "id": "sosym2020-paper-online",
+    "date": "2021-10-02",
+    "title": "SoSym Paper is online",
+    "summary": "The paper is available online.",
+    "detail": "The paper is available online .",
+    "resources": [
+      {
+        "label": "online",
+        "url": "https://link.springer.com/article/10.1007/s10270-021-00916-8"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/sosym2020_paper_online/index.html",
+        "sha256": "311289067974cd0990cff19d40e1f592224aafecde38e659dc587c3d85d75063"
+      }
+    ]
+  },
+  {
+    "id": "robosoft",
+    "date": "2019-11-12",
+    "title": "RoboSoft",
+    "summary": "RoboSoft is a two-day event to bring together researchers representing groups working on themes relevant for Software Engineering for Robotics, developers working on the next-generation of robotic systems in various areas of application, and regulation authorities interested in safety of robotic systems.",
+    "detail": "RoboSoft will take place in Royal Academy of Engineering for two days (13-14 Nov, 2019).",
+    "resources": [
+      {
+        "label": "RoboSoft",
+        "url": "https://www.cs.york.ac.uk/robostar/robosoft/"
+      },
+      {
+        "label": "Royal Academy of Engineering",
+        "url": "https://www.raeng.org.uk/events/events-programme/2019/november/robosoft-software-engineering-for-robotics"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/robosoft/index.html",
+        "sha256": "d2d1f1c2ec4ec6b045b07371f9bfd95d815ccf0b16237841740157ead24e7c88"
+      }
+    ],
+    "eventDate": "2019-11-13",
+    "eventEndDate": "2019-11-14"
+  },
+  {
+    "id": "swu-visit-201907",
+    "date": "2019-07-22",
+    "title": "Second visit of Prof. Zhiming Liu's team at York",
+    "summary": "very glad to meet Prof. Zhiming Liu's team again at York",
+    "detail": "Agenda: Monday talks: Xia Zeng: Universal adversary example generation Liyun: Model Checking Problem of Timed Systems by Incremental Method Hengjun: Hybrid System Verification and Synthesis Wei Zhang: Contract Model of SimuLink Zhiming Liu: Engineering Formal Method Tuesday talks Randall: Verification of the probabilistic behaviour of RoboChart by PRISM Alvaro: RoboChart Will: Using RoboChart to model an autonomous vehicle Ana: Physical modelling in RoboSim Jim: Verifying a robotic pose estimation algorithm",
+    "resources": [
+      {
+        "label": "Zhiming Liu",
+        "url": "http://computer.swu.edu.cn/s/computer/zhimingliu/20160607/1141451.html"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/swu_visit_201907/index.html",
+        "sha256": "4afe341d05b5d305513cbe3ad8f743c3b49b45c6d2949595db60c29cfd82ebe8"
+      }
+    ]
+  },
+  {
+    "id": "visit-swu-cq-201905",
+    "date": "2019-05-13",
+    "title": "Visit SWU in Chongqing with Prof. Jim Woodcock",
+    "summary": "'NSFC-RS' Joint Project Workshop on Modelling, Verification, and Refinement of Evolving Cyber-Physical Systems",
+    "detail": "Very glad to meet Prof. Zhiming Liu’s team again and his wife, particularly in Chingqing, the city where I had my BSc and MSc. This is a three-day workshop ( ‘NSFC-RS’ Joint Project Workshop on Modelling, Verification, and Refinement of Evolving Cyber-Physical Systems ) and I gave a Isabelle/UTP tutorial in Chinese :). Jim presented “Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra” and “Probabilistic semantics in RoboChart”. Also met nice guys: Xin Chen from Nanjing University and Wang Lin from Zhejiang Sci-Tech University.",
+    "resources": [
+      {
+        "label": "‘NSFC-RS’ Joint Project Workshop on Modelling, Verification, and Refinement of Evolving Cyber-Physical Systems",
+        "url": "http://computer.swu.edu.cn/s/computer/kxyj2xsky/20190509/3706486.html"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/visit_swu_cq_201905/index.html",
+        "sha256": "8979dac09ad54932d4cdc9202846627cfa7609d6bcf321bbc683034436d1fbc7"
+      }
+    ]
+  },
+  {
+    "id": "swu-cq-first-visit",
+    "date": "2018-07-24",
+    "title": "Visit of Prof. Zhiming Liu's team at York",
+    "summary": "Very very glad to meet Prof. Zhiming Liu's team from Southwest University (SWU)",
+    "detail": "This visit is about a Royal Society and NSFC joint workshop (from July 24th, 2018 to July 26th, 2018) regarding requirements modelling for cyber-physical systems . These guys (Prof. Zhiming Liu, Dr. Bo Liu, Dr Hengjun Zhao, Dr. Liyun Dai, Dr. Xia Zeng, and Mr. Guisen Wu) are really really nice and very glad to meet them in York.",
+    "resources": [
+      {
+        "label": "Zhiming Liu",
+        "url": "http://computer.swu.edu.cn/s/computer/zhimingliu/20160607/1141451.html"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/swu_cq_first_visit/index.html",
+        "sha256": "e6f329d45b2c7cc58f391e51821b9468cb8baca1589d5f67ac164ad0de5eb503"
+      }
+    ],
+    "eventDate": "2018-07-24",
+    "eventEndDate": "2018-07-26"
+  },
+  {
+    "id": "robotest-robocalc-advisory-board-meeting",
+    "date": "2018-04-13",
+    "title": "RoboTest RoboCalc Advisory Board meeting",
+    "summary": "Just joined the RoboCalc project and this is the opportunity to know most people in the projects: RoboCalc and RoboTest, like Rob Hierons and Brijesh Dongol.",
+    "detail": "Just joined the RoboCalc project and this is the opportunity to know most people in the projects: RoboCalc and RoboTest, like Rob Hierons and Brijesh Dongol.",
+    "resources": [],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/robotest_robocalc_advisory_board_meeting/index.html",
+        "sha256": "45fe51ea8d717773ac24d8f47334f051813cc9833ce7664bff9dd13c60d7da07"
+      }
+    ]
+  },
+  {
+    "id": "viva-prep",
+    "date": "2016-09-02",
+    "title": "Viva Preparation",
+    "summary": "Defending my doctoral thesis",
+    "detail": "There are two examiners: external examiner ( Prof. Michael Butler ) and internal examiner ( Dr. Jeremy Jacob ). Jeremy used to be my PhD assessor as well. (The Department of Computer Science at University of York has very clear and good structure for the PhD degree and usually every six months you will have a milestone. Then your supervisor and assessor will assess your progress at this point. I found this is extremely helpful, particularly with my supervisor and assessor Jeremy.) Prof. Michael Butler is a very nice person. I was applying the PhD degree with him at University of Southampton in 2012 and had an interview with him, and finally he gave me an offer. (At that time, York and Southampton are two of my favorite universities. Eventually, I chose to have PhD with Prof. Jim Woodcock at York). I look forward to having a nice talk with Michael and hopefully he is happy with my defense of the thesis. Finger crossed! 🌓",
+    "resources": [
+      {
+        "label": "Prof. Michael Butler",
+        "url": "https://www.ecs.soton.ac.uk/people/mjb"
+      },
+      {
+        "label": "Dr. Jeremy Jacob",
+        "url": "https://www.cs.york.ac.uk/people/jeremy"
+      },
+      {
+        "label": "clear and good structure",
+        "url": "https://www.cs.york.ac.uk/postgraduate/research-degrees/phd/"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/viva-prep/index.html",
+        "sha256": "d81747616000060d044ac587299060c6191812471d045b3f03d6a0ebd33ff652"
+      }
+    ]
+  },
+  {
+    "id": "phd-thesis-submission",
+    "date": "2016-08-02",
+    "title": "Phd Thesis Submission",
+    "summary": "Finally submitted my PhD thesis formally",
+    "detail": "After about four months of hard work and one month of review with my supervisor Prof. Jim Woodcock (very efficient, many thanks to Jim), finally I submitted my PhD thesis on August 2nd, 2016. My thesis is available here .",
+    "resources": [
+      {
+        "label": "Prof. Jim Woodcock",
+        "url": "https://www-users.cs.york.ac.uk/~jim/"
+      },
+      {
+        "label": "here",
+        "url": "http://etheses.whiterose.ac.uk/15526/"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "news/phd-thesis-submission/index.html",
+        "sha256": "20af3d213187cc119bf60111641186e218eec4df5695591b84917bf73c47de03"
+      }
+    ]
+  }
+]

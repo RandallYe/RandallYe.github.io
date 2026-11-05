@@ -9,7 +9,7 @@
     "id": "proburel",
     "resources": [
       {
-        "label": "Archived BibTeX (earlier version)",
+        "label": "BibTeX (earlier version)",
         "url": "/old_entry/publication/ye-2023-probabilistic/cite.bib"
       },
       {
@@ -31,11 +31,11 @@
     "id": "robochart-animation-jlamp",
     "resources": [
       {
-        "label": "Archived BibTeX (earlier version)",
+        "label": "BibTeX (earlier version)",
         "url": "/old_entry/publication/ye-2023-formally/cite.bib"
       },
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/ye-2024100940/cite.bib"
       },
       {
@@ -76,11 +76,11 @@
     "id": "reactive-programs-calculation",
     "resources": [
       {
-        "label": "Archived BibTeX (earlier version)",
+        "label": "BibTeX (earlier version)",
         "url": "/old_entry/publication/foster-2020-a/foster-2020-a.bib"
       },
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/foster-2021100681/cite.bib"
       },
       {
@@ -102,7 +102,7 @@
     "id": "circus-model-checking",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/ye-2017/ye-2017.bib"
       }
     ],
@@ -162,7 +162,7 @@
     "id": "agriculture-robot-light-treatment",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/10260395/cite.bib"
       }
     ]
@@ -177,7 +177,7 @@
     "id": "robochart-animation-icfem",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/ye-2022/cite.bib"
       }
     ],
@@ -198,7 +198,7 @@
     "id": "probabilistic-sequential-programs",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/ye-2021-a/cite.bib"
       }
     ],
@@ -216,7 +216,7 @@
     "id": "probabilistic-semantics-robochart",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/jim-2019/jim-2019.bib"
       }
     ]
@@ -231,11 +231,11 @@
     "id": "reactive-relations-2018",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/foster-2018/foster-2018.bib"
       },
       {
-        "label": "Archived BibTeX (earlier version)",
+        "label": "BibTeX (earlier version)",
         "url": "/old_entry/publication/foster-2018-a/foster-2018-a.bib"
       },
       {
@@ -275,7 +275,7 @@
     "id": "robostar-uncertainty",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/woodcock-2021/cite.bib"
       }
     ],
@@ -297,7 +297,7 @@
         "url": "/old_entry/publication/ye-2018/ye-2018.bib"
       },
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/ye-2020/ye-2020.bib"
       },
       {
@@ -319,7 +319,7 @@
     "id": "state-rich-formalisms-thesis",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/ye-2016/ye-2016.bib"
       }
     ]
@@ -343,7 +343,7 @@
     "id": "quantitative-activity-diagrams",
     "resources": [
       {
-        "label": "Archived BibTeX",
+        "label": "BibTeX",
         "url": "/old_entry/publication/ye-2024-quantitative/cite.bib"
       }
     ]

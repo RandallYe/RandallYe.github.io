@@ -76,7 +76,7 @@ const demos = defineCollection({
 
 const posts = defineCollection({
   loader: file('./src/data/posts.json'),
-  schema: z.object({ id: slug, title: z.string(), date: z.string(), dateLabel: z.string().optional(), summary: z.string(), math: z.boolean(), sourcePath: z.string(), sourceSha256: z.string(), body: z.string() }),
+  schema: z.object({ id: slug, title: z.string(), date: z.string(), dateLabel: z.string().optional(), summary: z.string(), math: z.boolean(), sourcePath: z.string(), sourceSha256: z.string(), thumbnail: resourceUrl, thumbnailAlt: z.string().min(1), thumbnailSource: z.string().min(1), body: z.string() }),
 });
 const talks = defineCollection({
   loader: file('./src/data/talks.json'),
@@ -91,6 +91,26 @@ const talks = defineCollection({
     sourcePath: z.string().optional(),
     recording: z.string().optional(),
     recordingTitle: z.string().optional(),
+    thumbnail: resourceUrl,
+    thumbnailAlt: z.string().min(1),
+    thumbnailSource: z.string().min(1),
   }),
 });
-export const collections = { demos, publications, posts, talks };
+const provenance = z.array(z.object({
+  source: z.enum(['GitHub', 'old_entry']),
+  path: z.string(),
+  sha256: z.string().regex(/^[a-f0-9]{64}$/),
+})).min(1);
+const projects = defineCollection({
+  loader: file('./src/data/projects.json'),
+  schema: z.object({ id: slug, title: z.string(), period: z.string(), summary: z.string(), detail: z.string(), resources: z.array(resource), relatedDemos: z.array(reference('demos')), provenance }),
+});
+const news = defineCollection({
+  loader: file('./src/data/news.json'),
+  schema: z.object({ id: slug, title: z.string(), date: z.iso.date(), summary: z.string(), detail: z.string().optional(), eventDate: z.iso.date().nullish(), eventEndDate: z.iso.date().nullish(), resources: z.array(resource), provenance }),
+});
+const teaching = defineCollection({
+  loader: file('./src/data/teaching.json'),
+  schema: z.object({ id: slug, title: z.string(), period: z.string(), summary: z.string(), resources: z.array(resource), provenance }),
+});
+export const collections = { demos, publications, posts, talks, projects, news, teaching };

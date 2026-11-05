@@ -24,19 +24,19 @@ ABSTRACT_SOURCES = {
 }
 
 BIB_SOURCES = {
-    'agriculture-robot-light-treatment': [('10260395', 'cite.bib', 'Archived BibTeX')],
-    'reactive-relations-2018': [('foster-2018', 'foster-2018.bib', 'Archived BibTeX'), ('foster-2018-a', 'foster-2018-a.bib', 'Archived BibTeX (earlier version)')],
-    'reactive-programs-calculation': [('foster-2020-a', 'foster-2020-a.bib', 'Archived BibTeX (earlier version)'), ('foster-2021100681', 'cite.bib', 'Archived BibTeX')],
-    'probabilistic-semantics-robochart': [('jim-2019', 'jim-2019.bib', 'Archived BibTeX')],
-    'robostar-uncertainty': [('woodcock-2021', 'cite.bib', 'Archived BibTeX')],
-    'circus-model-checking': [('ye-2017', 'ye-2017.bib', 'Archived BibTeX')],
-    'control-law-diagrams': [('ye-2018', 'ye-2018.bib', '2018 working-report BibTeX'), ('ye-2020', 'ye-2020.bib', 'Archived BibTeX')],
-    'probabilistic-sequential-programs': [('ye-2021-a', 'cite.bib', 'Archived BibTeX')],
-    'robochart-animation-icfem': [('ye-2022', 'cite.bib', 'Archived BibTeX')],
-    'robochart-animation-jlamp': [('ye-2023-formally', 'cite.bib', 'Archived BibTeX (preprint record)'), ('ye-2024100940', 'cite.bib', 'Archived BibTeX')],
-    'proburel': [('ye-2023-probabilistic', 'cite.bib', 'Archived BibTeX (preprint record)')],
-    'quantitative-activity-diagrams': [('ye-2024-quantitative', 'cite.bib', 'Archived BibTeX (preprint record)')],
-    'state-rich-formalisms-thesis': [('ye-2016', 'ye-2016.bib', 'Archived BibTeX')],
+    'agriculture-robot-light-treatment': [('10260395', 'cite.bib', 'BibTeX')],
+    'reactive-relations-2018': [('foster-2018', 'foster-2018.bib', 'BibTeX'), ('foster-2018-a', 'foster-2018-a.bib', 'BibTeX (earlier version)')],
+    'reactive-programs-calculation': [('foster-2020-a', 'foster-2020-a.bib', 'BibTeX (earlier version)'), ('foster-2021100681', 'cite.bib', 'BibTeX')],
+    'probabilistic-semantics-robochart': [('jim-2019', 'jim-2019.bib', 'BibTeX')],
+    'robostar-uncertainty': [('woodcock-2021', 'cite.bib', 'BibTeX')],
+    'circus-model-checking': [('ye-2017', 'ye-2017.bib', 'BibTeX')],
+    'control-law-diagrams': [('ye-2018', 'ye-2018.bib', '2018 working-report BibTeX'), ('ye-2020', 'ye-2020.bib', 'BibTeX')],
+    'probabilistic-sequential-programs': [('ye-2021-a', 'cite.bib', 'BibTeX')],
+    'robochart-animation-icfem': [('ye-2022', 'cite.bib', 'BibTeX')],
+    'robochart-animation-jlamp': [('ye-2023-formally', 'cite.bib', 'BibTeX (preprint record)'), ('ye-2024100940', 'cite.bib', 'BibTeX')],
+    'proburel': [('ye-2023-probabilistic', 'cite.bib', 'BibTeX (preprint record)')],
+    'quantitative-activity-diagrams': [('ye-2024-quantitative', 'cite.bib', 'BibTeX (preprint record)')],
+    'state-rich-formalisms-thesis': [('ye-2016', 'ye-2016.bib', 'BibTeX')],
 }
 
 PREPRINTS = {

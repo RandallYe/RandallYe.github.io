@@ -5,7 +5,15 @@
     "date": "2025-07-15",
     "event": "CHEDDAR Symposium and Industry Days · London",
     "description": "Presentation of York’s formal-verification highlight project P3.2, in collaboration with Glasgow and Imperial College London.",
-    "resources": [{ "label": "Presentation slides (PDF)", "url": "/Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf" }]
+    "resources": [
+      {
+        "label": "Presentation slides (PDF)",
+        "url": "/Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf"
+      }
+    ],
+    "thumbnail": "/talk-thumbnails/cheddar-2025.png",
+    "thumbnailAlt": "Title slide for York’s CHEDDAR P3.2 presentation",
+    "thumbnailSource": "Cheddar/Cheddar_20250715/CHEDDAR_York_P3.2_20250715.pdf"
   },
   {
     "id": "sefm-2024-security-animation",
@@ -14,10 +22,22 @@
     "event": "SEFM 2024 · Aveiro",
     "description": "Co-authored presentation on accessible verification and the soundness of generated animators.",
     "resources": [
-      { "label": "Presentation slides (PDF)", "url": "/SEFM2024/SEFM2024_presentation.pdf" },
-      { "label": "SEFM and DataMod report", "url": "/posts/sefm-datamod-report/" },
-      { "label": "Related security-protocol demonstration", "url": "/tools/security-protocol-animation/" }
-    ]
+      {
+        "label": "Presentation slides (PDF)",
+        "url": "/SEFM2024/SEFM2024_presentation.pdf"
+      },
+      {
+        "label": "SEFM and DataMod report",
+        "url": "/posts/sefm-datamod-report/"
+      },
+      {
+        "label": "Related security-protocol demonstration",
+        "url": "/tools/security-protocol-animation/"
+      }
+    ],
+    "thumbnail": "/talk-thumbnails/sefm-2024.png",
+    "thumbnailAlt": "Title slide for the SEFM 2024 security-protocol animation paper",
+    "thumbnailSource": "SEFM2024/SEFM2024_presentation.pdf"
   },
   {
     "id": "celebrating-spaces-2024",
@@ -25,7 +45,15 @@
     "date": "2024-06-27",
     "event": "Celebrating Spaces: Connecting Researchers · University of York",
     "description": "Five-minute lightning talk on reasoning about probabilistic algorithms.",
-    "resources": [{ "label": "Original talk recording", "url": "https://www.youtube.com/watch?v=9GZMzrVsnxY" }]
+    "resources": [
+      {
+        "label": "Original talk recording",
+        "url": "https://www.youtube.com/watch?v=9GZMzrVsnxY"
+      }
+    ],
+    "thumbnail": "/pics/me.jpg",
+    "thumbnailAlt": "Portrait of Kangfeng (Randall) Ye",
+    "thumbnailSource": "pics/me.jpg"
   },
   {
     "id": "probabilistic-relations-seminar-2023",
@@ -35,9 +63,18 @@
     "description": "Seminar presentation on probabilistic relations and their semantics and mechanised reasoning.",
     "sourcePath": "talk/robostar_seminar_20230628_probabilistic_relations/index.html",
     "resources": [
-      { "label": "Seminar slides (PDF)", "url": "/old_entry/talk/robostar_seminar_20230628_probabilistic_relations/robostar_seminar_20230628_probabilistic_relations.pdf" },
-      { "label": "Probabilistic-relations demonstration", "url": "/tools/probabilistic-relations/" }
-    ]
+      {
+        "label": "Seminar slides (PDF)",
+        "url": "/old_entry/talk/robostar_seminar_20230628_probabilistic_relations/robostar_seminar_20230628_probabilistic_relations.pdf"
+      },
+      {
+        "label": "Probabilistic-relations demonstration",
+        "url": "/tools/probabilistic-relations/"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/robostar_seminar_20230628_probabilistic_relations/featured.png",
+    "thumbnailAlt": "Preview image for the probabilistic-relations seminar",
+    "thumbnailSource": "talk/robostar_seminar_20230628_probabilistic_relations/featured.png"
   },
   {
     "id": "robostar-industry-exhibition-2022",
@@ -47,41 +84,90 @@
     "description": "An introduction to probabilistic modelling in RoboChart, probabilistic properties, and verification with PRISM and Isabelle/UTP.",
     "sourcePath": "talk/20221011_robostar_industry_exhibition/index.html",
     "resources": [
-      { "label": "Presentation slides (PDF)", "url": "/old_entry/talk/20221011_robostar_industry_exhibition/20221011_robostar_industry_exhibition.pdf" },
-      { "label": "Related RoboChart and PRISM demonstration", "url": "/tools/robochart-prism/" }
-    ]
+      {
+        "label": "Presentation slides (PDF)",
+        "url": "/old_entry/talk/20221011_robostar_industry_exhibition/20221011_robostar_industry_exhibition.pdf"
+      },
+      {
+        "label": "Exhibition poster (October 2022, PDF)",
+        "url": "/old_entry/showcase/poster_robostar_industry_exhibition_202210/Poster_RoboStar_industry_exhibition_202210.pdf"
+      },
+      {
+        "label": "Related RoboChart and PRISM demonstration",
+        "url": "/tools/robochart-prism/"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/20221011_robostar_industry_exhibition/featured.png",
+    "thumbnailAlt": "Preview image for the RoboStar Industry Exhibition presentation",
+    "thumbnailSource": "talk/20221011_robostar_industry_exhibition/featured.png"
   },
   {
     "id": "models-2022-probabilistic-robochart",
     "title": "Probabilistic modelling and verification using RoboChart and PRISM",
     "date": "2022-10-27",
     "event": "MODELS 2022",
-    "description": "Presentation of the RoboChart and PRISM work associated with the SoSyM paper. The archive includes a conference recording and a longer slide deck.",
+    "description": "Presentation of the RoboChart and PRISM work associated with the SoSyM paper. Includes a conference recording and a longer slide deck.",
     "sourcePath": "talk/20221027_models_2022/index.html",
     "recording": "/old_entry/talk/20221027_models_2022/MODELS-2022_JF1_recording_Probabilistic-modelling-and-verification-using-RoboChart-and-PRISM_KangfengYe.mp4",
     "recordingTitle": "Recorded MODELS 2022 presentation",
-    "rehearsals": [{ "date": "2022-10-05", "title": "Probabilistic modelling and verification using RoboChart and PRISM", "label": "RoboStar seminar rehearsal" }],
+    "rehearsals": [
+      {
+        "date": "2022-10-05",
+        "title": "Probabilistic modelling and verification using RoboChart and PRISM",
+        "label": "RoboStar seminar rehearsal"
+      }
+    ],
     "resources": [
-      { "label": "MODELS presentation slides (PDF)", "url": "/old_entry/talk/20221027_models_2022/20221027_MODELS_2022.pdf" },
-      { "label": "Longer presentation slides (PDF)", "url": "/old_entry/uploads/MODELS2022_with_more_details_20221025.pdf" },
-      { "label": "Related RoboChart and PRISM demonstration", "url": "/tools/robochart-prism/" },
-      { "label": "SoSyM paper", "url": "https://doi.org/10.1007/s10270-021-00916-8" }
-    ]
+      {
+        "label": "MODELS presentation slides (PDF)",
+        "url": "/old_entry/talk/20221027_models_2022/20221027_MODELS_2022.pdf"
+      },
+      {
+        "label": "Longer presentation slides (PDF)",
+        "url": "/old_entry/uploads/MODELS2022_with_more_details_20221025.pdf"
+      },
+      {
+        "label": "Related RoboChart and PRISM demonstration",
+        "url": "/tools/robochart-prism/"
+      },
+      {
+        "label": "SoSyM paper",
+        "url": "https://doi.org/10.1007/s10270-021-00916-8"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/robostar_seminar_20221005/featured.png",
+    "thumbnailAlt": "Preview image for the RoboStar seminar rehearsal of the MODELS 2022 talk",
+    "thumbnailSource": "talk/robostar_seminar_20221005/featured.png"
   },
   {
     "id": "icfem-2022-robochart-animation",
     "title": "Formally Verified Animation for RoboChart Using Interaction Trees",
     "date": "2022-10-26",
     "event": "ICFEM 2022",
-    "description": "Presentation of the RoboChart animation work. The archived page includes a short animation clip and presentation slides.",
+    "description": "Presentation of the RoboChart animation work. Includes a short animation clip and presentation slides.",
     "sourcePath": "talk/20221026_icfem_2022/index.html",
     "recording": "/old_entry/talk/20221026_icfem_2022/Animation_Movement.mp4",
-    "recordingTitle": "RoboChart animation clip from the archived ICFEM page",
-    "rehearsals": [{ "date": "2022-10-19", "title": "Formally Verified Animation for RoboChart Using Interaction Trees", "label": "RoboStar seminar rehearsal" }],
+    "recordingTitle": "RoboChart animation clip — ICFEM 2022",
+    "rehearsals": [
+      {
+        "date": "2022-10-19",
+        "title": "Formally Verified Animation for RoboChart Using Interaction Trees",
+        "label": "RoboStar seminar rehearsal"
+      }
+    ],
     "resources": [
-      { "label": "ICFEM presentation slides (PDF)", "url": "/old_entry/talk/20221026_icfem_2022/20221026_ICFEM_2022.pdf" },
-      { "label": "Related RoboChart animation demonstration", "url": "/tools/robochart-patrol-robot/" }
-    ]
+      {
+        "label": "ICFEM presentation slides (PDF)",
+        "url": "/old_entry/talk/20221026_icfem_2022/20221026_ICFEM_2022.pdf"
+      },
+      {
+        "label": "Related RoboChart animation demonstration",
+        "url": "/tools/robochart-patrol-robot/"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/robostar_seminar_20221119/featured.png",
+    "thumbnailAlt": "Preview image for the RoboStar seminar rehearsal of the ICFEM 2022 talk",
+    "thumbnailSource": "talk/robostar_seminar_20221119/featured.png"
   },
   {
     "id": "ramics-2021-probabilistic-programs",
@@ -90,11 +176,26 @@
     "event": "RAMiCS 2021",
     "description": "Conference presentation on theorem-prover support for reasoning about probabilistic sequential programs.",
     "sourcePath": "talk/ramics2021/index.html",
-    "rehearsals": [{ "date": "2021-10-29", "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving", "label": "Rehearsal" }],
+    "rehearsals": [
+      {
+        "date": "2021-10-29",
+        "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving",
+        "label": "Rehearsal"
+      }
+    ],
     "resources": [
-      { "label": "RAMiCS presentation slides (PDF)", "url": "/old_entry/talk/ramics2021/ramics2021.pdf" },
-      { "label": "Related publication", "url": "/publications/#probabilistic-sequential-programs" }
-    ]
+      {
+        "label": "RAMiCS presentation slides (PDF)",
+        "url": "/old_entry/talk/ramics2021/ramics2021.pdf"
+      },
+      {
+        "label": "Related publication",
+        "url": "/publications/#probabilistic-sequential-programs"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/ramics2021/featured.png",
+    "thumbnailAlt": "Preview image for the RAMiCS 2021 presentation",
+    "thumbnailSource": "talk/ramics2021/featured.png"
   },
   {
     "id": "robostar-interaction-trees-seminar-2021",
@@ -103,7 +204,15 @@
     "event": "RoboStar seminar",
     "description": "Seminar presentation on animating RoboChart models using interaction trees.",
     "sourcePath": "talk/robostar_seminar_2021/index.html",
-    "resources": [{ "label": "Related publication", "url": "/publications/#robochart-animation-jlamp" }]
+    "resources": [
+      {
+        "label": "Related publication",
+        "url": "/publications/#robochart-animation-jlamp"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/robostar_seminar_2021/featured.png",
+    "thumbnailAlt": "Preview image for the Interaction Trees seminar",
+    "thumbnailSource": "talk/robostar_seminar_2021/featured.png"
   },
   {
     "id": "robostar-probabilistic-systems-seminar-2019",
@@ -112,7 +221,15 @@
     "event": "RoboStar seminar",
     "description": "Seminar on modelling and verifying probabilistic systems with RoboChart and RoboTool.",
     "sourcePath": "talk/robostar_seminar/index.html",
-    "resources": [{ "label": "Related RoboChart and PRISM demonstration", "url": "/tools/robochart-prism/" }]
+    "resources": [
+      {
+        "label": "Related RoboChart and PRISM demonstration",
+        "url": "/tools/robochart-prism/"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/robostar_seminar/featured.png",
+    "thumbnailAlt": "Preview image for the RoboChart and RoboTool seminar",
+    "thumbnailSource": "talk/robostar_seminar/featured.png"
   },
   {
     "id": "southwest-university-workshop-2019",
@@ -121,7 +238,15 @@
     "event": "Workshop with visitors from Southwest University · York",
     "description": "A two-day workshop presentation about verification of probabilistic RoboChart behaviour using PRISM.",
     "sourcePath": "talk/workshop_cq_visitor/index.html",
-    "resources": [{ "label": "Related RoboChart and PRISM demonstration", "url": "/tools/robochart-prism/" }]
+    "resources": [
+      {
+        "label": "Related RoboChart and PRISM demonstration",
+        "url": "/tools/robochart-prism/"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/workshop_cq_visitor/Featured.png",
+    "thumbnailAlt": "Preview image for the Southwest University visitor workshop",
+    "thumbnailSource": "talk/workshop_cq_visitor/Featured.png"
   },
   {
     "id": "isabelle-utp-tutorial-2019",
@@ -131,10 +256,22 @@
     "description": "Tutorial material based substantially on a tutorial by Dr Simon Foster during the CyPhyAssure Spring School.",
     "sourcePath": "talk/nsfc-rs_isabelle_utp_tutorial/index.html",
     "resources": [
-      { "label": "Dr Simon Foster's tutorial material", "url": "https://www-users.cs.york.ac.uk/~simonf/simon-foster/" },
-      { "label": "CyPhyAssure Spring School", "url": "https://www.cs.york.ac.uk/circus/CyPhyAssure/school/" },
-      { "label": "CyPhyAssure project", "url": "https://www.cs.york.ac.uk/circus/CyPhyAssure/" }
-    ]
+      {
+        "label": "Dr Simon Foster's tutorial material",
+        "url": "https://www-users.cs.york.ac.uk/~simonf/simon-foster/"
+      },
+      {
+        "label": "CyPhyAssure Spring School",
+        "url": "https://www.cs.york.ac.uk/circus/CyPhyAssure/school/"
+      },
+      {
+        "label": "CyPhyAssure project",
+        "url": "https://www.cs.york.ac.uk/circus/CyPhyAssure/"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/nsfc-rs_isabelle_utp_tutorial/featured.png",
+    "thumbnailAlt": "Preview image for the Chinese Isabelle/UTP tutorial",
+    "thumbnailSource": "talk/nsfc-rs_isabelle_utp_tutorial/featured.png"
   },
   {
     "id": "vetss-control-law-diagrams-2018",
@@ -144,9 +281,18 @@
     "description": "Presentation on compositional reasoning for control-law diagrams; the source page points to the associated paper and a Simulink resource.",
     "sourcePath": "talk/vetss_ag_swu_visit/index.html",
     "resources": [
-      { "label": "Simulink resource (PDF)", "url": "/old_entry/talk/vetss_ag_swu_visit/vetss_simulink.pdf" },
-      { "label": "Associated paper", "url": "https://link.springer.com/chapter/10.1007/978-3-030-15792-0_10" }
-    ]
+      {
+        "label": "Simulink resource (PDF)",
+        "url": "/old_entry/talk/vetss_ag_swu_visit/vetss_simulink.pdf"
+      },
+      {
+        "label": "Associated paper",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-030-15792-0_10"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/vetss_ag_swu_visit/featured.png",
+    "thumbnailAlt": "Preview image for the VeTSS control-law-diagrams talk",
+    "thumbnailSource": "talk/vetss_ag_swu_visit/featured.png"
   },
   {
     "id": "pint-of-science-robotic-swarms-2019",
@@ -156,12 +302,33 @@
     "description": "Public talk accompanied by several CSP frog-jumper solver versions prepared for different board settings and rules.",
     "sourcePath": "talk/pintofscience2019/index.html",
     "resources": [
-      { "label": "Pint of Science event page", "url": "https://pintofscience.co.uk/event/-blurred-lines-boundaries-between-man-and-machine" },
-      { "label": "Frog-jumper CSP model V0", "url": "/old_entry/files/PoS2019/frog-0.csp" },
-      { "label": "Frog-jumper CSP model V1", "url": "/old_entry/files/PoS2019/frog-1.csp" },
-      { "label": "Frog-jumper CSP model V2", "url": "/old_entry/files/PoS2019/frog-2.csp" },
-      { "label": "Frog-jumper CSP model V3", "url": "/old_entry/files/PoS2019/frog-3.csp" },
-      { "label": "Frog-jumper CSP model V4", "url": "/old_entry/files/PoS2019/frog-4.csp" }
-    ]
+      {
+        "label": "Pint of Science event page",
+        "url": "https://pintofscience.co.uk/event/-blurred-lines-boundaries-between-man-and-machine"
+      },
+      {
+        "label": "Frog-jumper CSP model V0",
+        "url": "/old_entry/files/PoS2019/frog-0.csp"
+      },
+      {
+        "label": "Frog-jumper CSP model V1",
+        "url": "/old_entry/files/PoS2019/frog-1.csp"
+      },
+      {
+        "label": "Frog-jumper CSP model V2",
+        "url": "/old_entry/files/PoS2019/frog-2.csp"
+      },
+      {
+        "label": "Frog-jumper CSP model V3",
+        "url": "/old_entry/files/PoS2019/frog-3.csp"
+      },
+      {
+        "label": "Frog-jumper CSP model V4",
+        "url": "/old_entry/files/PoS2019/frog-4.csp"
+      }
+    ],
+    "thumbnail": "/old_entry/talk/pintofscience2019/featured.png",
+    "thumbnailAlt": "Preview image for the Engineering Robotic Swarms public talk",
+    "thumbnailSource": "talk/pintofscience2019/featured.png"
   }
 ]

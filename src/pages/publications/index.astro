@@ -7,7 +7,7 @@ const groups = [...new Set(publications.map(paper => paper.group))];
 const id = (group: string) => group.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '');
 ---
 <BaseLayout title="Publications" description="The full publication record of Kangfeng (Randall) Ye: journals, conference papers, formal proofs, chapters, thesis and preprints.">
-  <div class="page-heading"><p class="eyebrow">Scholarly record</p><h1>Publications</h1><p>Journal articles, conference papers and mechanised proofs. All 20 entries from the original homepage, with co-authors and source metadata retained.</p></div>
+  <div class="page-heading"><p class="eyebrow">Scholarly record</p><h1>Publications</h1><p>Journal articles, conference papers and mechanised proofs.</p></div>
   <nav class="anchor-nav" aria-label="Publication categories">{groups.map(group => <a href={`#${id(group)}`}>{group}</a>)}</nav>
   {groups.map(group => <section class="section" id={id(group)}><h2>{group}</h2>{publications.filter(paper => paper.group === group).map(paper => <PublicationEntry {...paper} />)}</section>)}
   <p class="muted">Dates follow the original bibliography; conference years and publication years can differ. <a href={local('legacy/#publications')}>Original bibliography</a>.</p>

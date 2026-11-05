@@ -16,7 +16,7 @@ whatVisitorsSee:
     description: Repository examples combine manual choices with automatic reachability exploration and display resulting traces. These instructions describe the documented workflow, rather than a timestamped video transcript.
 resultsOrLimitations: Animation soundness relates generated behaviour to the formal semantics. It is distinct from a proof that every execution satisfies a particular security property. Conclusions depend on the chosen model, intruder assumptions, parameters and exploration bounds.
 thumbnailAlt: No verified video still is available.
-mediaNote: The video link is preserved from the original MWC2025 news item. Playback and embedding have not yet been verified; no preview image or transcript is available.
+mediaNote: Security-protocol animation demonstration presented at MWC2025.
 videoUrl: https://www.youtube.com/watch?v=8FO6KT6EMqM
 paperLinks:
   - label: Read the SEFM 2024 paper
@@ -50,4 +50,4 @@ The repository includes an early framework associated with this paper and a late
 
 The repository documents local execution of generated Haskell animators with GHC. Regenerating an animator from a theory requires the patched Isabelle/UTP environment described in the README. The web interface uses the Haskell Yesod framework and requires its own runtime.
 
-This website hosts a recording link and research resources. No public interactive service has been verified. GitHub Pages does not run the Isabelle or Haskell software.
+Run the animators locally using the repository’s installation instructions.

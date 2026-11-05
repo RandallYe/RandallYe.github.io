@@ -2,22 +2,22 @@
 slug: probabilistic-relations
 title: Reasoning about probabilistic programs in Isabelle/HOL
 subtitle: From probabilistic notation to mechanised reasoning.
-summary: An archived research walkthrough introducing probabilistic relations, their Isabelle/UTP implementation, and examples involving a coin flip, Monty Hall and robot localisation.
+summary: A research walkthrough introducing probabilistic relations, their Isabelle/UTP implementation, and examples involving a coin flip, Monty Hall and robot localisation.
 researchArea: Formal Semantics & Theorem Proving
 status: recorded-demonstration
 problem: Probabilistic programs combine state changes with uncertainty. Precise semantics and mechanised reasoning help make their assumptions and intended behaviour explicit.
-method: The walkthrough introduces the probabilistic programming language and Isabelle/UTP implementation documented in the original showcase, including Iverson brackets, distribution notation, algebraic laws and fixed-point theorems.
+method: The walkthrough introduces the probabilistic programming language and Isabelle/UTP implementation covered in the demonstration, including Iverson brackets, distribution notation, algebraic laws and fixed-point theorems.
 whatVisitorsSee:
   - title: A language for probabilistic behaviour
-    description: The original showcase introduces probabilistic programming notation and its semantic implementation in Isabelle/UTP, built on Isabelle/HOL.
+    description: The walkthrough introduces probabilistic programming notation and its semantic implementation in Isabelle/UTP, built on Isabelle/HOL.
   - title: Definitions and algebraic foundations
-    description: The archived description covers Iverson brackets, distribution notation, algebraic laws and fixed-point theorems. Its genuine screenshot shows the theory inside the Isabelle editor.
+    description: The walkthrough covers Iverson brackets, distribution notation, algebraic laws and fixed-point theorems. The screenshot shows the theory inside the Isabelle editor.
   - title: Three worked examples
-    description: The original showcase lists a coin flip, the Monty Hall problem with learning facts, and robot localisation. This is a source-based summary, not a timestamped transcript.
+    description: The examples cover a coin flip, the Monty Hall problem with learning facts, and robot localisation.
 resultsOrLimitations: This is a historical walkthrough, originally published in February 2023. It does not demonstrate every result in the later 2024 ProbURel paper, and it does not run Isabelle in this website. Reproducing the proofs requires the corresponding theory versions and Isabelle/UTP environment.
 thumbnail: /old_entry/showcase/demonstration_of_probabilistic_relation/featured_hu7888d7cc804f4e8e895bb066cdd171ef_1109337_720x2500_fit_q75_h2_lanczos_3.webp
 thumbnailAlt: The original Isabelle editor screenshot showing probabilistic relation definitions and the theory outline.
-mediaNote: Original recording preserved from the earlier homepage. A summary of its documented topics appears below; the source archive does not provide a transcript or captions.
+mediaNote: Captions and transcript are unavailable. The topics are summarised below.
 media:
   - kind: video
     src: /old_entry/showcase/demonstration_of_probabilistic_relation/Demonstration_of_probabilistic_relations.mp4
@@ -39,9 +39,9 @@ paperLinks:
   - label: Preprint and version history
     url: https://arxiv.org/abs/2303.09692
 sourceLinks:
-  - label: Current probabilistic-relations theory
+  - label: Probabilistic-relations theory
     url: https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_relations
-examplesHeading: Worked examples in the original showcase
+examplesHeading: Worked examples
 exampleLinks:
   - label: Coin flip
     description: A basic probabilistic example introducing the language and its treatment of uncertain outcomes.
@@ -62,14 +62,8 @@ order: 2
 
 The later journal paper, *Probabilistic unifying relations for modelling epistemic and aleatoric uncertainty: Semantics and automated reasoning with theorem proving*, is co-authored by **K. Ye, J. Woodcock and S. Foster** and published in *Theoretical Computer Science* in 2024.
 
-This recording was introduced on the earlier homepage in February 2023. It provides historical context for the research, rather than a demonstration of every result in the final paper. The original description lists three worked examples; the later paper describes a broader set of examples.
+The February 2023 walkthrough covers three worked examples. The later journal paper develops a broader set of examples and results.
 
-## Theory versions and reproduction
+## Theory and examples
 
-The original showcase linked to the `TCS` branch of the earlier `probabilistic_designs` repository. The current homepage instead links to `probabilistic_programming_utp`. Use the current repository for its documented installation instructions and example collection; reproducing a particular historical development may require the earlier environment.
-
-The original branch URL is preserved as a historical reference in the migration records. Its availability has not been confirmed, so the primary source link above uses the current homepage's repository.
-
-## About the recording
-
-The video and Isabelle editor screenshot are recovered assets from the original showcase. They are not a simulated proof interface. This static website plays the recording and links to the theories; it does not execute proof commands.
+The probabilistic-relations repository contains installation instructions and worked examples. Reproducing the proofs requires the corresponding Isabelle/UTP environment and theory versions.

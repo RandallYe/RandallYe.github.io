@@ -16,7 +16,11 @@
     "check:demo": "python3 scripts/check-demo-output.py",
     "check:posts": "python3 scripts/check-posts-output.py",
     "check:talks": "python3 scripts/check-talks-output.py",
-    "check:publications": "python3 scripts/check-publications-output.py"
+    "check:publications": "python3 scripts/check-publications-output.py",
+    "check:history": "python3 scripts/check-history-output.py",
+    "audit:routes": "python3 scripts/audit-routes.py --write",
+    "check:routes": "python3 scripts/audit-routes.py",
+    "verify": "node scripts/verify-site.mjs"
   },
   "dependencies": {
     "astro": "7.4.5",

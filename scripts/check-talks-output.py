@@ -4,18 +4,19 @@ from pathlib import Path
 import os
 
 ROOT = Path(os.environ.get('CHECK_ROOT', 'dist')).resolve()
-BASE = os.environ.get('CHECK_BASE', '/')
+BASE = os.environ.get('CHECK_BASE', os.environ.get('ASTRO_BASE', '/'))
 if not BASE.startswith('/') or not BASE.endswith('/'):
     raise SystemExit('CHECK_BASE must start and end with /')
 
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__(); self.ids = set(); self.links = []; self.videos = []
+        super().__init__(); self.ids = set(); self.links = []; self.videos = []; self.images = []
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if a.get('id'): self.ids.add(a['id'])
         if tag == 'a' and a.get('href'): self.links.append(a['href'])
         if tag == 'video': self.videos.append(a)
+        if tag == 'img' and 'visual-entry-image' in a.get('class', '').split(): self.images.append(a)
 
 talk_file = ROOT / 'talks/index.html'
 assert talk_file.exists(), f'missing {talk_file}'
@@ -23,6 +24,11 @@ talk_page = Page()
 talk_page.feed(talk_file.read_text())
 assert len(talk_page.ids) >= 11
 assert 'cheddar-symposium-2025' in talk_page.ids and 'pint-of-science-robotic-swarms-2019' in talk_page.ids
+assert len(talk_page.images) == 14, f'expected one thumbnail per talk, got {len(talk_page.images)}'
+assert all(image.get('alt') and image.get('src', '').startswith(BASE) for image in talk_page.images)
+for image in talk_page.images:
+    source = image['src'].removeprefix(BASE).lstrip('/')
+    assert (ROOT / source).is_file(), f'missing talk thumbnail {source}'
 assert len(talk_page.videos) == 2
 assert all('controls' in v and v.get('preload') == 'none' and 'autoplay' not in v for v in talk_page.videos)
 for video in talk_page.videos:

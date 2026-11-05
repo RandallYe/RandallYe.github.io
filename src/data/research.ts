@@ -9,8 +9,3 @@ export const tools = [
   { title: 'Circus2ZCSP', kind: 'Translation tool', summary: 'Linking state-rich Circus models to a combination of state-based specification and process algebra for model checking.', url: 'https://github.com/RandallYe/Circus2ZCSP' },
   { title: 'Interaction trees', demoId: 'robochart-chemical-detector', kind: 'Formal foundations', summary: 'Isabelle/HOL interaction trees and a CSP model underpinning co-authored work on RoboChart animation.', url: 'https://github.com/isabelle-utp/interaction-trees' },
 ];
-export const news = [
-  { date: '2025-11-24', title: 'Joined IOHK as a formal methods engineer', summary: 'A move to industry after research at the University of York.' },
-  { date: '2025-11-13', title: 'Abel’s limit theorem accepted into the AFP', summary: 'A mechanisation of the theorem for power series with real coefficients.', url: 'https://isa-afp.org/entries/Abel_Limit_Theorem.html' },
-  { date: '2025-03-03', title: 'Security protocol animation at MWC2025', summary: 'A recorded demonstration accompanying the work on user-guided verification.', url: 'https://www.youtube.com/watch?v=8FO6KT6EMqM' },
-];

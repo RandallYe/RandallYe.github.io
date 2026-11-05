@@ -12,8 +12,8 @@ const body = (data.math ? typesetArticle(data.body) : data.body).replace(/(href|
 ---
 <BaseLayout title={data.title} description={data.summary}>
   <a class="back-link" href={local('posts/')}>← Posts</a>
-  <div class="page-heading"><p class="eyebrow">{data.dateLabel ?? <>Historical technical notes · <time datetime={data.date}>{data.date}</time></>}</p><h1>{data.title}</h1><p>{data.summary}</p></div>
-  {data.math && <aside class="notice"><strong>Historical working notes — technical review</strong><p>The original text is retained, including unfinished examples. Some statements need correction: sums of transition probabilities count expected visits rather than the probability of a visit; finite-step powers need not equal their limiting matrix exactly; return probabilities use first-return events. The displayed Markov-property condition should use non-negative time indices. Treat the original summary diagram in the same historical context.</p><p>For the displayed three-state example, exact arithmetic gives (P¹¹)₀₀ = 382205275/1019215872, rather than exactly 3/8. Further review of the distinctions between time averages and pointwise limits is needed.</p></aside>}
+  <div class="page-heading"><p class="eyebrow">{data.dateLabel ?? <>Technical notes · <time datetime={data.date}>{data.date}</time></>}</p><h1>{data.title}</h1><p>{data.summary}</p></div>
+  {data.math && <aside class="notice"><strong>Working notes — technical review</strong><p>These notes include unfinished examples and statements needing correction: sums of transition probabilities count expected visits rather than the probability of a visit; finite-step powers need not equal their limiting matrix exactly; return probabilities use first-return events. The displayed Markov-property condition should use non-negative time indices. Read the summary diagram with these qualifications.</p><p>For the displayed three-state example, exact arithmetic gives (P¹¹)₀₀ = 382205275/1019215872, rather than exactly 3/8. Further review of the distinctions between time averages and pointwise limits is needed.</p></aside>}
   <article class="post-body" set:html={body} />
 </BaseLayout>
 <style>

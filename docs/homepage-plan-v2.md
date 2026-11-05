@@ -11,6 +11,7 @@ Present a consistent view of Kangfeng (Randall) Ye by combining the latest GitHu
 3. **One canonical record per work:** published paper and its preprints are linked versions; a poster, talk and demo are related resources, not additional publications. Distinct conference and journal contributions remain distinct records.
 4. **Keep provenance:** source page, original path, source date, content type and relationship to the canonical work. Preserve conflicting raw evidence in review metadata, not contradictory visitor-facing text.
 5. **Do not resolve uncertainty by guessing:** record missing resources and disputed scientific statements explicitly. Never fabricate media, execution results or verification claims.
+6. **Keep migration notes internal:** source precedence, old/new homepage comparisons, preservation status and migration verification belong in documentation and metadata, not visitor-facing page copy. Retain dates, attribution and substantive scientific limitations.
 
 Evidence: `old-entry-analysis.md`, `old-entry-inventory.json`, `old-entry-merge-map.md`. The source export remains read-only outside this repository; selected resources have now been preserved as recorded in `progress.md`.
 
@@ -89,10 +90,10 @@ Acceptance: both selected posts accounted for, zero stock-example posts; figures
 
 - [x] Enrich the canonical bibliography with all source-backed archived abstracts, every preserved BibTeX file, and identified preprint versions. Keep the 2018 working report labelled as a companion resource; do not count it as the later chapter.
 - [x] Add all 14 substantive archived talk entries, grouping three rehearsals with their conference presentations; restore the MODELS 2022 recording and slide variants, ICFEM 2022 clip/slides and other preserved talk materials.
-- Merge seven project histories and 21 news entries with current records. Distinguish dates of publication, announcement and event.
-- Add CSAV teaching and the Chinese Isabelle/UTP tutorial to About/Talks.
-- Add the line-following robot as a dated engineering case study, explicitly retaining that formal verification was not completed. Record its missing physical-model image.
-- Restore the five CSP frog-puzzle downloads from the outreach talk. An executable browser recreation is optional future work and needs separate validation.
+- [x] Merge seven project histories and 21 news entries with current records. Distinguish dates of publication, announcement and event.
+- [x] Add CSAV teaching and the Chinese Isabelle/UTP tutorial to About/Talks.
+- [x] Add the line-following robot as a dated engineering case study, explicitly retaining that formal verification was not completed. Record its missing physical-model image.
+- [x] Restore the five CSP frog-puzzle downloads from the outreach talk. An executable browser recreation is optional future work and needs separate validation.
 
 Acceptance: every substantive archive entry is migrated, merged into a canonical record, or explicitly deferred with a visible access path. No duplicate publication/event listings or stale “Present” statuses.
 
@@ -112,4 +113,4 @@ Present the coherent merged portfolio and review unresolved biography/company wo
 
 Continue on `redesign/astro`; make small commits per content group and update `docs/progress.md`. Do not restart the existing design or replace the current website with the old export.
 
-The next implementation increment is to merge seven project histories and 21 news entries, then add the documented teaching/tutorial history. Talks are now represented as 11 archive presentations plus three nested rehearsals, alongside the three recent talks already on the site. Subsequent implementation status is recorded in `progress.md`; browser acceptance remains pending.
+Project, news and teaching implementation is now recorded in `progress.md`: seven archived project pages merge into six canonical histories, all 21 archived news pages are accounted for in the combined chronology, and About links teaching/tutorial history. Route-disposition reporting, static quality checks and a manual preview artifact workflow are now implemented. Next: browser/media/external-resource acceptance and remaining content review, as detailed in `preview-review.md`. Talks are now represented as 11 archive presentations plus three nested rehearsals, alongside the three recent talks already on the site. Subsequent implementation status is recorded in `progress.md`; browser acceptance remains pending.

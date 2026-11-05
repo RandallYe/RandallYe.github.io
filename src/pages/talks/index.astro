@@ -6,7 +6,7 @@ import { local } from '../../lib/site-paths';
 const talks = (await getCollection('talks')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 const href = (url: string) => url.startsWith('/') ? local(url.slice(1)) : url;
 ---
-<BaseLayout title="Talks & presentations" description="Conference presentations, seminars, tutorials and public talks, with preserved slides and selected recordings.">
+<BaseLayout title="Talks & presentations" description="Conference presentations, seminars, tutorials and public talks, with slides and selected recordings.">
   <div class="page-heading">
     <p class="eyebrow">Presentations & conversations</p>
     <h1>Talks</h1>
@@ -14,10 +14,14 @@ const href = (url: string) => url.startsWith('/') ? local(url.slice(1)) : url;
   </div>
   <section class="talk-list" aria-label="Talks in reverse chronological order">
     {talks.map(({ id, data }) => (
-      <article class="research-detail talk-entry" id={id}>
-        <p class="eyebrow"><time datetime={data.date}>{new Date(`${data.date}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time> · {data.event}</p>
-        <h2>{data.title}</h2>
-        <p>{data.description}</p>
+      <article class="research-detail talk-entry visual-entry" id={id}>
+        <img class="visual-entry-image" src={local(data.thumbnail.slice(1))} alt={data.thumbnailAlt} loading="lazy" decoding="async" />
+        <div class="visual-entry-copy">
+          <p class="eyebrow"><time datetime={data.date}>{new Date(`${data.date}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time> · {data.event}</p>
+          <h2>{data.title}</h2>
+          <p>{data.description}</p>
+        </div>
+        <div class="talk-entry-details">
         {data.recording && <div class="talk-recording">
           <h3>{data.recordingTitle ?? 'Recording'}</h3>
           <video controls preload="none" playsinline src={local(data.recording.slice(1))}>
@@ -32,16 +36,20 @@ const href = (url: string) => url.startsWith('/') ? local(url.slice(1)) : url;
         {data.resources.length > 0 && <ul class="resource-links" aria-label={`Resources for ${data.title}`}>
           {data.resources.map(resource => <li><a href={href(resource.url)}>{resource.label} <span aria-hidden="true">↗</span></a></li>)}
         </ul>}
+        </div>
       </article>
     ))}
   </section>
 </BaseLayout>
 
 <style>
-  .talk-list { display: grid; gap: 1.15rem; }
-  .talk-entry { scroll-margin-top: 6rem; }
-  .talk-entry h2 { max-width: 850px; }
-  .talk-entry > .eyebrow { margin-bottom: .55rem; }
+  .talk-list { display: grid; gap: 1rem; }
+  .talk-entry { scroll-margin-top: 6rem; grid-template-areas: "image intro" "details details"; }
+  .talk-entry > .visual-entry-image { grid-area: image; }
+  .talk-entry > .visual-entry-copy { grid-area: intro; }
+  .talk-entry-details { grid-area: details; min-width: 0; }
+  .talk-entry h2 { max-width: 850px; font-size: 1.45rem; margin: .35rem 0 .7rem; }
+  .talk-entry .eyebrow { margin-bottom: .55rem; }
   .talk-recording { max-width: 820px; margin: 1.5rem 0; }
   .talk-recording h3 { font-size: 1rem; }
   .talk-recording video { display: block; width: 100%; max-height: 70vh; background: #111; }
@@ -49,4 +57,5 @@ const href = (url: string) => url.startsWith('/') ? local(url.slice(1)) : url;
   .talk-rehearsals summary { cursor: pointer; font-weight: 600; }
   .talk-rehearsals ul { padding-left: 1.4rem; }
   .talk-rehearsals li { margin: .45rem 0; }
+  @media (max-width: 640px) { .talk-entry { grid-template-columns: 1fr; grid-template-areas: "image" "intro" "details"; } }
 </style>

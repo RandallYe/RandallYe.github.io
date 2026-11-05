@@ -38,8 +38,13 @@ class Extract(HTMLParser):
 posts=[]
 for slug,old,title,date,summary,math in [
  ('temporal-logic','temporal-logic','Temporal Logic — history and semantics','2022-11-18','A timeline of temporal logics, from tense logic to branching-time and probabilistic logics.',False),
- ('steady-state-probabilities','steady_state_probabilities','Steady state probabilities of Markov chains','2022-11-23','Historical working notes on recurrence, stationary distributions and limiting behaviour of Markov chains.',True)]:
+ ('steady-state-probabilities','steady_state_probabilities','Steady state probabilities of Markov chains','2022-11-23','Notes on recurrence, stationary distributions and limiting behaviour of Markov chains.',True)]:
  path=source/'post'/old/'index.html';p=Extract();p.feed(path.read_text());body=''.join(p.parts)
- posts.append(dict(id=slug,title=title,date=date,summary=summary,math=math,sourcePath='post/'+old+'/index.html',sourceSha256=hashlib.sha256(path.read_bytes()).hexdigest(),body=body))
-(root/'src/data/posts.json').write_text(json.dumps(posts,indent=2,ensure_ascii=False)+'\n')
+ thumb,alt={'temporal-logic':('old_entry/post/temporal-logic/temporal-logic.png','Timeline of temporal logics'),'steady-state-probabilities':('old_entry/post/steady_state_probabilities/summary-steady-state_prob.png','Diagram summarising steady-state probabilities')}[slug]
+ posts.append(dict(id=slug,title=title,date=date,summary=summary,math=math,sourcePath='post/'+old+'/index.html',sourceSha256=hashlib.sha256(path.read_bytes()).hexdigest(),thumbnail='/'+thumb,thumbnailAlt=alt,thumbnailSource='post/'+old+'/'+Path(thumb).name,body=body))
+data_path=root/'src/data/posts.json'
+existing={post['id']:post for post in json.loads(data_path.read_text())} if data_path.exists() else {}
+for post in posts: existing[post['id']]=post
+all_posts=sorted(existing.values(),key=lambda post:post['date'],reverse=True)
+data_path.write_text(json.dumps(all_posts,indent=2,ensure_ascii=False)+'\n')
 p=root/'src/data/route-aliases.json';a=json.loads(p.read_text());a.extend(dict(path='post/'+post['sourcePath'].split('/')[1],destination='posts/'+post['id']+'/',title=post['title']) for post in posts);a=list({entry['path']:entry for entry in a}.values());p.write_text(json.dumps(a,indent=2,ensure_ascii=False)+'\n')

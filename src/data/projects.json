@@ -1,0 +1,179 @@
+[
+  {
+    "id": "cheddar",
+    "title": "CHEDDAR",
+    "period": "February 2024 – November 2025",
+    "summary": "The Communications Hub for Empowering Distributed Cloud Computing Applications and Research.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Project website",
+        "url": "https://cheddarhub.org/"
+      }
+    ],
+    "relatedDemos": [
+      "security-protocol-animation"
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "project/cheddar/index.html",
+        "sha256": "d3488cbcb6b7af8c7857d360c8852fa2acc61a7fdb93aecf378d29fac1469675"
+      },
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "sesame",
+    "title": "SESAME",
+    "period": "June 2023 – January 2024",
+    "summary": "Secure and Safe Multi-Robot Systems, a Horizon 2020 project associated with the Automated Software Engineering group. Historical work with Simos Gerasimou addressed safety and security analysis of multiple robotic systems using probabilistic model checking.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Project website",
+        "url": "https://www.sesame-project.org/"
+      }
+    ],
+    "relatedDemos": [],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "project/sesame/index.html",
+        "sha256": "ce12d86ffcc84f4320401aa00cc0de9e15a8b3e5f43987dbc806ded8f87b3a39"
+      },
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "robocalc-robotest",
+    "title": "RoboCalc and RoboTest",
+    "period": "April 2018 – June 2023",
+    "summary": "EPSRC projects in the RoboStar group, supporting research in modelling and verification of robotic software.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Project website",
+        "url": "https://robostar.cs.york.ac.uk/"
+      }
+    ],
+    "relatedDemos": [
+      "robochart-prism",
+      "robochart-chemical-detector",
+      "robochart-patrol-robot"
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "project/robocalc/index.html",
+        "sha256": "0702d0700567d7e8c1d967b36b006823c7f57ebd5ee6e247ed04ca740f34fb00"
+      },
+      {
+        "source": "old_entry",
+        "path": "project/robotest/index.html",
+        "sha256": "d7f8eb7261da12639f21b5c697d40b5a9c5bcb5522bbcad9afb0f4f62c24a1f8"
+      },
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "cyphyassure",
+    "title": "CyPhyAssure",
+    "period": "June 2021 – September 2021",
+    "summary": "An EPSRC-funded project associated with Simon Foster’s fellowship and the RoboStar group.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Project website",
+        "url": "https://www.cs.york.ac.uk/circus/CyPhyAssure/"
+      }
+    ],
+    "relatedDemos": [],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "project/cyphyassure/index.html",
+        "sha256": "3a1bb82c93ae85286676e7e14ab6ceb8d681d36c41cd1570b61ff4f350154b9d"
+      },
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "vetss",
+    "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP",
+    "period": "October 2017 – March 2018",
+    "summary": "A VeTSS-sponsored project on compositional reasoning for discrete-time control-law diagrams.",
+    "detail": "This project is funded by VeTSS (UK Research Institute in Verified Trustworthy Software Systems). In this project, we have developed a theoretical reasoning framework for discrete-time blocks of control law diagrams. The framework is based on Hoare and He’s Unifying Theories of Programming and their theory of designs. Using UTP to give denotational semantics to block diagrams generalises the framework and makes it easily be used for another block diagrams like Modelica, or other stream based languages. In addition, our framework supports reasoning of non-deterministic and non-input-receptive systems as well as systems with algebraic loops. Particularly, we use compositional reasoning and theorem proving to tackle the state space explosion problem. In terms of outcomes, we developed a theoretical reasoning framework for the discrete-time part of control law block diagrams (such as Simulink) using theorem proving (based on the mathematical semantics of diagrams and capable of dealing with large state spaces) it supports contract-based compositional reasoning (using refinement relation) to tackle verification of large systems it is able to reason and resolve diagrams with algebraic loops (ignored by most verification approaches) and we have verified one subsystem of an aircraft cabin pressure control application (from industry) Isabelle/UTP based verification More information could be found in the technical report .",
+    "resources": [
+      {
+        "label": "Project website",
+        "url": "https://vetss.org.uk/"
+      },
+      {
+        "label": "This project",
+        "url": "https://vetss.org.uk/mechanised-assume-guarantee-reasoning-for-control-law-diagrams-via-circus"
+      },
+      {
+        "label": "report",
+        "url": "http://eprints.whiterose.ac.uk/129640/"
+      }
+    ],
+    "relatedDemos": [],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "project/vetss/index.html",
+        "sha256": "9d79daedaca1ca5cf9e22671929fa876ae94113eed4dac44376f6afbc8d1c601"
+      },
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  },
+  {
+    "id": "into-cps",
+    "title": "INTO-CPS",
+    "period": "November 2016 – December 2017",
+    "summary": "Integrated Tool Chain for Model-based Design of Cyber-Physical Systems, an EU Horizon 2020 project. The project itself ran from 2015 to 2017; the dates here describe Randall’s participation.",
+    "detail": "",
+    "resources": [
+      {
+        "label": "Project website",
+        "url": "https://into-cps.org/"
+      }
+    ],
+    "relatedDemos": [
+      "line-following-robot"
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "project/into-csp/index.html",
+        "sha256": "7e06d440e1a13a506c17cb50c070e8e677b049d0a198526beacbdaa26821d29c"
+      },
+      {
+        "source": "GitHub",
+        "path": "index.md",
+        "sha256": "aca0f5401916db5b515d45b9a1bd595f802bc1ea78e0f3786c4b0945e764d77a"
+      }
+    ]
+  }
+]

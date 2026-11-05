@@ -103,5 +103,250 @@
     "path": "talk/workshop_cq_visitor",
     "destination": "talks/#southwest-university-workshop-2019",
     "title": "Modelling and verification of probabilistic behaviour of robotic applications"
+  },
+  {
+    "path": "project/cheddar",
+    "destination": "research/projects/cheddar/",
+    "title": "CHEDDAR"
+  },
+  {
+    "path": "project/sesame",
+    "destination": "research/projects/sesame/",
+    "title": "SESAME"
+  },
+  {
+    "path": "project/robocalc",
+    "destination": "research/projects/robocalc-robotest/",
+    "title": "RoboCalc and RoboTest"
+  },
+  {
+    "path": "project/robotest",
+    "destination": "research/projects/robocalc-robotest/",
+    "title": "RoboCalc and RoboTest"
+  },
+  {
+    "path": "project/cyphyassure",
+    "destination": "research/projects/cyphyassure/",
+    "title": "CyPhyAssure"
+  },
+  {
+    "path": "project/vetss",
+    "destination": "research/projects/vetss/",
+    "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP"
+  },
+  {
+    "path": "project/into-csp",
+    "destination": "research/projects/into-cps/",
+    "title": "INTO-CPS"
+  },
+  {
+    "path": "news/20220829_invitation_to_models2022_jf1",
+    "destination": "news/#20220829-invitation-to-models2022-jf1",
+    "title": "An exciting invitation from MODELS2022 to present our SoSym journal paper there"
+  },
+  {
+    "path": "news/20221011_robostar_industry_exhibition",
+    "destination": "news/#20221011-robostar-industry-exhibition",
+    "title": "YorRobots and RoboStar Industry Exhibition"
+  },
+  {
+    "path": "news/20221026_icfem2022_presentation",
+    "destination": "news/#20221026-icfem2022-presentation",
+    "title": "An online talk today at ICFEM2022"
+  },
+  {
+    "path": "news/20221027_models2022_presentation",
+    "destination": "news/#20221027-models2022-presentation",
+    "title": "An online talk today at MODELS2022"
+  },
+  {
+    "path": "news/20221119_invitation_jlamp_extension_icfem",
+    "destination": "news/#20221119-invitation-jlamp-extension-icfem",
+    "title": "An exciting invitation from ICFEM2022"
+  },
+  {
+    "path": "news/2022_sosym-first-paper-award",
+    "destination": "news/#2022-sosym-first-paper-award",
+    "title": "2022_SoSyM First Paper Award"
+  },
+  {
+    "path": "news/20230627_new_project_sesame",
+    "destination": "news/#20230627-new-project-sesame",
+    "title": "Work in a new project SESAME"
+  },
+  {
+    "path": "news/20231229_jlamp_paper_accepted_online",
+    "destination": "news/#current-2023-12-19-15",
+    "title": "Our journal submission: Formally verified animation for RoboChart using interaction trees, was accepted and available online"
+  },
+  {
+    "path": "news/20240201_new_project_cheddar",
+    "destination": "news/#20240201-new-project-cheddar",
+    "title": "Work in a new project CHEDDAR"
+  },
+  {
+    "path": "news/20240229_submission_jss",
+    "destination": "news/#20240229-submission-jss",
+    "title": "A new journal submission to JSS - QASCAD: Quantitative Assurance and Synthesis of Controllers from Activity Diagrams"
+  },
+  {
+    "path": "news/accepted_paper_icfem2022",
+    "destination": "news/#accepted-paper-icfem2022",
+    "title": "The submission (Formally Verified Animation for RoboChart using Interaction Trees) to ICFEM2022 is accepted"
+  },
+  {
+    "path": "news/phd-thesis-submission",
+    "destination": "news/#phd-thesis-submission",
+    "title": "Phd Thesis Submission"
+  },
+  {
+    "path": "news/published_online_icfem2022",
+    "destination": "news/#published-online-icfem2022",
+    "title": "ICFEM 2022 paper is available online"
+  },
+  {
+    "path": "news/robosoft",
+    "destination": "news/#robosoft",
+    "title": "RoboSoft"
+  },
+  {
+    "path": "news/robotest_robocalc_advisory_board_meeting",
+    "destination": "news/#robotest-robocalc-advisory-board-meeting",
+    "title": "RoboTest RoboCalc Advisory Board meeting"
+  },
+  {
+    "path": "news/sosym2020_paper_online",
+    "destination": "news/#sosym2020-paper-online",
+    "title": "SoSym Paper is online"
+  },
+  {
+    "path": "news/special_issue_ras_journal_cfp",
+    "destination": "news/#special-issue-ras-journal-cfp",
+    "title": "Call for paper: Special Issue of Software Engineering for Robotics in Robotics and Autonomous Systems Journal, Elsevier"
+  },
+  {
+    "path": "news/swu_cq_first_visit",
+    "destination": "news/#swu-cq-first-visit",
+    "title": "Visit of Prof. Zhiming Liu's team at York"
+  },
+  {
+    "path": "news/swu_visit_201907",
+    "destination": "news/#swu-visit-201907",
+    "title": "Second visit of Prof. Zhiming Liu's team at York"
+  },
+  {
+    "path": "news/visit_swu_cq_201905",
+    "destination": "news/#visit-swu-cq-201905",
+    "title": "Visit SWU in Chongqing with Prof. Jim Woodcock"
+  },
+  {
+    "path": "news/viva-prep",
+    "destination": "news/#viva-prep",
+    "title": "Viva Preparation"
+  },
+  {
+    "path": "teaching/csav2018",
+    "destination": "about/#teaching",
+    "title": "CSAV teaching"
+  },
+  {
+    "path": "showcase/poster_animation_robochart_interaction_trees",
+    "destination": "tools/robochart-chemical-detector/#resources",
+    "title": "Poster about animation of RoboChart using interaction trees"
+  },
+  {
+    "path": "showcase/poster_probabilistic_modelling_and_verificaton",
+    "destination": "tools/robochart-prism/#resources",
+    "title": "Improved poster about probabilistic modelling and verification in RoboChart"
+  },
+  {
+    "path": "showcase/poster_robostar_industry_exhibition_202210",
+    "destination": "tools/robochart-prism/#resources",
+    "title": "Poster displayed at YorRobots and RoboStar Industry Exhibition in October 2022"
+  },
+  {
+    "path": "publication/10260395",
+    "destination": "publications/#agriculture-robot-light-treatment",
+    "title": "Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment"
+  },
+  {
+    "path": "publication/foster-2018",
+    "destination": "publications/#reactive-relations-2018",
+    "title": "Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra"
+  },
+  {
+    "path": "publication/foster-2018-a",
+    "destination": "publications/#reactive-relations-2018",
+    "title": "Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra"
+  },
+  {
+    "path": "publication/foster-2020-a",
+    "destination": "publications/#reactive-programs-calculation",
+    "title": "Automated Verification of Reactive and Concurrent Programs by Calculation"
+  },
+  {
+    "path": "publication/foster-2021100681",
+    "destination": "publications/#reactive-programs-calculation",
+    "title": "Automated verification of reactive and concurrent programs by calculation"
+  },
+  {
+    "path": "publication/jim-2019",
+    "destination": "publications/#probabilistic-semantics-robochart",
+    "title": "Probabilistic Semantics for RoboChart - A Weakest Completion Approach"
+  },
+  {
+    "path": "publication/woodcock-2021",
+    "destination": "publications/#robostar-uncertainty",
+    "title": "RoboStar Technology: Modelling Uncertainty in RoboChart Using Probability"
+  },
+  {
+    "path": "publication/ye-2017",
+    "destination": "publications/#circus-model-checking",
+    "title": "Model checking of state-rich formalism by linking to $$CSP,‖ ,B$$CSP‖B"
+  },
+  {
+    "path": "publication/ye-2018",
+    "destination": "publications/#control-law-diagrams",
+    "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP"
+  },
+  {
+    "path": "publication/ye-2020",
+    "destination": "publications/#control-law-diagrams",
+    "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP"
+  },
+  {
+    "path": "publication/ye-2021",
+    "destination": "publications/#robochart-prism",
+    "title": "Probabilistic modelling and verification using RoboChart and PRISM"
+  },
+  {
+    "path": "publication/ye-2021-a",
+    "destination": "publications/#probabilistic-sequential-programs",
+    "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving"
+  },
+  {
+    "path": "publication/ye-2022",
+    "destination": "publications/#robochart-animation-icfem",
+    "title": "Formally Verified Animation for RoboChart Using Interaction Trees"
+  },
+  {
+    "path": "publication/ye-2023-formally",
+    "destination": "publications/#robochart-animation-jlamp",
+    "title": "Formally Verified Animation for RoboChart using Interaction Trees"
+  },
+  {
+    "path": "publication/ye-2023-probabilistic",
+    "destination": "publications/#proburel",
+    "title": "Probabilistic relations for modelling epistemic and aleatoric uncertainty: semantics and automated reasoning with theorem proving"
+  },
+  {
+    "path": "publication/ye-2024-quantitative",
+    "destination": "publications/#quantitative-activity-diagrams",
+    "title": "Quantitative Assurance and Synthesis of Controllers from Activity Diagrams"
+  },
+  {
+    "path": "publication/ye-2024100940",
+    "destination": "publications/#robochart-animation-jlamp",
+    "title": "Formally verified animation for RoboChart using interaction trees"
   }
 ]

@@ -11,22 +11,18 @@ status: recorded-demonstration
 problem: A line-following robot must respond to changes in the route, including
   sharp corners. Models, simulation and physical trials provide different ways
   to investigate the controller.
-method: The archived work draws on INTO-CPS model-based engineering experience,
+method: The work draws on INTO-CPS model-based engineering experience,
   including co-simulation with Functional Mock-up Units. It documents a
   mathematical model, OpenModelica modelling, a C++ controller and
   simulation-based design-space exploration.
 whatVisitorsSee:
   - title: Compare models and hardware
-    description: The original case study includes the m3pi robot photograph and a
-      mathematical model. Its separate OpenModelica physical-model image is
-      missing from the archive.
+    description: The m3pi robot photograph and mathematical model connect the hardware to its specification.
   - title: Watch physical and simulated runs
     description: Three separate original recordings show a sharp-corner route, a
       robot run on a map used for simulation, and a simulation on that map.
   - title: Inspect the implementation and exploration
-    description: The preserved C++ ZIP and design-space-exploration figure provide
-      supporting engineering material. They have not been rebuilt or rerun as
-      part of this migration.
+    description: The C++ implementation and design-space-exploration figure provide supporting engineering material.
 resultsOrLimitations: The original author explicitly states that the proposed
   formal verification was not completed after the research focus moved to
   probabilistic RoboChart. These physical and simulation recordings are
@@ -34,8 +30,7 @@ resultsOrLimitations: The original author explicitly states that the proposed
   performance measurements.
 thumbnail: /old_entry/showcase/engineer_lfr/featured_hue7d176f41346907722bcc5ab0fc7f63b_167208_720x2500_fit_q75_h2_lanczos_3.webp
 thumbnailAlt: Original preview image from the line-following robot engineering case study.
-mediaNote: Original archived recording. No captions or transcript were supplied;
-  a source-based explanation is provided on this page.
+mediaNote: Captions and transcript are unavailable. The engineering workflow is described below.
 media:
   - kind: video
     src: /old_entry/showcase/engineer_lfr/lfr_demo_sharp_corner.mp4
@@ -50,8 +45,7 @@ media:
   - kind: video
     src: /old_entry/showcase/engineer_lfr/lfr_map1.mp4
     title: Robot running on the simulation map
-    caption: Original recording labelled “LFR running on a map for simulation” in
-      the archived case study.
+    caption: Physical robot running on the map used for simulation.
     mimeType: video/mp4
     sourcePath: showcase/engineer_lfr/lfr_map1.mp4
     sha256: 3f55a88c24667c7a0574b7f92a2cd949c8be03af32040cb04ae76af176ef8fd1
@@ -76,7 +70,7 @@ media:
   - kind: image
     src: /old_entry/showcase/engineer_lfr/lfr_math_model_hu11154b5c7d56c293c951a3ab585eac38_2121722_1200x1200_fit_q75_h2_lanczos.webp
     title: Mathematical model
-    caption: Original mathematical-model diagram from the archived case study.
+    caption: Mathematical model of the line-following robot.
     alt: Mathematical model from the original line-following robot case study
     sourcePath: showcase/engineer_lfr/lfr_math_model_hu11154b5c7d56c293c951a3ab585eac38_2121722_1200x1200_fit_q75_h2_lanczos.webp
     sha256: ce3793308b8acf2f825cd2654d524f800a698cdce21c93184995b9e1326bc24b
@@ -84,8 +78,7 @@ media:
   - kind: image
     src: /old_entry/showcase/engineer_lfr/lfr_dse_result_hu1b4adb50a28e97bc749041e0355b4f07_2481568_1200x1200_fit_q75_h2_lanczos_3.webp
     title: Design-space exploration
-    caption: Original design-space exploration results obtained using simulation;
-      these are archived results, not a new experiment.
+    caption: Design-space exploration results obtained using simulation.
     alt: Design-space exploration from the original line-following robot case study
     sourcePath: showcase/engineer_lfr/lfr_dse_result_hu1b4adb50a28e97bc749041e0355b4f07_2481568_1200x1200_fit_q75_h2_lanczos_3.webp
     sha256: f0ea2b9c85552031c919d5bc8ace76b95be9d311c99258388393be4e5943da1b
@@ -115,10 +108,8 @@ The original controller discussion cites *Optimization of PID Control for High S
 
 ## What was completed
 
-The archived material records a controller implementation, physical robot runs, simulation and design-space exploration. It explicitly distinguishes these engineering activities from the intended formal-verification work, which was not taken forward. No theorem-proving result or universal correctness guarantee is inferred from the recordings.
+The case study includes a controller implementation, physical robot runs, simulation and design-space exploration. The planned formal verification was not completed.
 
-## Source and missing material
+## Implementation
 
-The controller ZIP is preserved unchanged, including its original bundled files. It has not been compiled or validated in the current environment. Hardware, toolchain and simulation versions should be checked before attempting reproduction.
-
-The original page references a separate physical-model image at `lfr/lfr_phy_model.png`; that image is absent from the supplied archive. The mathematical-model diagram above is a different, recovered asset. No replacement physical-model image has been fabricated.
+The C++ controller is available as a ZIP download. Consult the hardware, toolchain and simulation requirements before reproducing the experiments.

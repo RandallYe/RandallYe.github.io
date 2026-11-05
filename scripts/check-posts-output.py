@@ -24,6 +24,8 @@ class Page(HTMLParser):
 index = ROOT / 'posts/index.html'
 assert index.is_file()
 listing = Page(index)
+assert len(listing.images) == 3, f'expected one thumbnail per post, got {len(listing.images)}'
+assert all(image.get('alt') and image.get('src', '').startswith(BASE) for image in listing.images)
 for slug in ['temporal-logic', 'steady-state-probabilities', 'sefm-datamod-report']:
     assert BASE + f'posts/{slug}/' in listing.links
     path = ROOT / f'posts/{slug}/index.html'
@@ -38,7 +40,7 @@ for slug in ['temporal-logic', 'steady-state-probabilities', 'sefm-datamod-repor
         assert all(image['src'].startswith(BASE + 'old_entry/') for image in page.images)
     if slug == 'steady-state-probabilities':
         assert page.math > 50, page.math
-        assert 'Historical working notes' in path.read_text()
+        assert 'Working notes — technical review' in path.read_text()
         assert 'katex-error' not in path.read_text()
     elif slug == 'temporal-logic':
         assert page.math == 0

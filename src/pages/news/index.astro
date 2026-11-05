@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ResourceLinks from '../../components/ResourceLinks.astro';
+const news = (await getCollection('news')).sort((a, b) => b.data.date.localeCompare(a.data.date) || a.id.localeCompare(b.id));
+const years = [...new Set(news.map(item => item.data.date.slice(0, 4)))];
+const dateLabel = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+---
+<BaseLayout title="News archive" description="Dated research, publication, project and career announcements from Kangfeng (Randall) Ye.">
+  <div class="page-heading"><p class="eyebrow">Research & career</p><h1>News archive</h1><p>Research, publications, projects and career updates.</p></div>
+  <nav class="anchor-nav" aria-label="News years">{years.map(year => <a href={`#year-${year}`}>{year}</a>)}</nav>
+  {years.map(year => <section class="section" aria-labelledby={`year-${year}`}><h2 id={`year-${year}`}>{year}</h2>{news.filter(item => item.data.date.startsWith(year)).map(({ id, data }) => <article class="research-detail prose" id={id}>
+    <p class="eyebrow"><time datetime={data.date}>{dateLabel(data.date)}</time></p><h3>{data.title}</h3><p>{data.summary}</p>
+    {data.eventDate && <p>Event: <time datetime={data.eventDate}>{dateLabel(data.eventDate)}</time>{data.eventEndDate && data.eventEndDate !== data.eventDate && <> – <time datetime={data.eventEndDate}>{dateLabel(data.eventEndDate)}</time></>}.</p>}
+    {data.detail && data.detail !== data.summary && <details><summary>More details</summary><p>{data.detail}</p></details>}
+    {data.resources.length > 0 && <ResourceLinks links={data.resources} label={`Resources for ${data.title}`} />}
+  </article>)}</section>)}
+</BaseLayout>

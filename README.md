@@ -6,7 +6,7 @@ Use Node >=22.23.4. Astro 7.4.5 was the registry's stable version at the audit. 
 
 ```sh
 cd astro-redesign
-npm install
+npm ci
 npm run check
 npm test
 npm run build
@@ -15,6 +15,8 @@ npm run check:demo
 npm run check:posts
 npm run check:talks
 npm run check:publications
+npm run check:history
+npm run check:routes
 npm run dev
 ```
 
@@ -36,7 +38,7 @@ npm run preview
 
 `local()` prefixes internal links with Astro's base; canonical URLs include the generated path. After preview checks, rebuild without ASTRO_BASE for production. Do not copy preview output to production.
 
-Before release, perform the browser checklist in `docs/progress.md`, verify the real video, review legacy URL aliases, and obtain explicit user approval. There is deliberately no deployment workflow. Do not push, change Pages settings or deploy as part of local development.
+Before release, perform the browser checklist in `docs/progress.md`, verify the real video, review legacy URL aliases, and obtain explicit user approval. The manual preview workflow packages a verified build artifact; it does not deploy. See `docs/preview-review.md`. Do not push, change Pages settings or deploy as part of local development.
 
 ## Historical resources
 
@@ -58,3 +60,7 @@ Only two blogs from `old_entry` are in scope: Temporal Logic and Steady State Pr
 Archived publication abstracts, BibTeX versions and preprint resources are attached to canonical records. To refresh source-backed abstracts from the supplied old-entry export, run `python3 scripts/enrich-publications.py /home/rye/workspace/web/old_entry`, then run `npm run check:publications` after a build.
 
 KaTeX is a pinned build dependency and outputs native MathML without client scripts or remote fonts. Run `npm run check:posts` after a successful build, with the same ASTRO_BASE value as that build. The steady-state post visibly identifies historical scientific-review issues while retaining the source notes.
+
+## Complete local verification
+
+Run `npm run verify` to check both root and preview base paths and restore a root build. `npm run check:routes` checks the complete 84-page route disposition report and exact-case aliases; `npm run audit:routes` refreshes that report after mapping changes. Browser/playback/external-resource acceptance is tracked separately in `docs/preview-review.md`.

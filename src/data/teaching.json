@@ -1,0 +1,21 @@
+[
+  {
+    "id": "csav-2018",
+    "title": "CSAV — Concurrent System Analysis and Verification",
+    "period": "Spring term, 2018–2019",
+    "summary": "Teaching assistant for Jim Woodcock’s practical classes at the University of York. The module covered CSP and Circus for modelling, validation, design and verification of concurrent reactive systems.",
+    "resources": [
+      {
+        "label": "online",
+        "url": "https://www.york.ac.uk/students/studying/manage/programmes/module-catalogue/module/COM00020H/2018-19"
+      }
+    ],
+    "provenance": [
+      {
+        "source": "old_entry",
+        "path": "teaching/csav2018/index.html",
+        "sha256": "57bd3aff48548c1094404a802ec918378edea898c996ad3f6ee0d7b21cb99cc7"
+      }
+    ]
+  }
+]

@@ -18,6 +18,10 @@ test('posts contain the two selected archive articles and latest-site SEFM/DataM
       assert.equal(post.sourceSha256, createHash('sha256').update(source).digest('hex'));
     }
     assert.ok(!post.body.includes('<script'));
+    assert.ok(post.thumbnailAlt && post.thumbnailSource, post.id);
+    assert.ok(existsSync(new URL(`public${post.thumbnail}`, root)), post.thumbnail);
+    const thumbSource = post.thumbnailSource.startsWith('post/') ? `public/old_entry/${post.thumbnailSource}` : `public/${post.thumbnailSource}`;
+    assert.ok(existsSync(new URL(thumbSource, root)), post.thumbnailSource);
     assert.ok(!post.body.includes('twitter.com/intent'));
     for (const match of post.body.matchAll(/src="(\/old_entry\/[^"#]+)"/g)) assert.ok(existsSync(new URL(`public${match[1]}`, root)), match[1]);
     for (const match of post.body.matchAll(/src="(\/posts\/SEFM_DataMod\/[^"#]+)"/g)) assert.ok(existsSync(new URL(`public${match[1]}`, root)), match[1]);

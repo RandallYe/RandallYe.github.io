@@ -11,33 +11,28 @@ problem: Robotic models include uncertain behaviour. Designers need a way to
   specifications.
 method: The co-authored RoboChart/PRISM work supports probabilistic modelling in
   RoboChart and automated translation and verification through RoboTool. The
-  archived demonstration uses a mail-delivery robot model.
+  demonstration uses a mail-delivery robot model.
 whatVisitorsSee:
   - title: Start with the robot model
-    description: The original showcase uses the mail-delivery robot case study and
-      preserves its RoboChart module diagram.
+    description: The case study uses a mail-delivery robot, illustrated by its RoboChart module diagram.
   - title: Connect modelling and analysis
     description: The recording demonstrates the RoboTool workflow for probabilistic
       verification using PRISM.
   - title: Follow the supporting research
     description: The paper and MODELS2022 slides explain the semantics and
-      model-based translation behind the tool. The description here summarises
-      the archived source, not a timestamped transcript.
+      model-based translation behind the tool.
 resultsOrLimitations: Quantitative conclusions depend on the model, its
   probability assumptions and the properties being analysed. This recording is a
   historical tool demonstration, not a new analysis of a deployed robot or a
   live PRISM service.
 thumbnail: /old_entry/showcase/probabilistic_verification_of_robochart_using_prism/featured_hub5a9c5ab00d6cfe3a815a9fd2a1eab28_1167549_720x2500_fit_q75_h2_lanczos_3.webp
 thumbnailAlt: Original RoboChart module diagram for the mail-delivery robot.
-mediaNote: Original recording preserved from the earlier homepage. The archive
-  supplies no captions or transcript; the documented topics are summarised
-  below.
+mediaNote: Captions and transcript are unavailable. The topics are summarised below.
 media:
   - kind: video
     src: /old_entry/showcase/probabilistic_verification_of_robochart_using_prism/Verification_of_Mail_Delivery_Robot.mp4
     title: Probabilistic verification of RoboChart using PRISM
-    caption: Original recording from the earlier homepage, introduced on 26 January
-      2023.
+    caption: Demonstration published on 26 January 2023.
     poster: /old_entry/showcase/probabilistic_verification_of_robochart_using_prism/featured_hub5a9c5ab00d6cfe3a815a9fd2a1eab28_1167549_720x2500_fit_q75_h2_lanczos_3.webp
     mimeType: video/mp4
     sourcePath: showcase/probabilistic_verification_of_robochart_using_prism/Verification_of_Mail_Delivery_Robot.mp4
@@ -46,7 +41,7 @@ media:
   - kind: image
     src: /old_entry/showcase/probabilistic_verification_of_robochart_using_prism/featured_hub5a9c5ab00d6cfe3a815a9fd2a1eab28_1167549_720x2500_fit_q75_h2_lanczos_3.webp
     title: Mail-delivery robot model
-    caption: Original RoboChart module diagram from the archived case study.
+    caption: RoboChart module diagram for the mail-delivery case study.
     alt: Original RoboChart module diagram for the mail-delivery robot.
     sourcePath: showcase/probabilistic_verification_of_robochart_using_prism/featured_hub5a9c5ab00d6cfe3a815a9fd2a1eab28_1167549_720x2500_fit_q75_h2_lanczos_3.webp
     sha256: 5b5bd012e8a34564a91aa8be33c8906e35cb5e53d6ffcc456ed137419801bdcf
@@ -64,22 +59,24 @@ sourceLinks:
     url: https://robostar.cs.york.ac.uk/robotool/
 exampleLinks:
   - label: Mail-delivery robot case study
-    description: The original case study linked by the archived showcase.
+    description: Model and supporting documentation for the mail-delivery robot.
     url: https://robostar.cs.york.ac.uk/prob_case_studies/mail_delivery_robot/index.html
 examplesHeading: Model and case-study resources
 slidesLinks:
   - label: Original conference presentation (PDF)
     url: /old_entry/talk/20221027_models_2022/20221027_MODELS_2022.pdf
-  - label: Related research poster (PDF)
+  - label: Research poster (January 2023, PDF)
     url: /old_entry/showcase/poster_probabilistic_modelling_and_verificaton/Poster_Probabilistic_Modelling_and_Verificaton.pdf
+  - label: Industry exhibition poster (October 2022, PDF)
+    url: /old_entry/showcase/poster_robostar_industry_exhibition_202210/Poster_RoboStar_industry_exhibition_202210.pdf
 featured: false
 order: 3
 ---
 ## Research and co-authorship
 
-The related paper, *Probabilistic modelling and verification using RoboChart and PRISM*, is by **K. Ye, A. Cavalcanti, S. Foster, A. Miyazawa and J. Woodcock**. Its publication year follows the latest homepage bibliography: 2022.
+The related paper, *Probabilistic modelling and verification using RoboChart and PRISM*, is by **K. Ye, A. Cavalcanti, S. Foster, A. Miyazawa and J. Woodcock**. It was published in 2022.
 
-The recording was introduced on the earlier homepage in January 2023. The MODELS2022 presentation and the improved probabilistic-modelling poster provide related explanations; they are supporting resources for this research, not separate publications.
+The January 2023 recording, MODELS2022 presentation and probabilistic-modelling poster explain the modelling and verification workflow.
 
 ## Reproducing the workflow
 

@@ -1,0 +1,851 @@
+{
+  "inventory": "docs/old-entry-inventory.json",
+  "scope": "New-host aliases only; no claim of redirects on the historical external host.",
+  "summary": {
+    "canonical": 70,
+    "excluded-template": 9,
+    "excluded-by-user": 5
+  },
+  "pages": [
+    {
+      "sourcePath": "showcase/animation_of_autonomous_chemical_detector/index.html",
+      "sourceSha256": "ad400761400d5537608d344bc8f2f38cd2f8710063200934bfa9e2d45c36de09",
+      "title": "Animation of the autonomous chemical detector RoboChart model",
+      "directoryUrl": "/old_entry/showcase/animation_of_autonomous_chemical_detector/",
+      "exactFileUrl": "/old_entry/showcase/animation_of_autonomous_chemical_detector/index.html",
+      "decision": "canonical",
+      "destination": "/tools/robochart-chemical-detector/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "showcase/animation_of_patrol_robot/index.html",
+      "sourceSha256": "d2d9d45db64618444283ebf1f9b940e8c8e4e9bebb7c8c7818593992a7fd0e98",
+      "title": "Animation of a patrol robot model",
+      "directoryUrl": "/old_entry/showcase/animation_of_patrol_robot/",
+      "exactFileUrl": "/old_entry/showcase/animation_of_patrol_robot/index.html",
+      "decision": "canonical",
+      "destination": "/tools/robochart-patrol-robot/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "showcase/demonstration_of_probabilistic_relation/index.html",
+      "sourceSha256": "66cd1be357d0c26558bb94c9517a2efdf2c651834f650f9dc05fcfc19c9408f0",
+      "title": "Demonstration of proving probabilistic programs using theorem proving",
+      "directoryUrl": "/old_entry/showcase/demonstration_of_probabilistic_relation/",
+      "exactFileUrl": "/old_entry/showcase/demonstration_of_probabilistic_relation/index.html",
+      "decision": "canonical",
+      "destination": "/tools/probabilistic-relations/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "showcase/engineer_lfr/index.html",
+      "sourceSha256": "c283663f730ecc728fc632e0f4e3c111bbee9ca696e699c1bf683ae1b7060b99",
+      "title": "Engineering Line Following Robot",
+      "directoryUrl": "/old_entry/showcase/engineer_lfr/",
+      "exactFileUrl": "/old_entry/showcase/engineer_lfr/index.html",
+      "decision": "canonical",
+      "destination": "/tools/line-following-robot/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "showcase/poster_animation_robochart_interaction_trees/index.html",
+      "sourceSha256": "3533fb0fdfcb1b8687a94fab56d2eb0380f1ac049edd88a812817f91822489a8",
+      "title": "Poster about animation of RoboChart using interaction trees",
+      "directoryUrl": "/old_entry/showcase/poster_animation_robochart_interaction_trees/",
+      "exactFileUrl": "/old_entry/showcase/poster_animation_robochart_interaction_trees/index.html",
+      "decision": "canonical",
+      "destination": "/tools/robochart-chemical-detector/#resources",
+      "reason": "Poster edition linked from the related demonstration resources."
+    },
+    {
+      "sourcePath": "showcase/poster_probabilistic_modelling_and_verificaton/index.html",
+      "sourceSha256": "10aaee578ab0947b9ccce42e1380b0af44d893fa4d4ca746518ab7abab6eaf8e",
+      "title": "Improved poster about probabilistic modelling and verification in RoboChart",
+      "directoryUrl": "/old_entry/showcase/poster_probabilistic_modelling_and_verificaton/",
+      "exactFileUrl": "/old_entry/showcase/poster_probabilistic_modelling_and_verificaton/index.html",
+      "decision": "canonical",
+      "destination": "/tools/robochart-prism/#resources",
+      "reason": "Poster edition linked from the related demonstration resources."
+    },
+    {
+      "sourcePath": "showcase/poster_robostar_industry_exhibition_202210/index.html",
+      "sourceSha256": "6f2eeaa44cb9d38734c9a0010b6e0f2128246eafe7f5de7dd4e70e4f64908a49",
+      "title": "Poster displayed at YorRobots and RoboStar Industry Exhibition in October 2022",
+      "directoryUrl": "/old_entry/showcase/poster_robostar_industry_exhibition_202210/",
+      "exactFileUrl": "/old_entry/showcase/poster_robostar_industry_exhibition_202210/index.html",
+      "decision": "canonical",
+      "destination": "/tools/robochart-prism/#resources",
+      "reason": "Poster edition linked from the related demonstration resources."
+    },
+    {
+      "sourcePath": "showcase/probabilistic_verification_of_robochart_using_prism/index.html",
+      "sourceSha256": "50211edc0c366590b65cfad714051c543ff15481a96708a03080cd16bd017dbe",
+      "title": "Automated probabilistic verification of RoboChart using PRISM",
+      "directoryUrl": "/old_entry/showcase/probabilistic_verification_of_robochart_using_prism/",
+      "exactFileUrl": "/old_entry/showcase/probabilistic_verification_of_robochart_using_prism/index.html",
+      "decision": "canonical",
+      "destination": "/tools/robochart-prism/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/10260395/index.html",
+      "sourceSha256": "9af1050a5dcef5562cd4c3adc853f415482d14cf9f94eea7d4a8ec593900ac42",
+      "title": "Probabilistic Modelling and Safety Assurance of an Agriculture Robot Providing Light-Treatment",
+      "directoryUrl": "/old_entry/publication/10260395/",
+      "exactFileUrl": "/old_entry/publication/10260395/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#agriculture-robot-light-treatment",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/conference-paper/index.html",
+      "sourceSha256": "bb330f7a10e16ee5f64bdfb823fbcf2550e37106a5f2f75879c98cec30f5fd71",
+      "title": "An example conference paper",
+      "directoryUrl": "/old_entry/publication/conference-paper/",
+      "exactFileUrl": "/old_entry/publication/conference-paper/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "publication/foster-2018/index.html",
+      "sourceSha256": "5174672c7c7b720c0437d4938116201e4aecf424f897887a648dfe07948a44a3",
+      "title": "Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra",
+      "directoryUrl": "/old_entry/publication/foster-2018/",
+      "exactFileUrl": "/old_entry/publication/foster-2018/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#reactive-relations-2018",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/foster-2018-a/index.html",
+      "sourceSha256": "7ea616c86741f097988e694cedc7e1eb8052c9c36c6a1aff9cad8c97762850ab",
+      "title": "Calculational Verification of Reactive Programs with Reactive Relations and Kleene Algebra",
+      "directoryUrl": "/old_entry/publication/foster-2018-a/",
+      "exactFileUrl": "/old_entry/publication/foster-2018-a/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#reactive-relations-2018",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/foster-2020-a/index.html",
+      "sourceSha256": "c7a2e62ff66df8d963e0a4857675a4ad384cb2d349c0a2ebfd0c740c62e8c094",
+      "title": "Automated Verification of Reactive and Concurrent Programs by Calculation",
+      "directoryUrl": "/old_entry/publication/foster-2020-a/",
+      "exactFileUrl": "/old_entry/publication/foster-2020-a/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#reactive-programs-calculation",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/foster-2021100681/index.html",
+      "sourceSha256": "1191273ceca1e46d23deb12e206918b3862bf79fd2accee68524584ead7aafc0",
+      "title": "Automated verification of reactive and concurrent programs by calculation",
+      "directoryUrl": "/old_entry/publication/foster-2021100681/",
+      "exactFileUrl": "/old_entry/publication/foster-2021100681/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#reactive-programs-calculation",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/jim-2019/index.html",
+      "sourceSha256": "c15fc70624bba7c96c07ddb691723c2f99c14d8dd263ce99a810cd1cfeb1ab4b",
+      "title": "Probabilistic Semantics for RoboChart - A Weakest Completion Approach",
+      "directoryUrl": "/old_entry/publication/jim-2019/",
+      "exactFileUrl": "/old_entry/publication/jim-2019/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#probabilistic-semantics-robochart",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/journal-article/index.html",
+      "sourceSha256": "667f31e95ea384e3a511000fd9096e6a922e2e96b8487fb3a19b09b1ef9aa7b5",
+      "title": "An example journal article",
+      "directoryUrl": "/old_entry/publication/journal-article/",
+      "exactFileUrl": "/old_entry/publication/journal-article/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "publication/preprint/index.html",
+      "sourceSha256": "bb1a18e1fa10653586aef5e942aa7d8513f307ec68e5d01fe676bbb3c37c7dbb",
+      "title": "An example preprint / working paper",
+      "directoryUrl": "/old_entry/publication/preprint/",
+      "exactFileUrl": "/old_entry/publication/preprint/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "publication/woodcock-2021/index.html",
+      "sourceSha256": "bbd8c5abcc911510a6db7e3587b41ac3f488d2d862b35544efbaf78a861e11f2",
+      "title": "RoboStar Technology: Modelling Uncertainty in RoboChart Using Probability",
+      "directoryUrl": "/old_entry/publication/woodcock-2021/",
+      "exactFileUrl": "/old_entry/publication/woodcock-2021/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#robostar-uncertainty",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2017/index.html",
+      "sourceSha256": "2318f36a7678a600842cc639d7c8dce184f2e9fe4f978d6e36b718921486eb4a",
+      "title": "Model checking of state-rich formalism by linking to $$CSP,‖ ,B$$CSP‖B",
+      "directoryUrl": "/old_entry/publication/ye-2017/",
+      "exactFileUrl": "/old_entry/publication/ye-2017/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#circus-model-checking",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2018/index.html",
+      "sourceSha256": "6456926dbd73032672e808377c213d31323050452f65af1f3b2489a98eff7604",
+      "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP",
+      "directoryUrl": "/old_entry/publication/ye-2018/",
+      "exactFileUrl": "/old_entry/publication/ye-2018/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#control-law-diagrams",
+      "reason": "Companion working report linked from the canonical chapter; not a separate publication."
+    },
+    {
+      "sourcePath": "publication/ye-2020/index.html",
+      "sourceSha256": "97098b26e8c92539b1cfd3d1596bd1f9920cb0285c08e236e51481ccba854c6b",
+      "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams Using UTP",
+      "directoryUrl": "/old_entry/publication/ye-2020/",
+      "exactFileUrl": "/old_entry/publication/ye-2020/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#control-law-diagrams",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2021/index.html",
+      "sourceSha256": "e4f9215effd8dcc4c7f23c2e44fd8e1a6833b2cccbcfc3df73eff5dacb04d86d",
+      "title": "Probabilistic modelling and verification using RoboChart and PRISM",
+      "directoryUrl": "/old_entry/publication/ye-2021/",
+      "exactFileUrl": "/old_entry/publication/ye-2021/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#robochart-prism",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2021-a/index.html",
+      "sourceSha256": "bfa95a2845227c1dafe1d54acf41267b2b6bab95614418137457f157075cdbb8",
+      "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving",
+      "directoryUrl": "/old_entry/publication/ye-2021-a/",
+      "exactFileUrl": "/old_entry/publication/ye-2021-a/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#probabilistic-sequential-programs",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2022/index.html",
+      "sourceSha256": "110c8d200ac714ed70c0e59b07036b6c4475b65d38204b0e095d5a4b898df446",
+      "title": "Formally Verified Animation for RoboChart Using Interaction Trees",
+      "directoryUrl": "/old_entry/publication/ye-2022/",
+      "exactFileUrl": "/old_entry/publication/ye-2022/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#robochart-animation-icfem",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2023-formally/index.html",
+      "sourceSha256": "f86c6b05649c00a464ec9dbdbc2dff8fef918df6105db7305fab7a7d1e9d234b",
+      "title": "Formally Verified Animation for RoboChart using Interaction Trees",
+      "directoryUrl": "/old_entry/publication/ye-2023-formally/",
+      "exactFileUrl": "/old_entry/publication/ye-2023-formally/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#robochart-animation-jlamp",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2023-probabilistic/index.html",
+      "sourceSha256": "8f76a4c3b1b197afbff41e10d3c8ea33b871006ab9ec5bd787ac39c5b879c158",
+      "title": "Probabilistic relations for modelling epistemic and aleatoric uncertainty: semantics and automated reasoning with theorem proving",
+      "directoryUrl": "/old_entry/publication/ye-2023-probabilistic/",
+      "exactFileUrl": "/old_entry/publication/ye-2023-probabilistic/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#proburel",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2024-quantitative/index.html",
+      "sourceSha256": "92cf96a719fb9a46beb5842ded1bfae5efc7e0f864cd7605b8c5d420cb504194",
+      "title": "Quantitative Assurance and Synthesis of Controllers from Activity Diagrams",
+      "directoryUrl": "/old_entry/publication/ye-2024-quantitative/",
+      "exactFileUrl": "/old_entry/publication/ye-2024-quantitative/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#quantitative-activity-diagrams",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "publication/ye-2024100940/index.html",
+      "sourceSha256": "45ba79879a6fef1a3a0103ef48015756de3d1517de40e9fdf34e1979d4584d8a",
+      "title": "Formally verified animation for RoboChart using interaction trees",
+      "directoryUrl": "/old_entry/publication/ye-2024100940/",
+      "exactFileUrl": "/old_entry/publication/ye-2024100940/index.html",
+      "decision": "canonical",
+      "destination": "/publications/#robochart-animation-jlamp",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/20221011_robostar_industry_exhibition/index.html",
+      "sourceSha256": "275d85610ee4f4766fede04a79698bebf7134b95e88d4e2194fcd395f55a75c2",
+      "title": "Presentation and poster at YorRobots and RoboStar Industry Exhibition",
+      "directoryUrl": "/old_entry/talk/20221011_robostar_industry_exhibition/",
+      "exactFileUrl": "/old_entry/talk/20221011_robostar_industry_exhibition/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#robostar-industry-exhibition-2022",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/20221026_icfem_2022/index.html",
+      "sourceSha256": "37af168eb2c24af91745a4780bc905dfd33b0e050e8e8f5587ea95dbef943807",
+      "title": "Formally Verified Animation for RoboChart Using Interaction Trees @ ICFEM2022",
+      "directoryUrl": "/old_entry/talk/20221026_icfem_2022/",
+      "exactFileUrl": "/old_entry/talk/20221026_icfem_2022/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#icfem-2022-robochart-animation",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/20221027_models_2022/index.html",
+      "sourceSha256": "64e2e4443fdb44fa51836f7c3ba7302247be976965b9d26c5ecc0532389275dc",
+      "title": "Probabilistic modelling and verification using RoboChart and PRISM @ MODELS2022",
+      "directoryUrl": "/old_entry/talk/20221027_models_2022/",
+      "exactFileUrl": "/old_entry/talk/20221027_models_2022/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#models-2022-probabilistic-robochart",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/example-talk/index.html",
+      "sourceSha256": "2cef9026bc5d6cda0a8d79d10404bb99dfac26825461ea16bd050ea96ed440a0",
+      "title": "Example Talk",
+      "directoryUrl": "/old_entry/talk/example-talk/",
+      "exactFileUrl": "/old_entry/talk/example-talk/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "talk/nsfc-rs_isabelle_utp_tutorial/index.html",
+      "sourceSha256": "a570a6a64c40a690f23012b6ca7e391275cfc4d469d749ae27429c440eeca7ff",
+      "title": "Isabelle/UTP Tutorial in Chinese",
+      "directoryUrl": "/old_entry/talk/nsfc-rs_isabelle_utp_tutorial/",
+      "exactFileUrl": "/old_entry/talk/nsfc-rs_isabelle_utp_tutorial/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#isabelle-utp-tutorial-2019",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/pintofscience2019/index.html",
+      "sourceSha256": "85a453459781ead965aafe5390faebc1877336409e99a1161727f40dee5cb42b",
+      "title": "Engineering Robotic Swarms",
+      "directoryUrl": "/old_entry/talk/pintofscience2019/",
+      "exactFileUrl": "/old_entry/talk/pintofscience2019/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#pint-of-science-robotic-swarms-2019",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/ramics2021/index.html",
+      "sourceSha256": "4e0530136e129b89ae422b0ece1c374eb4f930b0e6a3e273a47923935e2e6aa5",
+      "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving @ RAMiCS2021",
+      "directoryUrl": "/old_entry/talk/ramics2021/",
+      "exactFileUrl": "/old_entry/talk/ramics2021/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#ramics-2021-probabilistic-programs",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/ramics2021_rehearsal/index.html",
+      "sourceSha256": "f4984541177f8b452714160a7cf6d1765762d70dda00c877121a9c82e2ac5a56",
+      "title": "Automated Reasoning for Probabilistic Sequential Programs with Theorem Proving",
+      "directoryUrl": "/old_entry/talk/ramics2021_rehearsal/",
+      "exactFileUrl": "/old_entry/talk/ramics2021_rehearsal/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#ramics-2021-probabilistic-programs",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/robostar_seminar/index.html",
+      "sourceSha256": "d1d547a84d410eb0e1976bf7dfdbb24b94f2aab1da45d977e2df32361d1ab528",
+      "title": "RoboChart & RoboTool: modelling and verification of probabilistic systems",
+      "directoryUrl": "/old_entry/talk/robostar_seminar/",
+      "exactFileUrl": "/old_entry/talk/robostar_seminar/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#robostar-probabilistic-systems-seminar-2019",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/robostar_seminar_2021/index.html",
+      "sourceSha256": "30f65b5d95508636abe146ba037943586a5c2a272b2e936b7e7ea7a710b4bea5",
+      "title": "Animation of RoboChart with Interaction Trees",
+      "directoryUrl": "/old_entry/talk/robostar_seminar_2021/",
+      "exactFileUrl": "/old_entry/talk/robostar_seminar_2021/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#robostar-interaction-trees-seminar-2021",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/robostar_seminar_20221005/index.html",
+      "sourceSha256": "5841412f0f46005c64883feaa889e0a58f8a1bac2233e6b4e8baa7067aabc137",
+      "title": "Probabilistic modelling and verification using RoboChart and PRISM",
+      "directoryUrl": "/old_entry/talk/robostar_seminar_20221005/",
+      "exactFileUrl": "/old_entry/talk/robostar_seminar_20221005/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#models-2022-probabilistic-robochart",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/robostar_seminar_20221119/index.html",
+      "sourceSha256": "089fc9d2368a1d26fc5b445b753a78f040de4e90951daa108618c153a837f363",
+      "title": "Formally Verified Animation for RoboChart Using Interaction Trees",
+      "directoryUrl": "/old_entry/talk/robostar_seminar_20221119/",
+      "exactFileUrl": "/old_entry/talk/robostar_seminar_20221119/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#icfem-2022-robochart-animation",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/robostar_seminar_20230628_probabilistic_relations/index.html",
+      "sourceSha256": "584965f7289bcf0ae8aadebd35a9d4398e3e8bf1ecde8bc56d0cefcf320f9bde",
+      "title": "Probabilistic relations for modelling epistemic and aleatoric uncertainties: its semantics and automated reasoning with theorem proving",
+      "directoryUrl": "/old_entry/talk/robostar_seminar_20230628_probabilistic_relations/",
+      "exactFileUrl": "/old_entry/talk/robostar_seminar_20230628_probabilistic_relations/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#probabilistic-relations-seminar-2023",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/vetss_ag_swu_visit/index.html",
+      "sourceSha256": "ad9503bed0db245ca07b706e11d510a556a382f94ee12a4e1fbbd65b175fc7e8",
+      "title": "Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP",
+      "directoryUrl": "/old_entry/talk/vetss_ag_swu_visit/",
+      "exactFileUrl": "/old_entry/talk/vetss_ag_swu_visit/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#vetss-control-law-diagrams-2018",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "talk/workshop_cq_visitor/index.html",
+      "sourceSha256": "7dba677e65167d542cfd49b63d505bc399efb8abb559e0571c178db4076bc524",
+      "title": "Modelling and verification of probabilistic behaviour of robotic applications",
+      "directoryUrl": "/old_entry/talk/workshop_cq_visitor/",
+      "exactFileUrl": "/old_entry/talk/workshop_cq_visitor/index.html",
+      "decision": "canonical",
+      "destination": "/talks/#southwest-university-workshop-2019",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "post/bdi_model/index.html",
+      "sourceSha256": "d63e6b6dbbc6a70d6cf9cdbe494e02ac7c7ec2a0797fd6797b912a6f366b5508",
+      "title": "Belief-Desire-Intention (BDI)",
+      "directoryUrl": "/old_entry/post/bdi_model/",
+      "exactFileUrl": "/old_entry/post/bdi_model/index.html",
+      "decision": "excluded-by-user",
+      "destination": null,
+      "reason": "Outside the two selected old-entry posts."
+    },
+    {
+      "sourcePath": "post/getting-started/index.html",
+      "sourceSha256": "79835d76ec50d2cdb3a630c846950eeaa0f98215dce5418bf8b796799b205b6e",
+      "title": "Welcome to Wowchemy, the website builder for Hugo",
+      "directoryUrl": "/old_entry/post/getting-started/",
+      "exactFileUrl": "/old_entry/post/getting-started/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "post/jupyter/index.html",
+      "sourceSha256": "d48b9bf2bf8f0f03e207d0a3b6209a91343b2d03f460fbfdf03eba0de3915c8e",
+      "title": "Display Jupyter Notebooks with Academic",
+      "directoryUrl": "/old_entry/post/jupyter/",
+      "exactFileUrl": "/old_entry/post/jupyter/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "post/quantum_superposition/index.html",
+      "sourceSha256": "1a9c6d215c2cd408ec105841458cbe963b0e41b2b3bc2e1b1e83cf4fd21cfd52",
+      "title": "[Quantum] What is superposition?",
+      "directoryUrl": "/old_entry/post/quantum_superposition/",
+      "exactFileUrl": "/old_entry/post/quantum_superposition/index.html",
+      "decision": "excluded-by-user",
+      "destination": null,
+      "reason": "Outside the two selected old-entry posts."
+    },
+    {
+      "sourcePath": "post/robosoft_evolving_robot/index.html",
+      "sourceSha256": "3fdf560bb791228407d5a727f425517b375e413853fd86a949f5bab951594dbe",
+      "title": "Evolving Robot Software and Hardware",
+      "directoryUrl": "/old_entry/post/robosoft_evolving_robot/",
+      "exactFileUrl": "/old_entry/post/robosoft_evolving_robot/index.html",
+      "decision": "excluded-by-user",
+      "destination": null,
+      "reason": "Outside the two selected old-entry posts."
+    },
+    {
+      "sourcePath": "post/robosoft_testing_robotic_systems/index.html",
+      "sourceSha256": "e726d636afb5cec83cf2d1b67e785b5b5432379ce55d6884f190ca33aad12043",
+      "title": "Testing Robotic Systems",
+      "directoryUrl": "/old_entry/post/robosoft_testing_robotic_systems/",
+      "exactFileUrl": "/old_entry/post/robosoft_testing_robotic_systems/index.html",
+      "decision": "excluded-by-user",
+      "destination": null,
+      "reason": "Outside the two selected old-entry posts."
+    },
+    {
+      "sourcePath": "post/steady_state_probabilities/index.html",
+      "sourceSha256": "c4907c879fde5a2708dd9392620e242b33b46c7338885e05f6c9c34b6fefd657",
+      "title": "Steady state probabilities of Markov Chains",
+      "directoryUrl": "/old_entry/post/steady_state_probabilities/",
+      "exactFileUrl": "/old_entry/post/steady_state_probabilities/index.html",
+      "decision": "canonical",
+      "destination": "/posts/steady-state-probabilities/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "post/stochastic/index.html",
+      "sourceSha256": "ab5cd5040fc71417af0d5e3247a2fa608fb1fcccd16bbe9eecb6278bd37abca6",
+      "title": "Probabilistic vs. Stochastic",
+      "directoryUrl": "/old_entry/post/stochastic/",
+      "exactFileUrl": "/old_entry/post/stochastic/index.html",
+      "decision": "excluded-by-user",
+      "destination": null,
+      "reason": "Outside the two selected old-entry posts."
+    },
+    {
+      "sourcePath": "post/temporal-logic/index.html",
+      "sourceSha256": "7cfeaf99453f5c40ee97e4f134246087514ff5758f1e64d0d785a2f184a1545d",
+      "title": "Temporal Logic - history and semantics",
+      "directoryUrl": "/old_entry/post/temporal-logic/",
+      "exactFileUrl": "/old_entry/post/temporal-logic/index.html",
+      "decision": "canonical",
+      "destination": "/posts/temporal-logic/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "post/writing-technical-content/index.html",
+      "sourceSha256": "ec6a2ecfcf4181ad203e9f524ab1dac7ec11cbf825242df13e9795fa9240f1fa",
+      "title": "Writing technical content in Markdown",
+      "directoryUrl": "/old_entry/post/writing-technical-content/",
+      "exactFileUrl": "/old_entry/post/writing-technical-content/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "news/20220829_invitation_to_models2022_jf1/index.html",
+      "sourceSha256": "7d82e61ef77d4fea217492b1b25b79004818345f54250ade225b92276e7afd29",
+      "title": "An exciting invitation from MODELS2022 to present our SoSym journal paper there",
+      "directoryUrl": "/old_entry/news/20220829_invitation_to_models2022_jf1/",
+      "exactFileUrl": "/old_entry/news/20220829_invitation_to_models2022_jf1/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20220829-invitation-to-models2022-jf1",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20221011_robostar_industry_exhibition/index.html",
+      "sourceSha256": "c7bc96ed0d5f1eeebeca4d1cc342b4e805f8a75392abc83eddd595f9b2ca883f",
+      "title": "YorRobots and RoboStar Industry Exhibition",
+      "directoryUrl": "/old_entry/news/20221011_robostar_industry_exhibition/",
+      "exactFileUrl": "/old_entry/news/20221011_robostar_industry_exhibition/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20221011-robostar-industry-exhibition",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20221026_icfem2022_presentation/index.html",
+      "sourceSha256": "32dda0f1688933dcdba4e8cf943bc39c15d99fb1f8c9ad4688d6cb96b6f258f0",
+      "title": "An online talk today at ICFEM2022",
+      "directoryUrl": "/old_entry/news/20221026_icfem2022_presentation/",
+      "exactFileUrl": "/old_entry/news/20221026_icfem2022_presentation/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20221026-icfem2022-presentation",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20221027_models2022_presentation/index.html",
+      "sourceSha256": "b52c8b8f7e53ee75eb8f67b333fa4876affbd3bf320b62c3e94c86efffd889c0",
+      "title": "An online talk today at MODELS2022",
+      "directoryUrl": "/old_entry/news/20221027_models2022_presentation/",
+      "exactFileUrl": "/old_entry/news/20221027_models2022_presentation/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20221027-models2022-presentation",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20221119_invitation_jlamp_extension_icfem/index.html",
+      "sourceSha256": "a8d1b72726266cf05df99cdbe23a2a59cac4964c7619df14e318c4fe27be9fdf",
+      "title": "An exciting invitation from ICFEM2022",
+      "directoryUrl": "/old_entry/news/20221119_invitation_jlamp_extension_icfem/",
+      "exactFileUrl": "/old_entry/news/20221119_invitation_jlamp_extension_icfem/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20221119-invitation-jlamp-extension-icfem",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/2022_sosym-first-paper-award/index.html",
+      "sourceSha256": "1c1faa2ededf867698a0b8a9cd80a20854cdcdbbde5f06c56bf917761cf67098",
+      "title": "2022_SoSyM First Paper Award",
+      "directoryUrl": "/old_entry/news/2022_sosym-first-paper-award/",
+      "exactFileUrl": "/old_entry/news/2022_sosym-first-paper-award/index.html",
+      "decision": "canonical",
+      "destination": "/news/#2022-sosym-first-paper-award",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20230627_new_project_sesame/index.html",
+      "sourceSha256": "bd15d05d585513174c48c2595d65296ca815f02cf590b1ec82bc319b7f0120b8",
+      "title": "Work in a new project SESAME",
+      "directoryUrl": "/old_entry/news/20230627_new_project_sesame/",
+      "exactFileUrl": "/old_entry/news/20230627_new_project_sesame/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20230627-new-project-sesame",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20231229_jlamp_paper_accepted_online/index.html",
+      "sourceSha256": "a2bba8c5328dee26dccdb364b17b7f7f43a79ecac3af8856e512a457081908f2",
+      "title": "Our journal submission: Formally verified animation for RoboChart using interaction trees, was accepted and available online",
+      "directoryUrl": "/old_entry/news/20231229_jlamp_paper_accepted_online/",
+      "exactFileUrl": "/old_entry/news/20231229_jlamp_paper_accepted_online/index.html",
+      "decision": "canonical",
+      "destination": "/news/#current-2023-12-19-15",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20240201_new_project_cheddar/index.html",
+      "sourceSha256": "3491eff744639836f56c5518fc0c7795609b51f7b2d75241e0618e9412625b2f",
+      "title": "Work in a new project CHEDDAR",
+      "directoryUrl": "/old_entry/news/20240201_new_project_cheddar/",
+      "exactFileUrl": "/old_entry/news/20240201_new_project_cheddar/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20240201-new-project-cheddar",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/20240229_submission_jss/index.html",
+      "sourceSha256": "36a21d91b8f8e140f31b8e3b523d4044047ef613ac3b991058c259a67755fa86",
+      "title": "A new journal submission to JSS - QASCAD: Quantitative Assurance and Synthesis of Controllers from Activity Diagrams",
+      "directoryUrl": "/old_entry/news/20240229_submission_jss/",
+      "exactFileUrl": "/old_entry/news/20240229_submission_jss/index.html",
+      "decision": "canonical",
+      "destination": "/news/#20240229-submission-jss",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/accepted_paper_icfem2022/index.html",
+      "sourceSha256": "88b503912b27449405b4dc08a7e3191ac8fe694fe69db5bb4fdae16cfc30bcb1",
+      "title": "The submission (Formally Verified Animation for RoboChart using Interaction Trees) to ICFEM2022 is accepted",
+      "directoryUrl": "/old_entry/news/accepted_paper_icfem2022/",
+      "exactFileUrl": "/old_entry/news/accepted_paper_icfem2022/index.html",
+      "decision": "canonical",
+      "destination": "/news/#accepted-paper-icfem2022",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/phd-thesis-submission/index.html",
+      "sourceSha256": "20af3d213187cc119bf60111641186e218eec4df5695591b84917bf73c47de03",
+      "title": "Phd Thesis Submission",
+      "directoryUrl": "/old_entry/news/phd-thesis-submission/",
+      "exactFileUrl": "/old_entry/news/phd-thesis-submission/index.html",
+      "decision": "canonical",
+      "destination": "/news/#phd-thesis-submission",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/published_online_icfem2022/index.html",
+      "sourceSha256": "c39074210a1cd632683f3a176afdf374e7f1fb6deba8cc04273677840cee907b",
+      "title": "ICFEM 2022 paper is available online",
+      "directoryUrl": "/old_entry/news/published_online_icfem2022/",
+      "exactFileUrl": "/old_entry/news/published_online_icfem2022/index.html",
+      "decision": "canonical",
+      "destination": "/news/#published-online-icfem2022",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/robosoft/index.html",
+      "sourceSha256": "d2d1f1c2ec4ec6b045b07371f9bfd95d815ccf0b16237841740157ead24e7c88",
+      "title": "RoboSoft",
+      "directoryUrl": "/old_entry/news/robosoft/",
+      "exactFileUrl": "/old_entry/news/robosoft/index.html",
+      "decision": "canonical",
+      "destination": "/news/#robosoft",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/robotest_robocalc_advisory_board_meeting/index.html",
+      "sourceSha256": "45fe51ea8d717773ac24d8f47334f051813cc9833ce7664bff9dd13c60d7da07",
+      "title": "RoboTest RoboCalc Advisory Board meeting",
+      "directoryUrl": "/old_entry/news/robotest_robocalc_advisory_board_meeting/",
+      "exactFileUrl": "/old_entry/news/robotest_robocalc_advisory_board_meeting/index.html",
+      "decision": "canonical",
+      "destination": "/news/#robotest-robocalc-advisory-board-meeting",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/sosym2020_paper_online/index.html",
+      "sourceSha256": "311289067974cd0990cff19d40e1f592224aafecde38e659dc587c3d85d75063",
+      "title": "SoSym Paper is online",
+      "directoryUrl": "/old_entry/news/sosym2020_paper_online/",
+      "exactFileUrl": "/old_entry/news/sosym2020_paper_online/index.html",
+      "decision": "canonical",
+      "destination": "/news/#sosym2020-paper-online",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/special_issue_ras_journal_cfp/index.html",
+      "sourceSha256": "f15ca6f9012ecb8a1b87f90644739847f4f4dc3604109d40d6ea59576bb0213a",
+      "title": "Call for paper: Special Issue of Software Engineering for Robotics in Robotics and Autonomous Systems Journal, Elsevier",
+      "directoryUrl": "/old_entry/news/special_issue_ras_journal_cfp/",
+      "exactFileUrl": "/old_entry/news/special_issue_ras_journal_cfp/index.html",
+      "decision": "canonical",
+      "destination": "/news/#special-issue-ras-journal-cfp",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/swu_cq_first_visit/index.html",
+      "sourceSha256": "e6f329d45b2c7cc58f391e51821b9468cb8baca1589d5f67ac164ad0de5eb503",
+      "title": "Visit of Prof. Zhiming Liu's team at York",
+      "directoryUrl": "/old_entry/news/swu_cq_first_visit/",
+      "exactFileUrl": "/old_entry/news/swu_cq_first_visit/index.html",
+      "decision": "canonical",
+      "destination": "/news/#swu-cq-first-visit",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/swu_visit_201907/index.html",
+      "sourceSha256": "4afe341d05b5d305513cbe3ad8f743c3b49b45c6d2949595db60c29cfd82ebe8",
+      "title": "Second visit of Prof. Zhiming Liu's team at York",
+      "directoryUrl": "/old_entry/news/swu_visit_201907/",
+      "exactFileUrl": "/old_entry/news/swu_visit_201907/index.html",
+      "decision": "canonical",
+      "destination": "/news/#swu-visit-201907",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/visit_swu_cq_201905/index.html",
+      "sourceSha256": "8979dac09ad54932d4cdc9202846627cfa7609d6bcf321bbc683034436d1fbc7",
+      "title": "Visit SWU in Chongqing with Prof. Jim Woodcock",
+      "directoryUrl": "/old_entry/news/visit_swu_cq_201905/",
+      "exactFileUrl": "/old_entry/news/visit_swu_cq_201905/index.html",
+      "decision": "canonical",
+      "destination": "/news/#visit-swu-cq-201905",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "news/viva-prep/index.html",
+      "sourceSha256": "d81747616000060d044ac587299060c6191812471d045b3f03d6a0ebd33ff652",
+      "title": "Viva Preparation",
+      "directoryUrl": "/old_entry/news/viva-prep/",
+      "exactFileUrl": "/old_entry/news/viva-prep/index.html",
+      "decision": "canonical",
+      "destination": "/news/#viva-prep",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "project/cheddar/index.html",
+      "sourceSha256": "d3488cbcb6b7af8c7857d360c8852fa2acc61a7fdb93aecf378d29fac1469675",
+      "title": "CHEDDAR (Feb 2024 - )",
+      "directoryUrl": "/old_entry/project/cheddar/",
+      "exactFileUrl": "/old_entry/project/cheddar/index.html",
+      "decision": "canonical",
+      "destination": "/research/projects/cheddar/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "project/cyphyassure/index.html",
+      "sourceSha256": "3a1bb82c93ae85286676e7e14ab6ceb8d681d36c41cd1570b61ff4f350154b9d",
+      "title": "CyPhyAssure (June 2021 - August 2021)",
+      "directoryUrl": "/old_entry/project/cyphyassure/",
+      "exactFileUrl": "/old_entry/project/cyphyassure/index.html",
+      "decision": "canonical",
+      "destination": "/research/projects/cyphyassure/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "project/example/index.html",
+      "sourceSha256": "6eb1b57945ace896db0973f13ce3a668873112c7df1c0e97b8c7e124c61355e1",
+      "title": "Example Project",
+      "directoryUrl": "/old_entry/project/example/",
+      "exactFileUrl": "/old_entry/project/example/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "project/external-project/index.html",
+      "sourceSha256": "1ebee8db091317da54d5643e8845e384488ee71720c616a0963ab71b7e0a8ebc",
+      "title": "External Project",
+      "directoryUrl": "/old_entry/project/external-project/",
+      "exactFileUrl": "/old_entry/project/external-project/index.html",
+      "decision": "excluded-template",
+      "destination": null,
+      "reason": "Stock theme example."
+    },
+    {
+      "sourcePath": "project/into-csp/index.html",
+      "sourceSha256": "7e06d440e1a13a506c17cb50c070e8e677b049d0a198526beacbdaa26821d29c",
+      "title": "INTO-CPS (Dec 2016 - Dec 2017)",
+      "directoryUrl": "/old_entry/project/into-csp/",
+      "exactFileUrl": "/old_entry/project/into-csp/index.html",
+      "decision": "canonical",
+      "destination": "/research/projects/into-cps/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "project/robocalc/index.html",
+      "sourceSha256": "0702d0700567d7e8c1d967b36b006823c7f57ebd5ee6e247ed04ca740f34fb00",
+      "title": "RoboCalc (April 2018 - March 2021)",
+      "directoryUrl": "/old_entry/project/robocalc/",
+      "exactFileUrl": "/old_entry/project/robocalc/index.html",
+      "decision": "canonical",
+      "destination": "/research/projects/robocalc-robotest/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "project/robotest/index.html",
+      "sourceSha256": "d7f8eb7261da12639f21b5c697d40b5a9c5bcb5522bbcad9afb0f4f62c24a1f8",
+      "title": "RoboTest (April 2021 - Present)",
+      "directoryUrl": "/old_entry/project/robotest/",
+      "exactFileUrl": "/old_entry/project/robotest/index.html",
+      "decision": "canonical",
+      "destination": "/research/projects/robocalc-robotest/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "project/sesame/index.html",
+      "sourceSha256": "ce12d86ffcc84f4320401aa00cc0de9e15a8b3e5f43987dbc806ded8f87b3a39",
+      "title": "SESAME (June 2023 - Jan 2024)",
+      "directoryUrl": "/old_entry/project/sesame/",
+      "exactFileUrl": "/old_entry/project/sesame/index.html",
+      "decision": "canonical",
+      "destination": "/research/projects/sesame/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "project/vetss/index.html",
+      "sourceSha256": "9d79daedaca1ca5cf9e22671929fa876ae94113eed4dac44376f6afbc8d1c601",
+      "title": "VeTSS - Compositional Assume-Guarantee Reasoning of Control Law Diagrams using UTP (Oct 2017 - March 2018)",
+      "directoryUrl": "/old_entry/project/vetss/",
+      "exactFileUrl": "/old_entry/project/vetss/index.html",
+      "decision": "canonical",
+      "destination": "/research/projects/vetss/",
+      "reason": "Migrated or merged into a canonical page."
+    },
+    {
+      "sourcePath": "teaching/csav2018/index.html",
+      "sourceSha256": "57bd3aff48548c1094404a802ec918378edea898c996ad3f6ee0d7b21cb99cc7",
+      "title": "CSAV2018 - Teaching Assistant",
+      "directoryUrl": "/old_entry/teaching/csav2018/",
+      "exactFileUrl": "/old_entry/teaching/csav2018/index.html",
+      "decision": "canonical",
+      "destination": "/about/#teaching",
+      "reason": "Migrated or merged into a canonical page."
+    }
+  ]
+}

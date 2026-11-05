@@ -39,7 +39,7 @@ const { Content } = await render(demo);
   {figures.length > 0 && <section class="section"><h2>Models & supporting figures</h2><div class="demo-figures">{figures.map(figure => <figure><a href={local(figure.src)}><img src={local(figure.src)} alt={figure.alt || figure.title} loading="lazy" decoding="async" /></a><figcaption><strong>{figure.title}</strong><p>{figure.caption}</p></figcaption></figure>)}</div></section>}
   <section class="section prose"><Content /></section>
   {papers.length > 0 && <section class="section prose"><h2>Related publications</h2>{papers.map(paper => <p><a href={local(`publications/#${paper.id}`)}>{paper.data.title}</a><br /><span class="muted">{paper.data.authors} · {paper.data.year}</span></p>)}</section>}
-  <section class="section"><h2>Research resources & references</h2><ResourceLinks links={[...d.paperLinks, ...d.sourceLinks, ...d.slidesLinks]} /></section>
+  <section class="section" id="resources"><h2>Research resources & references</h2><ResourceLinks links={[...d.paperLinks, ...d.sourceLinks, ...d.slidesLinks]} /></section>
 </BaseLayout>
 <style>
   .page-heading .source-date { font-size: .85rem; color: var(--muted); }

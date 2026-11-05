@@ -100,6 +100,9 @@ posts.append({
     'math': False,
     'sourcePath': 'posts/SEFM_DataMod/SEFM_DataMod_2024.html',
     'sourceSha256': hashlib.sha256(source_bytes).hexdigest(),
+    'thumbnail': '/posts/SEFM_DataMod/current_practice.png',
+    'thumbnailAlt': 'Workflow diagram for current security-protocol verification practice',
+    'thumbnailSource': 'posts/SEFM_DataMod/current_practice.png',
     'body': body,
 })
 posts.sort(key=lambda post: post['date'], reverse=True)

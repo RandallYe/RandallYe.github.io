@@ -1,0 +1,19 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ResourceLinks from '../../../components/ResourceLinks.astro';
+import { local } from '../../../lib/site-paths';
+export const getStaticPaths = (async () => (await getCollection('projects')).map(project => ({ params: { slug: project.id }, props: { project } }))) satisfies GetStaticPaths;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { project: { data } } = Astro.props;
+const demos = await Promise.all(data.relatedDemos.map(demo => getEntry(demo)));
+---
+<BaseLayout title={data.title} description={data.summary}>
+  <a class="back-link" href={local('research/#projects')}>← Research projects</a>
+  <div class="page-heading"><p class="eyebrow">Project participation · {data.period}</p><h1>{data.title}</h1><p>{data.summary}</p></div>
+  {data.detail && <section class="prose"><h2>Project overview</h2><p>{data.detail}</p></section>}
+  <ResourceLinks links={data.resources} label="Project resources" />
+  {demos.length > 0 && <section class="section prose"><h2>Related demonstrations and case studies</h2><ul>{demos.map(demo => demo && <li><a href={local(`tools/${demo.id}/`)}>{demo.data.title}</a></li>)}</ul></section>}
+  <p class="prose">Dates describe my participation in the project.</p>
+</BaseLayout>
