@@ -113,4 +113,29 @@ const teaching = defineCollection({
   loader: file('./src/data/teaching.json'),
   schema: z.object({ id: slug, title: z.string(), period: z.string(), summary: z.string(), resources: z.array(resource), provenance }),
 });
-export const collections = { demos, publications, posts, talks, projects, news, teaching };
+const researchAreas = defineCollection({
+  loader: file('./src/data/research-areas.json'),
+  schema: z.object({
+    id: slug,
+    title: z.string().min(1),
+    shortTitle: z.string().min(1),
+    notation: z.string(),
+    question: z.string().min(1),
+    summary: z.string().min(1),
+    approach: z.string().min(1),
+    order: z.number().int(),
+    relatedProjects: z.array(reference('projects')),
+    contributions: z.array(z.object({
+      id: slug,
+      title: z.string().min(1),
+      summary: z.string().min(1),
+      method: z.string().min(1),
+      relatedPublications: z.array(reference('publications')),
+      relatedDemos: z.array(reference('demos')),
+      resources: z.array(resource),
+      examples: z.array(z.string()),
+      role: z.string().optional(),
+    })).min(1),
+  }),
+});
+export const collections = { demos, publications, posts, talks, projects, news, teaching, researchAreas };

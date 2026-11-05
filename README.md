@@ -64,3 +64,7 @@ KaTeX is a pinned build dependency and outputs native MathML without client scri
 ## Complete local verification
 
 Run `npm run verify` to check both root and preview base paths and restore a root build. `npm run check:routes` checks the complete 84-page route disposition report and exact-case aliases; `npm run audit:routes` refreshes that report after mapping changes. Browser/playback/external-resource acceptance is tracked separately in `docs/preview-review.md`.
+
+## Research content
+
+`src/data/research-areas.json` contains the four validated research areas and 13 contributions. Each contribution links canonical publications, demonstrations, projects and software resources. The overview and homepage theme cards share these summaries. `docs/research-content-map.md` records the source authority and scope qualifications. `npm run check:research` verifies research navigation, coverage, diagrams and attribution after a build; it also runs within `npm run verify`.

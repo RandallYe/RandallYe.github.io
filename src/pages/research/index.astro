@@ -1,14 +1,46 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getCollection } from 'astro:content';
-import { research } from '../../data/research';
+import ResearchMethod from '../../components/ResearchMethod.astro';
+import { getCollection, getEntry } from 'astro:content';
 import { local } from '../../lib/site-paths';
+import '../../styles/research.css';
+const areas = (await getCollection('researchAreas')).sort((a, b) => a.data.order - b.data.order);
 const projects = await getCollection('projects');
+const selected = await Promise.all([
+  { title: 'UTP & Circus', paper: 'circus-model-checking', venue: 'Formal Aspects of Computing', demo: null, notation: 'P ⊑ Q', path: 'concurrency/#circus', summary: 'Modelling state-rich concurrent systems and verifying them through refinement checking.' },
+  { title: 'ProbURel', paper: 'proburel', venue: 'Theoretical Computer Science', demo: 'probabilistic-relations', notation: 'ℙ(X)', path: 'semantics/#proburel', summary: 'Extending relational reasoning to uncertainty, learning and probabilistic programs.' },
+  { title: 'RoboChart & PRISM', paper: 'robochart-prism', venue: 'Software and Systems Modeling', demo: 'robochart-prism', notation: 'P ∥ Q', path: 'probability/#robochart-prism', summary: 'From robotic state machines to automated probabilistic verification and quantitative properties.' },
+].map(async work => ({ ...work, publication: await getEntry('publications', work.paper), demonstration: work.demo ? await getEntry('demos', work.demo) : undefined })));
 ---
-<BaseLayout title="Research" description="Research in formal semantics, concurrency, security protocols, probabilistic verification and model-based engineering.">
-  <div class="page-heading"><p class="eyebrow">Foundations & applications</p><h1>Research</h1><p>Precise mathematical models, mechanised reasoning, and tools for understanding complex software behaviour.</p></div>
-  <nav class="anchor-nav" aria-label="Research themes">{research.map(theme => <a href={`#${theme.id}`}>{theme.title}</a>)}<a href="#projects">Project history</a></nav>
-  {research.map(theme => <section class="research-detail prose" id={theme.id}><h2>{theme.title}</h2><p>{theme.summary}</p><p>{theme.detail}</p><a href={theme.url}>Explore the research resources ↗</a>{theme.id === 'semantics' && <p><a href={local('tools/probabilistic-relations/')}>Watch the probabilistic-relations walkthrough →</a></p>}</section>)}
-  <section class="section prose"><h2>Contributions in context</h2><p>This research includes collaborations with colleagues at York and beyond. Publication records name co-authors. Contributions to Isabelle/UTP concern selected reactive-design and interaction-tree developments; I primarily use the framework rather than develop it.</p><a href={local('legacy/#insresearch-interests-and-summaryins')}>More research details →</a></section>
-  <section class="section" id="projects"><h2>Project history</h2><p>Dates describe my participation in each project.</p><div class="grid tools-grid">{projects.map(({ id, data }) => <article class="tool-card"><p class="eyebrow">{data.period}</p><h3><a href={local(`research/projects/${id}/`)}>{data.title}</a></h3><p>{data.summary}</p></article>)}</div></section>
+<BaseLayout title="Research" description="Research centred on UTP and Circus: modelling state-rich concurrent systems, refinement checking, probabilistic semantics and verification tools.">
+  <div class="research-intro">
+    <div><p class="eyebrow">UTP · Circus · Refinement checking</p><h1>Research</h1><p class="research-intro-statement">Modelling state.<br />Understanding concurrency.<br /><em>Checking refinement.</em></p><p>UTP and Circus are at the centre of my research. I study the modelling of state-rich concurrent systems and their verification through refinement checking, connecting mathematical semantics with specification languages and analysis tools.</p><p>From this foundation, my work extends to probabilistic semantics, robotic systems and security protocols.</p><a class="text-link" href="#areas">Explore the research areas ↓</a></div>
+    <ResearchMethod />
+  </div>
+  <section class="section" aria-labelledby="selected-research-title">
+    <div class="section-heading"><div><p class="eyebrow">Theory into practice · Co-authored work</p><h2 id="selected-research-title">Selected contributions</h2></div><a href={local('publications/')}>All publications →</a></div>
+    <div class="research-selected-grid">{selected.map((work, index) => <article class="research-selected">
+      <div class="research-selected-preview">
+        {work.demonstration?.data.thumbnail ? <img src={local(work.demonstration.data.thumbnail)} alt={work.demonstration.data.thumbnailAlt} width="720" height="450" loading="lazy" decoding="async" /> : <div class="research-foundation-preview" aria-hidden="true"><span>UTP / CIRCUS</span><strong>{work.notation}</strong><span>STATE · CONCURRENCY · REFINEMENT</span></div>}
+        <span class="research-selected-index" aria-hidden="true">0{index + 1}</span>
+      </div>
+      <div class="research-selected-copy"><p class="eyebrow">{work.publication?.data.year} · {work.venue}</p><h3><a href={local(`research/${work.path}`)}>{work.title}</a></h3><p>{work.summary}</p><p class="research-authors">{work.publication?.data.authors}</p><a class="text-link" href={local(`research/${work.path}`)}>Explore the contribution →</a></div>
+    </article>)}</div>
+  </section>
+  <section class="section" id="areas" aria-labelledby="research-areas-title">
+    <div class="section-heading"><div><p class="eyebrow">Connected lines of inquiry</p><h2 id="research-areas-title">Research areas</h2></div></div>
+    {areas.map(({ id, data }) => <article class="research-area-overview" id={id}>
+      <div class="research-area-marker" aria-hidden="true"><span>0{data.order + 1}</span><strong>{data.notation}</strong></div>
+      <div><h3><a href={local(`research/${id}/`)}>{data.title}</a></h3><p class="research-overview-question">{data.question}</p><p>{data.summary}</p><a class="text-link" href={local(`research/${id}/`)}>Explore this area →</a></div>
+      <ul class="research-work-index" aria-label={`Contributions in ${data.shortTitle}`}>{data.contributions.map(work => <li><a href={local(`research/${id}/#${work.id}`)}>{work.title}<span aria-hidden="true">↗</span></a></li>)}</ul>
+    </article>)}
+  </section>
+  <section class="section" aria-labelledby="research-cases-title">
+    <div class="section-heading"><div><p class="eyebrow">Models behind the methods</p><h2 id="research-cases-title">From theory to case studies</h2></div></div>
+    <div class="research-case-grid">
+      <figure class="research-case"><a href={local('pics/uvc_human.png')} aria-label="View the UV light-treatment robot human-state model at full size"><img src={local('pics/uvc_human.png')} alt="RoboChart human-state model with probabilistic transitions between out-of-range, green, yellow and red zones." width="2346" height="1732" loading="lazy" decoding="async" /></a><figcaption><p class="eyebrow">Robotic safety · RoboChart</p><h3>Uncertainty around a UV light-treatment robot</h3><p>The human-state model represents uncertain movement between zones around the robot. The co-authored agriculture-robot study connects probabilistic modelling with safety assurance.</p><a href={local('research/probability/#robochart-prism')}>Modelling and verification →</a></figcaption></figure>
+      <figure class="research-case"><a href={local('pics/PAL_use_case.png')} aria-label="View the hospital intralogistics activity diagram at full size"><img src={local('pics/PAL_use_case.png')} alt="Hospital intralogistics activity diagram with two concurrent robot delivery paths, reliability, duration and probabilistic flow annotations." width="3226" height="1360" loading="lazy" decoding="async" /></a><figcaption><p class="eyebrow">Quantitative workflows · UML</p><h3>Hospital intralogistics</h3><p>Reliability, duration and probabilistic annotations describe a robot delivery workflow. Quantitative analysis connects the activity diagram to Markov models and controller synthesis.</p><a href={local('research/probability/#activity-diagrams')}>Activity diagrams and analysis →</a></figcaption></figure>
+    </div>
+  </section>
+  <section class="section" id="projects"><div class="section-heading"><div><p class="eyebrow">Collaborations & research settings</p><h2>Project history</h2></div></div><p>Dates describe my participation in each project.</p><div class="research-project-links">{projects.map(({ id, data }) => <a href={local(`research/projects/${id}/`)}><strong>{data.title}</strong><span>{data.period}</span></a>)}</div></section>
 </BaseLayout>

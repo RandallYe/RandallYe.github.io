@@ -13,9 +13,10 @@ import publications from '../data/publications.json';
 import { local } from '../lib/site-paths';
 const demos = (await getCollection('demos', ({ data }) => data.featured)).sort((a, b) => a.data.order - b.data.order);
 const news = (await getCollection('news')).sort((a, b) => b.data.date.localeCompare(a.data.date)).slice(0, 3);
-const selected = [publications[0], publications[6], publications[2]];
+const selectedIds = ['circus-model-checking', 'proburel', 'robochart-prism'];
+const selected = selectedIds.flatMap(id => publications.filter(paper => paper.id === id));
 ---
-<BaseLayout title="Formal methods, from foundations to tools" description="Kangfeng (Randall) Ye works on formal semantics, theorem proving, probabilistic verification and accessible research tools.">
+<BaseLayout title="Formal methods, from foundations to tools" description="Kangfeng (Randall) Ye researches UTP and Circus, modelling state-rich concurrent systems, refinement checking and probabilistic verification.">
   <LegacyAnchors />
   <Hero />
   {demos.map(demo => <FeaturedDemo demo={demo} />)}

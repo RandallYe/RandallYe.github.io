@@ -20,7 +20,8 @@
     "check:history": "python3 scripts/check-history-output.py",
     "audit:routes": "python3 scripts/audit-routes.py --write",
     "check:routes": "python3 scripts/audit-routes.py",
-    "verify": "node scripts/verify-site.mjs"
+    "verify": "node scripts/verify-site.mjs",
+    "check:research": "python3 scripts/check-research-output.py"
   },
   "dependencies": {
     "astro": "7.4.5",

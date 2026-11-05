@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const cwd = fileURLToPath(new URL('../', import.meta.url));
-const outputChecks = ['check:links', 'check:routes', 'check:history', 'check:demo', 'check:posts', 'check:talks', 'check:publications'];
+const outputChecks = ['check:links', 'check:routes', 'check:history', 'check:research', 'check:demo', 'check:posts', 'check:talks', 'check:publications'];
 const run = (script, base = '/') => {
   const result = spawnSync('npm', ['run', script], {
     cwd,

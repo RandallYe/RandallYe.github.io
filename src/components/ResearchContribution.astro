@@ -1,0 +1,20 @@
+---
+import { getEntries, type CollectionEntry } from 'astro:content';
+import ResourceLinks from './ResourceLinks.astro';
+import { local } from '../lib/site-paths';
+interface Props { contribution: CollectionEntry<'researchAreas'>['data']['contributions'][number]; index: number; }
+const { contribution: work, index } = Astro.props;
+const papers = await getEntries(work.relatedPublications);
+const demos = await getEntries(work.relatedDemos);
+---
+<article class="research-contribution" id={work.id}>
+  <div class="research-contribution-heading"><p class="eyebrow">Contribution {String(index + 1).padStart(2, '0')}</p><h2>{work.title}</h2><p class="research-work-summary">{work.summary}</p></div>
+  <div class="research-work-body">
+    <p>{work.method}</p>
+    {work.role && <p class="research-role">{work.role}</p>}
+    {work.examples.length > 0 && <div class="research-examples"><h3>Examples & applications</h3><ul>{work.examples.map(example => <li>{example}</li>)}</ul></div>}
+    {demos.length > 0 && <div class="research-demo-links">{demos.map(demo => <a class="button" href={local(`tools/${demo.id}/`)}>Watch: {demo.data.title} <span aria-hidden="true">→</span></a>)}</div>}
+    {work.resources.length > 0 && <ResourceLinks links={work.resources} label={`Software and examples for ${work.title}`} />}
+    {papers.length > 0 && <div class="research-evidence"><h3>Related publications</h3><ul>{papers.map(paper => <li><a href={local(`publications/#${paper.id}`)}>{paper.data.title}</a><p>{paper.data.authors} · {paper.data.year}</p></li>)}</ul></div>}
+  </div>
+</article>

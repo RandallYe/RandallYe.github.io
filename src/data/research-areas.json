@@ -1,0 +1,377 @@
+[
+  {
+    "id": "concurrency",
+    "title": "UTP & Circus: State-Rich Concurrent Systems",
+    "shortTitle": "UTP, Circus & refinement",
+    "notation": "P ⊑ Q",
+    "question": "How can we model state-rich concurrent systems and verify them through refinement checking?",
+    "summary": "UTP and Circus are central to my research: mathematical foundations and specification languages for state-rich concurrent systems, with verification through refinement checking.",
+    "approach": "My research centres on Unifying Theories of Programming (UTP) and Circus. UTP provides a semantic foundation for reasoning about programs; Circus brings together rich state and concurrent behaviour in a specification language. I study how to model these systems and verify them through refinement checking, relating more concrete models to their specifications. This foundation also informs my work on probabilistic semantics, robotics and security protocols.",
+    "relatedProjects": [
+      "robocalc-robotest",
+      "cyphyassure"
+    ],
+    "order": 0,
+    "contributions": [
+      {
+        "id": "circus",
+        "title": "Circus: modelling and refinement checking",
+        "summary": "Modelling state-rich concurrent systems in Circus and supporting verification through a link to CSP ∥ B.",
+        "method": "Circus combines state-based specification with process algebra to model data and concurrent behaviour together. My work links Circus to the combination of B and CSP, enabling model checking and refinement checking. The Circus2ZCSP translator implements the transformation in Java on the Community Z Tools infrastructure, supporting analysis with ProB. This research formed my PhD thesis and the co-authored journal paper on state-rich formalisms.",
+        "relatedPublications": [
+          "circus-model-checking",
+          "state-rich-formalisms-thesis"
+        ],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "Circus2ZCSP translator",
+            "url": "https://github.com/RandallYe/Circus2ZCSP"
+          },
+          {
+            "label": "Circus case studies",
+            "url": "https://github.com/RandallYe/Circus-Programs"
+          }
+        ],
+        "examples": [
+          "Reactive buffer",
+          "Steam boiler",
+          "ESEL specification"
+        ]
+      },
+      {
+        "id": "parser",
+        "title": "ISO Z and Circus parsing and type checking",
+        "summary": "Language infrastructure for checking Z and Circus specifications before further analysis.",
+        "method": "The implementation covers ISO Z and most Circus syntax, using Alex and Happy in Haskell, with C++ work also available. Semantics transformation rules are only partly implemented. This software development is distinct from the published Circus model-checking work.",
+        "relatedPublications": [],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "Parser and type checker",
+            "url": "https://github.com/RandallYe/ISOZ-Parser-TypeChecker"
+          }
+        ],
+        "examples": [
+          "Examples from the ISO Z standard",
+          "Circus buffer and reactive buffer",
+          "Circus steam boiler"
+        ]
+      },
+      {
+        "id": "interaction-trees",
+        "title": "Sound animation of RoboChart with interaction trees",
+        "summary": "Generating executable animations from RoboChart semantics mechanised in Isabelle/HOL.",
+        "method": "The co-authored work uses interaction trees and CSP to connect formal semantics with generated Haskell animators. The chemical-detector and patrol-robot examples allow model behaviour to be explored. Animation soundness concerns the relationship to the formal model; it does not by itself prove every safety property of a physical robot.",
+        "relatedPublications": [
+          "robochart-animation-icfem",
+          "robochart-animation-jlamp"
+        ],
+        "relatedDemos": [
+          "robochart-chemical-detector",
+          "robochart-patrol-robot"
+        ],
+        "resources": [
+          {
+            "label": "Interaction-tree development",
+            "url": "https://github.com/isabelle-utp/interaction-trees"
+          }
+        ],
+        "examples": [
+          "Autonomous chemical detector",
+          "Patrol robot with shared state and nondeterministic choices"
+        ]
+      },
+      {
+        "id": "reactive-relations",
+        "title": "Calculational verification with reactive relations",
+        "summary": "Mechanised theories for reasoning about reactive and concurrent programs in Isabelle/UTP.",
+        "method": "The co-authored papers develop calculational approaches to reactive programs. My contribution was focused on verification of the reactive buffer and insights into the verification strategy.",
+        "relatedPublications": [
+          "reactive-relations-2018",
+          "reactive-programs-calculation"
+        ],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "Reactive relations theory",
+            "url": "https://github.com/isabelle-utp/utp-main/tree/master/theories/reactive"
+          }
+        ],
+        "examples": [
+          "Reactive buffer"
+        ],
+        "role": "I primarily use Isabelle/UTP and have made selected contributions to reactive designs and interaction trees; I do not claim authorship of the framework as a whole."
+      }
+    ]
+  },
+  {
+    "id": "semantics",
+    "title": "Probabilistic Semantics & Theorem Proving",
+    "shortTitle": "Probabilistic semantics & proofs",
+    "notation": "⊢ φ",
+    "question": "How can we give programs a precise meaning and reason about their behaviour?",
+    "summary": "Building on UTP to reason about probabilistic programs and control systems, with theories and proofs mechanised in Isabelle/HOL.",
+    "approach": "Building on the UTP foundation, I give probabilistic programs and control-system models a mathematical meaning. This connects language constructs to algebraic laws and supports compositional reasoning through explicit assumptions, guarantees and refinement.",
+    "relatedProjects": [
+      "vetss",
+      "into-cps"
+    ],
+    "order": 1,
+    "contributions": [
+      {
+        "id": "proburel",
+        "title": "ProbURel: reasoning about uncertainty",
+        "summary": "A relational semantics and probabilistic programming language for modelling epistemic and aleatoric uncertainty: uncertainty about a system and uncertainty in its outcomes.",
+        "method": "The Isabelle/UTP development connects probabilistic expressions to algebraic laws and automated reasoning. Worked examples explore learning from observations, localisation and repeated random experiments. The 2024 journal article develops the theory beyond the February 2023 recorded walkthrough.",
+        "relatedPublications": [
+          "proburel",
+          "programming-choices"
+        ],
+        "relatedDemos": [
+          "probabilistic-relations"
+        ],
+        "resources": [
+          {
+            "label": "ProbURel theory and algebraic laws",
+            "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_relations"
+          },
+          {
+            "label": "Worked theories",
+            "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_relations/Examples"
+          }
+        ],
+        "examples": [
+          "Monty Hall and learning facts",
+          "Robot localisation",
+          "Bayesian cancer diagnosis",
+          "Repeated coin and dice experiments"
+        ]
+      },
+      {
+        "id": "probabilistic-designs",
+        "title": "Probabilistic designs",
+        "summary": "A theory for sequential programs that combine probabilistic and nondeterministic behaviour.",
+        "method": "Mechanised in Isabelle/HOL, probabilistic designs support reasoning about the relationship between a program’s assumptions and its possible outcomes. The development includes proofs for algorithms that construct a uniform distribution using a fair coin.",
+        "relatedPublications": [
+          "probabilistic-sequential-programs"
+        ],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "Isabelle/HOL theory",
+            "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_designs"
+          },
+          {
+            "label": "Example proofs",
+            "url": "https://github.com/RandallYe/probabilistic_programming_utp/tree/main/probability/probabilistic_designs/examples"
+          }
+        ],
+        "examples": [
+          "Uniform distributions from a fair coin",
+          "Examples from probabilistic programming literature"
+        ]
+      },
+      {
+        "id": "control-law-diagrams",
+        "title": "Compositional reasoning for control-law diagrams",
+        "summary": "Assume-guarantee reasoning for discrete-time control-law diagrams, including nondeterministic and non-input-receptive systems and algebraic loops.",
+        "method": "A UTP theory of designs gives mathematical semantics to blocks and supports contract-based reasoning through refinement. The mechanised development includes a post-landing finalisation subsystem from an aircraft cabin-pressure controller.",
+        "relatedPublications": [
+          "control-law-diagrams"
+        ],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "Mechanised Simulink theory",
+            "url": "https://github.com/RandallYe/Compositional_AG_Reasoning_Simulink_UTP"
+          },
+          {
+            "label": "Aircraft controller subsystem",
+            "url": "https://github.com/RandallYe/Compositional_AG_Reasoning_Simulink_UTP/blob/main/post_landing_finalize_1.thy"
+          }
+        ],
+        "examples": [
+          "Discrete-time Simulink blocks",
+          "Aircraft cabin-pressure control"
+        ]
+      },
+      {
+        "id": "abel-limit-theorem",
+        "title": "Mechanising Abel’s limit theorem",
+        "summary": "An Isabelle formalisation of Abel’s limit theorem for power series with real coefficients.",
+        "method": "Published in the Archive of Formal Proofs in November 2025, this development extends the mathematical proof work beyond programming-language semantics.",
+        "relatedPublications": [
+          "abel-limit-theorem"
+        ],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "Theory and proof document",
+            "url": "https://www.isa-afp.org/entries/Abel_Limit_Theorem.html"
+          }
+        ],
+        "examples": []
+      }
+    ]
+  },
+  {
+    "id": "probability",
+    "title": "Probabilistic Verification & Model-Based Engineering",
+    "shortTitle": "Probability & models",
+    "notation": "ℙ(X)",
+    "question": "How can models reveal the consequences of uncertain behaviour?",
+    "summary": "Automated quantitative analysis of robotic software, activity diagrams and communication-network control policies.",
+    "approach": "I connect domain-specific modelling languages to probabilistic analysis tools. Explicit semantics, model transformations and property specifications allow designers to investigate reliability, timing, safety and service availability within a stated model.",
+    "relatedProjects": [
+      "robocalc-robotest",
+      "sesame",
+      "cheddar"
+    ],
+    "order": 2,
+    "contributions": [
+      {
+        "id": "robochart-prism",
+        "title": "RoboChart and PRISM",
+        "summary": "Probabilistic semantics and automated verification for RoboChart, a state-machine notation for robotic software.",
+        "method": "My RoboTool work supports three plugins: a PRISM metamodel, transformation and verification of RoboChart models, and probabilistic property specification. Related co-authored work develops the semantics, case studies and RoboCertProb property notation. The RoboChart/PRISM paper received a SoSyM Journal-first award and was presented at MODELS 2022.",
+        "relatedPublications": [
+          "robochart-prism",
+          "probabilistic-semantics-robochart",
+          "robostar-uncertainty",
+          "robocertprob",
+          "agriculture-robot-light-treatment"
+        ],
+        "relatedDemos": [
+          "robochart-prism"
+        ],
+        "resources": [
+          {
+            "label": "RoboTool",
+            "url": "https://robostar.cs.york.ac.uk/robotool/"
+          },
+          {
+            "label": "High-voltage controller",
+            "url": "https://github.com/UoY-RoboStar/hvc-case-study/tree/prism_verification"
+          },
+          {
+            "label": "UV light-treatment robot",
+            "url": "https://github.com/UoY-RoboStar/uvc-case-study"
+          }
+        ],
+        "examples": [
+          "Mail-delivery robot",
+          "High-voltage controller",
+          "UV light-treatment agriculture robot"
+        ]
+      },
+      {
+        "id": "activity-diagrams",
+        "title": "Quantitative analysis of activity diagrams",
+        "summary": "Quantitative annotations bring reliability, timing and probabilistic choices into UML activity diagrams.",
+        "method": "The work combines a UML profile, translation to PRISM models, parametric quantitative analysis and controller synthesis. The Eclipse-based tools support PRISM and Storm, with discrete-time Markov chains, Markov decision processes and continuous-time Markov chains. The examples include a hospital intralogistics robot alongside models from the literature.",
+        "relatedPublications": [
+          "quantitative-activity-diagrams"
+        ],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "QANAD tools and examples",
+            "url": "https://github.com/RandallYe/QANAD"
+          },
+          {
+            "label": "QASCAD development",
+            "url": "https://github.com/RandallYe/QASCAD"
+          },
+          {
+            "label": "Installation: Eclipse, Papyrus and Epsilon",
+            "url": "https://www.youtube.com/watch?v=EhhQAlD1P2Q"
+          },
+          {
+            "label": "Installation: configuration",
+            "url": "https://www.youtube.com/watch?v=NTyLdK8tQvo"
+          }
+        ],
+        "examples": [
+          "Hospital intralogistics robot",
+          "Digital camera",
+          "Fruit picking",
+          "Travel and IT-support workflows"
+        ]
+      },
+      {
+        "id": "oran",
+        "title": "Energy efficiency and service availability in O-RAN",
+        "summary": "Formal analysis of how an O-RAN xApp control policy trades energy use against service availability.",
+        "method": "The co-authored study compares six control-policy configurations using PRISM. Its scenario models three radio cells and nine user equipments, with users switching on and off according to exponential distributions. The conclusions concern this model and its assumptions.",
+        "relatedPublications": [
+          "oran-energy-availability"
+        ],
+        "relatedDemos": [],
+        "resources": [
+          {
+            "label": "PRISM models",
+            "url": "https://github.com/RandallYe/ORAN-xApp-QoS-PRISM-Models"
+          },
+          {
+            "label": "SEFM and DataMod research report",
+            "url": "/posts/sefm-datamod-report/"
+          }
+        ],
+        "examples": [
+          "Radio-cell control policies",
+          "Energy and service-availability trade-offs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "security",
+    "title": "Security Protocol Verification",
+    "shortTitle": "Security protocols",
+    "notation": "{m}ₖ",
+    "question": "How can designers inspect protocol behaviour without losing its formal foundations?",
+    "summary": "Accessible exploration of security-protocol models, combining sound animation with user-guided verification.",
+    "approach": "I model protocol interactions using CSP and interaction trees in Isabelle/HOL. Generated animators make executions accessible to designers, while the semantics states the relationship between the executable behaviour and the specification.",
+    "relatedProjects": [
+      "cheddar"
+    ],
+    "order": 3,
+    "contributions": [
+      {
+        "id": "protocol-animation",
+        "title": "User-guided verification through sound animation",
+        "summary": "An animator for inspecting interactions between protocol participants and an intruder within a specified model.",
+        "method": "The work combines manual event selection with automatic reachability exploration, supported by generated Haskell code. The repository includes terminal and web interfaces. Security conclusions depend on the protocol model, intruder assumptions, parameters and exploration bounds; animation soundness is separate from a universal proof of a security property.",
+        "relatedPublications": [
+          "security-protocol-animation"
+        ],
+        "relatedDemos": [
+          "security-protocol-animation"
+        ],
+        "resources": [
+          {
+            "label": "Models and animator implementation",
+            "url": "https://github.com/RandallYe/Animation_of_Security_Protocols"
+          }
+        ],
+        "examples": [
+          "Needham–Schroeder public-key protocol",
+          "Diffie–Hellman key agreement"
+        ]
+      },
+      {
+        "id": "physical-layer-security",
+        "title": "Physical-layer security for communication networks",
+        "summary": "Co-authored research on formal verification of physical-layer security protocols for next-generation communication networks.",
+        "method": "This contribution extends the security-protocol research to communication-network applications. Read the paper for its formal setting and results.",
+        "relatedPublications": [
+          "physical-layer-security"
+        ],
+        "relatedDemos": [],
+        "resources": [],
+        "examples": []
+      }
+    ]
+  }
+]
