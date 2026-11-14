@@ -15,6 +15,23 @@ latest_path = args.latest / 'index.md'
 latest = latest_path.read_text()
 def digest(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def write(path, value): (root / path).write_text(json.dumps(value, indent=2, ensure_ascii=False) + '\n')
+def yaml_list(key, items):
+    if not items: return ''
+    lines=[f'{key}:']
+    for item in items:
+        first=True
+        for name,value in item.items():
+            lines.append(f"  {'- ' if first else '  '}{name}: {value}")
+            first=False
+    return '\n'.join(lines) + '\n'
+def news_note(record):
+    """One markdown note per announcement; build-news.mjs compiles them to JSON."""
+    front = '\n'.join([f"title: {record['title']}", f"date: {record['date']}", f"summary: {record['summary']}"])
+    for key in ('eventDate', 'eventEndDate'):
+        if record.get(key): front += f"\n{key}: {record[key]}"
+    front += '\n' + yaml_list('resources', record['resources']) + yaml_list('provenance', record['provenance'])
+    body = record.get('detail', '')
+    return f"---\n{front}---\n" + (f"\n{body}\n" if body else '')
 def plain(text):
     text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
     text = re.sub(r'https?://\S+', '', text)
@@ -122,7 +139,10 @@ for record in news:
         label,url=links[record['id']];record['resources'].append(dict(label=label,url=url))
     record['resources']=list({item['url']:item for item in record['resources']}.values())
 news.sort(key=lambda n:(n['date'],n['id']),reverse=True)
-write('src/data/news.json',news)
+(root / 'src/content/news').mkdir(parents=True, exist_ok=True)
+for record in news:
+    (root / f"src/content/news/{record['id']}.md").write_text(news_note(record))
+
 # Retain the module description and teaching role, without carrying over a current-role claim.
 path='teaching/csav2018/index.html';p=Body();p.feed((args.archive/path).read_text())
 teaching=[dict(id='csav-2018',title='CSAV — Concurrent System Analysis and Verification',period='Spring term, 2018–2019',summary='Teaching assistant for Jim Woodcock’s practical classes at the University of York. The module covered CSP and Circus for modelling, validation, design and verification of concurrent reactive systems.',resources=p.links,provenance=[source(path)])]

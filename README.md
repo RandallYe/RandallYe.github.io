@@ -61,6 +61,34 @@ Archived publication abstracts, BibTeX versions and preprint resources are attac
 
 KaTeX is a pinned build dependency and outputs native MathML without client scripts or remote fonts. Run `npm run check:posts` after a successful build, with the same ASTRO_BASE value as that build. The steady-state post visibly identifies historical scientific-review issues while retaining the source notes.
 
+## News
+
+Announcements are written as one Markdown note per item in `src/content/news/<slug>.md`. `npm run build:news` compiles them into `src/data/news.json`, which the validated `news` collection reads. `npm run build` and `npm test` run the compiler first, so an out-of-date JSON file fails the test suite instead of shipping stale news, and `astro dev` recompiles on every note change (an invalid note is reported in the dev log and the previous data stays published).
+
+```md
+---
+title: New journey in industry at IOHK
+date: 2025-11-24
+summary: One or two sentences.
+resources:
+  - label: IOHK
+    url: https://iohk.io/
+---
+
+Optional longer text. It appears behind a “More details” disclosure on `/news/`.
+```
+
+`eventDate` and `eventEndDate` (YYYY-MM-DD) may be added for dated events, and `provenance` uses the same `- field: value` list shape for material migrated from a source file:
+
+```md
+provenance:
+  - source: old_entry
+    path: news/20221011_robostar_industry_exhibition/index.html
+    sha256: <64 hex chars>
+```
+
+The filename is the id, so it must be a lowercase slug (`^[a-z0-9]+(-[a-z0-9]+)*$`); it also becomes the page anchor. `title`, `date` and `summary` are required; everything else is optional. Order does not matter: both the archive and the homepage sort by date. Frontmatter is a small YAML subset — `key: value` lines plus `key:` + indented `- field: value` lists — so plain text values need no quotes.
+
 ## Complete local verification
 
 Run `npm run verify` to check both root and preview base paths and restore a root build. `npm run check:routes` checks the complete 84-page route disposition report and exact-case aliases; `npm run audit:routes` refreshes that report after mapping changes. Browser/playback/external-resource acceptance is tracked separately in `docs/preview-review.md`.

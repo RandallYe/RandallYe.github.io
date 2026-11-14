@@ -21,7 +21,11 @@
     "audit:routes": "python3 scripts/audit-routes.py --write",
     "check:routes": "python3 scripts/audit-routes.py",
     "verify": "node scripts/verify-site.mjs",
-    "check:research": "python3 scripts/check-research-output.py"
+    "check:research": "python3 scripts/check-research-output.py",
+    "build:news": "node scripts/build-news.mjs",
+    "prebuild": "npm run build:news",
+    "pretest": "npm run build:news",
+    "predev": "npm run build:news"
   },
   "dependencies": {
     "astro": "7.4.5",

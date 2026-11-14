@@ -253,3 +253,43 @@ Added a byte-identical public download at `/downloads/academic-cv.pdf`, which ha
 Added a reusable NewsTimeline component for the News archive and the three homepage updates. Entries use semantic ordered lists with a vertical line and circular markers, dates on the left and content on the right; mobile stacks dates above the content beside the line. The archive retains its year navigation, all 46 announcement anchors, event ranges, expandable details and resource links. The compact homepage timeline links to the corresponding full entries. Styling follows existing theme tokens and adds no JavaScript.
 
 Validation: Astro check reports zero diagnostics; root build, history-output checks and all internal links pass (100 HTML pages, 922 references, zero errors/warnings); whitespace checks pass. Browser visual review remains pending. Changes remain uncommitted.
+
+## Linkable research interests summary — 5 November 2026
+
+The old homepage's "Research interests and summary" section now has a rebuilt page at `/research/interests/`. It summarises all four research strands and their 13 contributions from `src/data/research-areas.json` (no duplicated copy) and links every entry to its detailed page anchor. The page keeps the original fragment id `insresearch-interests-and-summaryins`, and the homepage's legacy fragment target for that id now points at the rebuilt page instead of the raw archive, so existing deep links resolve to readable content. The research overview links to it twice: beside “Explore the contributions to this theme” in the hero, and from the contributions section heading.
+
+## Light-theme dark panels — 5 November 2026
+
+Two surfaces ignored the theme: the homepage "Security verification you can explore" featured band (`--feature` was a fixed dark navy) and the hero "Mathematical foundations" panel (fully hardcoded palette). Both now use the shared theme tokens, so the light theme renders them as light tinted panels and the dark theme keeps its existing contrast.
+
+- `.feature` in `src/styles/global.css`: light `--feature` is `#e7efeb`; text, paragraphs, links, buttons and borders come from `--ink`, `--muted`, `--accent` and `--line`; the fixed mint overrides and the dark decorative pattern were replaced with `color-mix()` on the accent. The obsolete "keep the panel dark in both themes" comment is gone.
+- `src/components/ResearchVisual.astro`: panel, header, caption and SVG take `--white`, `--ink`, `--muted`, `--accent`, `--line` and `--focus`; nothing is a fixed hex anymore.
+- Removed the three decorative dots in the panel header. They looked like carousel pagination; there is no carousel.
+
+Deliberately still dark in both themes: the selected-contribution preview matte and the case-study image frames (`research.css`), and video frames, which act as mattes for media.
+
+Validation: Astro check, root build, 16 tests and internal links pass (101 pages, 962 references, 0 errors). No browser is available in this environment, so the light-theme result was reviewed statically only; screenshot review remains pending.
+
+## Mathematical-foundations panel sharpened — 5 November 2026
+
+The panel looked blurred because it carried a `transform: rotate(1deg)`, which forces the browser to resample the whole card, including its small text and 1px diagram strokes. The rotation and its rotated shadow are gone.
+
+Type and diagram were raised too: header 0.64rem, context label 0.68rem, support line 0.76rem (was 0.55/0.58/0.65), diagram labels 8px → 10px in the 360-unit viewBox, figures 22px → 23px, equation 2.8rem → 3rem. Straight grid, axis and separator lines use `shape-rendering: crispEdges`; dashed transition arrow and node radii were adjusted so the markers no longer overlap the nodes.
+
+Astro check, root build, internal links and 16 tests pass. No browser here, so sharpness was not visually confirmed.
+
+## News authored as Markdown — 5 November 2026
+
+Adding an announcement no longer means editing JSON. Each item is now one note in `src/content/news/<slug>.md`: frontmatter for `title`, `date`, `summary`, optional `eventDate`/`eventEndDate`, `resources` and `provenance`, plus an optional prose body shown behind “More details”. The filename is the id and the page anchor.
+
+`scripts/build-news.mjs` compiles those notes into the existing `src/data/news.json`, which the validated `news` collection still reads, so page components, the history checks and the archive tests are unchanged. Frontmatter is a small YAML subset: `key: value` lines plus `key:` with indented `- field: value` items for `resources` and `provenance`; plain values need no quotes, and the parser rejects a list item outside a list or a missing required field instead of guessing. The generator sorts by filename, keeps `detail` optional and fails loudly on missing frontmatter or required fields. `npm run build:news` regenerates the file; `prebuild` and `pretest` run it automatically, and `scripts/build-news.test.mjs` fails when the committed JSON differs from the notes. Existing note filenames and frontmatter keep every current id, date, event range, resource and checksum.
+
+News `provenance` is now optional (`.default([])`) so a hand-written announcement needs no invented source hash; migrated items keep their GitHub/archive entries, and the existing hash assertions still cover them. `scripts/migrate-supporting-history.py` now writes the same Markdown notes instead of JSON.
+
+Validation: Astro check, build, 17 tests, links (101 pages, 962 references, 0 errors) and history output pass at the root base.
+
+## News notes reload while developing — 5 November 2026
+
+A newly added note did not appear because `src/data/news.json` is compiled, and a running `astro dev` only compiled it at startup. `astro.config.mjs` now registers a small Vite plugin: when a note under `src/content/news/` changes, it recompiles the JSON, which the content layer then reloads. Compilation errors are logged as `[news-notes] <file>: <problem>` and keep the previous data, so the dev server survives a malformed note. `predev`, `prebuild` and `pretest` still cover command-line runs.
+
+Note for the current session: the running dev server had to be restarted once to load the new config (Astro 7 runs it as a background daemon; `npx astro dev stop` then `npm run dev`).
