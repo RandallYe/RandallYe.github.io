@@ -1,7 +1,7 @@
 :root {
   color-scheme:light;
   --footer:#eef2ef;
-  --feature:#172d3a;
+  --feature:#e7efeb;
   --button-text:#fff;
   --button-hover:#114f48;
   --focus:#986511;
@@ -462,28 +462,18 @@ h1 span {
 }
 .feature {
   background:var(--feature);
-  color:#fff;
+  color:var(--ink);
   padding:2.6rem;
   border-radius:var(--radius);
   margin-bottom:3rem;
-}
-.feature .eyebrow {
-  color:#a6d4c4;
 }
 .feature h2 {
   font-size:clamp(1.8rem,3vw,2.6rem);
   max-width:700px;
 }
 .feature p {
-  color:#d0dcd8;
+  color:var(--muted);
   max-width:680px;
-}
-.feature a {
-  color:#b8e3d1;
-}
-.feature .button {
-  background:#c6e7d8;
-  color:#173e35;
 }
 .feature-grid {
   display:grid;
@@ -499,7 +489,7 @@ h1 span {
   font-size:.82rem;
 }
 .feature-side {
-  border:1px solid #4b656d;
+  border:1px solid var(--line);
   padding:1.6rem;
   border-radius:3px;
 }
@@ -789,7 +779,7 @@ h1 span {
 }
 .feature-side .media-status {
   font-size:.73rem;
-  border-top:1px solid #4b656d;
+  border-top:1px solid var(--line);
   padding-top:1rem;
   margin-bottom:0;
 }
@@ -799,7 +789,6 @@ h1 span {
   }
 }
 
-/* Keep the demonstration panel dark in both themes. */
 :root[data-theme="dark"] {
   color-scheme:dark;
   --paper:#101b24;
@@ -903,10 +892,10 @@ body {
 .research-notation { font: italic 1.5rem Georgia, 'Times New Roman', serif; color: var(--accent); }
 .research-card h3 { font-size: 1.08rem; }
 .tool-card { border-radius: 7px; box-shadow: 0 4px 16px -12px var(--muted); }
-.feature { position: relative; overflow: hidden; border: 1px solid #416373; border-radius: 10px; background-image: linear-gradient(115deg, transparent 50%, #83dcca08), radial-gradient(circle, #a1d7ce18 .7px, transparent 1px); background-size: auto, 20px 20px; }
-.feature::before { content: '⊢'; position: absolute; right: -1rem; bottom: -7rem; font: 22rem Georgia, serif; color: #83dcca07; pointer-events: none; }
+.feature { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background-image: linear-gradient(115deg, transparent 50%, color-mix(in srgb, var(--accent) 6%, transparent)), radial-gradient(circle, color-mix(in srgb, var(--accent) 12%, transparent) .7px, transparent 1px); background-size: auto, 20px 20px; }
+.feature::before { content: '⊢'; position: absolute; right: -1rem; bottom: -7rem; font: 22rem Georgia, serif; color: color-mix(in srgb, var(--accent) 10%, transparent); pointer-events: none; }
 .feature-grid { position: relative; }
-.feature-side { background: #10232d88; border-radius: 6px; }
+.feature-side { background: color-mix(in srgb, var(--accent) 6%, transparent); border-radius: 6px; }
 .page-heading { position: relative; }
 .page-heading::after { content: ''; display: block; width: 52px; height: 3px; margin-top: 1.8rem; background: var(--accent); box-shadow: 16px 0 0 var(--line); }
 @media (hover:hover) {
