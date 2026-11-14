@@ -28,6 +28,10 @@ Copy is based on the current homepage's Research interests and summary, Short ba
 
 All 20 canonical works are reachable through the related-publication lists across these 13 contributions. Their complete co-author strings and years are rendered from publication records, rather than restated as solo achievements.
 
+## Linkable summary
+
+The old homepage's "Research interests and summary" section is rebuilt at `/research/interests/` from the same `research-areas.json` records, so it cannot drift from the area pages. It keeps the original fragment id `insresearch-interests-and-summaryins` for existing deep links and links each contribution to its detailed anchor.
+
 ## Visuals and behaviour
 
 - The overview uses existing probabilistic-relations and RoboChart preview assets. The leading UTP/Circus card has decorative refinement notation, not a fabricated tool screenshot or verification result.

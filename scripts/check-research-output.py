@@ -71,6 +71,14 @@ for area in areas:
     for project in area['relatedProjects']:
         assert BASE + f'research/projects/{project}/' in page.links
 assert contributions == 13 and covered == publications
+interests = Page(DIST / 'research/interests/index.html')
+assert 'insresearch-interests-and-summaryins' in interests.ids, 'Lost the original research-interests fragment'
+assert BASE + 'research/interests/' in overview.links
+assert BASE + 'research/interests/' in home.links, 'Old research-interests fragment must reach the rebuilt page'
+for area in areas:
+    assert area['id'] in interests.ids
+    for work in area['contributions']:
+        assert BASE + f'research/{area["id"]}/#{work["id"]}' in interests.links
 for path in ['pics/uvc_human.png', 'pics/PAL_use_case.png']:
     image = next(image for image in overview.images if image['src'] == BASE + path)
     assert image['alt'] and image['loading'] == 'lazy'
@@ -81,4 +89,4 @@ assert 'focused on verification of the reactive buffer' in concurrency
 assert 'I do not claim authorship of the framework as a whole' in concurrency
 security = (DIST / 'research/security/index.html').read_text()
 assert 'animation soundness is separate' in security
-print(f'Research output passes at {BASE}: four areas, 13 contributions, all 20 canonical works, original diagrams, demonstrations and scoped attribution.')
+print(f'Research output passes at {BASE}: four areas, 13 contributions, the research-interests summary, all 20 canonical works, original diagrams, demonstrations and scoped attribution.')

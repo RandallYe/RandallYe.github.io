@@ -1,5 +1,7 @@
 ---
 import inventory from '../../docs/legacy-links.json';
 import { local } from '../lib/site-paths';
+// The research summary has a rebuilt page, so its old deep link leaves the raw archive.
+const rebuilt: Record<string, string> = { 'insresearch-interests-and-summaryins': 'research/interests/' };
 ---
-{inventory.ids.map(id => <aside class="legacy-target" id={id}><p>Find more information about this topic. <a href={local(`legacy/#${id}`)}>Read more →</a></p></aside>)}
+{inventory.ids.map(id => <aside class="legacy-target" id={id}><p>Find more information about this topic. <a href={local(rebuilt[id] ?? `legacy/#${id}`)}>Read more →</a></p></aside>)}
